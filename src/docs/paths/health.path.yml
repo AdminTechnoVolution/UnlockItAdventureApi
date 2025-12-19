@@ -1,0 +1,12 @@
+/api/health:
+  get:
+    summary: Healthcheck
+    tags:
+      - Health
+    responses:
+      200:
+        $ref: '#/components/responses/SuccessResponse'
+      400:
+        $ref: '#/components/responses/BadRequestResponse'
+      500:
+        $ref: '#/components/responses/InternalServerErrorResponse'

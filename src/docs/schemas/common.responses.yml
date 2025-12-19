@@ -1,0 +1,36 @@
+components:
+  responses:
+    SuccessResponse:
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/BaseResponse'
+
+    BadRequestResponse:
+      description: Bad Request
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/BaseResponse'
+
+    UnauthorizedResponse:
+      description: Unauthorized
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/BaseResponse'
+
+    TooManyRequestsResponse:
+      description: Too Many Requests
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/BaseResponse'
+
+    InternalServerErrorResponse:
+      description: Internal Server Error
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/BaseResponse'

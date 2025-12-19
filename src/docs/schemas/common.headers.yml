@@ -1,0 +1,19 @@
+components:
+  parameters:
+    Authorization:
+      in: header
+      name: Authorization
+      example: eyJhbGciOi
+      description: Authorization token
+      required: true
+      schema:
+        type: string
+
+    AcceptLanguage:
+      in: header
+      name: Accept-Language
+      example: en
+      description: Language code for localization (e.g., en, es)
+      required: false
+      schema:
+        type: string

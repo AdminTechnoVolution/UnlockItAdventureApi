@@ -1,0 +1,20 @@
+paths:
+  /api/group/group-activities:
+    get:
+      summary: Get group activities
+      tags:
+        - Groups & Activities
+      security:
+        - Bearer: []
+      parameters:
+        - $ref: '#/components/parameters/Authorization'
+        - $ref: '#/components/parameters/AcceptLanguage'
+      responses:
+        200:
+          $ref: '#/components/responses/SuccessResponse'
+        400:
+          $ref: '#/components/responses/BadRequestResponse'
+        401:
+          $ref: '#/components/responses/UnauthorizedResponse'
+        500:
+          $ref: '#/components/responses/InternalServerErrorResponse'

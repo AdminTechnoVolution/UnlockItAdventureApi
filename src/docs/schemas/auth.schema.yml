@@ -1,0 +1,117 @@
+components:
+  schemas:
+    RegisterUserSchema:
+      type: object
+      required:
+        - email
+        - password
+        - fullName
+      properties:
+        email:
+          type: string
+          maxLength: 256
+          format: email
+          example: "johndoe@example.com"
+        password:
+          type: string
+          minLength: 8
+          maxLength: 128
+          example: "StrongPassword123"
+        fullName:
+          type: string
+          maxLength: 128
+          example: "John Doe"
+
+    VerifyCodeUserSchema:
+      type: object
+      required:
+        - email
+        - verificationCode
+      properties:
+        email:
+          type: string
+          maxLength: 256
+          format: email
+          example: johndoe@example.com
+        verificationCode:
+          type: string
+          maxLength: 64
+          example: "000000"
+
+    SendVerificationCodeSchema:
+      type: object
+      required:
+        - email
+      properties:
+        email:
+          type: string
+          maxLength: 256
+          format: email
+          example: johndoe@example.com
+
+    ResetPasswordSchema:
+      type: object
+      required:
+        - email
+        - verificationCode
+        - password
+      properties:
+        email:
+          type: string
+          maxLength: 256
+          format: email
+          example: johndoe@example.com
+        verificationCode:
+          type: string
+          maxLength: 64
+          example: "000000"
+        password:
+          type: string
+          maxLength: 128
+          example: StrongPassword123
+  
+    LoginSchema:
+      type: object
+      required:
+        - email
+        - password
+        - fcmToken
+      properties:
+        email:
+          type: string
+          maxLength: 256
+          format: email
+          example: "johndoe@example.com"
+        password:
+          type: string
+          maxLength: 128
+          example: "StrongPassword123"
+        fcmToken:
+          type: string
+          example: "eyJhbGciOi"
+
+    RefreshTokenSchema:
+      type: object
+      required:
+        - refreshToken
+      properties:
+        refreshToken:
+          type: string
+          example: "eyJhbGciOi"
+
+    LogoutSchema:
+      type: object
+      required:
+        - accessToken
+        - refreshToken
+        - fcmToken
+      properties:
+        accessToken:
+          type: string
+          example: "eyJhbGciOiAcc"
+        refreshToken:
+          type: string
+          example: "eyJhbGciOiRef"
+        fcmToken:
+          type: string
+          example: "eyJhbGciOiFcm"

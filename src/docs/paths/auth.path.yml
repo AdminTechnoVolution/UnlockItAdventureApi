@@ -1,0 +1,161 @@
+paths:
+  /api/auth/user/register:
+    post:
+      summary: Register a new user
+      tags:
+        - Auth
+      parameters:
+        - $ref: '#/components/parameters/AcceptLanguage'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RegisterUserSchema'
+      responses:
+        200:
+          $ref: '#/components/responses/SuccessResponse'
+        400:
+          $ref: '#/components/responses/BadRequestResponse'
+        500:
+          $ref: '#/components/responses/InternalServerErrorResponse'
+
+  /api/auth/user/register/verify-code:
+    post:
+      summary: Verify registration code for a new user
+      tags:
+        - Auth
+      parameters:
+        - $ref: '#/components/parameters/AcceptLanguage'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/VerifyCodeUserSchema'
+      responses:
+        200:
+          $ref: '#/components/responses/SuccessResponse'
+        400:
+          $ref: '#/components/responses/BadRequestResponse'
+        401:
+          $ref: '#/components/responses/UnauthorizedResponse'
+        500:
+          $ref: '#/components/responses/InternalServerErrorResponse'
+
+  /api/auth/user/recover/send-code:
+    post:
+      summary: Send verification code to user email. This works to send new code, resend code, and recover password
+      tags:
+        - Auth
+      parameters:
+        - $ref: '#/components/parameters/AcceptLanguage'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SendVerificationCodeSchema'
+      responses:
+        200:
+          $ref: '#/components/responses/SuccessResponse'
+        400:
+          $ref: '#/components/responses/BadRequestResponse'
+        401:
+          $ref: '#/components/responses/UnauthorizedResponse'
+        429:
+          $ref: '#/components/responses/TooManyRequestsResponse'
+        500:
+          $ref: '#/components/responses/InternalServerErrorResponse'
+
+  /api/auth/user/recover/reset-password:
+    post:
+      summary: Reset the password once you have the verification code
+      tags:
+        - Auth
+      parameters:
+        - $ref: '#/components/parameters/AcceptLanguage'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ResetPasswordSchema'
+      responses:
+        200:
+          $ref: '#/components/responses/SuccessResponse'
+        400:
+          $ref: '#/components/responses/BadRequestResponse'
+        401:
+          $ref: '#/components/responses/UnauthorizedResponse'
+        500:
+          $ref: '#/components/responses/InternalServerErrorResponse'
+
+  /api/auth/user/login:
+    post:
+      summary: Login user
+      tags:
+        - Auth
+      parameters:
+        - $ref: '#/components/parameters/AcceptLanguage'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/LoginSchema'
+      responses:
+        200:
+          $ref: '#/components/responses/SuccessResponse'
+        400:
+          $ref: '#/components/responses/BadRequestResponse'
+        401:
+          $ref: '#/components/responses/UnauthorizedResponse'
+        500:
+          $ref: '#/components/responses/InternalServerErrorResponse'
+
+  /api/auth/user/login/refresh:
+    post:
+      summary: Refresh login user
+      tags:
+        - Auth
+      parameters:
+        - $ref: '#/components/parameters/AcceptLanguage'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RefreshTokenSchema'
+      responses:
+        200:
+          $ref: '#/components/responses/SuccessResponse'
+        400:
+          $ref: '#/components/responses/BadRequestResponse'
+        401:
+          $ref: '#/components/responses/UnauthorizedResponse'
+        500:
+          $ref: '#/components/responses/InternalServerErrorResponse'
+
+  /api/auth/user/logout:
+    post:
+      summary: Logout user
+      tags:
+        - Auth
+      parameters:
+        - $ref: '#/components/parameters/AcceptLanguage'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/LogoutSchema'
+      responses:
+        200:
+          $ref: '#/components/responses/SuccessResponse'
+        400:
+          $ref: '#/components/responses/BadRequestResponse'
+        401:
+          $ref: '#/components/responses/UnauthorizedResponse'
+        500:
+          $ref: '#/components/responses/InternalServerErrorResponse'

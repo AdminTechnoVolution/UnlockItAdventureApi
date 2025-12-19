@@ -1,0 +1,46 @@
+components:
+  schemas:
+    BaseResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+          example: true
+        messages:
+          type: array
+          items:
+            type: string
+          example: ["Success", "Error"]
+        data:
+          type: object
+          nullable: true
+          description: "Any custom response object"
+
+    PaginationDto:
+      type: object
+      properties:
+        nextCursor:
+          type: string
+          nullable: true
+          description: Cursor for fetching the next page (null if no more results)
+          example: "68d416ebe7884b8394eb22e7"
+        pageSize:
+          type: integer
+          description: Number of items returned in this page
+          example: 20
+        hasMore:
+          type: boolean
+          description: Flag to know there are more results to fetch
+          example: true
+
+    BasePaginatedResponse:
+      type: object
+      properties:
+        results:
+          type: array
+          description: The list of returned items
+          items:
+            type: object
+            description: "Any model object returned by this endpoint"
+        pagination:
+          $ref: '#/components/schemas/PaginationDto'
