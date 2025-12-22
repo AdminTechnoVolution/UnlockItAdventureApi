@@ -28,18 +28,12 @@ jobs:
           npm install
           npm run build --if-present
 
-      - name: Remove node_modules before deploy
-        run: |
-          rm -rf node_modules
-
-      # Upload source code ONLY
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
           name: node-app
           path: |
             .
-            !node_modules
 
   deploy:
     runs-on: ubuntu-latest
