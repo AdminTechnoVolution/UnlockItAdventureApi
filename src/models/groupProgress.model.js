@@ -13,7 +13,7 @@ const ActivitySchema = new mongoose.Schema({
 const groupProgressSchema = new mongoose.Schema(
   {
     userId: { type: mongoose.Schema.Types.ObjectId, ref: "User", required: true },
-    partnerId: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
+    partnerId: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }],
     groupId: { type: mongoose.Schema.Types.ObjectId, ref: "Group", required: true },
     status: { type: String, enum: Object.values(GroupProgressStatus), default: GroupProgressStatus.IN_PROGRESS, required: true, lowercase: true },
     completedAt: { type: Date },

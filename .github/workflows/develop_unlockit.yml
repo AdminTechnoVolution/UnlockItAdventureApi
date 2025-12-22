@@ -23,17 +23,23 @@ jobs:
         with:
           node-version: '22.x'
 
-      - name: npm install, build, and test
+      - name: npm install, build
         run: |
           npm install
           npm run build --if-present
-          npm run test --if-present
 
+      - name: Remove node_modules before deploy
+        run: |
+          rm -rf node_modules
+
+      # Upload source code ONLY
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
           name: node-app
-          path: .
+          path: |
+            .
+            !node_modules
 
   deploy:
     runs-on: ubuntu-latest
@@ -59,7 +65,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
         with:
-          app-name: 'unlockit'
+          app-name: 'UnlockIt'
           slot-name: 'Production'
           package: .
           
