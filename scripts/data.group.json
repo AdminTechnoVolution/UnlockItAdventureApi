@@ -15,30 +15,6 @@
             "it": "Benvenuto alla tua prima avventura! Questo pacchetto iniziale include 3 attività facili perfette per esperienze in solitaria o in coppia."
         },
         "imageUrl": "https://example.com/images/home_local_adventures.jpg",
-        "prices": [
-            {
-                "currency": "USD",
-                "cost": 0,
-                "tier": "free",
-                "features": {
-                    "en": [
-                        "1 photo per activity"
-                    ],
-                    "es": [
-                        "1 foto por actividad"
-                    ],
-                    "pt": [
-                        "1 foto por atividade"
-                    ],
-                    "fr": [
-                        "1 photo par activité"
-                    ],
-                    "it": [
-                        "1 foto per attività"
-                    ]
-                }
-            }
-        ],
         "isActive": true,
         "activities": [
             {
@@ -197,34 +173,8 @@
             "it": "Esplora le sette meraviglie del mondo moderno con dettagli, consigli e storia."
         },
         "imageUrl": "https://example.com/images/seven_wonders_main.jpg",
-        "prices": [
-            {
-                "currency": "USD",
-                "cost": 2.99,
-                "tier": "basic",
-                "features": {
-                    "en": [
-                        "1 photo per activity",
-                        "Basic access"
-                    ],
-                    "es": [
-                        "1 foto por actividad",
-                        "Acceso básico"
-                    ],
-                    "pt": [
-                        "1 foto por atividade",
-                        "Acesso básico"
-                    ],
-                    "fr": [
-                        "1 photo par activité",
-                        "Accès basique"
-                    ],
-                    "it": [
-                        "1 foto per attività",
-                        "Accesso base"
-                    ]
-                }
-            }
+        "productsId": [
+            "product_seven_wonders"
         ],
         "isActive": true,
         "activities": [
