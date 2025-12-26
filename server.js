@@ -45,4 +45,9 @@ if (env.ENABLE_SWAGGER === 'true') {
 }
 
 const PORT = env.PORT;
-server.listen(PORT, () => logger.info(`UnlockIt Adventure Backend App server running on port ${PORT}`, { className: filename }));
+server.listen(PORT, () => {
+    logger.info(`UnlockIt Adventure Backend App server running on port ${PORT}`, { className: filename });
+
+    mongoose.connectWithRetry();
+    redisClient.connect();
+});

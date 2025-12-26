@@ -3,8 +3,6 @@ const path = require('path');
 const logger = require('./logger');
 const filename = path.basename(__filename);
 const env = require('../constants/environmentSystemVariables');
-const models = require('../../src/models');
-let initialized = false;
 let reconnectAttempt = 0;
 let isConnecting = false;
 
@@ -27,7 +25,6 @@ const connectWithRetry = () => {
         })
             .then(() => {
                 isConnecting = false;
-                createCollections();
             })
             .catch(err => {
                 isConnecting = false;
@@ -36,18 +33,6 @@ const connectWithRetry = () => {
             });
     }, delay);
 };
-
-const createCollections = async (req) => {
-    if (!initialized) {
-        for (const modelName of Object.keys(models)) {
-            await models[modelName].init();
-            logger.info(`MongoDB collection initialized ${modelName}`, { className: filename });
-        }
-
-        logger.info('MongoDB collections have been successfully initialized', { className: filename });
-        initialized = true;
-    }
-}
 
 mongoose.connection.on('connected', () => {
     reconnectAttempt = 0;
@@ -66,6 +51,6 @@ mongoose.connection.on('disconnected', () => {
     connectWithRetry();
 });
 
-connectWithRetry();
+mongoose.connectWithRetry = connectWithRetry;
 
 module.exports = mongoose;
