@@ -12,20 +12,20 @@ const redisClient = require('../config/redis');
 module.exports = async (req, res, next) => {
     const tokenBearer = req.headers['authorization'];
 
-    if (!tokenBearer) throw new BusinessException(ERROR_CODES.CODE_ERROR_AUTH, constants.HTTP_UNATHORIZED);
+    if (!tokenBearer) throw new BusinessException(ERROR_CODES.CODE_ERROR_AUTH, constants.HTTP_UNAUTHORIZED);
 
     const { token, decoded } = jwt.verifyJwtToken(tokenBearer);
 
-    if (!token) throw new BusinessException(ERROR_CODES.CODE_ERROR_AUTH, constants.HTTP_UNATHORIZED);
+    if (!token) throw new BusinessException(ERROR_CODES.CODE_ERROR_AUTH, constants.HTTP_UNAUTHORIZED);
 
     try {
         const exists = await isTokenInRedis(token, decoded);
         if (!exists)
-            throw new BusinessException(ERROR_CODES.CODE_ERROR_AUTH, constants.HTTP_UNATHORIZED);
+            throw new BusinessException(ERROR_CODES.CODE_ERROR_AUTH, constants.HTTP_UNAUTHORIZED);
         next();
     } catch (err) {
         logger.error(`Error validating token: ${err}`, { className: filename });
-        throw new BusinessException(ERROR_CODES.CODE_ERROR_AUTH, constants.HTTP_UNATHORIZED);
+        throw new BusinessException(ERROR_CODES.CODE_ERROR_AUTH, constants.HTTP_UNAUTHORIZED);
     }
 };
 

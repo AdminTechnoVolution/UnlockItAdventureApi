@@ -10,13 +10,12 @@ const registerUserSchema = Joi.object({
             'string.max': ERROR_CODES.FIELD_MAX,
             'string.email': ERROR_CODES.FIELD_INVALID
         }),
-    password: Joi.string().min(8).max(128).pattern(new RegExp(constants.PASSWORD_PATTERN)).required()
+    password: Joi.string().min(8).max(128).required()
         .messages({
             'any.required': ERROR_CODES.FIELD_REQUIRED,
             'string.empty': ERROR_CODES.FIELD_REQUIRED,
             'string.min': ERROR_CODES.FIELD_MIN,
-            'string.max': ERROR_CODES.FIELD_MAX,
-            'string.pattern.base': ERROR_CODES.FIELD_PATTERN
+            'string.max': ERROR_CODES.FIELD_MAX
         }),
     fullName: Joi.string().trim().max(128).required()
         .messages({

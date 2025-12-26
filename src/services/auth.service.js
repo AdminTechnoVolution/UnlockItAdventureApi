@@ -11,6 +11,7 @@ const UserStatus = require('../../shared/constants/enums/EnumUserStatus');
 const redisClient = require('../../shared/config/redis');
 const util = require('../../shared/util/util');
 const jwt = require('../../shared/util/jwt');
+const constants = require('../../shared/constants/constants');
 const consCache = require('../../shared/constants/constants.cache');
 const env = require('../../shared/constants/environmentSystemVariables');
 const mailer = require('../../shared/config/email');
@@ -64,14 +65,14 @@ const verifyCodeUser = async (req) => {
     const { email, verificationCode } = req.body;
 
     const user = await UserRepository.findOneByFilter({ email: email, status: UserStatus.PENDING });
-    if (!user) throw new BusinessException(ERROR_CODES.CODE_USER_NOT_FOUND);
+    if (!user) throw new BusinessException(ERROR_CODES.CODE_USER_NOT_FOUND, constants.HTTP_SUCCESS);
 
     const hashedVerificationCode = await util.generateHash(verificationCode, false);
     const redisKeyVerificationCode = util.getKeyRedis(`${consCache.REDIS_KEY_VERIFICATION_CODES}${user._id}`);
     const redisKeyResendVerificationCode = util.getKeyRedis(`${consCache.REDIS_KEY_RESEND_VERIFICATION_CODES}${user._id}`);
     let userResetCode = await redisClient.get(redisKeyVerificationCode);
 
-    if (!userResetCode) throw new BusinessException(ERROR_CODES.CODE_EXPIRED_VERIFICATION_CODE, 401);
+    if (!userResetCode) throw new BusinessException(ERROR_CODES.CODE_EXPIRED_VERIFICATION_CODE, constants.HTTP_SUCCESS);
 
     userResetCode = JSON.parse(userResetCode);
 
@@ -83,7 +84,7 @@ const verifyCodeUser = async (req) => {
             const value = JSON.stringify(userResetCode);
             await redisClient.set(redisKeyVerificationCode, value, { KEEPTTL: true });
         }
-        throw new BusinessException(ERROR_CODES.CODE_INVALID_VERIFICATION_CODE, 401);
+        throw new BusinessException(ERROR_CODES.CODE_INVALID_VERIFICATION_CODE, constants.HTTP_SUCCESS);
     }
 
     user.status = UserStatus.ACTIVE;
@@ -103,7 +104,7 @@ const sendVerificationCode = async (req) => {
     const { email } = body;
 
     const user = await UserRepository.findOneByFilter({ email: email });
-    if (!user) throw new BusinessException(ERROR_CODES.CODE_USER_NOT_FOUND);
+    if (!user) throw new BusinessException(ERROR_CODES.CODE_USER_NOT_FOUND, constants.HTTP_SUCCESS);
 
     await validateAlreadySendCode(user);
 
@@ -132,13 +133,13 @@ const resetPassword = async (req) => {
     const { email, password, verificationCode } = body;
 
     const user = await UserRepository.findOneByFilter({ email: email, status: UserStatus.ACTIVE });
-    if (!user) throw new BusinessException(ERROR_CODES.CODE_USER_NOT_FOUND);
+    if (!user) throw new BusinessException(ERROR_CODES.CODE_USER_NOT_FOUND, constants.HTTP_SUCCESS);
 
     const hashedVerificationCode = await util.generateHash(verificationCode, false);
     const redisKeyVerificationCode = util.getKeyRedis(`${consCache.REDIS_KEY_VERIFICATION_CODES}${user._id}`);
     let userResetCode = await redisClient.get(redisKeyVerificationCode);
 
-    if (!userResetCode) throw new BusinessException(ERROR_CODES.CODE_EXPIRED_VERIFICATION_CODE, 401);
+    if (!userResetCode) throw new BusinessException(ERROR_CODES.CODE_EXPIRED_VERIFICATION_CODE, constants.HTTP_SUCCESS);
 
     userResetCode = JSON.parse(userResetCode);
 
@@ -150,7 +151,7 @@ const resetPassword = async (req) => {
             const value = JSON.stringify(userResetCode);
             await redisClient.set(redisKeyVerificationCode, value, { KEEPTTL: true });
         }
-        throw new BusinessException(ERROR_CODES.CODE_INVALID_VERIFICATION_CODE, 401);
+        throw new BusinessException(ERROR_CODES.CODE_INVALID_VERIFICATION_CODE, constants.HTTP_SUCCESS);
     }
 
     const hashedPassword = await util.generateHash(password, true);
@@ -171,10 +172,10 @@ const loginUser = async (req) => {
     let { email, password, fcmToken } = req.body;
     const user = await UserRepository.findOneByFilter({ email: email, status: UserStatus.ACTIVE });
 
-    if (!user) throw new BusinessException(ERROR_CODES.CODE_ERROR_LOGIN, 401);
+    if (!user) throw new BusinessException(ERROR_CODES.CODE_ERROR_LOGIN, constants.HTTP_UNAUTHORIZED);
     let isMatch = bcrypt.compareSync(password, user.password);
 
-    if (!isMatch) throw new BusinessException(ERROR_CODES.CODE_ERROR_LOGIN, 401);
+    if (!isMatch) throw new BusinessException(ERROR_CODES.CODE_ERROR_LOGIN, constants.HTTP_UNAUTHORIZED);
 
     const payload = {
         id: user._id,
@@ -212,7 +213,7 @@ const loginUser = async (req) => {
 const refreshTokenUser = async (req) => {
     let { refreshToken } = req.body;
     const { decoded } = jwt.verifyJwtToken(refreshToken, false);
-    if (!decoded) throw new BusinessException(ERROR_CODES.CODE_ERROR_AUTH, 401);
+    if (!decoded) throw new BusinessException(ERROR_CODES.CODE_ERROR_AUTH, constants.HTTP_UNAUTHORIZED);
 
     const user = {
         _id: decoded['id'],
@@ -222,7 +223,7 @@ const refreshTokenUser = async (req) => {
     const tokenConcat = util.getKeyRedis(`${consCache.REDIS_KEY_REFRESH_TOKEN}${user._id}:${refreshToken}`);
     const exists = await redisClient.exists(tokenConcat);
     if (exists !== 1) {
-        throw new BusinessException(ERROR_CODES.CODE_ERROR_AUTH, 401);
+        throw new BusinessException(ERROR_CODES.CODE_ERROR_AUTH, constants.HTTP_UNAUTHORIZED);
     }
 
     const payload = {
@@ -275,7 +276,7 @@ const logoutUser = async (req) => {
 const validateUserInput = async (body) => {
     const existingUser = await UserRepository.findOneByFilter({ email: body.email });
 
-    if (existingUser) throw new BusinessException(ERROR_CODES.CODE_USER_EXISTS);
+    if (existingUser) throw new BusinessException(ERROR_CODES.CODE_USER_EXISTS, constants.HTTP_SUCCESS);
 
     return existingUser;
 };
@@ -284,7 +285,7 @@ const validateAlreadySendCode = async (user) => {
     const key = util.getKeyRedis(`${consCache.REDIS_KEY_RESEND_VERIFICATION_CODES}${user._id}`);
 
     const ttl = await redisClient.ttl(key);
-    if (ttl > 0) throw new BusinessException(ERROR_CODES.CODE_RESEND_VERIFICATION_CODE_TOO_MANY_REQUESTS, 429);
+    if (ttl > 0) throw new BusinessException(ERROR_CODES.CODE_RESEND_VERIFICATION_CODE_TOO_MANY_REQUESTS, constants.HTTP_TOO_MANY_REQUESTS);
 };
 
 const sendVerificationCodeEmail = async (email, code, name, verificationExpireMins, acceptLanguage) => {
