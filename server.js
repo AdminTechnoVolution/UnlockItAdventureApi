@@ -5,6 +5,7 @@ const http = require('http');
 const path = require('path');
 const logger = require('./shared/config/logger');
 const filename = path.basename(__filename);
+const helmet = require('helmet');
 const mongoose = require('./shared/config/mongo');
 const redisClient = require('./shared/config/redis');
 const errorHandler = require('./shared/middlewares/errorHandler');
@@ -22,9 +23,9 @@ const authRoutes = require('./src/routes/auth.route');
 const app = express();
 
 app.set("trust proxy", true);
-
 app.use(setHeaders);
 app.use(cors());
+app.use(helmet());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(logRequest);

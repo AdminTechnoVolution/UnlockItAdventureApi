@@ -1,7 +1,7 @@
 {
   "name": "unlockit-adventure-api",
-  "version": "0.0.8",
-  "main": "index.js",
+  "version": "0.0.9",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
@@ -22,6 +22,7 @@
     "flat": "^6.0.1",
     "google-auth-library": "^10.5.0",
     "googleapis": "^164.1.0",
+    "helmet": "^8.1.0",
     "i18n": "^0.15.1",
     "joi": "^17.13.3",
     "jsonwebtoken": "^9.0.2",

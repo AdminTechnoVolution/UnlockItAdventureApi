@@ -207,6 +207,9 @@ const loginUser = async (req) => {
     const accessToken = await generateTokenAndSaveToken(payload, env.JWT_ACCESS_TOKEN_TTL_SECS, `${consCache.REDIS_KEY_ACCESS_TOKEN}${payload.id}:`);
     const refreshToken = await generateTokenAndSaveToken(payloadRefresh, env.JWT_REFRESH_TOKEN_TTL_SECS, `${consCache.REDIS_KEY_REFRESH_TOKEN}${payloadRefresh.id}:`);
 
+    const userData = { lastLogin: new Date() };
+    UserRepository.findByIdAndUpdate(user._id, userData);
+
     return new BaseResponse(true, [], { accessToken, refreshToken });
 };
 
@@ -241,6 +244,9 @@ const refreshTokenUser = async (req) => {
 
     const accessToken = await generateTokenAndSaveToken(payload, env.JWT_ACCESS_TOKEN_TTL_SECS, `${consCache.REDIS_KEY_ACCESS_TOKEN}${payload.id}:`);
     refreshToken = await generateTokenAndSaveToken(payloadRefresh, env.JWT_REFRESH_TOKEN_TTL_SECS, `${consCache.REDIS_KEY_REFRESH_TOKEN}${payloadRefresh.id}:`);
+
+    const userData = { lastLogin: new Date() };
+    UserRepository.findByIdAndUpdate(user._id, userData);
 
     return new BaseResponse(true, [], { accessToken, refreshToken });
 }

@@ -8,7 +8,7 @@ const fcmTokensSchema = new mongoose.Schema({
   versionKey: false
 });
 
-fcmTokensSchema.index({ "userId": 1 }, { unique: true });
-fcmTokensSchema.index({ "userId": 1, "fcmTokens": 1 });
+fcmTokensSchema.index({ userId: 1 }, { unique: true });
+fcmTokensSchema.index({ userId: 1, fcmTokens: 1 });
 
 module.exports = mongoose.model('FCMTokens', fcmTokensSchema, 'fcmTokens');
