@@ -1,5 +1,27 @@
 components:
   schemas:
+    DeviceInfoSchema:
+      type: object
+      required:
+        - fcmToken
+        - platform
+      properties:
+        fcmToken:
+          type: string
+          example: "eyJhbGciOiFcm"
+        platform:
+          type: string
+          enum:
+            - android
+            - ios
+          example: "android"
+        appVersion:
+          type: string
+          example: "1.0.0"
+        deviceId:
+          type: string
+          example: "device-123456"
+
     RegisterUserSchema:
       type: object
       required:
@@ -69,13 +91,13 @@ components:
           type: string
           maxLength: 128
           example: StrongPassword123
-  
+
     LoginSchema:
       type: object
       required:
         - email
         - password
-        - fcmToken
+        - device
       properties:
         email:
           type: string
@@ -86,9 +108,8 @@ components:
           type: string
           maxLength: 128
           example: "StrongPassword123"
-        fcmToken:
-          type: string
-          example: "eyJhbGciOi"
+        device:
+          $ref: '#/components/schemas/DeviceInfoSchema'
 
     RefreshTokenSchema:
       type: object

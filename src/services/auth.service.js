@@ -169,7 +169,7 @@ const resetPassword = async (req) => {
 };
 
 const loginUser = async (req) => {
-    let { email, password, fcmToken } = req.body;
+    let { email, password, device } = req.body;
     const user = await UserRepository.findOneByFilter({ email: email, status: UserStatus.ACTIVE });
 
     if (!user) throw new BusinessException(ERROR_CODES.CODE_ERROR_LOGIN, constants.HTTP_UNAUTHORIZED);
@@ -190,16 +190,16 @@ const loginUser = async (req) => {
 
     const result = await FCMTokenRepository.findOneByFilter({ userId: user._id });
     if (result) {
-        const existsFcmToken = result.fcmTokens.some(i => i === fcmToken);
+        const existsFcmToken = result.devices.some(i => i.fcmToken === device.fcmToken);
 
         if (!existsFcmToken) {
-            result.fcmTokens.push(fcmToken);
+            result.devices.push({ fcmToken: device.fcmToken, platform: device.platform, appVersion: device.appVersion, deviceId: device.deviceId });
             await FCMTokenRepository.save(result);
         }
     } else {
         const fcmTokenDoc = new FCMToken({
             userId: user._id,
-            fcmTokens: [fcmToken],
+            devices: [device],
         });
         await FCMTokenRepository.save(fcmTokenDoc);
     }
@@ -258,8 +258,8 @@ const logoutUser = async (req) => {
         let { accessToken, refreshToken, fcmToken } = req.body;
 
         FCMTokenRepository.findOneByFilterAndPullToken(
-            { fcmTokens: fcmToken },
-            { fcmTokens: fcmToken }
+            { "devices.fcmToken": fcmToken },
+            { devices: { fcmToken: fcmToken } }
         );
 
         const { decoded: decodedAccessToken } = jwt.verifyJwtToken(accessToken, false);
@@ -275,7 +275,7 @@ const logoutUser = async (req) => {
             redisClient.del(key);
         }
     } catch (err) {
-        logger.error(`Error logout: ${err}`, { className: filename });
+        logger.error({ message: `Error logout: ${err}`, className: filename, req: req });
     }
 
     return new BaseResponse(true);

@@ -18,7 +18,7 @@ const getGroupActivities = async (req) => {
 
     let groups = cache.get(consCache.CACHE_KEY_GROUPS);
     if (!groups) {
-        logger.info(`Fetching GroupActivities from MongoDB`, { className: filename });
+        logger.info({ message: `Fetching GroupActivities from MongoDB`, className: filename, req: req });
         const filter = { isActive: true };
         const sort = {};
         groups = await GroupRepository.find(filter, sort);

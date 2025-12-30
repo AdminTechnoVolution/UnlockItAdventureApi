@@ -1,6 +1,6 @@
 const Joi = require('joi');
 const { ERROR_CODES } = require('../../shared/i18n/messages');
-const constants = require('../../shared/constants/constants');
+const Platforms = require('../../shared/constants/enums/EnumPlatforms');
 
 const registerUserSchema = Joi.object({
     email: Joi.string().trim().max(256).email().required()
@@ -89,11 +89,27 @@ const loginSchema = Joi.object({
             'string.empty': ERROR_CODES.FIELD_REQUIRED,
             'string.max': ERROR_CODES.FIELD_MAX
         }),
-    fcmToken: Joi.string().required()
-        .messages({
-            'any.required': ERROR_CODES.FIELD_REQUIRED,
-            'string.empty': ERROR_CODES.FIELD_REQUIRED
-        })
+    device: {
+        fcmToken: Joi.string().required()
+            .messages({
+                'any.required': ERROR_CODES.FIELD_REQUIRED,
+                'string.empty': ERROR_CODES.FIELD_REQUIRED
+            }),
+        platform: Joi.string().valid(...Object.values(Platforms)).required()
+            .messages({
+                'any.required': ERROR_CODES.FIELD_REQUIRED,
+                'string.empty': ERROR_CODES.FIELD_REQUIRED,
+                'any.only': ERROR_CODES.FIELD_INVALID
+            }),
+        appVersion: Joi.string().max(32).optional()
+            .messages({
+                'string.max': ERROR_CODES.FIELD_MAX
+            }),
+        deviceId: Joi.string().max(128).optional()
+            .messages({
+                'string.max': ERROR_CODES.FIELD_MAX
+            })
+    }
 });
 
 const refreshTokenSchema = Joi.object({

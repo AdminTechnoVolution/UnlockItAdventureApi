@@ -24,7 +24,7 @@ module.exports = async (req, res, next) => {
             throw new BusinessException(ERROR_CODES.CODE_ERROR_AUTH, constants.HTTP_UNAUTHORIZED);
         next();
     } catch (err) {
-        logger.error(`Error validating token: ${err}`, { className: filename });
+        logger.error({ message: `Error validating token: ${err}`, className: filename, req: req });
         throw new BusinessException(ERROR_CODES.CODE_ERROR_AUTH, constants.HTTP_UNAUTHORIZED);
     }
 };
