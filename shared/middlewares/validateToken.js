@@ -19,7 +19,7 @@ module.exports = async (req, res, next) => {
     if (!token) throw new BusinessException(ERROR_CODES.CODE_ERROR_AUTH, constants.HTTP_UNAUTHORIZED);
 
     try {
-        const exists = await isTokenInRedis(token, decoded);
+        const exists = await isTokenInRedis(token, decoded, req);
         if (!exists)
             throw new BusinessException(ERROR_CODES.CODE_ERROR_AUTH, constants.HTTP_UNAUTHORIZED);
         next();
@@ -29,13 +29,13 @@ module.exports = async (req, res, next) => {
     }
 };
 
-async function isTokenInRedis(token, decoded) {
+async function isTokenInRedis(token, decoded, req) {
     try {
         const tokenConcat = util.getKeyRedis(`${consCache.REDIS_KEY_ACCESS_TOKEN}${decoded.id}:${token}`);
         const exists = await redisClient.exists(tokenConcat);
         return exists === 1;
     } catch (err) {
-        logger.error(`Error validating or refreshing token: ${err}`, { className: filename });
+        logger.error({ message: `Error validating or refreshing token: ${err}`, className: filename, req: req });
         return false;
     }
 }
