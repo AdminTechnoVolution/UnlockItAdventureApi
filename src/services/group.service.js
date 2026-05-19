@@ -29,7 +29,7 @@ const getGroupActivities = async (req) => {
     groups = groups.map(g => mapGroupLang(g, acceptLanguage));
     addFieldsToGroups(groups, groupProgress, decoded['id']);
 
-    return new BaseResponse(true, [], data = groups);
+    return new BaseResponse(true, [], groups);
 };
 
 const getProgressByUserId = async (userId) => {

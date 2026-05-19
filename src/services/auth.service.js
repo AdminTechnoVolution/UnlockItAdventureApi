@@ -55,7 +55,7 @@ const registerUser = async (req) => {
 
     sendRegistrationEmail(email, verificationCode, fullName, verificationExpireMins, acceptLanguage);
 
-    message = translate(SUCCESS_CODES.CODE_REGISTER_SUCCESS, acceptLanguage);
+    const message = translate(SUCCESS_CODES.CODE_REGISTER_SUCCESS, acceptLanguage);
     const data = { resendCodeInSecs: env.RESEND_RESETCODE_REDIS_TTL_SECS };
     return new BaseResponse(true, [message], data);
 }
@@ -94,7 +94,7 @@ const verifyCodeUser = async (req) => {
     await redisClient.del(redisKeyVerificationCode);
     await redisClient.del(redisKeyResendVerificationCode);
 
-    message = translate(SUCCESS_CODES.CODE_VERIFICATION_SUCCESS, acceptLanguage);
+    const message = translate(SUCCESS_CODES.CODE_VERIFICATION_SUCCESS, acceptLanguage);
     return new BaseResponse(true, [message]);
 };
 
@@ -122,7 +122,7 @@ const sendVerificationCode = async (req) => {
 
     sendVerificationCodeEmail(email, verificationCode, user.fullName, verificationExpireMins, acceptLanguage);
 
-    message = translate(SUCCESS_CODES.CODE_SENT_SUCCESS, acceptLanguage);
+    const message = translate(SUCCESS_CODES.CODE_SENT_SUCCESS, acceptLanguage);
     const data = { resendCodeInSecs: env.RESEND_RESETCODE_REDIS_TTL_SECS };
     return new BaseResponse(true, [message], data);
 };
@@ -164,7 +164,7 @@ const resetPassword = async (req) => {
     deleteRedisTokens(user._id.toString());
     deleteFcmTokens(user._id.toString());
 
-    message = translate(SUCCESS_CODES.CODE_RESET_PASSWORD_SUCCESS, acceptLanguage);
+    const message = translate(SUCCESS_CODES.CODE_RESET_PASSWORD_SUCCESS, acceptLanguage);
     return new BaseResponse(true, [message]);
 };
 

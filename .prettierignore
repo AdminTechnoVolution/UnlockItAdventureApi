@@ -1,0 +1,6 @@
+node_modules
+coverage
+reports
+logs
+package-lock.json
+*.min.js
