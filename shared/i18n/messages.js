@@ -5,7 +5,10 @@ const FIELDS = {
     REFRESH_TOKEN: "refreshToken",
     ACCESS_TOKEN: "accessToken",
     FCM_TOKEN: "fcmToken",
-    VERIFICATION_CODE: "verificationCode"
+    VERIFICATION_CODE: "verificationCode",
+    GROUP_ID: "groupId",
+    PURCHASE_TOKEN: "purchaseToken",
+    PRODUCT_ID: "productId",
 };
 
 const ERROR_CODES = {
@@ -23,6 +26,9 @@ const ERROR_CODES = {
     CODE_EXPIRED_VERIFICATION_CODE: "CODE_EXPIRED_VERIFICATION_CODE",
     CODE_INVALID_VERIFICATION_CODE: "CODE_INVALID_VERIFICATION_CODE",
     CODE_RESEND_VERIFICATION_CODE_TOO_MANY_REQUESTS: "CODE_RESEND_VERIFICATION_CODE_TOO_MANY_REQUESTS",
+    CODE_GROUP_NOT_ACTIVE: "CODE_GROUP_NOT_ACTIVE",
+    CODE_GROUP_ALREADY_UNLOCKED: "CODE_GROUP_ALREADY_UNLOCKED",
+    CODE_GOOGLE_PLAY_VALIDATION_FAILED: "CODE_GOOGLE_PLAY_VALIDATION_FAILED",
     ERROR_BAD_REQUEST_RESPONSE: "ERROR_BAD_REQUEST_RESPONSE",
     ERROR_MALFORMED_BAD_REQUEST: "ERROR_MALFORMED_BAD_REQUEST",
     ERROR_INTERNAL_SERVER_ERROR: "INTERNAL_SERVER_ERROR",
@@ -33,6 +39,7 @@ const SUCCESS_CODES = {
     CODE_VERIFICATION_SUCCESS: "CODE_VERIFICATION_SUCCESS",
     CODE_RESET_PASSWORD_SUCCESS: "CODE_RESET_PASSWORD_SUCCESS",
     CODE_SENT_SUCCESS: "CODE_SENT_SUCCESS",
+    CODE_UNLOCK_GROUP_SUCCESS: "CODE_UNLOCK_GROUP_SUCCESS",
 };
 
 const EMAIL_TEMPLATES = {
@@ -51,6 +58,27 @@ const TRANSLATIONS = {
         pt: "código de verificação",
         fr: "code de vérification",
         it: "codice di verifica"
+    },
+    [FIELDS.GROUP_ID]: {
+        en: "group id",
+        es: "id de grupo",
+        pt: "id do grupo",
+        fr: "id du groupe",
+        it: "id del gruppo"
+    },
+    [FIELDS.PURCHASE_TOKEN]: {
+        en: "purchase token",
+        es: "token de compra",
+        pt: "token de compra",
+        fr: "jeton d'achat",
+        it: "token di acquisto"
+    },
+    [FIELDS.PRODUCT_ID]: {
+        en: "product id",
+        es: "id de producto",
+        pt: "id do produto",
+        fr: "id du produit",
+        it: "id del prodotto"
     },
     [FIELDS.EMAIL]: {
         en: "email",
@@ -173,6 +201,27 @@ const TRANSLATIONS = {
         fr: "Un code de vérification a déjà été envoyé. Réessayez plus tard.",
         it: "Un codice di verifica è già stato inviato. Riprova più tardi."
     },
+    [ERROR_CODES.CODE_GROUP_NOT_ACTIVE]: {
+        en: "This group is not available.",
+        es: "Este grupo no está disponible.",
+        pt: "Este grupo não está disponível.",
+        fr: "Ce groupe n'est pas disponible.",
+        it: "Questo gruppo non è disponibile."
+    },
+    [ERROR_CODES.CODE_GROUP_ALREADY_UNLOCKED]: {
+        en: "You have already unlocked this group.",
+        es: "Ya has desbloqueado este grupo.",
+        pt: "Você já desbloqueou este grupo.",
+        fr: "Vous avez déjà débloqué ce groupe.",
+        it: "Hai già sbloccato questo gruppo."
+    },
+    [ERROR_CODES.CODE_GOOGLE_PLAY_VALIDATION_FAILED]: {
+        en: "Payment validation failed. Please verify your purchase and try again.",
+        es: "La validación del pago falló. Verifica tu compra e inténtalo de nuevo.",
+        pt: "A validação do pagamento falhou. Verifique sua compra e tente novamente.",
+        fr: "La validation du paiement a échoué. Vérifiez votre achat et réessayez.",
+        it: "La validazione del pagamento non è riuscita. Verifica il tuo acquisto e riprova."
+    },
     [ERROR_CODES.FIELD_INVALID]: {
         en: "Invalid field: ",
         es: "Campo inválido: ",
@@ -269,6 +318,13 @@ const TRANSLATIONS = {
         pt: "Código de verificação enviado com sucesso. Enviamos um e-mail para você. Verifique também sua pasta de spam",
         fr: "Code de vérification envoyé avec succès. Nous vous avons envoyé un e-mail. Veuillez également vérifier votre dossier spam",
         it: "Codice di verifica inviato con successo. Ti abbiamo inviato un'email. Controlla anche la cartella spam"
+    },
+    [SUCCESS_CODES.CODE_UNLOCK_GROUP_SUCCESS]: {
+        en: "Group unlocked successfully.",
+        es: "Grupo desbloqueado exitosamente.",
+        pt: "Grupo desbloqueado com sucesso.",
+        fr: "Groupe débloqué avec succès.",
+        it: "Gruppo sbloccato con successo."
     }
 };
 

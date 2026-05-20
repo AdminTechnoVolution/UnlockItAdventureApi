@@ -13,8 +13,28 @@ const find = async (filter, sort) => {
         logger.error(`Error in find. Error: ${err}`, { className: filename });
         throw new DataLayerException(ERROR_CODES.ERROR_INTERNAL_SERVER_ERROR);
     }
-}
+};
+
+const existsByFilter = async (filter) => {
+    try {
+        return await GroupProgress.exists(filter);
+    } catch (err) {
+        logger.error(`Error in existsByFilter. Error: ${err}`, { className: filename });
+        throw new DataLayerException(ERROR_CODES.ERROR_INTERNAL_SERVER_ERROR);
+    }
+};
+
+const save = async (groupProgress) => {
+    try {
+        return await groupProgress.save();
+    } catch (err) {
+        logger.error(`Error in save. Error: ${err}`, { className: filename });
+        throw new DataLayerException(ERROR_CODES.ERROR_INTERNAL_SERVER_ERROR);
+    }
+};
 
 module.exports = {
-    find
+    find,
+    existsByFilter,
+    save,
 };

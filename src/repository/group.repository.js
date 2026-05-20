@@ -13,8 +13,18 @@ const find = async (filter, sort) => {
         logger.error(`Error in find. Error: ${err}`, { className: filename });
         throw new DataLayerException(ERROR_CODES.ERROR_INTERNAL_SERVER_ERROR);
     }
-}
+};
+
+const findById = async (id) => {
+    try {
+        return await Group.findById(id).lean();
+    } catch (err) {
+        logger.error(`Error in findById. Error: ${err}`, { className: filename });
+        throw new DataLayerException(ERROR_CODES.ERROR_INTERNAL_SERVER_ERROR);
+    }
+};
 
 module.exports = {
-    find
+    find,
+    findById,
 };
