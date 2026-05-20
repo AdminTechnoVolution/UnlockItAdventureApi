@@ -21,6 +21,13 @@ components:
           schema:
             $ref: '#/components/schemas/BaseResponse'
 
+    ForbiddenResponse:
+      description: Forbidden
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/BaseResponse'
+
     TooManyRequestsResponse:
       description: Too Many Requests
       content:

@@ -7,6 +7,7 @@ const BusinessException = require('../../shared/commons/models/BusinessException
 const GroupProgress = require('../models/groupProgress.model');
 const GroupRepository = require('../repository/group.repository');
 const GroupProgressRepository = require('../repository/groupProgress.repository');
+const UserRepository = require('../repository/user.repository');
 const GroupProgressStatus = require('../../shared/constants/enums/EnumGroupProgressStatus');
 const constants = require('../../shared/constants/constants');
 const jwt = require('../../shared/util/jwt');
@@ -44,6 +45,70 @@ const unlockGroup = async (req) => {
     const message = translate(SUCCESS_CODES.CODE_UNLOCK_GROUP_SUCCESS, acceptLanguage);
 
     return new BaseResponse(true, [message], saved);
+};
+
+const addPartners = async (req) => {
+    const acceptLanguage = req.acceptLanguage;
+    const auth = req.headers['authorization'];
+    const { decoded } = jwt.verifyJwtToken(auth, true);
+
+    const { groupProgressId, partnerIds } = req.body;
+    const userId = new ObjectId(decoded.id);
+
+    const { groupProgress, partnerUsers } = await validateAddPartnersEligibility(userId, groupProgressId, partnerIds);
+
+    appendPartnersToGroupProgress(groupProgress, partnerUsers);
+
+    await GroupProgressRepository.save(groupProgress);
+    const message = translate(SUCCESS_CODES.CODE_ADD_PARTNERS_SUCCESS, acceptLanguage);
+
+    return new BaseResponse(true, [message]);
+};
+
+const validateAddPartnersEligibility = async (userId, groupProgressId, partnerIds) => {
+    const groupProgress = await GroupProgressRepository.findById(groupProgressId);
+
+    if (!groupProgress || groupProgress.status === GroupProgressStatus.VALIDATING) {
+        throw new BusinessException(ERROR_CODES.CODE_GROUP_PROGRESS_NOT_FOUND, constants.HTTP_NOT_FOUND);
+    }
+
+    if (groupProgress.userId.toString() !== userId.toString()) {
+        throw new BusinessException(ERROR_CODES.CODE_GROUP_PROGRESS_FORBIDDEN, constants.HTTP_FORBIDDEN);
+    }
+
+    const uniquePartnerEmails = [...new Set(partnerIds.map((email) => email.toLowerCase().trim()))];
+    await validatePartnerEmails(userId, uniquePartnerEmails);
+
+    const partnerUsers = await UserRepository.findByEmails(uniquePartnerEmails);
+
+    if (partnerUsers.length !== uniquePartnerEmails.length) {
+        throw new BusinessException(ERROR_CODES.CODE_PARTNER_EMAIL_NOT_FOUND, constants.HTTP_NOT_FOUND);
+    }
+
+    return { groupProgress, uniquePartnerEmails, partnerUsers };
+};
+
+const validatePartnerEmails = async (userId, partnerEmails) => {
+    const owner = await UserRepository.findOneByFilter({ _id: userId });
+
+    if (!owner) {
+        throw new BusinessException(ERROR_CODES.CODE_USER_NOT_FOUND, constants.HTTP_NOT_FOUND);
+    }
+
+    const ownerEmail = owner.email.toLowerCase();
+
+    if (partnerEmails.some((email) => email === ownerEmail)) {
+        throw new BusinessException(ERROR_CODES.CODE_PARTNER_CANNOT_BE_SELF, constants.HTTP_BAD_REQUEST);
+    }
+};
+
+const appendPartnersToGroupProgress = (groupProgress, partnerUsers) => {
+    const existingPartnerIds = new Set((groupProgress.partnerId || []).map((id) => id.toString()));
+    const newPartnerIds = partnerUsers
+        .map((user) => user._id)
+        .filter((partnerId) => !existingPartnerIds.has(partnerId.toString()));
+
+    groupProgress.partnerId = [...(groupProgress.partnerId || []), ...newPartnerIds];
 };
 
 const isPaidGroup = (group) => {
@@ -102,4 +167,5 @@ const buildInitialActivities = (groupActivities, userId) => {
 
 module.exports = {
     unlockGroup,
+    addPartners,
 };

@@ -9,6 +9,8 @@ const FIELDS = {
     GROUP_ID: "groupId",
     PURCHASE_TOKEN: "purchaseToken",
     PRODUCT_ID: "productId",
+    GROUP_PROGRESS_ID: "groupProgressId",
+    PARTNER_IDS: "partnerIds",
 };
 
 const ERROR_CODES = {
@@ -29,6 +31,10 @@ const ERROR_CODES = {
     CODE_GROUP_NOT_ACTIVE: "CODE_GROUP_NOT_ACTIVE",
     CODE_GROUP_ALREADY_UNLOCKED: "CODE_GROUP_ALREADY_UNLOCKED",
     CODE_GOOGLE_PLAY_VALIDATION_FAILED: "CODE_GOOGLE_PLAY_VALIDATION_FAILED",
+    CODE_GROUP_PROGRESS_NOT_FOUND: "CODE_GROUP_PROGRESS_NOT_FOUND",
+    CODE_GROUP_PROGRESS_FORBIDDEN: "CODE_GROUP_PROGRESS_FORBIDDEN",
+    CODE_PARTNER_EMAIL_NOT_FOUND: "CODE_PARTNER_EMAIL_NOT_FOUND",
+    CODE_PARTNER_CANNOT_BE_SELF: "CODE_PARTNER_CANNOT_BE_SELF",
     ERROR_BAD_REQUEST_RESPONSE: "ERROR_BAD_REQUEST_RESPONSE",
     ERROR_MALFORMED_BAD_REQUEST: "ERROR_MALFORMED_BAD_REQUEST",
     ERROR_INTERNAL_SERVER_ERROR: "INTERNAL_SERVER_ERROR",
@@ -40,6 +46,7 @@ const SUCCESS_CODES = {
     CODE_RESET_PASSWORD_SUCCESS: "CODE_RESET_PASSWORD_SUCCESS",
     CODE_SENT_SUCCESS: "CODE_SENT_SUCCESS",
     CODE_UNLOCK_GROUP_SUCCESS: "CODE_UNLOCK_GROUP_SUCCESS",
+    CODE_ADD_PARTNERS_SUCCESS: "CODE_ADD_PARTNERS_SUCCESS",
 };
 
 const EMAIL_TEMPLATES = {
@@ -79,6 +86,20 @@ const TRANSLATIONS = {
         pt: "id do produto",
         fr: "id du produit",
         it: "id del prodotto"
+    },
+    [FIELDS.GROUP_PROGRESS_ID]: {
+        en: "group progress id",
+        es: "id de progreso del grupo",
+        pt: "id de progresso do grupo",
+        fr: "id de progression du groupe",
+        it: "id progresso gruppo"
+    },
+    [FIELDS.PARTNER_IDS]: {
+        en: "emails",
+        es: "correos",
+        pt: "emails",
+        fr: "emails",
+        it: "email"
     },
     [FIELDS.EMAIL]: {
         en: "email",
@@ -222,6 +243,34 @@ const TRANSLATIONS = {
         fr: "La validation du paiement a échoué. Vérifiez votre achat et réessayez.",
         it: "La validazione del pagamento non è riuscita. Verifica il tuo acquisto e riprova."
     },
+    [ERROR_CODES.CODE_GROUP_PROGRESS_NOT_FOUND]: {
+        en: "Group progress not found.",
+        es: "Progreso del grupo no encontrado.",
+        pt: "Progresso do grupo não encontrado.",
+        fr: "Progression du groupe introuvable.",
+        it: "Progresso del gruppo non trovato."
+    },
+    [ERROR_CODES.CODE_GROUP_PROGRESS_FORBIDDEN]: {
+        en: "Only the group owner can add partners.",
+        es: "Solo el dueño del grupo puede agregar compañeros.",
+        pt: "Apenas o dono do grupo pode adicionar parceiros.",
+        fr: "Seul le propriétaire du groupe peut ajouter des partenaires.",
+        it: "Solo il proprietario del gruppo può aggiungere partner."
+    },
+    [ERROR_CODES.CODE_PARTNER_EMAIL_NOT_FOUND]: {
+        en: "Some of the emails were not found.",
+        es: "Alguno de los correos no fueron encontrados.",
+        pt: "Alguns dos emails não foram encontrados.",
+        fr: "Certains emails n'ont pas été trouvés.",
+        it: "Alcune email non sono state trovate."
+    },
+    [ERROR_CODES.CODE_PARTNER_CANNOT_BE_SELF]: {
+        en: "You cannot add yourself as a partner.",
+        es: "No puedes agregarte a ti mismo como compañero.",
+        pt: "Você não pode se adicionar como parceiro.",
+        fr: "Vous ne pouvez pas vous ajouter comme partenaire.",
+        it: "Non puoi aggiungere te stesso come partner."
+    },
     [ERROR_CODES.FIELD_INVALID]: {
         en: "Invalid field: ",
         es: "Campo inválido: ",
@@ -325,6 +374,13 @@ const TRANSLATIONS = {
         pt: "Grupo desbloqueado com sucesso.",
         fr: "Groupe débloqué avec succès.",
         it: "Gruppo sbloccato con successo."
+    },
+    [SUCCESS_CODES.CODE_ADD_PARTNERS_SUCCESS]: {
+        en: "Emails added successfully.",
+        es: "Correos agregados exitosamente.",
+        pt: "Emails adicionados com sucesso.",
+        fr: "Emails ajoutés avec succès.",
+        it: "Email aggiunte con successo."
     }
 };
 

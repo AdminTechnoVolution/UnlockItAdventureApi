@@ -33,8 +33,18 @@ const save = async (groupProgress) => {
     }
 };
 
+const findById = async (id) => {
+    try {
+        return await GroupProgress.findById(id);
+    } catch (err) {
+        logger.error(`Error in findById. Error: ${err}`, { className: filename });
+        throw new DataLayerException(ERROR_CODES.ERROR_INTERNAL_SERVER_ERROR);
+    }
+};
+
 module.exports = {
     find,
     existsByFilter,
     save,
+    findById,
 };

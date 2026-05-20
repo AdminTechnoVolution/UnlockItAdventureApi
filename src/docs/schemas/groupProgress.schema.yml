@@ -33,3 +33,23 @@ components:
           type: string
           description: in_progress (free group or after Google validation); validating only transient for paid groups
           example: "in_progress"
+
+    AddPartnersSchema:
+      type: object
+      required:
+        - groupProgressId
+        - partnerIds
+      properties:
+        groupProgressId:
+          type: string
+          example: "507f1f77bcf86cd799439012"
+        partnerIds:
+          type: array
+          minItems: 1
+          items:
+            type: string
+            format: email
+            maxLength: 256
+          example:
+            - "partner1@example.com"
+            - "partner2@example.com"
