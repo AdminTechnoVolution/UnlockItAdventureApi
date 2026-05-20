@@ -60,7 +60,7 @@ const addFieldsToGroups = (groups, groupProgress, userId) => {
 
         if (gp.userId?.toString() === userIdStr) g.unlocked = true;
 
-        if (gp.partnerId?.toString() === userIdStr) g.sharedWithMe = true;
+        if (gp.partnerId?.some((partnerId) => partnerId.toString() === userIdStr)) g.sharedWithMe = true;
     });
 };
 
