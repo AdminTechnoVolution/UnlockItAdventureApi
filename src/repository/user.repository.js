@@ -4,35 +4,36 @@ const filename = path.basename(__filename);
 const { ERROR_CODES } = require('../../shared/i18n/messages');
 const DataLayerException = require('../../shared/commons/models/DataLayerException');
 const User = require('../models/user.model');
+const UserStatus = require('../../shared/constants/enums/EnumUserStatus');
 
-const findOneByFilter = async (filter) => {
+const findOneByFilter = async (filter, req = null) => {
     try {
         return await User.findOne(filter).collation({ locale: 'en', strength: 2 });
     } catch (err) {
-        logger.error(`Error in findOneByFilter. Error: ${err}`, { className: filename });
+        logger.error(`Error in findOneByFilter. Error: ${err}`, { className: filename, req: req });
         throw new DataLayerException(ERROR_CODES.ERROR_INTERNAL_SERVER_ERROR);
     }
-}
+};
 
-const existsByFilter = async (filter) => {
+const existsByFilter = async (filter, req = null) => {
     try {
         return await User.exists(filter);
     } catch (err) {
-        logger.error(`Error in existsByFilter. Error: ${err}`, { className: filename });
+        logger.error(`Error in existsByFilter. Error: ${err}`, { className: filename, req: req });
         throw new DataLayerException(ERROR_CODES.ERROR_INTERNAL_SERVER_ERROR);
     }
-}
+};
 
-const save = async (user) => {
+const save = async (user, req = null) => {
     try {
         return await user.save();
     } catch (err) {
-        logger.error(`Error in save. Error: ${err}`, { className: filename });
+        logger.error(`Error in save. Error: ${err}`, { className: filename, req: req });
         throw new DataLayerException(ERROR_CODES.ERROR_INTERNAL_SERVER_ERROR);
     }
-}
+};
 
-const findByIdAndUpdate = async (id, user) => {
+const findByIdAndUpdate = async (id, user, req = null) => {
     try {
         return await User.findByIdAndUpdate(
             { _id: id },
@@ -40,14 +41,26 @@ const findByIdAndUpdate = async (id, user) => {
             { new: true }
         );
     } catch (err) {
-        logger.error(`Error in findByIdAndUpdate. Error: ${err}`, { className: filename });
+        logger.error(`Error in findByIdAndUpdate. Error: ${err}`, { className: filename, req: req });
         throw new DataLayerException(ERROR_CODES.ERROR_INTERNAL_SERVER_ERROR);
     }
-}
+};
+
+const findByEmails = async (emails, req = null) => {
+    try {
+        const normalizedEmails = emails.map((email) => email.toLowerCase().trim());
+        return await User.find({ email: { $in: normalizedEmails }, status: UserStatus.ACTIVE })
+            .collation({ locale: 'en', strength: 2 });
+    } catch (err) {
+        logger.error(`Error in findByEmails. Error: ${err}`, { className: filename, req: req });
+        throw new DataLayerException(ERROR_CODES.ERROR_INTERNAL_SERVER_ERROR);
+    }
+};
 
 module.exports = {
     findOneByFilter,
     save,
     findByIdAndUpdate,
-    existsByFilter
+    existsByFilter,
+    findByEmails,
 };

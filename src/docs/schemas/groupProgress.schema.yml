@@ -1,0 +1,68 @@
+components:
+  schemas:
+    UnlockGroupSchema:
+      type: object
+      required:
+        - groupId
+      properties:
+        groupId:
+          type: string
+          description: MongoDB ObjectId of the group to unlock
+          example: "507f1f77bcf86cd799439011"
+        purchaseToken:
+          type: string
+          maxLength: 2048
+          description: Required only for paid groups (when group.productsId is set). Google Play purchase token.
+          example: "abc123purchaseToken"
+        productId:
+          type: string
+          maxLength: 256
+          description: Required only for paid groups (when group.productsId is set). Google Play product id.
+          example: "product_seven_wonders"
+
+    UnlockGroupResponseData:
+      type: object
+      properties:
+        groupProgressId:
+          type: string
+          example: "507f1f77bcf86cd799439012"
+        groupId:
+          type: string
+          example: "507f1f77bcf86cd799439011"
+        status:
+          type: string
+          description: in_progress (free group or after Google validation); validating only transient for paid groups
+          example: "in_progress"
+
+    AddPartnersSchema:
+      type: object
+      required:
+        - groupProgressId
+        - partnerIds
+      properties:
+        groupProgressId:
+          type: string
+          example: "507f1f77bcf86cd799439012"
+        partnerIds:
+          type: array
+          minItems: 1
+          items:
+            type: string
+            format: email
+            maxLength: 256
+          example:
+            - "partner1@example.com"
+            - "partner2@example.com"
+
+    RemovePartnerSchema:
+      type: object
+      required:
+        - groupProgressId
+        - partnerId
+      properties:
+        groupProgressId:
+          type: string
+          example: "507f1f77bcf86cd799439012"
+        partnerId:
+          type: string
+          example: "507f1f77bcf86cd799439013"

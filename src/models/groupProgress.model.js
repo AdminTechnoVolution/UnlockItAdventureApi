@@ -4,7 +4,7 @@ const GroupProgressStatus = require('../../shared/constants/enums/EnumGroupProgr
 const ActivitySchema = new mongoose.Schema({
   key: { type: String, required: true },
   completed: { type: Boolean, required: true, default: false },
-  completedAt: { type: Date, default: new Date() },
+  completedAt: { type: Date },
   notes: { type: String },
   photos: [{ url: String }],
   updatedBy: { type: mongoose.Schema.Types.ObjectId, ref: "User", required: true }
@@ -27,5 +27,6 @@ groupProgressSchema.index({ userId: 1 });
 groupProgressSchema.index({ partnerId: 1 });
 groupProgressSchema.index({ groupId: 1 });
 groupProgressSchema.index({ status: 1 });
+groupProgressSchema.index({ userId: 1, groupId: 1 }, { unique: true });
 
 module.exports = mongoose.model('GroupProgress', groupProgressSchema, 'groupProgress');

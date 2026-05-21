@@ -1,0 +1,11 @@
+{
+  "ignores": [
+    "@eslint/js",
+    "eslint",
+    "globals",
+    "prettier",
+    "depcheck",
+    "nodemon"
+  ],
+  "skip-missing": true
+}

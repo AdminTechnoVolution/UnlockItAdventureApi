@@ -21,18 +21,18 @@ const getGroupActivities = async (req) => {
         logger.info({ message: `Fetching GroupActivities from MongoDB`, className: filename, req: req });
         const filter = { isActive: true };
         const sort = {};
-        groups = await GroupRepository.find(filter, sort);
+        groups = await GroupRepository.find(filter, sort, req);
         cache.set(consCache.CACHE_KEY_GROUPS, groups, env.MASTER_DATA_CACHE_TTL_SECS);
     }
 
-    const groupProgress = await getProgressByUserId(decoded['id']);
+    const groupProgress = await getProgressByUserId(decoded['id'], req);
     groups = groups.map(g => mapGroupLang(g, acceptLanguage));
     addFieldsToGroups(groups, groupProgress, decoded['id']);
 
-    return new BaseResponse(true, [], data = groups);
+    return new BaseResponse(true, [], groups);
 };
 
-const getProgressByUserId = async (userId) => {
+const getProgressByUserId = async (userId, req) => {
     const id = new ObjectId(userId);
     const filter = {
         $or: [
@@ -41,7 +41,7 @@ const getProgressByUserId = async (userId) => {
         ]
     };
     const sort = {};
-    return await GroupProgressRepository.find(filter, sort);
+    return await GroupProgressRepository.find(filter, sort, req);
 }
 
 const addFieldsToGroups = (groups, groupProgress, userId) => {
@@ -60,7 +60,7 @@ const addFieldsToGroups = (groups, groupProgress, userId) => {
 
         if (gp.userId?.toString() === userIdStr) g.unlocked = true;
 
-        if (gp.partnerId?.toString() === userIdStr) g.sharedWithMe = true;
+        if (gp.partnerId?.some((partnerId) => partnerId.toString() === userIdStr)) g.sharedWithMe = true;
     });
 };
 

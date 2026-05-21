@@ -5,7 +5,13 @@ const FIELDS = {
     REFRESH_TOKEN: "refreshToken",
     ACCESS_TOKEN: "accessToken",
     FCM_TOKEN: "fcmToken",
-    VERIFICATION_CODE: "verificationCode"
+    VERIFICATION_CODE: "verificationCode",
+    GROUP_ID: "groupId",
+    PURCHASE_TOKEN: "purchaseToken",
+    PRODUCT_ID: "productId",
+    GROUP_PROGRESS_ID: "groupProgressId",
+    PARTNER_IDS: "partnerIds",
+    PARTNER_ID: "partnerId",
 };
 
 const ERROR_CODES = {
@@ -23,6 +29,15 @@ const ERROR_CODES = {
     CODE_EXPIRED_VERIFICATION_CODE: "CODE_EXPIRED_VERIFICATION_CODE",
     CODE_INVALID_VERIFICATION_CODE: "CODE_INVALID_VERIFICATION_CODE",
     CODE_RESEND_VERIFICATION_CODE_TOO_MANY_REQUESTS: "CODE_RESEND_VERIFICATION_CODE_TOO_MANY_REQUESTS",
+    CODE_GROUP_NOT_ACTIVE: "CODE_GROUP_NOT_ACTIVE",
+    CODE_GROUP_ALREADY_UNLOCKED: "CODE_GROUP_ALREADY_UNLOCKED",
+    CODE_GOOGLE_PLAY_VALIDATION_FAILED: "CODE_GOOGLE_PLAY_VALIDATION_FAILED",
+    CODE_GROUP_PROGRESS_NOT_FOUND: "CODE_GROUP_PROGRESS_NOT_FOUND",
+    CODE_GROUP_PROGRESS_FORBIDDEN: "CODE_GROUP_PROGRESS_FORBIDDEN",
+    CODE_PARTNER_EMAIL_NOT_FOUND: "CODE_PARTNER_EMAIL_NOT_FOUND",
+    CODE_PARTNER_CANNOT_BE_SELF: "CODE_PARTNER_CANNOT_BE_SELF",
+    CODE_PARTNER_NOT_FOUND: "CODE_PARTNER_NOT_FOUND",
+    CODE_REMOVE_PARTNER_FORBIDDEN: "CODE_REMOVE_PARTNER_FORBIDDEN",
     ERROR_BAD_REQUEST_RESPONSE: "ERROR_BAD_REQUEST_RESPONSE",
     ERROR_MALFORMED_BAD_REQUEST: "ERROR_MALFORMED_BAD_REQUEST",
     ERROR_INTERNAL_SERVER_ERROR: "INTERNAL_SERVER_ERROR",
@@ -33,6 +48,9 @@ const SUCCESS_CODES = {
     CODE_VERIFICATION_SUCCESS: "CODE_VERIFICATION_SUCCESS",
     CODE_RESET_PASSWORD_SUCCESS: "CODE_RESET_PASSWORD_SUCCESS",
     CODE_SENT_SUCCESS: "CODE_SENT_SUCCESS",
+    CODE_UNLOCK_GROUP_SUCCESS: "CODE_UNLOCK_GROUP_SUCCESS",
+    CODE_ADD_PARTNERS_SUCCESS: "CODE_ADD_PARTNERS_SUCCESS",
+    CODE_REMOVE_PARTNER_SUCCESS: "CODE_REMOVE_PARTNER_SUCCESS",
 };
 
 const EMAIL_TEMPLATES = {
@@ -51,6 +69,48 @@ const TRANSLATIONS = {
         pt: "código de verificação",
         fr: "code de vérification",
         it: "codice di verifica"
+    },
+    [FIELDS.GROUP_ID]: {
+        en: "group id",
+        es: "id de grupo",
+        pt: "id do grupo",
+        fr: "id du groupe",
+        it: "id del gruppo"
+    },
+    [FIELDS.PURCHASE_TOKEN]: {
+        en: "purchase token",
+        es: "token de compra",
+        pt: "token de compra",
+        fr: "jeton d'achat",
+        it: "token di acquisto"
+    },
+    [FIELDS.PRODUCT_ID]: {
+        en: "product id",
+        es: "id de producto",
+        pt: "id do produto",
+        fr: "id du produit",
+        it: "id del prodotto"
+    },
+    [FIELDS.GROUP_PROGRESS_ID]: {
+        en: "group progress id",
+        es: "id de progreso del grupo",
+        pt: "id de progresso do grupo",
+        fr: "id de progression du groupe",
+        it: "id progresso gruppo"
+    },
+    [FIELDS.PARTNER_IDS]: {
+        en: "emails",
+        es: "correos",
+        pt: "emails",
+        fr: "emails",
+        it: "email"
+    },
+    [FIELDS.PARTNER_ID]: {
+        en: "partner id",
+        es: "id de compañero",
+        pt: "id do parceiro",
+        fr: "id du partenaire",
+        it: "id partner"
     },
     [FIELDS.EMAIL]: {
         en: "email",
@@ -173,6 +233,69 @@ const TRANSLATIONS = {
         fr: "Un code de vérification a déjà été envoyé. Réessayez plus tard.",
         it: "Un codice di verifica è già stato inviato. Riprova più tardi."
     },
+    [ERROR_CODES.CODE_GROUP_NOT_ACTIVE]: {
+        en: "This group is not available.",
+        es: "Este grupo no está disponible.",
+        pt: "Este grupo não está disponível.",
+        fr: "Ce groupe n'est pas disponible.",
+        it: "Questo gruppo non è disponibile."
+    },
+    [ERROR_CODES.CODE_GROUP_ALREADY_UNLOCKED]: {
+        en: "You have already unlocked this group.",
+        es: "Ya has desbloqueado este grupo.",
+        pt: "Você já desbloqueou este grupo.",
+        fr: "Vous avez déjà débloqué ce groupe.",
+        it: "Hai già sbloccato questo gruppo."
+    },
+    [ERROR_CODES.CODE_GOOGLE_PLAY_VALIDATION_FAILED]: {
+        en: "Payment validation failed. Please verify your purchase and try again.",
+        es: "La validación del pago falló. Verifica tu compra e inténtalo de nuevo.",
+        pt: "A validação do pagamento falhou. Verifique sua compra e tente novamente.",
+        fr: "La validation du paiement a échoué. Vérifiez votre achat et réessayez.",
+        it: "La validazione del pagamento non è riuscita. Verifica il tuo acquisto e riprova."
+    },
+    [ERROR_CODES.CODE_GROUP_PROGRESS_NOT_FOUND]: {
+        en: "Group progress not found.",
+        es: "Progreso del grupo no encontrado.",
+        pt: "Progresso do grupo não encontrado.",
+        fr: "Progression du groupe introuvable.",
+        it: "Progresso del gruppo non trovato."
+    },
+    [ERROR_CODES.CODE_GROUP_PROGRESS_FORBIDDEN]: {
+        en: "Only the group owner can add partners.",
+        es: "Solo el dueño del grupo puede agregar compañeros.",
+        pt: "Apenas o dono do grupo pode adicionar parceiros.",
+        fr: "Seul le propriétaire du groupe peut ajouter des partenaires.",
+        it: "Solo il proprietario del gruppo può aggiungere partner."
+    },
+    [ERROR_CODES.CODE_PARTNER_EMAIL_NOT_FOUND]: {
+        en: "Some of the emails were not found.",
+        es: "Alguno de los correos no fueron encontrados.",
+        pt: "Alguns dos emails não foram encontrados.",
+        fr: "Certains emails n'ont pas été trouvés.",
+        it: "Alcune email non sono state trovate."
+    },
+    [ERROR_CODES.CODE_PARTNER_CANNOT_BE_SELF]: {
+        en: "You cannot add yourself as a partner.",
+        es: "No puedes agregarte a ti mismo como compañero.",
+        pt: "Você não pode se adicionar como parceiro.",
+        fr: "Vous ne pouvez pas vous ajouter comme partenaire.",
+        it: "Non puoi aggiungere te stesso come partner."
+    },
+    [ERROR_CODES.CODE_PARTNER_NOT_FOUND]: {
+        en: "Partner not found in this group progress.",
+        es: "Compañero no encontrado en este progreso del grupo.",
+        pt: "Parceiro não encontrado neste progresso do grupo.",
+        fr: "Partenaire introuvable dans cette progression du groupe.",
+        it: "Partner non trovato in questo progresso del gruppo."
+    },
+    [ERROR_CODES.CODE_REMOVE_PARTNER_FORBIDDEN]: {
+        en: "You can only remove yourself from this group progress.",
+        es: "Solo puedes eliminarte a ti mismo de este progreso del grupo.",
+        pt: "Você só pode se remover deste progresso do grupo.",
+        fr: "Vous ne pouvez vous retirer que vous-même de cette progression du groupe.",
+        it: "Puoi rimuovere solo te stesso da questo progresso del gruppo."
+    },
     [ERROR_CODES.FIELD_INVALID]: {
         en: "Invalid field: ",
         es: "Campo inválido: ",
@@ -269,6 +392,27 @@ const TRANSLATIONS = {
         pt: "Código de verificação enviado com sucesso. Enviamos um e-mail para você. Verifique também sua pasta de spam",
         fr: "Code de vérification envoyé avec succès. Nous vous avons envoyé un e-mail. Veuillez également vérifier votre dossier spam",
         it: "Codice di verifica inviato con successo. Ti abbiamo inviato un'email. Controlla anche la cartella spam"
+    },
+    [SUCCESS_CODES.CODE_UNLOCK_GROUP_SUCCESS]: {
+        en: "Group unlocked successfully.",
+        es: "Grupo desbloqueado exitosamente.",
+        pt: "Grupo desbloqueado com sucesso.",
+        fr: "Groupe débloqué avec succès.",
+        it: "Gruppo sbloccato con successo."
+    },
+    [SUCCESS_CODES.CODE_ADD_PARTNERS_SUCCESS]: {
+        en: "Emails added successfully.",
+        es: "Correos agregados exitosamente.",
+        pt: "Emails adicionados com sucesso.",
+        fr: "Emails ajoutés avec succès.",
+        it: "Email aggiunte con successo."
+    },
+    [SUCCESS_CODES.CODE_REMOVE_PARTNER_SUCCESS]: {
+        en: "Partner removed successfully.",
+        es: "Compañero eliminado exitosamente.",
+        pt: "Parceiro removido com sucesso.",
+        fr: "Partenaire supprimé avec succès.",
+        it: "Partner rimosso con successo."
     }
 };
 
