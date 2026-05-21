@@ -211,17 +211,21 @@ const buildInitialActivities = (groupActivities, userId) => {
     }));
 };
 
-const getMyGroupProgress = async (req) => {
+const getGroupProgressList = async (req, fetchGroupProgressList) => {
     const acceptLanguage = req.acceptLanguage;
     const auth = req.headers['authorization'];
     const { decoded } = jwt.verifyJwtToken(auth, true);
     const userId = new ObjectId(decoded.id);
 
-    const groupProgressList = await GroupProgressRepository.findByUserIdWithRelations(userId, req);
+    const groupProgressList = await fetchGroupProgressList(userId, req);
     const data = groupProgressList.map((groupProgress) => mapGroupProgressResponse(groupProgress, acceptLanguage));
 
     return new BaseResponse(true, [], data);
 };
+
+const getMyGroupProgress = async (req) => getGroupProgressList(req, GroupProgressRepository.findByUserIdWithRelations);
+
+const getSharedGroupProgress = async (req) => getGroupProgressList(req, GroupProgressRepository.findByPartnerIdWithRelations);
 
 const mapGroupProgressResponse = (groupProgress, lang) => {
     const groupActivitiesByKey = buildGroupActivitiesByKey(groupProgress.group?.activities, lang);
@@ -232,6 +236,7 @@ const mapGroupProgressResponse = (groupProgress, lang) => {
         completedAt: groupProgress.completedAt,
         createdAt: groupProgress.createdAt,
         updatedAt: groupProgress.updatedAt,
+        userId: mapUserSummary(groupProgress.owner),
         group: groupProgress.group ? mapGroupSummary(groupProgress.group, lang) : null,
         partners: mapPartners(groupProgress.partnerId, groupProgress.partners),
         activities: (groupProgress.activities || []).map((progressActivity) => mapProgressActivity(
@@ -288,17 +293,23 @@ const mapProgressActivity = (progressActivity, groupActivity = {}) => ({
     difficulty: groupActivity.difficulty ?? null,
 });
 
+const mapUserSummary = (user) => {
+    if (!user) return null;
+
+    return {
+        id: user._id,
+        fullName: user.fullName,
+        email: user.email,
+    };
+};
+
 const mapPartners = (partnerIds, partners) => {
     const partnerMap = new Map((partners || []).map((partner) => [partner._id.toString(), partner]));
 
     return (partnerIds || [])
         .map((partnerId) => partnerMap.get(partnerId.toString()))
         .filter(Boolean)
-        .map((partner) => ({
-            id: partner._id,
-            fullName: partner.fullName,
-            email: partner.email,
-        }));
+        .map(mapUserSummary);
 };
 
 module.exports = {
@@ -306,4 +317,5 @@ module.exports = {
     addPartners,
     removePartner,
     getMyGroupProgress,
+    getSharedGroupProgress,
 };

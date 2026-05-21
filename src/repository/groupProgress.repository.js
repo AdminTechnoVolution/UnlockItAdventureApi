@@ -42,37 +42,55 @@ const findById = async (id, req = null) => {
     }
 };
 
-const findByUserIdWithRelations = async (userId, req = null) => {
+const buildGroupProgressWithRelationsPipeline = (match) => ([
+    { $match: match },
+    { $sort: { createdAt: -1 } },
+    {
+        $lookup: {
+            from: 'groups',
+            localField: 'groupId',
+            foreignField: '_id',
+            as: 'group',
+        },
+    },
+    { $unwind: { path: '$group', preserveNullAndEmptyArrays: true } },
+    {
+        $lookup: {
+            from: 'users',
+            localField: 'userId',
+            foreignField: '_id',
+            as: 'owner',
+            pipeline: [
+                { $project: { fullName: 1, email: 1 } },
+            ],
+        },
+    },
+    { $unwind: { path: '$owner', preserveNullAndEmptyArrays: true } },
+    {
+        $lookup: {
+            from: 'users',
+            localField: 'partnerId',
+            foreignField: '_id',
+            as: 'partners',
+            pipeline: [
+                { $project: { fullName: 1, email: 1 } },
+            ],
+        },
+    },
+]);
+
+const findWithRelations = async (match, req = null) => {
     try {
-        return await GroupProgress.aggregate([
-            { $match: { userId } },
-            { $sort: { createdAt: -1 } },
-            {
-                $lookup: {
-                    from: 'groups',
-                    localField: 'groupId',
-                    foreignField: '_id',
-                    as: 'group',
-                },
-            },
-            { $unwind: { path: '$group', preserveNullAndEmptyArrays: true } },
-            {
-                $lookup: {
-                    from: 'users',
-                    localField: 'partnerId',
-                    foreignField: '_id',
-                    as: 'partners',
-                    pipeline: [
-                        { $project: { fullName: 1, email: 1 } },
-                    ],
-                },
-            },
-        ]);
+        return await GroupProgress.aggregate(buildGroupProgressWithRelationsPipeline(match));
     } catch (err) {
-        logger.error(`Error in findByUserIdWithRelations. Error: ${err}`, { className: filename, req: req });
+        logger.error(`Error in findWithRelations. Error: ${err}`, { className: filename, req: req });
         throw new DataLayerException(ERROR_CODES.ERROR_INTERNAL_SERVER_ERROR);
     }
 };
+
+const findByUserIdWithRelations = async (userId, req = null) => findWithRelations({ userId }, req);
+
+const findByPartnerIdWithRelations = async (partnerId, req = null) => findWithRelations({ partnerId }, req);
 
 module.exports = {
     find,
@@ -80,4 +98,5 @@ module.exports = {
     save,
     findById,
     findByUserIdWithRelations,
+    findByPartnerIdWithRelations,
 };

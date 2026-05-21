@@ -7,6 +7,8 @@ const validateToken = require('../../shared/middlewares/validateToken');
 
 router.get('/group/progress', validateToken, GroupProgressController.getMyGroupProgress);
 
+router.get('/group/progress/shared', validateToken, GroupProgressController.getSharedGroupProgress);
+
 router.post('/group/unlock', validateToken, validateBody(GroupProgressValidator.unlockGroupSchema), GroupProgressController.unlockGroup);
 
 router.put('/group/progress/partners', validateToken, validateBody(GroupProgressValidator.addPartnersSchema), GroupProgressController.addPartners);
