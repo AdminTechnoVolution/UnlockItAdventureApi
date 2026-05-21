@@ -22,7 +22,7 @@ const unlockGroup = async (req) => {
     const { groupId, purchaseToken, productId } = req.body;
     const userId = new ObjectId(decoded.id);
 
-    const group = await validateUnlockEligibility(userId, groupId);
+    const group = await validateUnlockEligibility(userId, groupId, req);
     const paidGroup = isPaidGroup(group);
     const activities = buildInitialActivities(group.activities, userId);
 
@@ -34,12 +34,12 @@ const unlockGroup = async (req) => {
         activities,
     });
 
-    let saved = await GroupProgressRepository.save(groupProgress);
+    let saved = await GroupProgressRepository.save(groupProgress, req);
 
     if (paidGroup) {
         await validateGooglePlayPurchase({ group, groupId, purchaseToken, productId }, req);
         saved.status = GroupProgressStatus.IN_PROGRESS;
-        saved = await GroupProgressRepository.save(saved);
+        saved = await GroupProgressRepository.save(saved, req);
     }
 
     const message = translate(SUCCESS_CODES.CODE_UNLOCK_GROUP_SUCCESS, acceptLanguage);
@@ -55,18 +55,18 @@ const addPartners = async (req) => {
     const { groupProgressId, partnerIds } = req.body;
     const userId = new ObjectId(decoded.id);
 
-    const { groupProgress, partnerUsers } = await validateAddPartnersEligibility(userId, groupProgressId, partnerIds);
+    const { groupProgress, partnerUsers } = await validateAddPartnersEligibility(userId, groupProgressId, partnerIds, req);
 
     appendPartnersToGroupProgress(groupProgress, partnerUsers);
 
-    await GroupProgressRepository.save(groupProgress);
+    await GroupProgressRepository.save(groupProgress, req);
     const message = translate(SUCCESS_CODES.CODE_ADD_PARTNERS_SUCCESS, acceptLanguage);
 
     return new BaseResponse(true, [message]);
 };
 
-const validateAddPartnersEligibility = async (userId, groupProgressId, partnerIds) => {
-    const groupProgress = await GroupProgressRepository.findById(groupProgressId);
+const validateAddPartnersEligibility = async (userId, groupProgressId, partnerIds, req) => {
+    const groupProgress = await GroupProgressRepository.findById(groupProgressId, req);
 
     if (!groupProgress || groupProgress.status === GroupProgressStatus.VALIDATING) {
         throw new BusinessException(ERROR_CODES.CODE_GROUP_PROGRESS_NOT_FOUND, constants.HTTP_NOT_FOUND);
@@ -77,9 +77,9 @@ const validateAddPartnersEligibility = async (userId, groupProgressId, partnerId
     }
 
     const uniquePartnerEmails = [...new Set(partnerIds.map((email) => email.toLowerCase().trim()))];
-    await validatePartnerEmails(userId, uniquePartnerEmails);
+    await validatePartnerEmails(userId, uniquePartnerEmails, req);
 
-    const partnerUsers = await UserRepository.findByEmails(uniquePartnerEmails);
+    const partnerUsers = await UserRepository.findByEmails(uniquePartnerEmails, req);
 
     if (partnerUsers.length !== uniquePartnerEmails.length) {
         throw new BusinessException(ERROR_CODES.CODE_PARTNER_EMAIL_NOT_FOUND, constants.HTTP_NOT_FOUND);
@@ -88,8 +88,8 @@ const validateAddPartnersEligibility = async (userId, groupProgressId, partnerId
     return { groupProgress, uniquePartnerEmails, partnerUsers };
 };
 
-const validatePartnerEmails = async (userId, partnerEmails) => {
-    const owner = await UserRepository.findOneByFilter({ _id: userId });
+const validatePartnerEmails = async (userId, partnerEmails, req) => {
+    const owner = await UserRepository.findOneByFilter({ _id: userId }, req);
 
     if (!owner) {
         throw new BusinessException(ERROR_CODES.CODE_USER_NOT_FOUND, constants.HTTP_NOT_FOUND);
@@ -117,8 +117,8 @@ const isPaidGroup = (group) => {
         && group.productsId.some((id) => typeof id === 'string' && id.trim().length > 0);
 };
 
-const validateUnlockEligibility = async (userId, groupId) => {
-    const group = await GroupRepository.findById(groupId);
+const validateUnlockEligibility = async (userId, groupId, req) => {
+    const group = await GroupRepository.findById(groupId, req);
 
     if (!group || !group.isActive) {
         throw new BusinessException(ERROR_CODES.CODE_GROUP_NOT_ACTIVE, constants.HTTP_NOT_FOUND);
@@ -127,7 +127,7 @@ const validateUnlockEligibility = async (userId, groupId) => {
     const alreadyUnlocked = await GroupProgressRepository.existsByFilter({
         userId,
         groupId: group._id,
-    });
+    }, req);
 
     if (alreadyUnlocked) {
         throw new BusinessException(ERROR_CODES.CODE_GROUP_ALREADY_UNLOCKED, constants.HTTP_CONFLICT);
@@ -148,9 +148,9 @@ const validateGooglePlayPurchase = async ({ group, groupId, purchaseToken, produ
         // - Rechazar con BusinessException si el pago no es válido o ya fue consumido.
         // - Si el servicio de google no responde reintentar varias veces antes de fallar.
         // - Si el servicio responde pero no es válido, loggear detalles y eliminar el registro de la DB.
-        logger.info({ message: `TODO: Google Play validation pending for groupId=${groupId}, productId=${productId}, productsId=${group.productsId.join(',')}, purchaseTokenReceived=${Boolean(purchaseToken)}`, className: filename, req, });
+        logger.info({ message: `TODO: Google Play validation pending for groupId=${groupId}, productId=${productId}, productsId=${group.productsId.join(',')}, purchaseTokenReceived=${Boolean(purchaseToken)}`, className: filename, req: req });
     } catch (error) {
-        logger.error({ message: `Error validating Google Play purchase for groupId=${groupId}, productId=${productId}. Error: ${error.message}`, className: filename, req });
+        logger.error({ message: `Error validating Google Play purchase for groupId=${groupId}, productId=${productId}. Error: ${error.message}`, className: filename, req: req });
         throw new BusinessException(ERROR_CODES.CODE_GOOGLE_PLAY_VALIDATION_FAILED, constants.HTTP_BAD_REQUEST);
     }
 };

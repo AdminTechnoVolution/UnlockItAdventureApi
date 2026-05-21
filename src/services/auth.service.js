@@ -23,7 +23,7 @@ const registerUser = async (req) => {
     const acceptLanguage = req.acceptLanguage;
     const body = req.body;
 
-    await validateUserInput(body);
+    await validateUserInput(body, req);
 
     const now = new Date();
     const { email, password, fullName } = body;
@@ -33,7 +33,7 @@ const registerUser = async (req) => {
     const hashedVerificationCode = await util.generateHash(verificationCode, false);
     const verificationExpiresAt = new Date(now.getTime() + env.RESETCODE_REDIS_TTL_SECS * 1000);
     const verificationExpireMins = env.RESETCODE_REDIS_TTL_SECS / 60;
-    const username = await generateUniqueUsername(email);
+    const username = await generateUniqueUsername(email, req);
 
     const user = new User({
         email: email,
@@ -43,7 +43,7 @@ const registerUser = async (req) => {
         verificationExpiresAt: verificationExpiresAt,
     });
 
-    const userCreated = await UserRepository.save(user);
+    const userCreated = await UserRepository.save(user, req);
 
     const redisKeyResendVerificationCode = util.getKeyRedis(`${consCache.REDIS_KEY_RESEND_VERIFICATION_CODES}${userCreated._id}`);
     const valueKeyVerification = JSON.stringify({ email: email.toLowerCase() });
@@ -64,7 +64,7 @@ const verifyCodeUser = async (req) => {
     const acceptLanguage = req.acceptLanguage;
     const { email, verificationCode } = req.body;
 
-    const user = await UserRepository.findOneByFilter({ email: email, status: UserStatus.PENDING });
+    const user = await UserRepository.findOneByFilter({ email: email, status: UserStatus.PENDING }, req);
     if (!user) throw new BusinessException(ERROR_CODES.CODE_USER_NOT_FOUND, constants.HTTP_SUCCESS);
 
     const hashedVerificationCode = await util.generateHash(verificationCode, false);
@@ -90,7 +90,7 @@ const verifyCodeUser = async (req) => {
     user.status = UserStatus.ACTIVE;
     user.verificationExpiresAt = undefined;
 
-    await UserRepository.save(user);
+    await UserRepository.save(user, req);
     await redisClient.del(redisKeyVerificationCode);
     await redisClient.del(redisKeyResendVerificationCode);
 
@@ -103,7 +103,7 @@ const sendVerificationCode = async (req) => {
     const body = req.body;
     const { email } = body;
 
-    const user = await UserRepository.findOneByFilter({ email: email });
+    const user = await UserRepository.findOneByFilter({ email: email }, req);
     if (!user) throw new BusinessException(ERROR_CODES.CODE_USER_NOT_FOUND, constants.HTTP_SUCCESS);
 
     await validateAlreadySendCode(user);
@@ -132,7 +132,7 @@ const resetPassword = async (req) => {
     const body = req.body;
     const { email, password, verificationCode } = body;
 
-    const user = await UserRepository.findOneByFilter({ email: email, status: UserStatus.ACTIVE });
+    const user = await UserRepository.findOneByFilter({ email: email, status: UserStatus.ACTIVE }, req);
     if (!user) throw new BusinessException(ERROR_CODES.CODE_USER_NOT_FOUND, constants.HTTP_SUCCESS);
 
     const hashedVerificationCode = await util.generateHash(verificationCode, false);
@@ -158,11 +158,11 @@ const resetPassword = async (req) => {
 
     user.password = hashedPassword;
 
-    await UserRepository.save(user);
+    await UserRepository.save(user, req);
 
     await redisClient.del(redisKeyVerificationCode);
     deleteRedisTokens(user._id.toString());
-    deleteFcmTokens(user._id.toString());
+    deleteFcmTokens(user._id.toString(), req);
 
     const message = translate(SUCCESS_CODES.CODE_RESET_PASSWORD_SUCCESS, acceptLanguage);
     return new BaseResponse(true, [message]);
@@ -170,7 +170,7 @@ const resetPassword = async (req) => {
 
 const loginUser = async (req) => {
     let { email, password, device } = req.body;
-    const user = await UserRepository.findOneByFilter({ email: email, status: UserStatus.ACTIVE });
+    const user = await UserRepository.findOneByFilter({ email: email, status: UserStatus.ACTIVE }, req);
 
     if (!user) throw new BusinessException(ERROR_CODES.CODE_ERROR_LOGIN, constants.HTTP_UNAUTHORIZED);
     let isMatch = bcrypt.compareSync(password, user.password);
@@ -188,20 +188,20 @@ const loginUser = async (req) => {
         hash: util.generateRandomHash(),
     };
 
-    const result = await FCMTokenRepository.findOneByFilter({ userId: user._id });
+    const result = await FCMTokenRepository.findOneByFilter({ userId: user._id }, req);
     if (result) {
         const existsFcmToken = result.devices.some(i => i.fcmToken === device.fcmToken);
 
         if (!existsFcmToken) {
             result.devices.push({ fcmToken: device.fcmToken, platform: device.platform, appVersion: device.appVersion, deviceId: device.deviceId });
-            await FCMTokenRepository.save(result);
+            await FCMTokenRepository.save(result, req);
         }
     } else {
         const fcmTokenDoc = new FCMToken({
             userId: user._id,
             devices: [device],
         });
-        await FCMTokenRepository.save(fcmTokenDoc);
+        await FCMTokenRepository.save(fcmTokenDoc, req);
     }
 
     const accessToken = await generateTokenAndSaveToken(payload, env.JWT_ACCESS_TOKEN_TTL_SECS, `${consCache.REDIS_KEY_ACCESS_TOKEN}${payload.id}:`);
@@ -209,7 +209,7 @@ const loginUser = async (req) => {
 
     const currentDate = new Date();
     const userData = { lastLogin: currentDate };
-    UserRepository.findByIdAndUpdate(user._id, userData);
+    UserRepository.findByIdAndUpdate(user._id, userData, req);
 
     return new BaseResponse(true, [], { accessToken, refreshToken });
 };
@@ -248,7 +248,7 @@ const refreshTokenUser = async (req) => {
 
     const currentDate = new Date();
     const userData = { lastLogin: currentDate };
-    UserRepository.findByIdAndUpdate(user._id, userData);
+    UserRepository.findByIdAndUpdate(user._id, userData, req);
 
     return new BaseResponse(true, [], { accessToken, refreshToken });
 }
@@ -259,7 +259,8 @@ const logoutUser = async (req) => {
 
         FCMTokenRepository.findOneByFilterAndPullToken(
             { "devices.fcmToken": fcmToken },
-            { devices: { fcmToken: fcmToken } }
+            { devices: { fcmToken: fcmToken } },
+            req
         );
 
         const { decoded: decodedAccessToken } = jwt.verifyJwtToken(accessToken, false);
@@ -281,8 +282,8 @@ const logoutUser = async (req) => {
     return new BaseResponse(true);
 }
 
-const validateUserInput = async (body) => {
-    const existingUser = await UserRepository.findOneByFilter({ email: body.email });
+const validateUserInput = async (body, req) => {
+    const existingUser = await UserRepository.findOneByFilter({ email: body.email }, req);
 
     if (existingUser) throw new BusinessException(ERROR_CODES.CODE_USER_EXISTS, constants.HTTP_SUCCESS);
 
@@ -336,8 +337,8 @@ const deleteRedisTokens = async (userId) => {
     await deleteKeysByUserId(dataRefreshTokens, userId);
 }
 
-const deleteFcmTokens = async (userId) => {
-    await FCMTokenRepository.deleteAllByFilter({ userId: userId });
+const deleteFcmTokens = async (userId, req) => {
+    await FCMTokenRepository.deleteAllByFilter({ userId: userId }, req);
 }
 
 const deleteKeysByUserId = async (data, userId) => {
@@ -365,12 +366,12 @@ const getRedisDataByPattern = async (pattern) => {
     return keys.map((k, i) => ({ key: k, value: values[i] }));
 }
 
-const generateUniqueUsername = async (email) => {
+const generateUniqueUsername = async (email, req) => {
     while (true) {
         const username = generateUsername();
         const filter = { username };
-        const exists = await UserRepository.existsByFilter(filter);
-        logger.info(`Username generated [${username}] for email [${email}]`, { className: filename });
+        const exists = await UserRepository.existsByFilter(filter, req);
+        logger.info(`Username generated [${username}] for email [${email}]`, { className: filename, req: req });
         if (!exists) return username;
     }
 }
