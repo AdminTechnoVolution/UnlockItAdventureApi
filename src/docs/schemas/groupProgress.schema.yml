@@ -66,3 +66,31 @@ components:
         partnerId:
           type: string
           example: "507f1f77bcf86cd799439013"
+
+    UpdateGroupProgressSchema:
+      type: object
+      required:
+        - groupProgressId
+        - keyActivity
+      properties:
+        groupProgressId:
+          type: string
+          example: "507f1f77bcf86cd799439012"
+        keyActivity:
+          type: string
+          example: "activity_1"
+        completed:
+          type: boolean
+          example: true
+        activityCompletedAt:
+          type: string
+          format: date-time
+          example: "2026-05-21T15:30:00.000Z"
+        groupCompletedAt:
+          type: string
+          format: date-time
+          example: "2026-05-21T16:00:00.000Z"
+        notes:
+          type: string
+          maxLength: 5000
+          example: "Great experience visiting the site."
