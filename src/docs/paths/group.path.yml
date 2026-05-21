@@ -26,6 +26,24 @@ paths:
         500:
           $ref: '#/components/responses/InternalServerErrorResponse'
 
+  /api/group/progress:
+    get:
+      summary: Get my own group progress
+      tags:
+        - Groups & Activities
+      security:
+        - Bearer: []
+      parameters:
+        - $ref: '#/components/parameters/Authorization'
+        - $ref: '#/components/parameters/AcceptLanguage'
+      responses:
+        200:
+          $ref: '#/components/responses/SuccessResponse'
+        401:
+          $ref: '#/components/responses/UnauthorizedResponse'
+        500:
+          $ref: '#/components/responses/InternalServerErrorResponse'
+
   /api/group/progress/partners:
     put:
       summary: Add partners to a group progress

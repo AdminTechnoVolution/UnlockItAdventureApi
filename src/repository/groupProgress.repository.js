@@ -42,9 +42,42 @@ const findById = async (id, req = null) => {
     }
 };
 
+const findByUserIdWithRelations = async (userId, req = null) => {
+    try {
+        return await GroupProgress.aggregate([
+            { $match: { userId } },
+            { $sort: { createdAt: -1 } },
+            {
+                $lookup: {
+                    from: 'groups',
+                    localField: 'groupId',
+                    foreignField: '_id',
+                    as: 'group',
+                },
+            },
+            { $unwind: { path: '$group', preserveNullAndEmptyArrays: true } },
+            {
+                $lookup: {
+                    from: 'users',
+                    localField: 'partnerId',
+                    foreignField: '_id',
+                    as: 'partners',
+                    pipeline: [
+                        { $project: { fullName: 1, email: 1 } },
+                    ],
+                },
+            },
+        ]);
+    } catch (err) {
+        logger.error(`Error in findByUserIdWithRelations. Error: ${err}`, { className: filename, req: req });
+        throw new DataLayerException(ERROR_CODES.ERROR_INTERNAL_SERVER_ERROR);
+    }
+};
+
 module.exports = {
     find,
     existsByFilter,
     save,
     findById,
+    findByUserIdWithRelations,
 };

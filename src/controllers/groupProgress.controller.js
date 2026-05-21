@@ -35,8 +35,18 @@ const removePartner = async (req, res, next) => {
     }
 };
 
+const getMyGroupProgress = async (req, res, next) => {
+    try {
+        const jsonResponse = await GroupProgressService.getMyGroupProgress(req);
+        res.status(200).json(jsonResponse);
+    } catch (err) {
+        next(err);
+    }
+};
+
 module.exports = {
     unlockGroup,
     addPartners,
     removePartner,
+    getMyGroupProgress,
 };

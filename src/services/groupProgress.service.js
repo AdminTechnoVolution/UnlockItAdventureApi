@@ -12,7 +12,7 @@ const GroupProgressStatus = require('../../shared/constants/enums/EnumGroupProgr
 const constants = require('../../shared/constants/constants');
 const jwt = require('../../shared/util/jwt');
 const { SUCCESS_CODES, ERROR_CODES } = require('../../shared/i18n/messages');
-const { translate } = require('../../shared/util/util');
+const { translate, pickLanguage } = require('../../shared/util/util');
 
 const unlockGroup = async (req) => {
     const acceptLanguage = req.acceptLanguage;
@@ -211,8 +211,99 @@ const buildInitialActivities = (groupActivities, userId) => {
     }));
 };
 
+const getMyGroupProgress = async (req) => {
+    const acceptLanguage = req.acceptLanguage;
+    const auth = req.headers['authorization'];
+    const { decoded } = jwt.verifyJwtToken(auth, true);
+    const userId = new ObjectId(decoded.id);
+
+    const groupProgressList = await GroupProgressRepository.findByUserIdWithRelations(userId, req);
+    const data = groupProgressList.map((groupProgress) => mapGroupProgressResponse(groupProgress, acceptLanguage));
+
+    return new BaseResponse(true, [], data);
+};
+
+const mapGroupProgressResponse = (groupProgress, lang) => {
+    const groupActivitiesByKey = buildGroupActivitiesByKey(groupProgress.group?.activities, lang);
+
+    return {
+        id: groupProgress._id,
+        status: groupProgress.status,
+        completedAt: groupProgress.completedAt,
+        createdAt: groupProgress.createdAt,
+        updatedAt: groupProgress.updatedAt,
+        group: groupProgress.group ? mapGroupSummary(groupProgress.group, lang) : null,
+        partners: mapPartners(groupProgress.partnerId, groupProgress.partners),
+        activities: (groupProgress.activities || []).map((progressActivity) => mapProgressActivity(
+            progressActivity,
+            groupActivitiesByKey.get(progressActivity.key)
+        )),
+    };
+};
+
+const mapGroupSummary = (group, lang) => ({
+    id: group._id,
+    name: pickLanguage(group.name, lang),
+    description: pickLanguage(group.description, lang),
+    imageUrl: group.imageUrl,
+    tags: pickLanguage(group.tags, lang),
+    additionalInfo: pickLanguage(group.additionalInfo, lang),
+});
+
+const buildGroupActivitiesByKey = (activities, lang) => {
+    const activitiesByKey = new Map();
+
+    if (!activities?.length) return activitiesByKey;
+
+    activities.forEach((activity) => {
+        activitiesByKey.set(activity.key, mapGroupActivity(activity, lang));
+    });
+
+    return activitiesByKey;
+};
+
+const mapGroupActivity = (activity, lang) => ({
+    name: pickLanguage(activity.name, lang),
+    description: pickLanguage(activity.description, lang),
+    tips: pickLanguage(activity.tips, lang),
+    imageUrl: activity.imageUrl,
+    additionalInfo: pickLanguage(activity.additionalInfo, lang),
+    tags: pickLanguage(activity.tags, lang),
+    difficulty: activity.difficulty,
+});
+
+const mapProgressActivity = (progressActivity, groupActivity = {}) => ({
+    key: progressActivity.key,
+    completed: progressActivity.completed,
+    completedAt: progressActivity.completedAt,
+    notes: progressActivity.notes,
+    photos: progressActivity.photos,
+    updatedBy: progressActivity.updatedBy,
+    name: groupActivity.name ?? null,
+    description: groupActivity.description ?? null,
+    tips: groupActivity.tips ?? null,
+    imageUrl: groupActivity.imageUrl ?? null,
+    additionalInfo: groupActivity.additionalInfo ?? null,
+    tags: groupActivity.tags ?? null,
+    difficulty: groupActivity.difficulty ?? null,
+});
+
+const mapPartners = (partnerIds, partners) => {
+    const partnerMap = new Map((partners || []).map((partner) => [partner._id.toString(), partner]));
+
+    return (partnerIds || [])
+        .map((partnerId) => partnerMap.get(partnerId.toString()))
+        .filter(Boolean)
+        .map((partner) => ({
+            id: partner._id,
+            fullName: partner.fullName,
+            email: partner.email,
+        }));
+};
+
 module.exports = {
     unlockGroup,
     addPartners,
     removePartner,
+    getMyGroupProgress,
 };
