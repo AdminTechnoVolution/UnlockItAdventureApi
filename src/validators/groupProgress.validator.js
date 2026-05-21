@@ -44,7 +44,23 @@ const addPartnersSchema = Joi.object({
         }),
 });
 
+const removePartnerSchema = Joi.object({
+    groupProgressId: Joi.string().trim().required()
+        .messages({
+            'any.required': ERROR_CODES.FIELD_REQUIRED,
+            'string.empty': ERROR_CODES.FIELD_REQUIRED,
+            'any.invalid': ERROR_CODES.FIELD_INVALID,
+        }),
+    partnerId: Joi.string().trim().required()
+        .messages({
+            'any.required': ERROR_CODES.FIELD_REQUIRED,
+            'string.empty': ERROR_CODES.FIELD_REQUIRED,
+            'any.invalid': ERROR_CODES.FIELD_INVALID,
+        }),
+});
+
 module.exports = {
     unlockGroupSchema,
     addPartnersSchema,
+    removePartnerSchema,
 };

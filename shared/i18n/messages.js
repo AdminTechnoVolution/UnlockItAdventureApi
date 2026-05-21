@@ -11,6 +11,7 @@ const FIELDS = {
     PRODUCT_ID: "productId",
     GROUP_PROGRESS_ID: "groupProgressId",
     PARTNER_IDS: "partnerIds",
+    PARTNER_ID: "partnerId",
 };
 
 const ERROR_CODES = {
@@ -35,6 +36,8 @@ const ERROR_CODES = {
     CODE_GROUP_PROGRESS_FORBIDDEN: "CODE_GROUP_PROGRESS_FORBIDDEN",
     CODE_PARTNER_EMAIL_NOT_FOUND: "CODE_PARTNER_EMAIL_NOT_FOUND",
     CODE_PARTNER_CANNOT_BE_SELF: "CODE_PARTNER_CANNOT_BE_SELF",
+    CODE_PARTNER_NOT_FOUND: "CODE_PARTNER_NOT_FOUND",
+    CODE_REMOVE_PARTNER_FORBIDDEN: "CODE_REMOVE_PARTNER_FORBIDDEN",
     ERROR_BAD_REQUEST_RESPONSE: "ERROR_BAD_REQUEST_RESPONSE",
     ERROR_MALFORMED_BAD_REQUEST: "ERROR_MALFORMED_BAD_REQUEST",
     ERROR_INTERNAL_SERVER_ERROR: "INTERNAL_SERVER_ERROR",
@@ -47,6 +50,7 @@ const SUCCESS_CODES = {
     CODE_SENT_SUCCESS: "CODE_SENT_SUCCESS",
     CODE_UNLOCK_GROUP_SUCCESS: "CODE_UNLOCK_GROUP_SUCCESS",
     CODE_ADD_PARTNERS_SUCCESS: "CODE_ADD_PARTNERS_SUCCESS",
+    CODE_REMOVE_PARTNER_SUCCESS: "CODE_REMOVE_PARTNER_SUCCESS",
 };
 
 const EMAIL_TEMPLATES = {
@@ -100,6 +104,13 @@ const TRANSLATIONS = {
         pt: "emails",
         fr: "emails",
         it: "email"
+    },
+    [FIELDS.PARTNER_ID]: {
+        en: "partner id",
+        es: "id de compañero",
+        pt: "id do parceiro",
+        fr: "id du partenaire",
+        it: "id partner"
     },
     [FIELDS.EMAIL]: {
         en: "email",
@@ -271,6 +282,20 @@ const TRANSLATIONS = {
         fr: "Vous ne pouvez pas vous ajouter comme partenaire.",
         it: "Non puoi aggiungere te stesso come partner."
     },
+    [ERROR_CODES.CODE_PARTNER_NOT_FOUND]: {
+        en: "Partner not found in this group progress.",
+        es: "Compañero no encontrado en este progreso del grupo.",
+        pt: "Parceiro não encontrado neste progresso do grupo.",
+        fr: "Partenaire introuvable dans cette progression du groupe.",
+        it: "Partner non trovato in questo progresso del gruppo."
+    },
+    [ERROR_CODES.CODE_REMOVE_PARTNER_FORBIDDEN]: {
+        en: "You can only remove yourself from this group progress.",
+        es: "Solo puedes eliminarte a ti mismo de este progreso del grupo.",
+        pt: "Você só pode se remover deste progresso do grupo.",
+        fr: "Vous ne pouvez vous retirer que vous-même de cette progression du groupe.",
+        it: "Puoi rimuovere solo te stesso da questo progresso del gruppo."
+    },
     [ERROR_CODES.FIELD_INVALID]: {
         en: "Invalid field: ",
         es: "Campo inválido: ",
@@ -381,6 +406,13 @@ const TRANSLATIONS = {
         pt: "Emails adicionados com sucesso.",
         fr: "Emails ajoutés avec succès.",
         it: "Email aggiunte con successo."
+    },
+    [SUCCESS_CODES.CODE_REMOVE_PARTNER_SUCCESS]: {
+        en: "Partner removed successfully.",
+        es: "Compañero eliminado exitosamente.",
+        pt: "Parceiro removido com sucesso.",
+        fr: "Partenaire supprimé avec succès.",
+        it: "Partner rimosso con successo."
     }
 };
 

@@ -53,3 +53,16 @@ components:
           example:
             - "partner1@example.com"
             - "partner2@example.com"
+
+    RemovePartnerSchema:
+      type: object
+      required:
+        - groupProgressId
+        - partnerId
+      properties:
+        groupProgressId:
+          type: string
+          example: "507f1f77bcf86cd799439012"
+        partnerId:
+          type: string
+          example: "507f1f77bcf86cd799439013"

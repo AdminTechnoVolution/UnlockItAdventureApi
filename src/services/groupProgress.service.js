@@ -111,6 +111,52 @@ const appendPartnersToGroupProgress = (groupProgress, partnerUsers) => {
     groupProgress.partnerId = [...(groupProgress.partnerId || []), ...newPartnerIds];
 };
 
+const removePartner = async (req) => {
+    const acceptLanguage = req.acceptLanguage;
+    const auth = req.headers['authorization'];
+    const { decoded } = jwt.verifyJwtToken(auth, true);
+
+    const { groupProgressId, partnerId } = req.body;
+    const userId = new ObjectId(decoded.id);
+    const partnerObjectId = new ObjectId(partnerId);
+
+    const groupProgress = await validateRemovePartnerEligibility(userId, groupProgressId, partnerObjectId, req);
+
+    removePartnerFromGroupProgress(groupProgress, partnerObjectId);
+
+    await GroupProgressRepository.save(groupProgress, req);
+    const message = translate(SUCCESS_CODES.CODE_REMOVE_PARTNER_SUCCESS, acceptLanguage);
+
+    return new BaseResponse(true, [message]);
+};
+
+const validateRemovePartnerEligibility = async (userId, groupProgressId, partnerId, req) => {
+    const groupProgress = await GroupProgressRepository.findById(groupProgressId, req);
+
+    if (!groupProgress || groupProgress.status === GroupProgressStatus.VALIDATING) {
+        throw new BusinessException(ERROR_CODES.CODE_GROUP_PROGRESS_NOT_FOUND, constants.HTTP_NOT_FOUND);
+    }
+
+    const isOwner = groupProgress.userId.toString() === userId.toString();
+    const partnerExists = (groupProgress.partnerId || []).some((id) => id.toString() === partnerId.toString());
+
+    if (!isOwner && partnerId.toString() !== userId.toString()) {
+        throw new BusinessException(ERROR_CODES.CODE_REMOVE_PARTNER_FORBIDDEN, constants.HTTP_FORBIDDEN);
+    }
+
+    if (!partnerExists) {
+        throw new BusinessException(ERROR_CODES.CODE_PARTNER_NOT_FOUND, constants.HTTP_NOT_FOUND);
+    }
+
+    return groupProgress;
+};
+
+const removePartnerFromGroupProgress = (groupProgress, partnerId) => {
+    groupProgress.partnerId = (groupProgress.partnerId || []).filter(
+        (id) => id.toString() !== partnerId.toString()
+    );
+};
+
 const isPaidGroup = (group) => {
     return Array.isArray(group.productsId)
         && group.productsId.length > 0
@@ -168,4 +214,5 @@ const buildInitialActivities = (groupActivities, userId) => {
 module.exports = {
     unlockGroup,
     addPartners,
+    removePartner,
 };

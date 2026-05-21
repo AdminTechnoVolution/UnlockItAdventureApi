@@ -9,4 +9,6 @@ router.post('/group/unlock', validateToken, validateBody(GroupProgressValidator.
 
 router.put('/group/progress/partners', validateToken, validateBody(GroupProgressValidator.addPartnersSchema), GroupProgressController.addPartners);
 
+router.put('/group/progress/partners/remove', validateToken, validateBody(GroupProgressValidator.removePartnerSchema), GroupProgressController.removePartner);
+
 module.exports = router;
