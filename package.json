@@ -1,6 +1,6 @@
 {
   "name": "unlockit-adventure-api",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
