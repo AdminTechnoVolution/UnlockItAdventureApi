@@ -12,6 +12,8 @@ const FIELDS = {
     GROUP_PROGRESS_ID: "groupProgressId",
     PARTNER_IDS: "partnerIds",
     PARTNER_ID: "partnerId",
+    KEY_ACTIVITY: "keyActivity",
+    NOTES: "notes",
 };
 
 const ERROR_CODES = {
@@ -38,6 +40,9 @@ const ERROR_CODES = {
     CODE_PARTNER_CANNOT_BE_SELF: "CODE_PARTNER_CANNOT_BE_SELF",
     CODE_PARTNER_NOT_FOUND: "CODE_PARTNER_NOT_FOUND",
     CODE_REMOVE_PARTNER_FORBIDDEN: "CODE_REMOVE_PARTNER_FORBIDDEN",
+    CODE_GROUP_PROGRESS_UPDATE_FORBIDDEN: "CODE_GROUP_PROGRESS_UPDATE_FORBIDDEN",
+    CODE_GROUP_PROGRESS_ACTIVITY_NOT_FOUND: "CODE_GROUP_PROGRESS_ACTIVITY_NOT_FOUND",
+    CODE_GROUP_PROGRESS_UPDATE_NO_FIELDS: "CODE_GROUP_PROGRESS_UPDATE_NO_FIELDS",
     ERROR_BAD_REQUEST_RESPONSE: "ERROR_BAD_REQUEST_RESPONSE",
     ERROR_MALFORMED_BAD_REQUEST: "ERROR_MALFORMED_BAD_REQUEST",
     ERROR_INTERNAL_SERVER_ERROR: "INTERNAL_SERVER_ERROR",
@@ -51,6 +56,7 @@ const SUCCESS_CODES = {
     CODE_UNLOCK_GROUP_SUCCESS: "CODE_UNLOCK_GROUP_SUCCESS",
     CODE_ADD_PARTNERS_SUCCESS: "CODE_ADD_PARTNERS_SUCCESS",
     CODE_REMOVE_PARTNER_SUCCESS: "CODE_REMOVE_PARTNER_SUCCESS",
+    CODE_UPDATE_GROUP_PROGRESS_SUCCESS: "CODE_UPDATE_GROUP_PROGRESS_SUCCESS",
 };
 
 const EMAIL_TEMPLATES = {
@@ -111,6 +117,20 @@ const TRANSLATIONS = {
         pt: "id do parceiro",
         fr: "id du partenaire",
         it: "id partner"
+    },
+    [FIELDS.KEY_ACTIVITY]: {
+        en: "activity",
+        es: "actividad",
+        pt: "atividade",
+        fr: "activité",
+        it: "attività"
+    },
+    [FIELDS.NOTES]: {
+        en: "notes",
+        es: "notas",
+        pt: "notas",
+        fr: "notes",
+        it: "note"
     },
     [FIELDS.EMAIL]: {
         en: "email",
@@ -296,6 +316,27 @@ const TRANSLATIONS = {
         fr: "Vous ne pouvez vous retirer que vous-même de cette progression du groupe.",
         it: "Puoi rimuovere solo te stesso da questo progresso del gruppo."
     },
+    [ERROR_CODES.CODE_GROUP_PROGRESS_UPDATE_FORBIDDEN]: {
+        en: "You must be the owner or a partner to update this group progress.",
+        es: "Debes ser el dueño o un compañero para actualizar este progreso del grupo.",
+        pt: "Você deve ser o dono ou um parceiro para atualizar este progresso do grupo.",
+        fr: "Vous devez être le propriétaire ou un partenaire pour mettre à jour cette progression du groupe.",
+        it: "Devi essere il proprietario o un partner per aggiornare questo progresso del gruppo."
+    },
+    [ERROR_CODES.CODE_GROUP_PROGRESS_ACTIVITY_NOT_FOUND]: {
+        en: "Activity not found in this group progress.",
+        es: "Actividad no encontrada en este progreso del grupo.",
+        pt: "Atividade não encontrada neste progresso do grupo.",
+        fr: "Activité introuvable dans cette progression du groupe.",
+        it: "Attività non trovata in questo progresso del gruppo."
+    },
+    [ERROR_CODES.CODE_GROUP_PROGRESS_UPDATE_NO_FIELDS]: {
+        en: "At least one of completed, activityCompletedAt, groupCompletedAt or notes is required.",
+        es: "Al menos uno de completed, activityCompletedAt, groupCompletedAt o notes es requerido.",
+        pt: "Pelo menos um de completed, activityCompletedAt, groupCompletedAt ou notes é obrigatório.",
+        fr: "Au moins un des champs completed, activityCompletedAt, groupCompletedAt ou notes est requis.",
+        it: "Almeno uno tra completed, activityCompletedAt, groupCompletedAt o notes è obbligatorio."
+    },
     [ERROR_CODES.FIELD_INVALID]: {
         en: "Invalid field: ",
         es: "Campo inválido: ",
@@ -413,6 +454,13 @@ const TRANSLATIONS = {
         pt: "Parceiro removido com sucesso.",
         fr: "Partenaire supprimé avec succès.",
         it: "Partner rimosso con successo."
+    },
+    [SUCCESS_CODES.CODE_UPDATE_GROUP_PROGRESS_SUCCESS]: {
+        en: "Group progress updated successfully.",
+        es: "Progreso del grupo actualizado exitosamente.",
+        pt: "Progresso do grupo atualizado com sucesso.",
+        fr: "Progression du groupe mise à jour avec succès.",
+        it: "Progresso del gruppo aggiornato con successo."
     }
 };
 

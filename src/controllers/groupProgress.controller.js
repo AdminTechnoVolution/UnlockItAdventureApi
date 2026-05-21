@@ -44,9 +44,31 @@ const getMyGroupProgress = async (req, res, next) => {
     }
 };
 
+const getSharedGroupProgress = async (req, res, next) => {
+    try {
+        const jsonResponse = await GroupProgressService.getSharedGroupProgress(req);
+        res.status(200).json(jsonResponse);
+    } catch (err) {
+        next(err);
+    }
+};
+
+const updateGroupProgress = async (req, res, next) => {
+    try {
+        if (!req.body) throw new BusinessException(ERROR_CODES.ERROR_BAD_REQUEST_RESPONSE);
+
+        const jsonResponse = await GroupProgressService.updateGroupProgress(req);
+        res.status(200).json(jsonResponse);
+    } catch (err) {
+        next(err);
+    }
+};
+
 module.exports = {
     unlockGroup,
     addPartners,
     removePartner,
     getMyGroupProgress,
+    getSharedGroupProgress,
+    updateGroupProgress,
 };

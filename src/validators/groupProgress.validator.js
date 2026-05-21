@@ -59,8 +59,43 @@ const removePartnerSchema = Joi.object({
         }),
 });
 
+const updateGroupProgressSchema = Joi.object({
+    groupProgressId: Joi.string().trim().required()
+        .messages({
+            'any.required': ERROR_CODES.FIELD_REQUIRED,
+            'string.empty': ERROR_CODES.FIELD_REQUIRED,
+            'any.invalid': ERROR_CODES.FIELD_INVALID,
+        }),
+    keyActivity: Joi.string().trim().required()
+        .messages({
+            'any.required': ERROR_CODES.FIELD_REQUIRED,
+            'string.empty': ERROR_CODES.FIELD_REQUIRED,
+            'any.invalid': ERROR_CODES.FIELD_INVALID,
+        }),
+    completed: Joi.boolean().optional(),
+    activityCompletedAt: Joi.date().iso().optional().allow(null)
+        .messages({
+            'date.format': ERROR_CODES.FIELD_INVALID,
+        }),
+    groupCompletedAt: Joi.date().iso().optional().allow(null)
+        .messages({
+            'date.format': ERROR_CODES.FIELD_INVALID,
+        }),
+    notes: Joi.string().trim().min(1).max(5000).optional().allow(null)
+        .messages({
+            'string.min': ERROR_CODES.FIELD_MIN,
+            'string.empty': ERROR_CODES.FIELD_REQUIRED,
+            'string.max': ERROR_CODES.FIELD_MAX,
+        }),
+})
+    .or('completed', 'activityCompletedAt', 'groupCompletedAt', 'notes')
+    .messages({
+        'object.missing': ERROR_CODES.CODE_GROUP_PROGRESS_UPDATE_NO_FIELDS,
+    });
+
 module.exports = {
     unlockGroupSchema,
     addPartnersSchema,
     removePartnerSchema,
+    updateGroupProgressSchema,
 };

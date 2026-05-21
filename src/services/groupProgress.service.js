@@ -157,6 +157,92 @@ const removePartnerFromGroupProgress = (groupProgress, partnerId) => {
     );
 };
 
+const updateGroupProgress = async (req) => {
+    const acceptLanguage = req.acceptLanguage;
+    const auth = req.headers['authorization'];
+    const { decoded } = jwt.verifyJwtToken(auth, true);
+    const userId = new ObjectId(decoded.id);
+
+    const { groupProgressId, keyActivity, completed, activityCompletedAt, groupCompletedAt, notes } = req.body;
+
+    const groupProgress = await validateUpdateGroupProgressEligibility(userId, groupProgressId, keyActivity, req);
+
+    fillGroupProgressActivity(groupProgress, { keyActivity, completed, activityCompletedAt, notes, userId, });
+
+    fillGroupProgress(groupProgress, groupCompletedAt);
+
+    await GroupProgressRepository.save(groupProgress, req);
+    const message = translate(SUCCESS_CODES.CODE_UPDATE_GROUP_PROGRESS_SUCCESS, acceptLanguage);
+
+    return new BaseResponse(true, [message]);
+};
+
+const validateUpdateGroupProgressEligibility = async (userId, groupProgressId, keyActivity, req) => {
+    const groupProgress = await GroupProgressRepository.findById(groupProgressId, req);
+
+    if (!groupProgress || groupProgress.status === GroupProgressStatus.VALIDATING) {
+        throw new BusinessException(ERROR_CODES.CODE_GROUP_PROGRESS_NOT_FOUND, constants.HTTP_NOT_FOUND);
+    }
+
+    if (!isGroupProgressParticipant(userId, groupProgress)) {
+        throw new BusinessException(ERROR_CODES.CODE_GROUP_PROGRESS_UPDATE_FORBIDDEN, constants.HTTP_FORBIDDEN);
+    }
+
+    const activityExists = (groupProgress.activities || []).some((activity) => activity.key === keyActivity);
+
+    if (!activityExists) {
+        throw new BusinessException(ERROR_CODES.CODE_GROUP_PROGRESS_ACTIVITY_NOT_FOUND, constants.HTTP_NOT_FOUND);
+    }
+
+    return groupProgress;
+};
+
+const isGroupProgressParticipant = (userId, groupProgress) => {
+    const userIdStr = userId.toString();
+
+    if (groupProgress.userId.toString() === userIdStr) {
+        return true;
+    }
+
+    return (groupProgress.partnerId || []).some((partnerId) => partnerId.toString() === userIdStr);
+};
+
+const fillGroupProgressActivity = (groupProgress, { keyActivity, completed, activityCompletedAt, notes, userId }) => {
+    const activity = groupProgress.activities.find((item) => item.key === keyActivity);
+
+    if (completed !== undefined) {
+        activity.completed = completed;
+    }
+
+    if (activityCompletedAt !== undefined) {
+        activity.completedAt = activityCompletedAt;
+    }
+
+    if (notes !== undefined) {
+        activity.notes = notes;
+    }
+
+    activity.updatedBy = userId;
+    groupProgress.markModified('activities');
+};
+
+const fillGroupProgress = (groupProgress, groupCompletedAt) => {
+    if (groupCompletedAt !== undefined) {
+        groupProgress.completedAt = groupCompletedAt;
+    }
+
+    const allCompleted = (groupProgress.activities || []).length > 0
+        && groupProgress.activities.every((activity) => activity.completed === true);
+
+    if (allCompleted) {
+        if (groupProgress.status !== GroupProgressStatus.COMPLETED) {
+            groupProgress.status = GroupProgressStatus.COMPLETED;
+        }
+    } else {
+        groupProgress.status = GroupProgressStatus.IN_PROGRESS;
+    }
+};
+
 const isPaidGroup = (group) => {
     return Array.isArray(group.productsId)
         && group.productsId.length > 0
@@ -211,17 +297,21 @@ const buildInitialActivities = (groupActivities, userId) => {
     }));
 };
 
-const getMyGroupProgress = async (req) => {
+const getGroupProgressList = async (req, fetchGroupProgressList) => {
     const acceptLanguage = req.acceptLanguage;
     const auth = req.headers['authorization'];
     const { decoded } = jwt.verifyJwtToken(auth, true);
     const userId = new ObjectId(decoded.id);
 
-    const groupProgressList = await GroupProgressRepository.findByUserIdWithRelations(userId, req);
+    const groupProgressList = await fetchGroupProgressList(userId, req);
     const data = groupProgressList.map((groupProgress) => mapGroupProgressResponse(groupProgress, acceptLanguage));
 
     return new BaseResponse(true, [], data);
 };
+
+const getMyGroupProgress = async (req) => getGroupProgressList(req, GroupProgressRepository.findByUserIdWithRelations);
+
+const getSharedGroupProgress = async (req) => getGroupProgressList(req, GroupProgressRepository.findByPartnerIdWithRelations);
 
 const mapGroupProgressResponse = (groupProgress, lang) => {
     const groupActivitiesByKey = buildGroupActivitiesByKey(groupProgress.group?.activities, lang);
@@ -232,6 +322,7 @@ const mapGroupProgressResponse = (groupProgress, lang) => {
         completedAt: groupProgress.completedAt,
         createdAt: groupProgress.createdAt,
         updatedAt: groupProgress.updatedAt,
+        userId: mapUserSummary(groupProgress.owner),
         group: groupProgress.group ? mapGroupSummary(groupProgress.group, lang) : null,
         partners: mapPartners(groupProgress.partnerId, groupProgress.partners),
         activities: (groupProgress.activities || []).map((progressActivity) => mapProgressActivity(
@@ -288,22 +379,30 @@ const mapProgressActivity = (progressActivity, groupActivity = {}) => ({
     difficulty: groupActivity.difficulty ?? null,
 });
 
+const mapUserSummary = (user) => {
+    if (!user) return null;
+
+    return {
+        id: user._id,
+        fullName: user.fullName,
+        email: user.email,
+    };
+};
+
 const mapPartners = (partnerIds, partners) => {
     const partnerMap = new Map((partners || []).map((partner) => [partner._id.toString(), partner]));
 
     return (partnerIds || [])
         .map((partnerId) => partnerMap.get(partnerId.toString()))
         .filter(Boolean)
-        .map((partner) => ({
-            id: partner._id,
-            fullName: partner.fullName,
-            email: partner.email,
-        }));
+        .map(mapUserSummary);
 };
 
 module.exports = {
     unlockGroup,
     addPartners,
     removePartner,
+    updateGroupProgress,
     getMyGroupProgress,
+    getSharedGroupProgress,
 };

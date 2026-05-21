@@ -43,6 +43,53 @@ paths:
           $ref: '#/components/responses/UnauthorizedResponse'
         500:
           $ref: '#/components/responses/InternalServerErrorResponse'
+    put:
+      summary: Update a group progress activity
+      tags:
+        - Groups & Activities
+      security:
+        - Bearer: []
+      parameters:
+        - $ref: '#/components/parameters/Authorization'
+        - $ref: '#/components/parameters/AcceptLanguage'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateGroupProgressSchema'
+      responses:
+        200:
+          $ref: '#/components/responses/SuccessResponse'
+        400:
+          $ref: '#/components/responses/BadRequestResponse'
+        401:
+          $ref: '#/components/responses/UnauthorizedResponse'
+        403:
+          $ref: '#/components/responses/ForbiddenResponse'
+        404:
+          $ref: '#/components/responses/BadRequestResponse'
+        500:
+          $ref: '#/components/responses/InternalServerErrorResponse'
+
+  /api/group/progress/shared:
+    get:
+      summary: Get group progress shared with me
+      description: Returns group progress where the authenticated user appears in partnerId, with the same localized response shape as GET /api/group/progress.
+      tags:
+        - Groups & Activities
+      security:
+        - Bearer: []
+      parameters:
+        - $ref: '#/components/parameters/Authorization'
+        - $ref: '#/components/parameters/AcceptLanguage'
+      responses:
+        200:
+          $ref: '#/components/responses/SuccessResponse'
+        401:
+          $ref: '#/components/responses/UnauthorizedResponse'
+        500:
+          $ref: '#/components/responses/InternalServerErrorResponse'
 
   /api/group/progress/partners:
     put:
