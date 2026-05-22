@@ -13,7 +13,6 @@ const swaggerOptions = {
         },
         tags: [
             { name: "Health" },
-            { name: "Auth" },
             { name: "Groups & Activities" },
             { name: "RTDN Google" },
             { name: "Subscription" },

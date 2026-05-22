@@ -4,11 +4,6 @@ const filename = path.basename(__filename);
 const jwt = require('jsonwebtoken');
 const env = require('../constants/environmentSystemVariables');
 
-const generateToken = (payload, expiresIn, unit = 's') => {
-    const expiresInSec = expiresIn + unit;
-    return jwt.sign(payload, env.JWT_SECRET_KEY, { expiresIn: expiresInSec });
-};
-
 const verifyJwtToken = (token, extractBearer = true) => {
     try {
         if (extractBearer)
@@ -19,6 +14,6 @@ const verifyJwtToken = (token, extractBearer = true) => {
         logger.error(`Error verifying JWT token: ${error}`, { className: filename });
         return { token: undefined, decoded: undefined };
     }
-}
+};
 
-module.exports = { generateToken, verifyJwtToken };
+module.exports = { verifyJwtToken };
