@@ -18,4 +18,8 @@ module.exports = {
     EMAIL_FROM: process.env.EMAIL_FROM,
     EMAIL_PASS: Buffer.from(process.env.EMAIL_PASS, "base64").toString("utf8"),
     JWT_SECRET_KEY: process.env.JWT_SECRET_KEY,
+    JWT_ACCESS_TOKEN_TTL_SECS: process.env.JWT_ACCESS_TOKEN_TTL_SECS || 3600,
+    JWT_REFRESH_TOKEN_TTL_SECS: process.env.JWT_REFRESH_TOKEN_TTL_SECS || 2592000,
+    GOOGLE_CLIENT_IDS: process.env.GOOGLE_CLIENT_IDS || '',
+    APPLE_CLIENT_ID: process.env.APPLE_CLIENT_ID || '',
 };

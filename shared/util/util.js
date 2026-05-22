@@ -1,6 +1,15 @@
+const crypto = require('crypto');
 const { TRANSLATIONS } = require("../i18n/messages");
 const constants = require('../constants/constants');
 const env = require('../constants/environmentSystemVariables');
+
+const generateSecureRandom = (min, max) => {
+    return crypto.randomInt(min, max + 1);
+};
+
+const generateRandomHash = () => {
+    return crypto.randomBytes(40).toString('hex');
+};
 
 const getEnumByValue = (EnumType, value, enumName = 'EnumType') => {
     for (const [key, item] of Object.entries(EnumType)) {
@@ -28,6 +37,8 @@ const getKeyRedis = (key) => {
 };
 
 module.exports = {
+    generateRandomHash,
+    generateSecureRandom,
     getEnumByValue,
     translate,
     pickLanguage,

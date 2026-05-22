@@ -19,6 +19,7 @@ const env = require('./shared/constants/environmentSystemVariables');
 const groupRoutes = require('./src/routes/group.route');
 const groupProgressRoutes = require('./src/routes/groupProgress.route');
 const healthRoutes = require('./src/routes/health.route');
+const authRoutes = require('./src/routes/auth.route');
 
 const app = express();
 
@@ -35,6 +36,7 @@ app.use(logResponse);
 app.use('/api/', healthRoutes);
 app.use('/api/', groupRoutes);
 app.use('/api/', groupProgressRoutes);
+app.use('/api/auth/', authRoutes);
 
 app.use(errorHandler);
 

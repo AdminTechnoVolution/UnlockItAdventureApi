@@ -1,0 +1,18 @@
+components:
+  schemas:
+    SocialLoginSchema:
+      type: object
+      required:
+        - authType
+        - tokenId
+      properties:
+        authType:
+          type: string
+          enum:
+            - google
+            - apple
+          example: google
+        tokenId:
+          type: string
+          description: ID token returned by Google Sign-In or Sign in with Apple
+          example: "eyJhbGciOiJSUzI1NiIsImtpZCI6Ij..."

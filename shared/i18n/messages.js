@@ -1,5 +1,7 @@
 const FIELDS = {
     EMAIL: "email",
+    AUTH_TYPE: "authType",
+    TOKEN_ID: "tokenId",
     GROUP_ID: "groupId",
     PURCHASE_TOKEN: "purchaseToken",
     PRODUCT_ID: "productId",
@@ -19,6 +21,8 @@ const ERROR_CODES = {
     FIELD_REQUIRED: "FIELD_REQUIRED",
     CODE_PHOTOS_ONLY: "CODE_PHOTOS_ONLY",
     CODE_ERROR_AUTH: "CODE_ERROR_AUTH",
+    CODE_SOCIAL_AUTH_FAILED: "CODE_SOCIAL_AUTH_FAILED",
+    CODE_SOCIAL_AUTH_EMAIL_REQUIRED: "CODE_SOCIAL_AUTH_EMAIL_REQUIRED",
     CODE_USER_NOT_FOUND: "CODE_USER_NOT_FOUND",
     CODE_GROUP_NOT_ACTIVE: "CODE_GROUP_NOT_ACTIVE",
     CODE_GROUP_ALREADY_UNLOCKED: "CODE_GROUP_ALREADY_UNLOCKED",
@@ -38,6 +42,7 @@ const ERROR_CODES = {
 };
 
 const SUCCESS_CODES = {
+    CODE_LOGIN_SUCCESS: "CODE_LOGIN_SUCCESS",
     CODE_UNLOCK_GROUP_SUCCESS: "CODE_UNLOCK_GROUP_SUCCESS",
     CODE_ADD_PARTNERS_SUCCESS: "CODE_ADD_PARTNERS_SUCCESS",
     CODE_REMOVE_PARTNER_SUCCESS: "CODE_REMOVE_PARTNER_SUCCESS",
@@ -108,6 +113,20 @@ const TRANSLATIONS = {
         fr: "email",
         it: "email"
     },
+    [FIELDS.AUTH_TYPE]: {
+        en: "auth type",
+        es: "tipo de autenticación",
+        pt: "tipo de autenticação",
+        fr: "type d'authentification",
+        it: "tipo di autenticazione"
+    },
+    [FIELDS.TOKEN_ID]: {
+        en: "token id",
+        es: "token id",
+        pt: "token id",
+        fr: "token id",
+        it: "token id"
+    },
 
     // ERROR CODES
     [ERROR_CODES.CODE_ERROR_AUTH]: {
@@ -116,6 +135,20 @@ const TRANSLATIONS = {
         pt: "Sessão expirada. Faça login novamente.",
         fr: "Session expirée. Veuillez vous reconnecter.",
         it: "Sessione scaduta. Accedi di nuovo."
+    },
+    [ERROR_CODES.CODE_SOCIAL_AUTH_FAILED]: {
+        en: "Authentication failed. Please try again.",
+        es: "La autenticación falló. Inténtalo de nuevo.",
+        pt: "A autenticação falhou. Tente novamente.",
+        fr: "L'authentification a échoué. Veuillez réessayer.",
+        it: "Autenticazione non riuscita. Riprova."
+    },
+    [ERROR_CODES.CODE_SOCIAL_AUTH_EMAIL_REQUIRED]: {
+        en: "Email is required on the first Apple sign-in.",
+        es: "El correo es requerido en el primer inicio de sesión con Apple.",
+        pt: "O email é obrigatório no primeiro login com Apple.",
+        fr: "L'email est requis lors de la première connexion Apple.",
+        it: "L'email è obbligatorio al primo accesso con Apple."
     },
     [ERROR_CODES.ERROR_BAD_REQUEST_RESPONSE]: {
         en: "Bad request",
@@ -280,6 +313,13 @@ const TRANSLATIONS = {
     },
 
     // SUCCESS
+    [SUCCESS_CODES.CODE_LOGIN_SUCCESS]: {
+        en: "Login successful.",
+        es: "Inicio de sesión exitoso.",
+        pt: "Login realizado com sucesso.",
+        fr: "Connexion réussie.",
+        it: "Accesso riuscito."
+    },
     [SUCCESS_CODES.CODE_UNLOCK_GROUP_SUCCESS]: {
         en: "Group unlocked successfully.",
         es: "Grupo desbloqueado exitosamente.",

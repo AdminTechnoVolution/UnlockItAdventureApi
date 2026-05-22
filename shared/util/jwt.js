@@ -4,6 +4,11 @@ const filename = path.basename(__filename);
 const jwt = require('jsonwebtoken');
 const env = require('../constants/environmentSystemVariables');
 
+const generateToken = (payload, expiresIn, unit = 's') => {
+    const expiresInSec = expiresIn + unit;
+    return jwt.sign(payload, env.JWT_SECRET_KEY, { expiresIn: expiresInSec });
+};
+
 const verifyJwtToken = (token, extractBearer = true) => {
     try {
         if (extractBearer)
@@ -16,4 +21,4 @@ const verifyJwtToken = (token, extractBearer = true) => {
     }
 };
 
-module.exports = { verifyJwtToken };
+module.exports = { generateToken, verifyJwtToken };
