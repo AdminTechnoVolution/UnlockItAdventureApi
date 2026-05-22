@@ -1,11 +1,7 @@
 const FIELDS = {
     EMAIL: "email",
-    PASSWORD: "password",
-    FULL_NAME: "fullName",
-    REFRESH_TOKEN: "refreshToken",
-    ACCESS_TOKEN: "accessToken",
-    FCM_TOKEN: "fcmToken",
-    VERIFICATION_CODE: "verificationCode",
+    AUTH_TYPE: "authType",
+    TOKEN_ID: "tokenId",
     GROUP_ID: "groupId",
     PURCHASE_TOKEN: "purchaseToken",
     PRODUCT_ID: "productId",
@@ -24,13 +20,11 @@ const ERROR_CODES = {
     FIELD_PATTERN: "FIELD_PATTERN",
     FIELD_REQUIRED: "FIELD_REQUIRED",
     CODE_PHOTOS_ONLY: "CODE_PHOTOS_ONLY",
-    CODE_ERROR_LOGIN: "CODE_ERROR_LOGIN",
     CODE_ERROR_AUTH: "CODE_ERROR_AUTH",
-    CODE_USER_EXISTS: "CODE_USER_EXISTS",
+    CODE_SOCIAL_AUTH_FAILED: "CODE_SOCIAL_AUTH_FAILED",
+    CODE_SOCIAL_AUTH_EMAIL_REQUIRED: "CODE_SOCIAL_AUTH_EMAIL_REQUIRED",
+    CODE_SOCIAL_AUTH_NOT_IMPLEMENTED: "CODE_SOCIAL_AUTH_NOT_IMPLEMENTED",
     CODE_USER_NOT_FOUND: "CODE_USER_NOT_FOUND",
-    CODE_EXPIRED_VERIFICATION_CODE: "CODE_EXPIRED_VERIFICATION_CODE",
-    CODE_INVALID_VERIFICATION_CODE: "CODE_INVALID_VERIFICATION_CODE",
-    CODE_RESEND_VERIFICATION_CODE_TOO_MANY_REQUESTS: "CODE_RESEND_VERIFICATION_CODE_TOO_MANY_REQUESTS",
     CODE_GROUP_NOT_ACTIVE: "CODE_GROUP_NOT_ACTIVE",
     CODE_GROUP_ALREADY_UNLOCKED: "CODE_GROUP_ALREADY_UNLOCKED",
     CODE_GOOGLE_PLAY_VALIDATION_FAILED: "CODE_GOOGLE_PLAY_VALIDATION_FAILED",
@@ -49,33 +43,14 @@ const ERROR_CODES = {
 };
 
 const SUCCESS_CODES = {
-    CODE_REGISTER_SUCCESS: "CODE_REGISTER_SUCCESS",
-    CODE_VERIFICATION_SUCCESS: "CODE_VERIFICATION_SUCCESS",
-    CODE_RESET_PASSWORD_SUCCESS: "CODE_RESET_PASSWORD_SUCCESS",
-    CODE_SENT_SUCCESS: "CODE_SENT_SUCCESS",
+    CODE_LOGIN_SUCCESS: "CODE_LOGIN_SUCCESS",
     CODE_UNLOCK_GROUP_SUCCESS: "CODE_UNLOCK_GROUP_SUCCESS",
     CODE_ADD_PARTNERS_SUCCESS: "CODE_ADD_PARTNERS_SUCCESS",
     CODE_REMOVE_PARTNER_SUCCESS: "CODE_REMOVE_PARTNER_SUCCESS",
     CODE_UPDATE_GROUP_PROGRESS_SUCCESS: "CODE_UPDATE_GROUP_PROGRESS_SUCCESS",
 };
 
-const EMAIL_TEMPLATES = {
-    USER_REGISTRATION: "TEMPLATE_USER_REGISTRATION",
-    VERIFICATION_CODE: "TEMPLATE_VERIFICATION_CODE",
-};
-
-const EMAIL_SUBJECTS = {
-    VERIFICATION_CODE: "SUBJECT_VERIFICATION_CODE",
-};
-
 const TRANSLATIONS = {
-    [FIELDS.VERIFICATION_CODE]: {
-        en: "verification code",
-        es: "código de verificación",
-        pt: "código de verificação",
-        fr: "code de vérification",
-        it: "codice di verifica"
-    },
     [FIELDS.GROUP_ID]: {
         en: "group id",
         es: "id de grupo",
@@ -139,40 +114,19 @@ const TRANSLATIONS = {
         fr: "email",
         it: "email"
     },
-    [FIELDS.FULL_NAME]: {
-        en: "full name",
-        es: "nombre completo",
-        pt: "nome completo",
-        fr: "nom complet",
-        it: "nome completo"
+    [FIELDS.AUTH_TYPE]: {
+        en: "auth type",
+        es: "tipo de autenticación",
+        pt: "tipo de autenticação",
+        fr: "type d'authentification",
+        it: "tipo di autenticazione"
     },
-    [FIELDS.PASSWORD]: {
-        en: "password",
-        es: "contraseña",
-        pt: "senha",
-        fr: "mot de passe",
-        it: "password"
-    },
-    [FIELDS.REFRESH_TOKEN]: {
-        en: "refresh token",
-        es: "token de actualización",
-        pt: "token de atualização",
-        fr: "jeton de renouvellement",
-        it: "token di aggiornamento"
-    },
-    [FIELDS.ACCESS_TOKEN]: {
-        en: "access token",
-        es: "token de acceso",
-        pt: "token de acesso",
-        fr: "jeton d'accès",
-        it: "token di accesso"
-    },
-    [FIELDS.FCM_TOKEN]: {
-        en: "FCM token",
-        es: "token FCM",
-        pt: "token FCM",
-        fr: "jeton FCM",
-        it: "token FCM"
+    [FIELDS.TOKEN_ID]: {
+        en: "token id",
+        es: "token id",
+        pt: "token id",
+        fr: "token id",
+        it: "token id"
     },
 
     // ERROR CODES
@@ -182,6 +136,27 @@ const TRANSLATIONS = {
         pt: "Sessão expirada. Faça login novamente.",
         fr: "Session expirée. Veuillez vous reconnecter.",
         it: "Sessione scaduta. Accedi di nuovo."
+    },
+    [ERROR_CODES.CODE_SOCIAL_AUTH_FAILED]: {
+        en: "Authentication failed. Please try again.",
+        es: "La autenticación falló. Inténtalo de nuevo.",
+        pt: "A autenticação falhou. Tente novamente.",
+        fr: "L'authentification a échoué. Veuillez réessayer.",
+        it: "Autenticazione non riuscita. Riprova."
+    },
+    [ERROR_CODES.CODE_SOCIAL_AUTH_EMAIL_REQUIRED]: {
+        en: "Email is required on the first Apple sign-in.",
+        es: "El correo es requerido en el primer inicio de sesión con Apple.",
+        pt: "O email é obrigatório no primeiro login com Apple.",
+        fr: "L'email est requis lors de la première connexion Apple.",
+        it: "L'email è obbligatorio al primo accesso con Apple."
+    },
+    [ERROR_CODES.CODE_SOCIAL_AUTH_NOT_IMPLEMENTED]: {
+        en: "This sign-in method is not available yet.",
+        es: "Este método de inicio de sesión aún no está disponible.",
+        pt: "Este método de login ainda não está disponível.",
+        fr: "Cette méthode de connexion n'est pas encore disponible.",
+        it: "Questo metodo di accesso non è ancora disponibile."
     },
     [ERROR_CODES.ERROR_BAD_REQUEST_RESPONSE]: {
         en: "Bad request",
@@ -211,47 +186,12 @@ const TRANSLATIONS = {
         fr: "Le fichier n'est pas pris en charge. Veuillez télécharger une photo",
         it: "Il file non è supportato. Carica una foto"
     },
-    [ERROR_CODES.CODE_USER_EXISTS]: {
-        en: "A user with this email already exists",
-        es: "Ya existe un usuario con este correo",
-        pt: "Já existe um usuário com este email",
-        fr: "Un utilisateur avec cet email existe déjà",
-        it: "Un utente con questa email esiste già"
-    },
-    [ERROR_CODES.CODE_ERROR_LOGIN]: {
-        en: "Email or password incorrect. Try again.",
-        es: "Correo o contraseña incorrectos. Inténtalo de nuevo.",
-        pt: "Email ou senha incorretos. Tente novamente.",
-        fr: "E-mail ou mot de passe incorrect. Réessayez.",
-        it: "Email o password non corretti. Riprova."
-    },
     [ERROR_CODES.CODE_USER_NOT_FOUND]: {
         en: "User not found",
         es: "Usuario no encontrado",
         pt: "Usuário não encontrado",
         fr: "Utilisateur non trouvé",
         it: "Utente non trovato"
-    },
-    [ERROR_CODES.CODE_EXPIRED_VERIFICATION_CODE]: {
-        en: "The verification code has expired. Please request a new one",
-        es: "El código de verificación ha expirado. Por favor solicita uno nuevo",
-        pt: "O código de verificação expirou. Por favor, solicite um novo",
-        fr: "Le code de vérification a expiré. Veuillez en demander un nouveau",
-        it: "Il codice di verifica è scaduto. Si prega di richiederne uno nuovo"
-    },
-    [ERROR_CODES.CODE_INVALID_VERIFICATION_CODE]: {
-        en: "The verification code is invalid. Please try again",
-        es: "El código de verificación es inválido. Por favor intenta de nuevo",
-        pt: "O código de verificação é inválido. Por favor, tente novamente",
-        fr: "Le code de vérification est invalide. Veuillez réessayer",
-        it: "Il codice di verifica non è valido. Per favore riprova"
-    },
-    [ERROR_CODES.CODE_RESEND_VERIFICATION_CODE_TOO_MANY_REQUESTS]: {
-        en: "A verification code was already sent. Try again later.",
-        es: "Ya se ha enviado un código de verificación. Intenta de nuevo más tarde.",
-        pt: "Um código de verificação já foi enviado. Tente novamente mais tarde.",
-        fr: "Un code de vérification a déjà été envoyé. Réessayez plus tard.",
-        it: "Un codice di verifica è già stato inviato. Riprova più tardi."
     },
     [ERROR_CODES.CODE_GROUP_NOT_ACTIVE]: {
         en: "This group is not available.",
@@ -380,59 +320,13 @@ const TRANSLATIONS = {
         it: "Campo richiesto: "
     },
 
-    //EMAIL TEMPLATES
-    [EMAIL_TEMPLATES.USER_REGISTRATION]: {
-        en: "<div style='font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 24px; border: 1px solid #eee; border-radius: 10px;'><h2 style='color: #2ECC71; margin-bottom: 10px;'>Welcome [name],</h2><p>Your verification code</p><h3 style='color: #2ECC71;'>[code]</h3><p>This code is valid for <strong>[verificationExpireMins] minutes</strong>. For your security, please do not share it with anyone.</p><p style='font-size: 12px; color: #888; margin-top: 30px;'>This is an automated message. If you did not request this code, please ignore it and do not reply.</p><hr style='margin: 28px 0;'><p style='font-size: 12px; color: #888;'>UnlockIT Adventure Team</p></div>",
-        es: "<div style='font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 24px; border: 1px solid #eee; border-radius: 10px;'><h2 style='color: #2ECC71; margin-bottom: 10px;'>Bienvenido [name],</h2><p>Tu código de verificación</p><h3 style='color: #2ECC71;'>[code]</h3><p>Este código es válido por <strong>[verificationExpireMins] minutos</strong>. Por tu seguridad, por favor no lo compartas con nadie.</p><p style='font-size: 12px; color: #888; margin-top: 30px;'>Este es un mensaje automático. Si no solicitaste este código, por favor ignóralo y no respondas.</p><hr style='margin: 28px 0;'><p style='font-size: 12px; color: #888;'>Equipo de UnlockIT Adventure</p></div>",
-        pt: "<div style='font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 24px; border: 1px solid #eee; border-radius: 10px;'><h2 style='color: #2ECC71; margin-bottom: 10px;'>Bem-vindo [name],</h2><p>Seu código de verificação</p><h3 style='color: #2ECC71;'>[code]</h3><p>Este código é válido por <strong>[verificationExpireMins] minutos</strong>. Por sua segurança, por favor, não o compartilhe com ninguém.</p><p style='font-size: 12px; color: #888; margin-top: 30px;'>Esta é uma mensagem automática. Se você não solicitou este código, por favor ignore e não responda.</p><hr style='margin: 28px 0;'><p style='font-size: 12px; color: #888;'>Equipe UnlockIT Adventure</p></div>",
-        fr: "<div style='font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 24px; border: 1px solid #eee; border-radius: 10px;'><h2 style='color: #2ECC71; margin-bottom: 10px;'>Bienvenue [name],</h2><p>Votre code de vérification</p><h3 style='color: #2ECC71;'>[code]</h3><p>Ce code est valide pendant <strong>[verificationExpireMins] minutes</strong>. Pour votre sécurité, veuillez ne le partager avec personne.</p><p style='font-size: 12px; color: #888; margin-top: 30px;'>Ceci est un message automatique. Si vous n'avez pas demandé ce code, veuillez l'ignorer et ne pas répondre.</p><hr style='margin: 28px 0;'><p style='font-size: 12px; color: #888;'>L'équipe UnlockIT Adventure</p></div>",
-        it: "<div style='font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 24px; border: 1px solid #eee; border-radius: 10px;'><h2 style='color: #2ECC71; margin-bottom: 10px;'>Benvenuto [name],</h2><p>Il tuo codice di verifica</p><h3 style='color: #2ECC71;'>[code]</h3><p>Questo codice è valido per <strong>[verificationExpireMins] minuti</strong>. Per la tua sicurezza, ti preghiamo di non condividerlo con nessuno.</p><p style='font-size: 12px; color: #888; margin-top: 30px;'>Questo è un messaggio automatico. Se non hai richiesto questo codice, ignoralo e non rispondere.</p><hr style='margin: 28px 0;'><p style='font-size: 12px; color: #888;'>Team di UnlockIT Adventure</p></div>"
-    },
-    [EMAIL_TEMPLATES.VERIFICATION_CODE]: {
-        en: "<div style='font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 24px; border: 1px solid #eee; border-radius: 10px;'><h2 style='color: #2ECC71; margin-bottom: 10px;'>Hello [name],</h2><p>Your verification code</p><h3 style='color: #2ECC71;'>[code]</h3><p>This code is valid for <strong>[verificationExpireMins] minutes</strong>. For your security, please do not share it with anyone.</p><p style='font-size: 12px; color: #888; margin-top: 30px;'>This is an automated message. If you did not request this code, please ignore it and do not reply.</p><hr style='margin: 28px 0;'><p style='font-size: 12px; color: #888;'>UnlockIT Adventure Team</p></div>",
-        es: "<div style='font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 24px; border: 1px solid #eee; border-radius: 10px;'><h2 style='color: #2ECC71; margin-bottom: 10px;'>Hola [name],</h2><p>Tu código de verificación</p><h3 style='color: #2ECC71;'>[code]</h3><p>Este código es válido por <strong>[verificationExpireMins] minutos</strong>. Por tu seguridad, por favor no lo compartas con nadie.</p><p style='font-size: 12px; color: #888; margin-top: 30px;'>Este es un mensaje automático. Si no solicitaste este código, por favor ignóralo y no respondas.</p><hr style='margin: 28px 0;'><p style='font-size: 12px; color: #888;'>Equipo de UnlockIT Adventure</p></div>",
-        pt: "<div style='font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 24px; border: 1px solid #eee; border-radius: 10px;'><h2 style='color: #2ECC71; margin-bottom: 10px;'>Olá [name],</h2><p>Seu código de verificação</p><h3 style='color: #2ECC71;'>[code]</h3><p>Este código é válido por <strong>[verificationExpireMins] minutos</strong>. Por sua segurança, por favor, não o compartilhe com ninguém.</p><p style='font-size: 12px; color: #888; margin-top: 30px;'>Esta é uma mensagem automática. Se você não solicitou este código, por favor ignore e não responda.</p><hr style='margin: 28px 0;'><p style='font-size: 12px; color: #888;'>Equipe UnlockIT Adventure</p></div>",
-        fr: "<div style='font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 24px; border: 1px solid #eee; border-radius: 10px;'><h2 style='color: #2ECC71; margin-bottom: 10px;'>Bonjour [name],</h2><p>Votre code de vérification</p><h3 style='color: #2ECC71;'>[code]</h3><p>Ce code est valide pendant <strong>[verificationExpireMins] minutes</strong>. Pour votre sécurité, veuillez ne le partager avec personne.</p><p style='font-size: 12px; color: #888; margin-top: 30px;'>Ceci est un message automatique. Si vous n'avez pas demandé ce code, veuillez l'ignorer et ne pas répondre.</p><hr style='margin: 28px 0;'><p style='font-size: 12px; color: #888;'>L'équipe UnlockIT Adventure</p></div>",
-        it: "<div style='font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 24px; border: 1px solid #eee; border-radius: 10px;'><h2 style='color: #2ECC71; margin-bottom: 10px;'>Ciao [name],</h2><p>Il tuo codice di verifica</p><h3 style='color: #2ECC71;'>[code]</h3><p>Questo codice è valido per <strong>[verificationExpireMins] minuti</strong>. Per la tua sicurezza, ti preghiamo di non condividerlo con nessuno.</p><p style='font-size: 12px; color: #888; margin-top: 30px;'>Questo è un messaggio automatico. Se non hai richiesto questo codice, ignoralo e non rispondere.</p><hr style='margin: 28px 0;'><p style='font-size: 12px; color: #888;'>Team di UnlockIT Adventure</p></div>"
-    },
-
-    //EMAIL SUBJECTS
-    [EMAIL_SUBJECTS.VERIFICATION_CODE]: {
-        en: "Your UnlockIT Adventure Code",
-        es: "Tu código de UnlockIT Adventure",
-        pt: "Seu código UnlockIT Adventure",
-        fr: "Votre code UnlockIT Adventure",
-        it: "Il tuo codice UnlockIT Adventure"
-    },
-
     // SUCCESS
-    [SUCCESS_CODES.CODE_REGISTER_SUCCESS]: {
-        en: "Registration successful. We have sent you an email. Please also check your spam folder",
-        es: "Registro exitoso. Te hemos enviado un correo electrónico. Por favor revisa también tu carpeta de spam",
-        pt: "Registro realizado com sucesso. Enviamos um e-mail para você. Verifique também sua pasta de spam",
-        fr: "Inscription réussie. Nous vous avons envoyé un e-mail. Veuillez également vérifier votre dossier spam",
-        it: "Registrazione riuscita. Ti abbiamo inviato un'email. Controlla anche la cartella spam"
-    },
-    [SUCCESS_CODES.CODE_VERIFICATION_SUCCESS]: {
-        en: "Verification successful",
-        es: "Verificación exitosa",
-        pt: "Verificação bem-sucedida",
-        fr: "Vérification réussie",
-        it: "Verifica riuscita"
-    },
-    [SUCCESS_CODES.CODE_RESET_PASSWORD_SUCCESS]: {
-        en: "Your password has been successfully reset. You can now sign in with your new credentials.",
-        es: "Tu contraseña ha sido restablecida exitosamente. Ahora puedes iniciar sesión con tus nuevas credenciales.",
-        pt: "Sua senha foi redefinida com sucesso. Agora você pode entrar com suas novas credenciais.",
-        fr: "Votre mot de passe a été réinitialisé avec succès. Vous pouvez maintenant vous connecter avec vos nouvelles informations.",
-        it: "La tua password è stata reimpostata con successo. Ora puoi accedere con le tue nuove credenziali."
-    },
-    [SUCCESS_CODES.CODE_SENT_SUCCESS]: {
-        en: "Verification code sent successfully. We have sent you an email. Please also check your spam folder",
-        es: "Código de verificación enviado con éxito. Te hemos enviado un correo electrónico. Por favor revisa también tu carpeta de spam",
-        pt: "Código de verificação enviado com sucesso. Enviamos um e-mail para você. Verifique também sua pasta de spam",
-        fr: "Code de vérification envoyé avec succès. Nous vous avons envoyé un e-mail. Veuillez également vérifier votre dossier spam",
-        it: "Codice di verifica inviato con successo. Ti abbiamo inviato un'email. Controlla anche la cartella spam"
+    [SUCCESS_CODES.CODE_LOGIN_SUCCESS]: {
+        en: "Login successful.",
+        es: "Inicio de sesión exitoso.",
+        pt: "Login realizado com sucesso.",
+        fr: "Connexion réussie.",
+        it: "Accesso riuscito."
     },
     [SUCCESS_CODES.CODE_UNLOCK_GROUP_SUCCESS]: {
         en: "Group unlocked successfully.",
@@ -467,8 +361,6 @@ const TRANSLATIONS = {
 
 module.exports = {
     FIELDS,
-    EMAIL_TEMPLATES,
-    EMAIL_SUBJECTS,
     ERROR_CODES,
     SUCCESS_CODES,
     TRANSLATIONS,

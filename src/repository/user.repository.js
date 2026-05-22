@@ -33,19 +33,6 @@ const save = async (user, req = null) => {
     }
 };
 
-const findByIdAndUpdate = async (id, user, req = null) => {
-    try {
-        return await User.findByIdAndUpdate(
-            { _id: id },
-            { $set: user },
-            { new: true }
-        );
-    } catch (err) {
-        logger.error(`Error in findByIdAndUpdate. Error: ${err}`, { className: filename, req: req });
-        throw new DataLayerException(ERROR_CODES.ERROR_INTERNAL_SERVER_ERROR);
-    }
-};
-
 const findByEmails = async (emails, req = null) => {
     try {
         const normalizedEmails = emails.map((email) => email.toLowerCase().trim());
@@ -60,7 +47,6 @@ const findByEmails = async (emails, req = null) => {
 module.exports = {
     findOneByFilter,
     save,
-    findByIdAndUpdate,
     existsByFilter,
     findByEmails,
 };

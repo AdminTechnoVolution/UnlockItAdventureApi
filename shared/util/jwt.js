@@ -19,6 +19,6 @@ const verifyJwtToken = (token, extractBearer = true) => {
         logger.error(`Error verifying JWT token: ${error}`, { className: filename });
         return { token: undefined, decoded: undefined };
     }
-}
+};
 
 module.exports = { generateToken, verifyJwtToken };
