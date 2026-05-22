@@ -23,6 +23,7 @@ const ERROR_CODES = {
     CODE_ERROR_AUTH: "CODE_ERROR_AUTH",
     CODE_SOCIAL_AUTH_FAILED: "CODE_SOCIAL_AUTH_FAILED",
     CODE_SOCIAL_AUTH_EMAIL_REQUIRED: "CODE_SOCIAL_AUTH_EMAIL_REQUIRED",
+    CODE_SOCIAL_AUTH_NOT_IMPLEMENTED: "CODE_SOCIAL_AUTH_NOT_IMPLEMENTED",
     CODE_USER_NOT_FOUND: "CODE_USER_NOT_FOUND",
     CODE_GROUP_NOT_ACTIVE: "CODE_GROUP_NOT_ACTIVE",
     CODE_GROUP_ALREADY_UNLOCKED: "CODE_GROUP_ALREADY_UNLOCKED",
@@ -149,6 +150,13 @@ const TRANSLATIONS = {
         pt: "O email é obrigatório no primeiro login com Apple.",
         fr: "L'email est requis lors de la première connexion Apple.",
         it: "L'email è obbligatorio al primo accesso con Apple."
+    },
+    [ERROR_CODES.CODE_SOCIAL_AUTH_NOT_IMPLEMENTED]: {
+        en: "This sign-in method is not available yet.",
+        es: "Este método de inicio de sesión aún no está disponible.",
+        pt: "Este método de login ainda não está disponível.",
+        fr: "Cette méthode de connexion n'est pas encore disponible.",
+        it: "Questo metodo di accesso non è ancora disponibile."
     },
     [ERROR_CODES.ERROR_BAD_REQUEST_RESPONSE]: {
         en: "Bad request",

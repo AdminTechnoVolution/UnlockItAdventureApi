@@ -5,7 +5,6 @@ const AuthType = require('../../shared/constants/enums/EnumAuthType');
 const userSchema = new mongoose.Schema({
   email: { type: String, required: true, trim: true, lowercase: true },
   username: { type: String, required: true, trim: true },
-  password: { type: String },
   fullName: { type: String, required: true, trim: true },
   profileImageUrl: { type: String },
   authType: { type: String, enum: Object.values(AuthType) },

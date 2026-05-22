@@ -32,9 +32,16 @@ const socialLogin = async (req) => {
 
     const message = translate(SUCCESS_CODES.CODE_LOGIN_SUCCESS, acceptLanguage);
 
+    const userData = {
+        username: user.username,
+        fullName: user.fullName,
+        profileImageUrl: user.profileImageUrl,
+    };
+
     return new BaseResponse(true, [message], {
         accessToken: tokens.accessToken,
         refreshToken: tokens.refreshToken,
+        user: userData,
         isNewUser,
     });
 };
@@ -47,9 +54,9 @@ const verifyProviderToken = async (authType, tokenId, req) => {
             profile = await verifyGoogleToken(tokenId);
         } else if (authType === AuthType.APPLE) {
             // TODO: Implement Apple ID token verification.
-            throw new Error('Apple authentication is not implemented yet');
+            throw new BusinessException(ERROR_CODES.CODE_SOCIAL_AUTH_NOT_IMPLEMENTED, constants.HTTP_BAD_REQUEST);
         } else {
-            throw new Error(`Unsupported auth type: ${authType}`);
+            throw new BusinessException(ERROR_CODES.FIELD_INVALID, constants.HTTP_BAD_REQUEST);
         }
 
         if (!profile.providerId) {
@@ -58,11 +65,11 @@ const verifyProviderToken = async (authType, tokenId, req) => {
 
         return profile;
     } catch (error) {
-        logger.error({
-            message: `Social token verification failed for authType=${authType}. Error: ${error.message}`,
-            className: filename,
-            req,
-        });
+        if (error instanceof BusinessException) {
+            throw error;
+        }
+
+        logger.error({ message: `Social token verification failed for authType=${authType}. Error: ${error.message}`, className: filename, req });
         throw new BusinessException(ERROR_CODES.CODE_SOCIAL_AUTH_FAILED, constants.HTTP_UNAUTHORIZED);
     }
 };
@@ -105,7 +112,6 @@ const findOrCreateSocialUser = async (authType, profile, req) => {
     user = new User({
         email: profile.email,
         username,
-        password: crypto.randomBytes(32).toString('hex'),
         fullName,
         profileImageUrl: profile.profileImageUrl,
         authType,
