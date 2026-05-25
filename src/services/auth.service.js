@@ -1,11 +1,12 @@
 const path = require('path');
-const crypto = require('crypto');
 const logger = require('../../shared/config/logger');
 const filename = path.basename(__filename);
 const BaseResponse = require('../../shared/commons/models/BaseResponse');
 const BusinessException = require('../../shared/commons/models/BusinessException');
 const User = require('../models/user.model');
+const FCMToken = require('../models/fcmToken.model');
 const UserRepository = require('../repository/user.repository');
+const FCMTokenRepository = require('../repository/fcmToken.repository');
 const UserStatus = require('../../shared/constants/enums/EnumUserStatus');
 const redisClient = require('../../shared/config/redis');
 const util = require('../../shared/util/util');
@@ -20,13 +21,14 @@ const { translate } = require('../../shared/util/util');
 
 const socialLogin = async (req) => {
     const acceptLanguage = req.acceptLanguage;
-    const { authType, tokenId } = req.body;
+    const { authType, tokenId, device } = req.body;
 
     const profile = await verifyProviderToken(authType, tokenId, req);
     const { user, isNewUser } = await findOrCreateSocialUser(authType, profile, req);
 
     user.lastLogin = new Date();
     await UserRepository.save(user, req);
+    await registerDevice(user, device, req);
 
     const tokens = await issueAuthTokens(user);
 
@@ -153,6 +155,28 @@ const issueAuthTokens = async (user) => {
     return { accessToken, refreshToken };
 };
 
+const registerDevice = async (user, device, req) => {
+    const fcmTokenDoc = await FCMTokenRepository.findOneByFilter({ userId: user._id }, req);
+
+    if (fcmTokenDoc) {
+        const existsFcmToken = fcmTokenDoc.devices.some((item) => item.fcmToken === device.fcmToken);
+
+        if (!existsFcmToken) {
+            fcmTokenDoc.devices.push(device);
+            await FCMTokenRepository.save(fcmTokenDoc, req);
+        }
+
+        return;
+    }
+
+    const newFcmTokenDoc = new FCMToken({
+        userId: user._id,
+        devices: [device],
+    });
+
+    await FCMTokenRepository.save(newFcmTokenDoc, req);
+};
+
 const saveTokenInRedis = async (token, payload, ttl, redisKeyPrefix) => {
     const key = util.getKeyRedis(`${redisKeyPrefix}${token}`);
     await redisClient.setEx(key, ttl, JSON.stringify(payload));
@@ -176,6 +200,76 @@ const generateUsername = (prefix = 'Guest') => {
     return `${prefix}_${timestamp}_${random}`;
 };
 
+const refreshToken = async (req) => {
+    const { refreshToken: refreshTokenBody } = req.body;
+
+    const { decoded } = jwt.verifyJwtToken(refreshTokenBody, false);
+    if (!decoded) {
+        throw new BusinessException(ERROR_CODES.CODE_ERROR_AUTH, constants.HTTP_UNAUTHORIZED);
+    }
+
+    const redisKey = util.getKeyRedis(`${consCache.REDIS_KEY_REFRESH_TOKEN}${decoded.id}:${refreshTokenBody}`);
+    const exists = await redisClient.exists(redisKey);
+    if (exists !== 1) {
+        throw new BusinessException(ERROR_CODES.CODE_ERROR_AUTH, constants.HTTP_UNAUTHORIZED);
+    }
+
+    const user = await UserRepository.findOneByFilter({ _id: decoded.id, status: UserStatus.ACTIVE }, req);
+    if (!user) {
+        throw new BusinessException(ERROR_CODES.CODE_ERROR_AUTH, constants.HTTP_UNAUTHORIZED);
+    }
+
+    await redisClient.del(redisKey);
+
+    user.lastLogin = new Date();
+    await UserRepository.save(user, req);
+
+    const tokens = await issueAuthTokens(user);
+
+    return new BaseResponse(true, [], {
+        accessToken: tokens.accessToken,
+        refreshToken: tokens.refreshToken,
+    });
+};
+
+const revokeAuthTokens = async (accessToken, refreshToken, fcmToken, req) => {
+    const revocations = [];
+
+    const { decoded: decodedAccessToken } = jwt.verifyJwtToken(accessToken, false);
+    if (decodedAccessToken) {
+        const accessKey = util.getKeyRedis(`${consCache.REDIS_KEY_ACCESS_TOKEN}${decodedAccessToken.id}:${accessToken}`);
+        revocations.push(redisClient.del(accessKey));
+    }
+
+    const { decoded: decodedRefreshToken } = jwt.verifyJwtToken(refreshToken, false);
+    if (decodedRefreshToken) {
+        const refreshKey = util.getKeyRedis(`${consCache.REDIS_KEY_REFRESH_TOKEN}${decodedRefreshToken.id}:${refreshToken}`);
+        revocations.push(redisClient.del(refreshKey));
+    }
+
+    revocations.push(
+        FCMTokenRepository.findOneByFilterAndPullToken(
+            { 'devices.fcmToken': fcmToken },
+            { devices: { fcmToken } },
+            req
+        )
+    );
+
+    await Promise.all(revocations);
+};
+
+const logout = async (req) => {
+    const { accessToken, refreshToken, fcmToken } = req.body;
+
+    revokeAuthTokens(accessToken, refreshToken, fcmToken, req).catch((err) => {
+        logger.error({ message: `Error revoking tokens on logout: ${err.message}`, className: filename, req });
+    });
+
+    return new BaseResponse(true, []);
+};
+
 module.exports = {
     socialLogin,
+    refreshToken,
+    logout,
 };
