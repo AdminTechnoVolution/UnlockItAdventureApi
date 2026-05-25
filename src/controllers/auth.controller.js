@@ -13,6 +13,30 @@ const socialLogin = async (req, res, next) => {
     }
 };
 
+const refreshToken = async (req, res, next) => {
+    try {
+        if (!req.body) throw new BusinessException(ERROR_CODES.ERROR_BAD_REQUEST_RESPONSE);
+
+        const jsonResponse = await AuthService.refreshToken(req);
+        res.status(200).json(jsonResponse);
+    } catch (err) {
+        next(err);
+    }
+};
+
+const logout = async (req, res, next) => {
+    try {
+        if (!req.body) throw new BusinessException(ERROR_CODES.ERROR_BAD_REQUEST_RESPONSE);
+
+        const jsonResponse = await AuthService.logout(req);
+        res.status(200).json(jsonResponse);
+    } catch (err) {
+        next(err);
+    }
+};
+
 module.exports = {
     socialLogin,
+    refreshToken,
+    logout,
 };
