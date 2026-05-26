@@ -24,6 +24,12 @@
     "description": "Maximum number of partners per group progress"
   },
   {
+    "key": "user.profile.photo.max_file_size_mb",
+    "name": "max_profile_photo_file_size_mb",
+    "value": 5,
+    "description": "Maximum file size for profile photo upload (MB)"
+  },
+  {
     "key": "app.maintenance.enabled",
     "name": "app_maintenance_enabled",
     "value": false,
