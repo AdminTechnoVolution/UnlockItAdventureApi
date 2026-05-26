@@ -13,6 +13,16 @@ const updateProfile = async (req, res, next) => {
     }
 };
 
+const updateProfilePhoto = async (req, res, next) => {
+    try {
+        const jsonResponse = await UserService.updateProfilePhoto(req);
+        res.status(200).json(jsonResponse);
+    } catch (err) {
+        next(err);
+    }
+};
+
 module.exports = {
     updateProfile,
+    updateProfilePhoto,
 };

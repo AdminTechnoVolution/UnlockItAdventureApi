@@ -21,7 +21,7 @@
   },
   {
     "key": "user.profile.photo.max_file_size_mb",
-    "value": 5,
+    "value": 1,
     "description": "Maximum file size for profile photo upload (MB)"
   },
   {

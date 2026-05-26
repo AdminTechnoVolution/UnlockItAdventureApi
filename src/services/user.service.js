@@ -8,6 +8,9 @@ const UserRepository = require('../repository/user.repository');
 const UserStatus = require('../../shared/constants/enums/EnumUserStatus');
 const constants = require('../../shared/constants/constants');
 const jwt = require('../../shared/util/jwt');
+const AppConfigService = require('./appConfig.service');
+const AppConfigKey = require('../../shared/constants/enums/EnumAppConfigKey');
+const { uploadUserProfilePhoto } = require('../clients/azureBlob');
 const { ERROR_CODES } = require('../../shared/i18n/messages');
 
 const updateProfile = async (req) => {
@@ -48,6 +51,50 @@ const validateUsernameAvailable = async (userId, username, req) => {
     }
 };
 
+const updateProfilePhoto = async (req) => {
+    const auth = req.headers['authorization'];
+    const { decoded } = jwt.verifyJwtToken(auth, true);
+    const userId = new ObjectId(decoded.id);
+    const file = req.file;
+
+    if (!file) {
+        throw new BusinessException(ERROR_CODES.CODE_PROFILE_PHOTO_REQUIRED, constants.HTTP_BAD_REQUEST);
+    }
+
+    await validateProfilePhotoFile(file, req);
+
+    const user = await UserRepository.findOneByFilter({ _id: userId, status: UserStatus.ACTIVE }, req);
+
+    if (!user) {
+        throw new BusinessException(ERROR_CODES.CODE_USER_NOT_FOUND, constants.HTTP_NOT_FOUND);
+    }
+
+    const url = await uploadUserProfilePhoto(userId.toString(), file.buffer);
+
+    user.profileImageUrl = url;
+    const userSaved = await UserRepository.save(user, req);
+
+    const userData = {
+        username: userSaved.username,
+        fullName: userSaved.fullName,
+        profileImageUrl: userSaved.profileImageUrl,
+    };
+
+    return new BaseResponse(true, [], {
+        user: userData,
+    });
+};
+
+const validateProfilePhotoFile = async (file, req) => {
+    const maxFileSizeMb = (await AppConfigService.getConfigByKey(AppConfigKey.USER_PROFILE_PHOTO_MAX_FILE_SIZE_MB, req))?.value ?? 5;
+    const maxBytes = Number(maxFileSizeMb) * 1024 * 1024;
+
+    if (file.size > maxBytes) {
+        throw new BusinessException(ERROR_CODES.CODE_PROFILE_PHOTO_TOO_LARGE, constants.HTTP_BAD_REQUEST);
+    }
+};
+
 module.exports = {
     updateProfile,
+    updateProfilePhoto,
 };

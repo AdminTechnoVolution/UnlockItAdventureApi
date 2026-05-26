@@ -22,6 +22,8 @@ const ERROR_CODES = {
     FIELD_PATTERN: "FIELD_PATTERN",
     FIELD_REQUIRED: "FIELD_REQUIRED",
     CODE_PHOTOS_ONLY: "CODE_PHOTOS_ONLY",
+    CODE_PROFILE_PHOTO_REQUIRED: "CODE_PROFILE_PHOTO_REQUIRED",
+    CODE_PROFILE_PHOTO_TOO_LARGE: "CODE_PROFILE_PHOTO_TOO_LARGE",
     CODE_ERROR_AUTH: "CODE_ERROR_AUTH",
     CODE_SOCIAL_AUTH_FAILED: "CODE_SOCIAL_AUTH_FAILED",
     CODE_SOCIAL_AUTH_EMAIL_REQUIRED: "CODE_SOCIAL_AUTH_EMAIL_REQUIRED",
@@ -188,6 +190,20 @@ const TRANSLATIONS = {
         pt: "O arquivo não é suportado. Por favor, envie uma foto",
         fr: "Le fichier n'est pas pris en charge. Veuillez télécharger une photo",
         it: "Il file non è supportato. Carica una foto"
+    },
+    [ERROR_CODES.CODE_PROFILE_PHOTO_REQUIRED]: {
+        en: "Profile photo is required",
+        es: "La foto de perfil es obligatoria",
+        pt: "A foto de perfil é obrigatória",
+        fr: "La photo de profil est requise",
+        it: "La foto del profilo è obbligatoria"
+    },
+    [ERROR_CODES.CODE_PROFILE_PHOTO_TOO_LARGE]: {
+        en: "Profile photo exceeds the maximum allowed size",
+        es: "La foto de perfil supera el tamaño máximo permitido",
+        pt: "A foto de perfil excede o tamanho máximo permitido",
+        fr: "La photo de profil dépasse la taille maximale autorisée",
+        it: "La foto del profilo supera la dimensione massima consentita"
     },
     [ERROR_CODES.CODE_USER_NOT_FOUND]: {
         en: "User not found",
