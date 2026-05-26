@@ -10,6 +10,8 @@ const FIELDS = {
     PARTNER_ID: "partnerId",
     KEY_ACTIVITY: "keyActivity",
     NOTES: "notes",
+    FULL_NAME: "fullName",
+    USERNAME: "username",
 };
 
 const ERROR_CODES = {
@@ -20,11 +22,14 @@ const ERROR_CODES = {
     FIELD_PATTERN: "FIELD_PATTERN",
     FIELD_REQUIRED: "FIELD_REQUIRED",
     CODE_PHOTOS_ONLY: "CODE_PHOTOS_ONLY",
+    CODE_PROFILE_PHOTO_REQUIRED: "CODE_PROFILE_PHOTO_REQUIRED",
+    CODE_PROFILE_PHOTO_TOO_LARGE: "CODE_PROFILE_PHOTO_TOO_LARGE",
     CODE_ERROR_AUTH: "CODE_ERROR_AUTH",
     CODE_SOCIAL_AUTH_FAILED: "CODE_SOCIAL_AUTH_FAILED",
     CODE_SOCIAL_AUTH_EMAIL_REQUIRED: "CODE_SOCIAL_AUTH_EMAIL_REQUIRED",
     CODE_SOCIAL_AUTH_NOT_IMPLEMENTED: "CODE_SOCIAL_AUTH_NOT_IMPLEMENTED",
     CODE_USER_NOT_FOUND: "CODE_USER_NOT_FOUND",
+    CODE_USERNAME_EXISTS: "CODE_USERNAME_EXISTS",
     CODE_GROUP_NOT_ACTIVE: "CODE_GROUP_NOT_ACTIVE",
     CODE_GROUP_ALREADY_UNLOCKED: "CODE_GROUP_ALREADY_UNLOCKED",
     CODE_GOOGLE_PLAY_VALIDATION_FAILED: "CODE_GOOGLE_PLAY_VALIDATION_FAILED",
@@ -186,12 +191,47 @@ const TRANSLATIONS = {
         fr: "Le fichier n'est pas pris en charge. Veuillez télécharger une photo",
         it: "Il file non è supportato. Carica una foto"
     },
+    [ERROR_CODES.CODE_PROFILE_PHOTO_REQUIRED]: {
+        en: "Profile photo is required",
+        es: "La foto de perfil es obligatoria",
+        pt: "A foto de perfil é obrigatória",
+        fr: "La photo de profil est requise",
+        it: "La foto del profilo è obbligatoria"
+    },
+    [ERROR_CODES.CODE_PROFILE_PHOTO_TOO_LARGE]: {
+        en: "Profile photo exceeds the maximum allowed size",
+        es: "La foto de perfil supera el tamaño máximo permitido",
+        pt: "A foto de perfil excede o tamanho máximo permitido",
+        fr: "La photo de profil dépasse la taille maximale autorisée",
+        it: "La foto del profilo supera la dimensione massima consentita"
+    },
     [ERROR_CODES.CODE_USER_NOT_FOUND]: {
         en: "User not found",
         es: "Usuario no encontrado",
         pt: "Usuário não encontrado",
         fr: "Utilisateur non trouvé",
         it: "Utente non trovato"
+    },
+    [ERROR_CODES.CODE_USERNAME_EXISTS]: {
+        en: "Username is already taken",
+        es: "El nombre de usuario ya está en uso",
+        pt: "O nome de usuário já está em uso",
+        fr: "Ce nom d'utilisateur est déjà utilisé",
+        it: "Il nome utente è già in uso"
+    },
+    [FIELDS.FULL_NAME]: {
+        en: "full name",
+        es: "nombre completo",
+        pt: "nome completo",
+        fr: "nom complet",
+        it: "nome completo"
+    },
+    [FIELDS.USERNAME]: {
+        en: "username",
+        es: "nombre de usuario",
+        pt: "nome de usuário",
+        fr: "nom d'utilisateur",
+        it: "nome utente"
     },
     [ERROR_CODES.CODE_GROUP_NOT_ACTIVE]: {
         en: "This group is not available.",
