@@ -28,6 +28,20 @@ components:
           schema:
             $ref: '#/components/schemas/BaseResponse'
 
+    NotFoundResponse:
+      description: Not Found
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/BaseResponse'
+
+    ConflictResponse:
+      description: Conflict
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/BaseResponse'
+
     TooManyRequestsResponse:
       description: Too Many Requests
       content:

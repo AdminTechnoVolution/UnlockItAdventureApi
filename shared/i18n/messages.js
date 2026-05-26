@@ -10,6 +10,8 @@ const FIELDS = {
     PARTNER_ID: "partnerId",
     KEY_ACTIVITY: "keyActivity",
     NOTES: "notes",
+    FULL_NAME: "fullName",
+    USERNAME: "username",
 };
 
 const ERROR_CODES = {
@@ -25,6 +27,7 @@ const ERROR_CODES = {
     CODE_SOCIAL_AUTH_EMAIL_REQUIRED: "CODE_SOCIAL_AUTH_EMAIL_REQUIRED",
     CODE_SOCIAL_AUTH_NOT_IMPLEMENTED: "CODE_SOCIAL_AUTH_NOT_IMPLEMENTED",
     CODE_USER_NOT_FOUND: "CODE_USER_NOT_FOUND",
+    CODE_USERNAME_EXISTS: "CODE_USERNAME_EXISTS",
     CODE_GROUP_NOT_ACTIVE: "CODE_GROUP_NOT_ACTIVE",
     CODE_GROUP_ALREADY_UNLOCKED: "CODE_GROUP_ALREADY_UNLOCKED",
     CODE_GOOGLE_PLAY_VALIDATION_FAILED: "CODE_GOOGLE_PLAY_VALIDATION_FAILED",
@@ -192,6 +195,27 @@ const TRANSLATIONS = {
         pt: "Usuário não encontrado",
         fr: "Utilisateur non trouvé",
         it: "Utente non trovato"
+    },
+    [ERROR_CODES.CODE_USERNAME_EXISTS]: {
+        en: "Username is already taken",
+        es: "El nombre de usuario ya está en uso",
+        pt: "O nome de usuário já está em uso",
+        fr: "Ce nom d'utilisateur est déjà utilisé",
+        it: "Il nome utente è già in uso"
+    },
+    [FIELDS.FULL_NAME]: {
+        en: "full name",
+        es: "nombre completo",
+        pt: "nome completo",
+        fr: "nom complet",
+        it: "nome completo"
+    },
+    [FIELDS.USERNAME]: {
+        en: "username",
+        es: "nombre de usuario",
+        pt: "nome de usuário",
+        fr: "nom d'utilisateur",
+        it: "nome utente"
     },
     [ERROR_CODES.CODE_GROUP_NOT_ACTIVE]: {
         en: "This group is not available.",
