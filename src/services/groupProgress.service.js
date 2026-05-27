@@ -177,7 +177,15 @@ const addActivityPhoto = async (req) => {
 
     await validateActivityPhotoFile(file, req);
 
-    const groupProgress = await GroupProgressRepository.findOneByFilter({ _id: new ObjectId(groupProgressId), userId }, req);
+    const groupProgress = await GroupProgressRepository.findById(groupProgressId, req);
+
+    if (!groupProgress || groupProgress.status === GroupProgressStatus.VALIDATING) {
+        throw new BusinessException(ERROR_CODES.CODE_GROUP_PROGRESS_NOT_FOUND, constants.HTTP_NOT_FOUND);
+    }
+
+    if (!isGroupProgressParticipant(userId, groupProgress)) {
+        throw new BusinessException(ERROR_CODES.CODE_GROUP_PROGRESS_UPDATE_FORBIDDEN, constants.HTTP_FORBIDDEN);
+    }
 
     validateActivityPhotoGroupProgress(groupProgress, keyActivity);
 
