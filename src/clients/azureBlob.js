@@ -97,9 +97,28 @@ const uploadActivityPhoto = async (groupProgressId, keyActivity, fileName, buffe
     }
 };
 
+const deleteActivityPhoto = async (groupProgressId, keyActivity, fileName, req = null) => {
+    try {
+        const blobPath = buildActivityPhotoBlobPath(groupProgressId, keyActivity, fileName);
+        const containerClient = getContainerClient();
+        const blockBlobClient = containerClient.getBlockBlobClient(blobPath);
+
+        await blockBlobClient.deleteIfExists();
+    } catch (error) {
+        if (error instanceof BusinessException) {
+            throw error;
+        }
+
+        logger.error({ message: `Error deleting activity photo from Azure Blob. groupProgressId=${groupProgressId}, keyActivity=${keyActivity}, fileName=${fileName}. Error: ${error.message}`, className: filename, req });
+
+        throw new BusinessException(ERROR_CODES.ERROR_INTERNAL_SERVER_ERROR, constants.HTTP_INTERNAL_SERVER);
+    }
+};
+
 module.exports = {
     uploadUserProfilePhoto,
     uploadActivityPhoto,
+    deleteActivityPhoto,
     buildUserProfileBlobPath,
     buildActivityPhotoBlobPath,
     PROFILE_PHOTO_MIME,

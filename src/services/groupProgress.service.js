@@ -179,15 +179,11 @@ const addActivityPhoto = async (req) => {
 
     const groupProgress = await GroupProgressRepository.findById(groupProgressId, req);
 
-    if (!groupProgress || groupProgress.status === GroupProgressStatus.VALIDATING) {
-        throw new BusinessException(ERROR_CODES.CODE_GROUP_PROGRESS_NOT_FOUND, constants.HTTP_NOT_FOUND);
-    }
+    validateActivityPhotoGroupProgress(groupProgress, keyActivity);
 
     if (!isGroupProgressParticipant(userId, groupProgress)) {
         throw new BusinessException(ERROR_CODES.CODE_GROUP_PROGRESS_UPDATE_FORBIDDEN, constants.HTTP_FORBIDDEN);
     }
-
-    validateActivityPhotoGroupProgress(groupProgress, keyActivity);
 
     const maxPhotosPerActivity = (await AppConfigService.getConfigByKey(AppConfigKey.ACTIVITY_PHOTOS_MAX_PER_USER, req))?.value ?? 2;
     const activity = groupProgress.activities.find((item) => item.key === keyActivity);
@@ -244,6 +240,49 @@ const buildActivityPhotoFileName = () => {
     const randomSuffix = String(generateSecureRandom(0, 9999)).padStart(4, '0');
 
     return `${Date.now()}_${randomSuffix}.webp`;
+};
+
+const removeActivityPhoto = async (req) => {
+    const acceptLanguage = req.acceptLanguage;
+    const auth = req.headers['authorization'];
+    const { decoded } = jwt.verifyJwtToken(auth, true);
+    const userId = new ObjectId(decoded.id);
+    const { groupProgressId, keyActivity, name } = req.body;
+
+    const groupProgress = await GroupProgressRepository.findById(groupProgressId, req);
+
+    if (!groupProgress || groupProgress.status !== GroupProgressStatus.IN_PROGRESS) {
+        throw new BusinessException(ERROR_CODES.CODE_GROUP_PROGRESS_NOT_FOUND, constants.HTTP_NOT_FOUND);
+    }
+
+    if (!isGroupProgressParticipant(userId, groupProgress)) {
+        throw new BusinessException(ERROR_CODES.CODE_GROUP_PROGRESS_UPDATE_FORBIDDEN, constants.HTTP_FORBIDDEN);
+    }
+
+    validateActivityPhotoGroupProgress(groupProgress, keyActivity);
+
+    const activity = groupProgress.activities.find((item) => item.key === keyActivity);
+    const photoIndex = findActivityPhotoIndexByName(activity, name);
+
+    if (photoIndex === -1) {
+        throw new BusinessException(ERROR_CODES.CODE_ACTIVITY_PHOTO_NOT_FOUND, constants.HTTP_NOT_FOUND);
+    }
+
+    await azureBlobStorage.deleteActivityPhoto(groupProgressId, keyActivity, name, req);
+
+    activity.photos.splice(photoIndex, 1);
+    activity.updatedBy = userId;
+    groupProgress.markModified('activities');
+
+    await GroupProgressRepository.save(groupProgress, req);
+
+    const message = translate(SUCCESS_CODES.CODE_PHOTO_DELETE_SUCCESS, acceptLanguage);
+
+    return new BaseResponse(true, [message]);
+};
+
+const findActivityPhotoIndexByName = (activity, name) => {
+    return (activity.photos || []).findIndex((photo) => photo.name === name);
 };
 
 const validateActivityPhotoGroupProgress = (groupProgress, keyActivity) => {
@@ -518,6 +557,7 @@ module.exports = {
     removePartner,
     updateGroupProgress,
     addActivityPhoto,
+    removeActivityPhoto,
     getMyGroupProgress,
     getSharedGroupProgress,
 };

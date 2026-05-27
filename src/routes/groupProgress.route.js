@@ -16,6 +16,8 @@ router.put('/group/progress', validateToken, validateBody(GroupProgressValidator
 
 router.post('/group/progress/activity/photo', validateToken, ...uploadActivityPhoto, validateBody(GroupProgressValidator.addActivityPhotoSchema), GroupProgressController.addActivityPhoto);
 
+router.put('/group/progress/activity/photo/remove', validateToken, validateBody(GroupProgressValidator.removeActivityPhotoSchema), GroupProgressController.removeActivityPhoto);
+
 router.put('/group/progress/partners', validateToken, validateBody(GroupProgressValidator.addPartnersSchema), GroupProgressController.addPartners);
 
 router.put('/group/progress/partners/remove', validateToken, validateBody(GroupProgressValidator.removePartnerSchema), GroupProgressController.removePartner);

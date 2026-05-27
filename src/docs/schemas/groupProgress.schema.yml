@@ -112,3 +112,21 @@ components:
           type: string
           format: binary
           description: Activity photo file (jpeg, png, or webp)
+
+    RemoveActivityPhotoSchema:
+      type: object
+      required:
+        - groupProgressId
+        - keyActivity
+        - name
+      properties:
+        groupProgressId:
+          type: string
+          example: "507f1f77bcf86cd799439012"
+        keyActivity:
+          type: string
+          example: "activity_1"
+        name:
+          type: string
+          description: Photo file name stored in MongoDB and Azure (e.g. 1779905183162_0453.webp)
+          example: "1779905183162_0453.webp"

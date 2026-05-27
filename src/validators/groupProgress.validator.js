@@ -108,10 +108,32 @@ const addActivityPhotoSchema = Joi.object({
         }),
 });
 
+const removeActivityPhotoSchema = Joi.object({
+    groupProgressId: Joi.string().trim().required()
+        .messages({
+            'any.required': ERROR_CODES.FIELD_REQUIRED,
+            'string.empty': ERROR_CODES.FIELD_REQUIRED,
+            'any.invalid': ERROR_CODES.FIELD_INVALID,
+        }),
+    keyActivity: Joi.string().trim().required()
+        .messages({
+            'any.required': ERROR_CODES.FIELD_REQUIRED,
+            'string.empty': ERROR_CODES.FIELD_REQUIRED,
+            'any.invalid': ERROR_CODES.FIELD_INVALID,
+        }),
+    name: Joi.string().trim().max(256).required()
+        .messages({
+            'any.required': ERROR_CODES.FIELD_REQUIRED,
+            'string.empty': ERROR_CODES.FIELD_REQUIRED,
+            'string.max': ERROR_CODES.FIELD_MAX,
+        }),
+});
+
 module.exports = {
     unlockGroupSchema,
     addPartnersSchema,
     removePartnerSchema,
     updateGroupProgressSchema,
     addActivityPhotoSchema,
+    removeActivityPhotoSchema,
 };

@@ -9,6 +9,7 @@ const FIELDS = {
     PARTNER_IDS: "partnerIds",
     PARTNER_ID: "partnerId",
     KEY_ACTIVITY: "keyActivity",
+    PHOTO_NAME: "name",
     NOTES: "notes",
     FULL_NAME: "fullName",
     USERNAME: "username",
@@ -27,6 +28,7 @@ const ERROR_CODES = {
     CODE_PHOTO_INVALID_EXTENSION: "CODE_PHOTO_INVALID_EXTENSION",
     CODE_IMAGE_CONTENT_NOT_ALLOWED: "CODE_IMAGE_CONTENT_NOT_ALLOWED",
     CODE_ACTIVITY_PHOTOS_MAX_REACHED: "CODE_ACTIVITY_PHOTOS_MAX_REACHED",
+    CODE_ACTIVITY_PHOTO_NOT_FOUND: "CODE_ACTIVITY_PHOTO_NOT_FOUND",
     CODE_ERROR_AUTH: "CODE_ERROR_AUTH",
     CODE_SOCIAL_AUTH_FAILED: "CODE_SOCIAL_AUTH_FAILED",
     CODE_SOCIAL_AUTH_EMAIL_REQUIRED: "CODE_SOCIAL_AUTH_EMAIL_REQUIRED",
@@ -57,6 +59,7 @@ const SUCCESS_CODES = {
     CODE_REMOVE_PARTNER_SUCCESS: "CODE_REMOVE_PARTNER_SUCCESS",
     CODE_UPDATE_GROUP_PROGRESS_SUCCESS: "CODE_UPDATE_GROUP_PROGRESS_SUCCESS",
     CODE_ACTIVITY_PHOTO_UPLOAD_SUCCESS: "CODE_ACTIVITY_PHOTO_UPLOAD_SUCCESS",
+    CODE_PHOTO_DELETE_SUCCESS: "CODE_PHOTO_DELETE_SUCCESS",
 };
 
 const TRANSLATIONS = {
@@ -108,6 +111,13 @@ const TRANSLATIONS = {
         pt: "atividade",
         fr: "activité",
         it: "attività"
+    },
+    [FIELDS.PHOTO_NAME]: {
+        en: "photo name",
+        es: "nombre de la foto",
+        pt: "nome da foto",
+        fr: "nom de la photo",
+        it: "nome della foto"
     },
     [FIELDS.NOTES]: {
         en: "notes",
@@ -229,6 +239,13 @@ const TRANSLATIONS = {
         pt: "Você atingiu o número máximo de fotos permitidas para esta atividade",
         fr: "Vous avez atteint le nombre maximum de photos autorisées pour cette activité",
         it: "Hai raggiunto il numero massimo di foto consentite per questa attività"
+    },
+    [ERROR_CODES.CODE_ACTIVITY_PHOTO_NOT_FOUND]: {
+        en: "Activity photo not found",
+        es: "Foto de actividad no encontrada",
+        pt: "Foto da atividade não encontrada",
+        fr: "Photo d'activité introuvable",
+        it: "Foto dell'attività non trovata"
     },
     [ERROR_CODES.CODE_USER_NOT_FOUND]: {
         en: "User not found",
@@ -427,6 +444,13 @@ const TRANSLATIONS = {
         pt: "Foto da atividade enviada com sucesso.",
         fr: "Photo d'activité téléchargée avec succès.",
         it: "Foto dell'attività caricata con successo."
+    },
+    [SUCCESS_CODES.CODE_PHOTO_DELETE_SUCCESS]: {
+        en: "Photo deleted successfully.",
+        es: "Foto eliminada exitosamente.",
+        pt: "Foto excluída com sucesso.",
+        fr: "Photo supprimée avec succès.",
+        it: "Foto eliminata con successo."
     }
 };
 
