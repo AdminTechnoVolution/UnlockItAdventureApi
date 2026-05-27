@@ -1,3 +1,4 @@
+const path = require('path');
 const ObjectId = require('mongoose').Types.ObjectId;
 const logger = require('../../shared/config/logger');
 const filename = path.basename(__filename);

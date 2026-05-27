@@ -206,7 +206,7 @@ const addActivityPhoto = async (req) => {
     const photoIndex = activity.photos.length - 1;
 
     try {
-        const uploadResult = await azureBlobStorage.uploadActivityPhoto(
+        const urlPhoto = await azureBlobStorage.uploadActivityPhoto(
             groupProgressId,
             keyActivity,
             photoName,
@@ -214,7 +214,7 @@ const addActivityPhoto = async (req) => {
             req,
         );
 
-        activity.photos[photoIndex].url = uploadResult.url;
+        activity.photos[photoIndex].url = urlPhoto;
         activity.photos[photoIndex].uploadedAt = new Date();
         groupProgress.markModified('activities');
 
