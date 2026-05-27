@@ -59,7 +59,7 @@ const updateProfilePhoto = async (req) => {
     const file = req.file;
 
     if (!file) {
-        throw new BusinessException(ERROR_CODES.CODE_PROFILE_PHOTO_REQUIRED, constants.HTTP_BAD_REQUEST);
+        throw new BusinessException(ERROR_CODES.CODE_PHOTO_REQUIRED, constants.HTTP_BAD_REQUEST);
     }
 
     await validateProfilePhotoFile(file, req);
@@ -71,7 +71,7 @@ const updateProfilePhoto = async (req) => {
     }
 
     await googleCloudVision.validateImageContent(file.buffer, req);
-    const url = await azureBlobStorage.uploadUserProfilePhoto(userId.toString(), file.buffer);
+    const url = await azureBlobStorage.uploadUserProfilePhoto(userId.toString(), file.buffer, req);
 
     user.profileImageUrl = url;
     const userSaved = await UserRepository.save(user, req);
@@ -92,7 +92,7 @@ const validateProfilePhotoFile = async (file, req) => {
     const maxBytes = Number(maxFileSizeMb) * 1024 * 1024;
 
     if (file.size > maxBytes) {
-        throw new BusinessException(ERROR_CODES.CODE_PROFILE_PHOTO_TOO_LARGE, constants.HTTP_BAD_REQUEST);
+        throw new BusinessException(ERROR_CODES.CODE_PHOTO_TOO_LARGE, constants.HTTP_BAD_REQUEST);
     }
 };
 

@@ -49,7 +49,13 @@ const uploadProfilePhoto = [
     createUpload().single('photo'),
 ];
 
+const uploadActivityPhoto = [
+    loadAllowedPhotoMimeTypes,
+    createUpload().single('photo'),
+];
+
 module.exports = upload;
 module.exports.uploadProfilePhoto = uploadProfilePhoto;
+module.exports.uploadActivityPhoto = uploadActivityPhoto;
 module.exports.loadAllowedPhotoMimeTypes = loadAllowedPhotoMimeTypes;
 module.exports.createUpload = createUpload;

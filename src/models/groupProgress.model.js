@@ -3,9 +3,9 @@ const GroupProgressStatus = require('../../shared/constants/enums/EnumGroupProgr
 
 const PhotoSchema = new mongoose.Schema({
   name: { type: String, required: true, trim: true },
-  url: { type: String, required: true, trim: true },
-  uploadedAt: { type: Date, default: Date.now },
-  uploadedBy: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
+  url: { type: String, trim: true },
+  uploadedAt: { type: Date },
+  uploadedBy: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true },
 }, { _id: false });
 
 const ActivitySchema = new mongoose.Schema({

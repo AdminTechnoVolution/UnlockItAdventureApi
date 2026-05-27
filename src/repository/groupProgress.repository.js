@@ -7,8 +7,7 @@ const GroupProgress = require('../models/groupProgress.model');
 
 const find = async (filter, sort, req = null) => {
     try {
-        const query = await GroupProgress.find(filter).sort(sort).lean();
-        return query;
+        return await GroupProgress.find(filter).sort(sort).lean();
     } catch (err) {
         logger.error(`Error in find. Error: ${err}`, { className: filename, req: req });
         throw new DataLayerException(ERROR_CODES.ERROR_INTERNAL_SERVER_ERROR);
@@ -38,6 +37,15 @@ const findById = async (id, req = null) => {
         return await GroupProgress.findById(id);
     } catch (err) {
         logger.error(`Error in findById. Error: ${err}`, { className: filename, req: req });
+        throw new DataLayerException(ERROR_CODES.ERROR_INTERNAL_SERVER_ERROR);
+    }
+};
+
+const findOneByFilter = async (filter, req = null) => {
+    try {
+        return await GroupProgress.findOne(filter);
+    } catch (err) {
+        logger.error(`Error in findOneByFilter. Error: ${err}`, { className: filename, req: req });
         throw new DataLayerException(ERROR_CODES.ERROR_INTERNAL_SERVER_ERROR);
     }
 };
@@ -97,6 +105,7 @@ module.exports = {
     existsByFilter,
     save,
     findById,
+    findOneByFilter,
     findByUserIdWithRelations,
     findByPartnerIdWithRelations,
 };

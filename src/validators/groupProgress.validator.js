@@ -93,9 +93,25 @@ const updateGroupProgressSchema = Joi.object({
         'object.missing': ERROR_CODES.CODE_GROUP_PROGRESS_UPDATE_NO_FIELDS,
     });
 
+const addActivityPhotoSchema = Joi.object({
+    groupProgressId: Joi.string().trim().required()
+        .messages({
+            'any.required': ERROR_CODES.FIELD_REQUIRED,
+            'string.empty': ERROR_CODES.FIELD_REQUIRED,
+            'any.invalid': ERROR_CODES.FIELD_INVALID,
+        }),
+    keyActivity: Joi.string().trim().required()
+        .messages({
+            'any.required': ERROR_CODES.FIELD_REQUIRED,
+            'string.empty': ERROR_CODES.FIELD_REQUIRED,
+            'any.invalid': ERROR_CODES.FIELD_INVALID,
+        }),
+});
+
 module.exports = {
     unlockGroupSchema,
     addPartnersSchema,
     removePartnerSchema,
     updateGroupProgressSchema,
+    addActivityPhotoSchema,
 };

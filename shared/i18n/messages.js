@@ -22,9 +22,11 @@ const ERROR_CODES = {
     FIELD_PATTERN: "FIELD_PATTERN",
     FIELD_REQUIRED: "FIELD_REQUIRED",
     CODE_PHOTOS_ONLY: "CODE_PHOTOS_ONLY",
-    CODE_PROFILE_PHOTO_REQUIRED: "CODE_PROFILE_PHOTO_REQUIRED",
-    CODE_PROFILE_PHOTO_TOO_LARGE: "CODE_PROFILE_PHOTO_TOO_LARGE",
+    CODE_PHOTO_REQUIRED: "CODE_PHOTO_REQUIRED",
+    CODE_PHOTO_TOO_LARGE: "CODE_PHOTO_TOO_LARGE",
+    CODE_PHOTO_INVALID_EXTENSION: "CODE_PHOTO_INVALID_EXTENSION",
     CODE_IMAGE_CONTENT_NOT_ALLOWED: "CODE_IMAGE_CONTENT_NOT_ALLOWED",
+    CODE_ACTIVITY_PHOTOS_MAX_REACHED: "CODE_ACTIVITY_PHOTOS_MAX_REACHED",
     CODE_ERROR_AUTH: "CODE_ERROR_AUTH",
     CODE_SOCIAL_AUTH_FAILED: "CODE_SOCIAL_AUTH_FAILED",
     CODE_SOCIAL_AUTH_EMAIL_REQUIRED: "CODE_SOCIAL_AUTH_EMAIL_REQUIRED",
@@ -54,6 +56,7 @@ const SUCCESS_CODES = {
     CODE_ADD_PARTNERS_SUCCESS: "CODE_ADD_PARTNERS_SUCCESS",
     CODE_REMOVE_PARTNER_SUCCESS: "CODE_REMOVE_PARTNER_SUCCESS",
     CODE_UPDATE_GROUP_PROGRESS_SUCCESS: "CODE_UPDATE_GROUP_PROGRESS_SUCCESS",
+    CODE_ACTIVITY_PHOTO_UPLOAD_SUCCESS: "CODE_ACTIVITY_PHOTO_UPLOAD_SUCCESS",
 };
 
 const TRANSLATIONS = {
@@ -192,19 +195,26 @@ const TRANSLATIONS = {
         fr: "Le fichier n'est pas pris en charge. Veuillez télécharger une photo",
         it: "Il file non è supportato. Carica una foto"
     },
-    [ERROR_CODES.CODE_PROFILE_PHOTO_REQUIRED]: {
-        en: "Profile photo is required",
-        es: "La foto de perfil es obligatoria",
-        pt: "A foto de perfil é obrigatória",
-        fr: "La photo de profil est requise",
-        it: "La foto del profilo è obbligatoria"
+    [ERROR_CODES.CODE_PHOTO_REQUIRED]: {
+        en: "Photo is required",
+        es: "La foto es obligatoria",
+        pt: "A foto é obrigatória",
+        fr: "La photo est requise",
+        it: "La foto è obbligatoria"
     },
-    [ERROR_CODES.CODE_PROFILE_PHOTO_TOO_LARGE]: {
-        en: "Profile photo exceeds the maximum allowed size",
-        es: "La foto de perfil supera el tamaño máximo permitido",
-        pt: "A foto de perfil excede o tamanho máximo permitido",
-        fr: "La photo de profil dépasse la taille maximale autorisée",
-        it: "La foto del profilo supera la dimensione massima consentita"
+    [ERROR_CODES.CODE_PHOTO_TOO_LARGE]: {
+        en: "Photo exceeds the maximum allowed size",
+        es: "La foto supera el tamaño máximo permitido",
+        pt: "A foto excede o tamanho máximo permitido",
+        fr: "La photo dépasse la taille maximale autorisée",
+        it: "La foto supera la dimensione massima consentita"
+    },
+    [ERROR_CODES.CODE_PHOTO_INVALID_EXTENSION]: {
+        en: "Photo file extension is not allowed",
+        es: "La extensión del archivo de la foto no está permitida",
+        pt: "A extensão do arquivo da foto não é permitida",
+        fr: "L'extension du fichier photo n'est pas autorisée",
+        it: "L'estensione del file foto non è consentita"
     },
     [ERROR_CODES.CODE_IMAGE_CONTENT_NOT_ALLOWED]: {
         en: "Image content is not allowed",
@@ -212,6 +222,13 @@ const TRANSLATIONS = {
         pt: "O conteúdo da imagem não é permitido",
         fr: "Le contenu de l'image n'est pas autorisé",
         it: "Il contenuto dell'immagine non è consentito"
+    },
+    [ERROR_CODES.CODE_ACTIVITY_PHOTOS_MAX_REACHED]: {
+        en: "You have reached the maximum number of photos allowed for this activity",
+        es: "Has alcanzado el máximo de fotos permitidas para esta actividad",
+        pt: "Você atingiu o número máximo de fotos permitidas para esta atividade",
+        fr: "Vous avez atteint le nombre maximum de photos autorisées pour cette activité",
+        it: "Hai raggiunto il numero massimo di foto consentite per questa attività"
     },
     [ERROR_CODES.CODE_USER_NOT_FOUND]: {
         en: "User not found",
@@ -403,6 +420,13 @@ const TRANSLATIONS = {
         pt: "Progresso do grupo atualizado com sucesso.",
         fr: "Progression du groupe mise à jour avec succès.",
         it: "Progresso del gruppo aggiornato con successo."
+    },
+    [SUCCESS_CODES.CODE_ACTIVITY_PHOTO_UPLOAD_SUCCESS]: {
+        en: "Activity photo uploaded successfully.",
+        es: "Foto de actividad subida exitosamente.",
+        pt: "Foto da atividade enviada com sucesso.",
+        fr: "Photo d'activité téléchargée avec succès.",
+        it: "Foto dell'attività caricata con successo."
     }
 };
 
