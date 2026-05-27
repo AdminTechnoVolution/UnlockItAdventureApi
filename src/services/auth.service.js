@@ -28,7 +28,10 @@ const socialLogin = async (req) => {
 
     user.lastLogin = new Date();
     await UserRepository.save(user, req);
-    await registerDevice(user, device, req);
+
+    if (device?.fcmToken) {
+        await registerDevice(user, device, req);
+    }
 
     const tokens = await issueAuthTokens(user);
 
@@ -247,13 +250,15 @@ const revokeAuthTokens = async (accessToken, refreshToken, fcmToken, req) => {
         revocations.push(redisClient.del(refreshKey));
     }
 
-    revocations.push(
-        FCMTokenRepository.findOneByFilterAndPullToken(
-            { 'devices.fcmToken': fcmToken },
-            { devices: { fcmToken } },
-            req
-        )
-    );
+    if (fcmToken) {
+        revocations.push(
+            FCMTokenRepository.findOneByFilterAndPullToken(
+                { 'devices.fcmToken': fcmToken },
+                { devices: { fcmToken } },
+                req
+            )
+        );
+    }
 
     await Promise.all(revocations);
 };

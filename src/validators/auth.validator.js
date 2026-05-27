@@ -4,9 +4,8 @@ const AuthType = require('../../shared/constants/enums/EnumAuthType');
 const Platforms = require('../../shared/constants/enums/EnumPlatforms');
 
 const deviceSchema = Joi.object({
-    fcmToken: Joi.string().trim().required()
+    fcmToken: Joi.string().trim().optional()
         .messages({
-            'any.required': ERROR_CODES.FIELD_REQUIRED,
             'string.empty': ERROR_CODES.FIELD_REQUIRED,
         }),
     platform: Joi.string().valid(...Object.values(Platforms)).required()
@@ -62,9 +61,8 @@ const logoutSchema = Joi.object({
             'any.required': ERROR_CODES.FIELD_REQUIRED,
             'string.empty': ERROR_CODES.FIELD_REQUIRED,
         }),
-    fcmToken: Joi.string().trim().required()
+    fcmToken: Joi.string().trim().optional()
         .messages({
-            'any.required': ERROR_CODES.FIELD_REQUIRED,
             'string.empty': ERROR_CODES.FIELD_REQUIRED,
         }),
 });

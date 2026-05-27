@@ -3,7 +3,6 @@ components:
     DeviceSchema:
       type: object
       required:
-        - fcmToken
         - platform
       properties:
         fcmToken:
@@ -58,7 +57,6 @@ components:
       required:
         - accessToken
         - refreshToken
-        - fcmToken
       properties:
         accessToken:
           type: string
