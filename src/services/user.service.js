@@ -10,7 +10,8 @@ const constants = require('../../shared/constants/constants');
 const jwt = require('../../shared/util/jwt');
 const AppConfigService = require('./appConfig.service');
 const AppConfigKey = require('../../shared/constants/enums/EnumAppConfigKey');
-const { uploadUserProfilePhoto } = require('../clients/azureBlob');
+const azureBlobStorage = require('../clients/azureBlob');
+const googleCloudVision = require('../clients/googleVision');
 const { ERROR_CODES } = require('../../shared/i18n/messages');
 
 const updateProfile = async (req) => {
@@ -69,7 +70,8 @@ const updateProfilePhoto = async (req) => {
         throw new BusinessException(ERROR_CODES.CODE_USER_NOT_FOUND, constants.HTTP_NOT_FOUND);
     }
 
-    const url = await uploadUserProfilePhoto(userId.toString(), file.buffer);
+    await googleCloudVision.validateImageContent(file.buffer, req);
+    const url = await azureBlobStorage.uploadUserProfilePhoto(userId.toString(), file.buffer);
 
     user.profileImageUrl = url;
     const userSaved = await UserRepository.save(user, req);

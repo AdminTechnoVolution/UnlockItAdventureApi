@@ -26,6 +26,7 @@ const detectSafeSearch = async (imageBuffer, req = null) => {
 
     const [result] = await visionClient.safeSearchDetection(imageBuffer);
 
+    logger.info({ message: `Image analyzed with Google Cloud Vision Safe Search. Result=${JSON.stringify(result?.safeSearchAnnotation)}`, className: filename, req });
     return result?.safeSearchAnnotation ?? null;
 };
 
@@ -67,12 +68,11 @@ const validateImageContent = async (imageBuffer, req = null) => {
             throw new BusinessException(ERROR_CODES.CODE_IMAGE_CONTENT_NOT_ALLOWED, constants.HTTP_BAD_REQUEST);
         }
     } catch (error) {
-        logger.error({ message: `Error analyzing image with Google Cloud Vision. Error: ${error.message}`, className: filename, req });
-
         if (error instanceof BusinessException) {
             throw error;
         }
 
+        logger.error({ message: `Error analyzing image with Google Cloud Vision. Error: ${error.message}`, className: filename, req });
         throw new BusinessException(ERROR_CODES.ERROR_INTERNAL_SERVER_ERROR, constants.HTTP_INTERNAL_SERVER);
     }
 };
