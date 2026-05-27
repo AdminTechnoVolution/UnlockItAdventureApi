@@ -2,7 +2,6 @@ paths:
   /api/user/profile:
     put:
       summary: Update authenticated user profile
-
       tags:
         - Users
       security:
@@ -18,7 +17,7 @@ paths:
               $ref: '#/components/schemas/UpdateProfileSchema'
       responses:
         200:
-          $ref: '#/components/responses/SuccessResponse'
+          $ref: '#/components/responses/UpdateProfileSuccessResponse'
         400:
           $ref: '#/components/responses/BadRequestResponse'
         401:
@@ -55,7 +54,7 @@ paths:
                   description: Profile photo file (jpeg, png, or webp)
       responses:
         200:
-          $ref: '#/components/responses/SuccessResponse'
+          $ref: '#/components/responses/UpdateProfilePhotoSuccessResponse'
         400:
           $ref: '#/components/responses/BadRequestResponse'
         401:

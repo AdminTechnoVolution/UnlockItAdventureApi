@@ -5,7 +5,7 @@
       - Health
     responses:
       200:
-        $ref: '#/components/responses/SuccessResponse'
+        $ref: '#/components/responses/HealthSuccessResponse'
       400:
         $ref: '#/components/responses/BadRequestResponse'
       500:

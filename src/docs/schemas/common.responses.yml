@@ -55,3 +55,80 @@ components:
         application/json:
           schema:
             $ref: '#/components/schemas/BaseResponse'
+
+    HealthSuccessResponse:
+      description: Health check result
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/HealthResponse'
+
+    SocialLoginSuccessResponse:
+      description: Social login successful
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/SocialLoginResponse'
+
+    RefreshTokenSuccessResponse:
+      description: Tokens refreshed successfully
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/RefreshTokenResponse'
+
+    LogoutSuccessResponse:
+      description: Logout successful
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/LogoutResponse'
+
+    UpdateProfileSuccessResponse:
+      description: Profile updated successfully
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/UpdateProfileResponse'
+
+    UpdateProfilePhotoSuccessResponse:
+      description: Profile photo updated successfully
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/UpdateProfilePhotoResponse'
+
+    GroupActivitiesSuccessResponse:
+      description: Group activities list
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/GroupActivitiesResponse'
+
+    UnlockGroupSuccessResponse:
+      description: Group unlocked successfully
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/UnlockGroupResponse'
+
+    GroupProgressListSuccessResponse:
+      description: Group progress list
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/GroupProgressListResponse'
+
+    MessageOnlySuccessResponse:
+      description: Success with no data payload
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/MessageOnlyResponse'
+
+    AddActivityPhotoSuccessResponse:
+      description: Activity photo uploaded successfully
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/AddActivityPhotoResponse'

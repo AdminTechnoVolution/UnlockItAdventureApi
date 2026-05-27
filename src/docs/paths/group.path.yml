@@ -17,11 +17,15 @@ paths:
               $ref: '#/components/schemas/UnlockGroupSchema'
       responses:
         200:
-          $ref: '#/components/responses/SuccessResponse'
+          $ref: '#/components/responses/UnlockGroupSuccessResponse'
         400:
           $ref: '#/components/responses/BadRequestResponse'
         401:
           $ref: '#/components/responses/UnauthorizedResponse'
+        404:
+          $ref: '#/components/responses/NotFoundResponse'
+        409:
+          $ref: '#/components/responses/ConflictResponse'
         500:
           $ref: '#/components/responses/InternalServerErrorResponse'
 
@@ -37,7 +41,7 @@ paths:
         - $ref: '#/components/parameters/AcceptLanguage'
       responses:
         200:
-          $ref: '#/components/responses/SuccessResponse'
+          $ref: '#/components/responses/GroupProgressListSuccessResponse'
         401:
           $ref: '#/components/responses/UnauthorizedResponse'
         500:
@@ -59,7 +63,7 @@ paths:
               $ref: '#/components/schemas/UpdateGroupProgressSchema'
       responses:
         200:
-          $ref: '#/components/responses/SuccessResponse'
+          $ref: '#/components/responses/MessageOnlySuccessResponse'
         400:
           $ref: '#/components/responses/BadRequestResponse'
         401:
@@ -67,7 +71,7 @@ paths:
         403:
           $ref: '#/components/responses/ForbiddenResponse'
         404:
-          $ref: '#/components/responses/BadRequestResponse'
+          $ref: '#/components/responses/NotFoundResponse'
         500:
           $ref: '#/components/responses/InternalServerErrorResponse'
 
@@ -83,7 +87,7 @@ paths:
         - $ref: '#/components/parameters/AcceptLanguage'
       responses:
         200:
-          $ref: '#/components/responses/SuccessResponse'
+          $ref: '#/components/responses/GroupProgressListSuccessResponse'
         401:
           $ref: '#/components/responses/UnauthorizedResponse'
         500:
@@ -107,7 +111,7 @@ paths:
               $ref: '#/components/schemas/AddActivityPhotoSchema'
       responses:
         200:
-          $ref: '#/components/responses/SuccessResponse'
+          $ref: '#/components/responses/AddActivityPhotoSuccessResponse'
         400:
           $ref: '#/components/responses/BadRequestResponse'
         401:
@@ -137,7 +141,7 @@ paths:
               $ref: '#/components/schemas/RemoveActivityPhotoSchema'
       responses:
         200:
-          $ref: '#/components/responses/SuccessResponse'
+          $ref: '#/components/responses/MessageOnlySuccessResponse'
         400:
           $ref: '#/components/responses/BadRequestResponse'
         401:
@@ -167,7 +171,7 @@ paths:
               $ref: '#/components/schemas/AddPartnersSchema'
       responses:
         200:
-          $ref: '#/components/responses/SuccessResponse'
+          $ref: '#/components/responses/MessageOnlySuccessResponse'
         400:
           $ref: '#/components/responses/BadRequestResponse'
         401:
@@ -175,7 +179,7 @@ paths:
         403:
           $ref: '#/components/responses/ForbiddenResponse'
         404:
-          $ref: '#/components/responses/BadRequestResponse'
+          $ref: '#/components/responses/NotFoundResponse'
         500:
           $ref: '#/components/responses/InternalServerErrorResponse'
 
@@ -197,7 +201,7 @@ paths:
               $ref: '#/components/schemas/RemovePartnerSchema'
       responses:
         200:
-          $ref: '#/components/responses/SuccessResponse'
+          $ref: '#/components/responses/MessageOnlySuccessResponse'
         400:
           $ref: '#/components/responses/BadRequestResponse'
         401:
@@ -205,7 +209,7 @@ paths:
         403:
           $ref: '#/components/responses/ForbiddenResponse'
         404:
-          $ref: '#/components/responses/BadRequestResponse'
+          $ref: '#/components/responses/NotFoundResponse'
         500:
           $ref: '#/components/responses/InternalServerErrorResponse'
 
@@ -221,7 +225,7 @@ paths:
         - $ref: '#/components/parameters/AcceptLanguage'
       responses:
         200:
-          $ref: '#/components/responses/SuccessResponse'
+          $ref: '#/components/responses/GroupActivitiesSuccessResponse'
         400:
           $ref: '#/components/responses/BadRequestResponse'
         401:

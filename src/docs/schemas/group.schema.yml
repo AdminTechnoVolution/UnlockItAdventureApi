@@ -1,0 +1,116 @@
+components:
+  schemas:
+    GroupAdditionalInfoItem:
+      type: object
+      properties:
+        name:
+          type: string
+        value:
+          description: Mixed value (string, number, boolean, object, or array)
+
+    GroupActivityItem:
+      type: object
+      properties:
+        key:
+          type: string
+          example: activity_1
+        name:
+          type: string
+          example: Visit the main square
+        description:
+          type: string
+        tips:
+          type: array
+          items:
+            type: string
+        imageUrl:
+          type: string
+        additionalInfo:
+          type: array
+          items:
+            $ref: '#/components/schemas/GroupAdditionalInfoItem'
+        tags:
+          type: array
+          items:
+            type: string
+        difficulty:
+          type: integer
+          minimum: 1
+          maximum: 5
+          example: 2
+
+    GroupPriceItem:
+      type: object
+      properties:
+        features:
+          type: array
+          items:
+            type: string
+
+    GroupWithProgressFlags:
+      type: object
+      properties:
+        _id:
+          type: string
+          example: "507f1f77bcf86cd799439011"
+        name:
+          type: string
+          example: Seven Wonders
+        description:
+          type: string
+        imageUrl:
+          type: string
+        productsId:
+          type: array
+          items:
+            type: string
+        tags:
+          type: array
+          items:
+            type: string
+        isActive:
+          type: boolean
+          example: true
+        activities:
+          type: array
+          items:
+            $ref: '#/components/schemas/GroupActivityItem'
+        prices:
+          type: array
+          items:
+            $ref: '#/components/schemas/GroupPriceItem'
+        additionalInfo:
+          type: array
+          items:
+            $ref: '#/components/schemas/GroupAdditionalInfoItem'
+        unlocked:
+          type: boolean
+          description: True when the authenticated user owns a group progress for this group
+          example: false
+        sharedWithMe:
+          type: boolean
+          description: True when the authenticated user is a partner on someone else's group progress
+          example: false
+        createdAt:
+          type: string
+          format: date-time
+        updatedAt:
+          type: string
+          format: date-time
+
+    GroupActivitiesResponse:
+      allOf:
+        - $ref: '#/components/schemas/BaseResponse'
+        - type: object
+          properties:
+            success:
+              type: boolean
+              example: true
+            messages:
+              type: array
+              items:
+                type: string
+            data:
+              type: array
+              items:
+                $ref: '#/components/schemas/GroupWithProgressFlags'
