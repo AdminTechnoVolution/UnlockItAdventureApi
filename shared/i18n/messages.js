@@ -24,6 +24,7 @@ const ERROR_CODES = {
     CODE_PHOTOS_ONLY: "CODE_PHOTOS_ONLY",
     CODE_PROFILE_PHOTO_REQUIRED: "CODE_PROFILE_PHOTO_REQUIRED",
     CODE_PROFILE_PHOTO_TOO_LARGE: "CODE_PROFILE_PHOTO_TOO_LARGE",
+    CODE_IMAGE_CONTENT_NOT_ALLOWED: "CODE_IMAGE_CONTENT_NOT_ALLOWED",
     CODE_ERROR_AUTH: "CODE_ERROR_AUTH",
     CODE_SOCIAL_AUTH_FAILED: "CODE_SOCIAL_AUTH_FAILED",
     CODE_SOCIAL_AUTH_EMAIL_REQUIRED: "CODE_SOCIAL_AUTH_EMAIL_REQUIRED",
@@ -204,6 +205,13 @@ const TRANSLATIONS = {
         pt: "A foto de perfil excede o tamanho máximo permitido",
         fr: "La photo de profil dépasse la taille maximale autorisée",
         it: "La foto del profilo supera la dimensione massima consentita"
+    },
+    [ERROR_CODES.CODE_IMAGE_CONTENT_NOT_ALLOWED]: {
+        en: "Image content is not allowed",
+        es: "El contenido de la imagen no está permitido",
+        pt: "O conteúdo da imagem não é permitido",
+        fr: "Le contenu de l'image n'est pas autorisé",
+        it: "Il contenuto dell'immagine non è consentito"
     },
     [ERROR_CODES.CODE_USER_NOT_FOUND]: {
         en: "User not found",

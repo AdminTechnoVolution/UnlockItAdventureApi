@@ -1,6 +1,6 @@
 {
   "name": "unlockit-adventure-api",
-  "version": "0.0.21",
+  "version": "0.0.22",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -21,6 +21,7 @@
   "description": "",
   "dependencies": {
     "@azure/storage-blob": "^12.28.0",
+    "@google-cloud/vision": "^5.3.6",
     "bcryptjs": "^3.0.2",
     "cors": "^2.8.5",
     "decimal.js": "^10.6.0",
