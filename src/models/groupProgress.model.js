@@ -1,12 +1,19 @@
 const mongoose = require('mongoose');
 const GroupProgressStatus = require('../../shared/constants/enums/EnumGroupProgressStatus');
 
+const PhotoSchema = new mongoose.Schema({
+  name: { type: String, required: true, trim: true },
+  url: { type: String, required: true, trim: true },
+  uploadedAt: { type: Date, default: Date.now },
+  uploadedBy: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
+}, { _id: false });
+
 const ActivitySchema = new mongoose.Schema({
   key: { type: String, required: true },
   completed: { type: Boolean, required: true, default: false },
   completedAt: { type: Date },
   notes: { type: String },
-  photos: [{ url: String }],
+  photos: { type: [PhotoSchema], default: [] },
   updatedBy: { type: mongoose.Schema.Types.ObjectId, ref: "User", required: true }
 }, { _id: false });
 

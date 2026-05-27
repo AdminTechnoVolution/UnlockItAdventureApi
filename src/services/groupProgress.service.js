@@ -363,12 +363,19 @@ const mapGroupActivity = (activity, lang) => ({
     difficulty: activity.difficulty,
 });
 
+const mapActivityPhoto = (photo) => ({
+    name: photo.name ?? null,
+    url: photo.url ?? null,
+    uploadedAt: photo.uploadedAt ?? null,
+    uploadedBy: photo.uploadedBy ?? null,
+});
+
 const mapProgressActivity = (progressActivity, groupActivity = {}) => ({
     key: progressActivity.key,
     completed: progressActivity.completed,
     completedAt: progressActivity.completedAt,
     notes: progressActivity.notes,
-    photos: progressActivity.photos,
+    photos: (progressActivity.photos || []).map(mapActivityPhoto),
     updatedBy: progressActivity.updatedBy,
     name: groupActivity.name ?? null,
     description: groupActivity.description ?? null,
