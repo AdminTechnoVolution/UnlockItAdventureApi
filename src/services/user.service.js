@@ -1,4 +1,3 @@
-const path = require('path');
 const ObjectId = require('mongoose').Types.ObjectId;
 const logger = require('../../shared/config/logger');
 const filename = path.basename(__filename);
@@ -13,6 +12,7 @@ const AppConfigKey = require('../../shared/constants/enums/EnumAppConfigKey');
 const azureBlobStorage = require('../clients/azureBlob');
 const googleCloudVision = require('../clients/googleVision');
 const { ERROR_CODES } = require('../../shared/i18n/messages');
+const utilPhotoFile = require('../../shared/util/photoFileValidation');
 
 const updateProfile = async (req) => {
     const auth = req.headers['authorization'];
@@ -88,12 +88,9 @@ const updateProfilePhoto = async (req) => {
 };
 
 const validateProfilePhotoFile = async (file, req) => {
-    const maxFileSizeMb = (await AppConfigService.getConfigByKey(AppConfigKey.USER_PROFILE_PHOTO_MAX_FILE_SIZE_MB, req))?.value ?? 5;
-    const maxBytes = Number(maxFileSizeMb) * 1024 * 1024;
-
-    if (file.size > maxBytes) {
-        throw new BusinessException(ERROR_CODES.CODE_PHOTO_TOO_LARGE, constants.HTTP_BAD_REQUEST);
-    }
+    await utilPhotoFile.validatePhotoFile(file, req, {
+        maxFileSizeMbConfigKey: AppConfigKey.USER_PROFILE_PHOTO_MAX_FILE_SIZE_MB,
+    });
 };
 
 module.exports = {

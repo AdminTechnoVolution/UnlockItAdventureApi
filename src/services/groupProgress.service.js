@@ -18,12 +18,7 @@ const azureBlobStorage = require('../clients/azureBlob');
 const googleCloudVision = require('../clients/googleVision');
 const { SUCCESS_CODES, ERROR_CODES } = require('../../shared/i18n/messages');
 const { translate, pickLanguage, generateSecureRandom } = require('../../shared/util/util');
-
-const MIME_TO_EXTENSIONS = {
-    'image/jpeg': ['.jpg', '.jpeg'],
-    'image/png': ['.png'],
-    'image/webp': ['.webp'],
-};
+const utilPhotoFile = require('../../shared/util/photoFileValidation');
 
 const unlockGroup = async (req) => {
     const acceptLanguage = req.acceptLanguage;
@@ -256,30 +251,9 @@ const validateActivityPhotoGroupProgress = (groupProgress, keyActivity) => {
 };
 
 const validateActivityPhotoFile = async (file, req) => {
-    const maxFileSizeMb = (await AppConfigService.getConfigByKey(AppConfigKey.ACTIVITY_PHOTO_MAX_FILE_SIZE_MB, req))?.value;
-    const maxBytes = Number(maxFileSizeMb) * 1024 * 1024;
-
-    if (file.size > maxBytes) {
-        throw new BusinessException(ERROR_CODES.CODE_PHOTO_TOO_LARGE, constants.HTTP_BAD_REQUEST);
-    }
-
-    const mimeConfig = await AppConfigService.getConfigByKey(AppConfigKey.ACTIVITY_PHOTO_ALLOWED_MIME_TYPES, req);
-    const allowedMimes = mimeConfig?.value;
-
-    if (!Array.isArray(allowedMimes) || allowedMimes.length === 0) {
-        throw new BusinessException(ERROR_CODES.ERROR_INTERNAL_SERVER_ERROR, constants.HTTP_INTERNAL_SERVER);
-    }
-
-    if (!allowedMimes.includes(file.mimetype)) {
-        throw new BusinessException(ERROR_CODES.CODE_PHOTOS_ONLY, constants.HTTP_BAD_REQUEST);
-    }
-
-    const fileExtension = path.extname(file.originalname || '').toLowerCase();
-    const allowedExtensions = allowedMimes.flatMap((mime) => MIME_TO_EXTENSIONS[mime] || []);
-
-    if (!fileExtension || !allowedExtensions.includes(fileExtension)) {
-        throw new BusinessException(ERROR_CODES.CODE_PHOTO_INVALID_EXTENSION, constants.HTTP_BAD_REQUEST);
-    }
+    await utilPhotoFile.validatePhotoFile(file, req, {
+        maxFileSizeMbConfigKey: AppConfigKey.ACTIVITY_PHOTO_MAX_FILE_SIZE_MB,
+    });
 };
 
 const updateGroupProgress = async (req) => {
