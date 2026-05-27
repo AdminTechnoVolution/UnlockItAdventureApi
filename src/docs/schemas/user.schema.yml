@@ -15,3 +15,40 @@ components:
           maxLength: 64
           pattern: "^[a-zA-Z0-9_]+$"
           example: "jane_doe"
+
+    UpdateProfileResponse:
+      allOf:
+        - $ref: '#/components/schemas/BaseResponse'
+        - type: object
+          properties:
+            success:
+              type: boolean
+              example: true
+            messages:
+              type: array
+              items:
+                type: string
+            data:
+              nullable: true
+              example: null
+
+    UpdateProfilePhotoResponseData:
+      type: object
+      properties:
+        user:
+          $ref: '#/components/schemas/AuthUserSummary'
+
+    UpdateProfilePhotoResponse:
+      allOf:
+        - $ref: '#/components/schemas/BaseResponse'
+        - type: object
+          properties:
+            success:
+              type: boolean
+              example: true
+            messages:
+              type: array
+              items:
+                type: string
+            data:
+              $ref: '#/components/schemas/UpdateProfilePhotoResponseData'

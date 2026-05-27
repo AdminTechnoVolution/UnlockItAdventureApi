@@ -10,8 +10,10 @@ const constants = require('../../shared/constants/constants');
 const jwt = require('../../shared/util/jwt');
 const AppConfigService = require('./appConfig.service');
 const AppConfigKey = require('../../shared/constants/enums/EnumAppConfigKey');
-const { uploadUserProfilePhoto } = require('../clients/azureBlob');
+const azureBlobStorage = require('../clients/azureBlob');
+const googleCloudVision = require('../clients/googleVision');
 const { ERROR_CODES } = require('../../shared/i18n/messages');
+const utilPhotoFile = require('../../shared/util/photoFileValidation');
 
 const updateProfile = async (req) => {
     const auth = req.headers['authorization'];
@@ -58,7 +60,7 @@ const updateProfilePhoto = async (req) => {
     const file = req.file;
 
     if (!file) {
-        throw new BusinessException(ERROR_CODES.CODE_PROFILE_PHOTO_REQUIRED, constants.HTTP_BAD_REQUEST);
+        throw new BusinessException(ERROR_CODES.CODE_PHOTO_REQUIRED, constants.HTTP_BAD_REQUEST);
     }
 
     await validateProfilePhotoFile(file, req);
@@ -69,7 +71,8 @@ const updateProfilePhoto = async (req) => {
         throw new BusinessException(ERROR_CODES.CODE_USER_NOT_FOUND, constants.HTTP_NOT_FOUND);
     }
 
-    const url = await uploadUserProfilePhoto(userId.toString(), file.buffer);
+    await googleCloudVision.validateImageContent(file.buffer, req);
+    const url = await azureBlobStorage.uploadUserProfilePhoto(userId.toString(), file.buffer, req);
 
     user.profileImageUrl = url;
     const userSaved = await UserRepository.save(user, req);
@@ -86,12 +89,9 @@ const updateProfilePhoto = async (req) => {
 };
 
 const validateProfilePhotoFile = async (file, req) => {
-    const maxFileSizeMb = (await AppConfigService.getConfigByKey(AppConfigKey.USER_PROFILE_PHOTO_MAX_FILE_SIZE_MB, req))?.value ?? 5;
-    const maxBytes = Number(maxFileSizeMb) * 1024 * 1024;
-
-    if (file.size > maxBytes) {
-        throw new BusinessException(ERROR_CODES.CODE_PROFILE_PHOTO_TOO_LARGE, constants.HTTP_BAD_REQUEST);
-    }
+    await utilPhotoFile.validatePhotoFile(file, req, {
+        maxFileSizeMbConfigKey: AppConfigKey.USER_PROFILE_PHOTO_MAX_FILE_SIZE_MB,
+    });
 };
 
 module.exports = {

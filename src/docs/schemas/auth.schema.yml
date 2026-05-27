@@ -3,7 +3,6 @@ components:
     DeviceSchema:
       type: object
       required:
-        - fcmToken
         - platform
       properties:
         fcmToken:
@@ -58,7 +57,6 @@ components:
       required:
         - accessToken
         - refreshToken
-        - fcmToken
       properties:
         accessToken:
           type: string
@@ -70,5 +68,98 @@ components:
           example: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
         fcmToken:
           type: string
-          description: FCM device token to remove from the user devices list
+          description: FCM device token to remove from the user devices list (optional)
           example: "dK3xYz...:APA91b..."
+
+    AuthUserSummary:
+      type: object
+      properties:
+        username:
+          type: string
+          example: Guest_1716823456789_482
+        fullName:
+          type: string
+          example: Jane Doe
+        profileImageUrl:
+          type: string
+          nullable: true
+          example: "https://lh3.googleusercontent.com/a/..."
+
+    SocialLoginResponseData:
+      type: object
+      required:
+        - accessToken
+        - refreshToken
+        - user
+        - isNewUser
+      properties:
+        accessToken:
+          type: string
+          example: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+        refreshToken:
+          type: string
+          example: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+        user:
+          $ref: '#/components/schemas/AuthUserSummary'
+        isNewUser:
+          type: boolean
+          example: false
+
+    RefreshTokenResponseData:
+      type: object
+      required:
+        - accessToken
+        - refreshToken
+      properties:
+        accessToken:
+          type: string
+          example: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+        refreshToken:
+          type: string
+          example: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+
+    SocialLoginResponse:
+      allOf:
+        - $ref: '#/components/schemas/BaseResponse'
+        - type: object
+          properties:
+            success:
+              type: boolean
+              example: true
+            messages:
+              type: array
+              items:
+                type: string
+            data:
+              $ref: '#/components/schemas/SocialLoginResponseData'
+
+    RefreshTokenResponse:
+      allOf:
+        - $ref: '#/components/schemas/BaseResponse'
+        - type: object
+          properties:
+            success:
+              type: boolean
+              example: true
+            messages:
+              type: array
+              items:
+                type: string
+            data:
+              $ref: '#/components/schemas/RefreshTokenResponseData'
+
+    LogoutResponse:
+      allOf:
+        - $ref: '#/components/schemas/BaseResponse'
+        - type: object
+          properties:
+            success:
+              type: boolean
+              example: true
+            messages:
+              type: array
+              items:
+                type: string
+            data:
+              nullable: true
+              example: null

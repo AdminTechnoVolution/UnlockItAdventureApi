@@ -64,6 +64,28 @@ const updateGroupProgress = async (req, res, next) => {
     }
 };
 
+const addActivityPhoto = async (req, res, next) => {
+    try {
+        if (!req.body) throw new BusinessException(ERROR_CODES.ERROR_BAD_REQUEST_RESPONSE);
+
+        const jsonResponse = await GroupProgressService.addActivityPhoto(req);
+        res.status(200).json(jsonResponse);
+    } catch (err) {
+        next(err);
+    }
+};
+
+const removeActivityPhoto = async (req, res, next) => {
+    try {
+        if (!req.body) throw new BusinessException(ERROR_CODES.ERROR_BAD_REQUEST_RESPONSE);
+
+        const jsonResponse = await GroupProgressService.removeActivityPhoto(req);
+        res.status(200).json(jsonResponse);
+    } catch (err) {
+        next(err);
+    }
+};
+
 module.exports = {
     unlockGroup,
     addPartners,
@@ -71,4 +93,6 @@ module.exports = {
     getMyGroupProgress,
     getSharedGroupProgress,
     updateGroupProgress,
+    addActivityPhoto,
+    removeActivityPhoto,
 };

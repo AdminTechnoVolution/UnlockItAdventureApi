@@ -4,6 +4,7 @@ const filename = path.basename(__filename);
 const ObjectId = require('mongoose').Types.ObjectId;
 const BaseResponse = require('../../shared/commons/models/BaseResponse');
 const BusinessException = require('../../shared/commons/models/BusinessException');
+const ClientException = require('../../shared/commons/models/ClientException');
 const GroupProgress = require('../models/groupProgress.model');
 const GroupRepository = require('../repository/group.repository');
 const GroupProgressRepository = require('../repository/groupProgress.repository');
@@ -11,8 +12,13 @@ const UserRepository = require('../repository/user.repository');
 const GroupProgressStatus = require('../../shared/constants/enums/EnumGroupProgressStatus');
 const constants = require('../../shared/constants/constants');
 const jwt = require('../../shared/util/jwt');
+const AppConfigService = require('./appConfig.service');
+const AppConfigKey = require('../../shared/constants/enums/EnumAppConfigKey');
+const azureBlobStorage = require('../clients/azureBlob');
+const googleCloudVision = require('../clients/googleVision');
 const { SUCCESS_CODES, ERROR_CODES } = require('../../shared/i18n/messages');
-const { translate, pickLanguage } = require('../../shared/util/util');
+const { translate, pickLanguage, generateSecureRandom } = require('../../shared/util/util');
+const utilPhotoFile = require('../../shared/util/photoFileValidation');
 
 const unlockGroup = async (req) => {
     const acceptLanguage = req.acceptLanguage;
@@ -155,6 +161,146 @@ const removePartnerFromGroupProgress = (groupProgress, partnerId) => {
     groupProgress.partnerId = (groupProgress.partnerId || []).filter(
         (id) => id.toString() !== partnerId.toString()
     );
+};
+
+const addActivityPhoto = async (req) => {
+    const acceptLanguage = req.acceptLanguage;
+    const auth = req.headers['authorization'];
+    const { decoded } = jwt.verifyJwtToken(auth, true);
+    const userId = new ObjectId(decoded.id);
+    const { groupProgressId, keyActivity } = req.body;
+    const file = req.file;
+
+    if (!file) {
+        throw new BusinessException(ERROR_CODES.CODE_PHOTO_REQUIRED, constants.HTTP_BAD_REQUEST);
+    }
+
+    await validateActivityPhotoFile(file, req);
+
+    const groupProgress = await GroupProgressRepository.findById(groupProgressId, req);
+
+    validateActivityPhotoGroupProgress(groupProgress, keyActivity);
+
+    if (!isGroupProgressParticipant(userId, groupProgress)) {
+        throw new BusinessException(ERROR_CODES.CODE_GROUP_PROGRESS_UPDATE_FORBIDDEN, constants.HTTP_FORBIDDEN);
+    }
+
+    const maxPhotosPerActivity = (await AppConfigService.getConfigByKey(AppConfigKey.ACTIVITY_PHOTOS_MAX_PER_USER, req))?.value ?? 2;
+    const activity = groupProgress.activities.find((item) => item.key === keyActivity);
+    const activityPhotosCount = (activity.photos || []).length;
+
+    if (activityPhotosCount >= Number(maxPhotosPerActivity)) {
+        throw new BusinessException(ERROR_CODES.CODE_ACTIVITY_PHOTOS_MAX_REACHED, constants.HTTP_BAD_REQUEST);
+    }
+
+    await googleCloudVision.validateImageContent(file.buffer, req);
+
+    const photoName = buildActivityPhotoFileName();
+    const reservedPhoto = {
+        name: photoName,
+        uploadedBy: userId,
+    };
+
+    activity.photos.push(reservedPhoto);
+    activity.updatedBy = userId;
+    groupProgress.markModified('activities');
+
+    await GroupProgressRepository.save(groupProgress, req);
+
+    const photoIndex = activity.photos.length - 1;
+
+    try {
+        const urlPhoto = await azureBlobStorage.uploadActivityPhoto(
+            groupProgressId,
+            keyActivity,
+            photoName,
+            file.buffer,
+            req,
+        );
+
+        activity.photos[photoIndex].url = urlPhoto;
+        activity.photos[photoIndex].uploadedAt = new Date();
+        groupProgress.markModified('activities');
+
+        await GroupProgressRepository.save(groupProgress, req);
+    } catch (error) {
+        activity.photos.splice(photoIndex, 1);
+        groupProgress.markModified('activities');
+        await GroupProgressRepository.save(groupProgress, req);
+        throw error;
+    }
+
+    const message = translate(SUCCESS_CODES.CODE_ACTIVITY_PHOTO_UPLOAD_SUCCESS, acceptLanguage);
+
+    const data = { photo: mapActivityPhoto(activity.photos[photoIndex]) };
+    return new BaseResponse(true, [message], data);
+};
+
+const buildActivityPhotoFileName = () => {
+    const randomSuffix = String(generateSecureRandom(0, 9999)).padStart(4, '0');
+
+    return `${Date.now()}_${randomSuffix}.webp`;
+};
+
+const removeActivityPhoto = async (req) => {
+    const acceptLanguage = req.acceptLanguage;
+    const auth = req.headers['authorization'];
+    const { decoded } = jwt.verifyJwtToken(auth, true);
+    const userId = new ObjectId(decoded.id);
+    const { groupProgressId, keyActivity, name } = req.body;
+
+    const groupProgress = await GroupProgressRepository.findById(groupProgressId, req);
+
+    if (!groupProgress || groupProgress.status !== GroupProgressStatus.IN_PROGRESS) {
+        throw new BusinessException(ERROR_CODES.CODE_GROUP_PROGRESS_NOT_FOUND, constants.HTTP_NOT_FOUND);
+    }
+
+    if (!isGroupProgressParticipant(userId, groupProgress)) {
+        throw new BusinessException(ERROR_CODES.CODE_GROUP_PROGRESS_UPDATE_FORBIDDEN, constants.HTTP_FORBIDDEN);
+    }
+
+    validateActivityPhotoGroupProgress(groupProgress, keyActivity);
+
+    const activity = groupProgress.activities.find((item) => item.key === keyActivity);
+    const photoIndex = findActivityPhotoIndexByName(activity, name);
+
+    if (photoIndex === -1) {
+        throw new BusinessException(ERROR_CODES.CODE_ACTIVITY_PHOTO_NOT_FOUND, constants.HTTP_NOT_FOUND);
+    }
+
+    await azureBlobStorage.deleteActivityPhoto(groupProgressId, keyActivity, name, req);
+
+    activity.photos.splice(photoIndex, 1);
+    activity.updatedBy = userId;
+    groupProgress.markModified('activities');
+
+    await GroupProgressRepository.save(groupProgress, req);
+
+    const message = translate(SUCCESS_CODES.CODE_PHOTO_DELETE_SUCCESS, acceptLanguage);
+
+    return new BaseResponse(true, [message]);
+};
+
+const findActivityPhotoIndexByName = (activity, name) => {
+    return (activity.photos || []).findIndex((photo) => photo.name === name);
+};
+
+const validateActivityPhotoGroupProgress = (groupProgress, keyActivity) => {
+    if (!groupProgress || groupProgress.status !== GroupProgressStatus.IN_PROGRESS) {
+        throw new BusinessException(ERROR_CODES.CODE_GROUP_PROGRESS_NOT_FOUND, constants.HTTP_NOT_FOUND);
+    }
+
+    const activityExists = (groupProgress.activities || []).some((activity) => activity.key === keyActivity);
+
+    if (!activityExists) {
+        throw new BusinessException(ERROR_CODES.CODE_GROUP_PROGRESS_ACTIVITY_NOT_FOUND, constants.HTTP_NOT_FOUND);
+    }
+};
+
+const validateActivityPhotoFile = async (file, req) => {
+    await utilPhotoFile.validatePhotoFile(file, req, {
+        maxFileSizeMbConfigKey: AppConfigKey.ACTIVITY_PHOTO_MAX_FILE_SIZE_MB,
+    });
 };
 
 const updateGroupProgress = async (req) => {
@@ -363,12 +509,19 @@ const mapGroupActivity = (activity, lang) => ({
     difficulty: activity.difficulty,
 });
 
+const mapActivityPhoto = (photo) => ({
+    name: photo.name ?? null,
+    url: photo.url ?? null,
+    uploadedAt: photo.uploadedAt ?? null,
+    uploadedBy: photo.uploadedBy ?? null,
+});
+
 const mapProgressActivity = (progressActivity, groupActivity = {}) => ({
     key: progressActivity.key,
     completed: progressActivity.completed,
     completedAt: progressActivity.completedAt,
     notes: progressActivity.notes,
-    photos: progressActivity.photos,
+    photos: (progressActivity.photos || []).filter((photo) => photo.url).map(mapActivityPhoto),
     updatedBy: progressActivity.updatedBy,
     name: groupActivity.name ?? null,
     description: groupActivity.description ?? null,
@@ -403,6 +556,8 @@ module.exports = {
     addPartners,
     removePartner,
     updateGroupProgress,
+    addActivityPhoto,
+    removeActivityPhoto,
     getMyGroupProgress,
     getSharedGroupProgress,
 };

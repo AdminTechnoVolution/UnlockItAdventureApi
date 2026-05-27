@@ -2,7 +2,6 @@ paths:
   /api/group/unlock:
     post:
       summary: Unlock a group for the authenticated user
-      description: Free groups (no productsId) are created directly as in_progress. Paid groups require purchaseToken and productId, start as validating, then Google Play validation moves them to in_progress.
       tags:
         - Groups & Activities
       security:
@@ -18,11 +17,15 @@ paths:
               $ref: '#/components/schemas/UnlockGroupSchema'
       responses:
         200:
-          $ref: '#/components/responses/SuccessResponse'
+          $ref: '#/components/responses/UnlockGroupSuccessResponse'
         400:
           $ref: '#/components/responses/BadRequestResponse'
         401:
           $ref: '#/components/responses/UnauthorizedResponse'
+        404:
+          $ref: '#/components/responses/NotFoundResponse'
+        409:
+          $ref: '#/components/responses/ConflictResponse'
         500:
           $ref: '#/components/responses/InternalServerErrorResponse'
 
@@ -38,7 +41,7 @@ paths:
         - $ref: '#/components/parameters/AcceptLanguage'
       responses:
         200:
-          $ref: '#/components/responses/SuccessResponse'
+          $ref: '#/components/responses/GroupProgressListSuccessResponse'
         401:
           $ref: '#/components/responses/UnauthorizedResponse'
         500:
@@ -60,7 +63,7 @@ paths:
               $ref: '#/components/schemas/UpdateGroupProgressSchema'
       responses:
         200:
-          $ref: '#/components/responses/SuccessResponse'
+          $ref: '#/components/responses/MessageOnlySuccessResponse'
         400:
           $ref: '#/components/responses/BadRequestResponse'
         401:
@@ -68,14 +71,13 @@ paths:
         403:
           $ref: '#/components/responses/ForbiddenResponse'
         404:
-          $ref: '#/components/responses/BadRequestResponse'
+          $ref: '#/components/responses/NotFoundResponse'
         500:
           $ref: '#/components/responses/InternalServerErrorResponse'
 
   /api/group/progress/shared:
     get:
       summary: Get group progress shared with me
-      description: Returns group progress where the authenticated user appears in partnerId, with the same localized response shape as GET /api/group/progress.
       tags:
         - Groups & Activities
       security:
@@ -85,9 +87,69 @@ paths:
         - $ref: '#/components/parameters/AcceptLanguage'
       responses:
         200:
-          $ref: '#/components/responses/SuccessResponse'
+          $ref: '#/components/responses/GroupProgressListSuccessResponse'
         401:
           $ref: '#/components/responses/UnauthorizedResponse'
+        500:
+          $ref: '#/components/responses/InternalServerErrorResponse'
+
+  /api/group/progress/activity/photo:
+    post:
+      summary: Upload a photo for a group progress activity
+      tags:
+        - Groups & Activities
+      security:
+        - Bearer: []
+      parameters:
+        - $ref: '#/components/parameters/Authorization'
+        - $ref: '#/components/parameters/AcceptLanguage'
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/AddActivityPhotoSchema'
+      responses:
+        200:
+          $ref: '#/components/responses/AddActivityPhotoSuccessResponse'
+        400:
+          $ref: '#/components/responses/BadRequestResponse'
+        401:
+          $ref: '#/components/responses/UnauthorizedResponse'
+        403:
+          $ref: '#/components/responses/ForbiddenResponse'
+        404:
+          $ref: '#/components/responses/NotFoundResponse'
+        500:
+          $ref: '#/components/responses/InternalServerErrorResponse'
+
+  /api/group/progress/activity/photo/remove:
+    put:
+      summary: Remove a photo from a group progress activity
+      tags:
+        - Groups & Activities
+      security:
+        - Bearer: []
+      parameters:
+        - $ref: '#/components/parameters/Authorization'
+        - $ref: '#/components/parameters/AcceptLanguage'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RemoveActivityPhotoSchema'
+      responses:
+        200:
+          $ref: '#/components/responses/MessageOnlySuccessResponse'
+        400:
+          $ref: '#/components/responses/BadRequestResponse'
+        401:
+          $ref: '#/components/responses/UnauthorizedResponse'
+        403:
+          $ref: '#/components/responses/ForbiddenResponse'
+        404:
+          $ref: '#/components/responses/NotFoundResponse'
         500:
           $ref: '#/components/responses/InternalServerErrorResponse'
 
@@ -109,7 +171,7 @@ paths:
               $ref: '#/components/schemas/AddPartnersSchema'
       responses:
         200:
-          $ref: '#/components/responses/SuccessResponse'
+          $ref: '#/components/responses/MessageOnlySuccessResponse'
         400:
           $ref: '#/components/responses/BadRequestResponse'
         401:
@@ -117,7 +179,7 @@ paths:
         403:
           $ref: '#/components/responses/ForbiddenResponse'
         404:
-          $ref: '#/components/responses/BadRequestResponse'
+          $ref: '#/components/responses/NotFoundResponse'
         500:
           $ref: '#/components/responses/InternalServerErrorResponse'
 
@@ -139,7 +201,7 @@ paths:
               $ref: '#/components/schemas/RemovePartnerSchema'
       responses:
         200:
-          $ref: '#/components/responses/SuccessResponse'
+          $ref: '#/components/responses/MessageOnlySuccessResponse'
         400:
           $ref: '#/components/responses/BadRequestResponse'
         401:
@@ -147,7 +209,7 @@ paths:
         403:
           $ref: '#/components/responses/ForbiddenResponse'
         404:
-          $ref: '#/components/responses/BadRequestResponse'
+          $ref: '#/components/responses/NotFoundResponse'
         500:
           $ref: '#/components/responses/InternalServerErrorResponse'
 
@@ -163,7 +225,7 @@ paths:
         - $ref: '#/components/parameters/AcceptLanguage'
       responses:
         200:
-          $ref: '#/components/responses/SuccessResponse'
+          $ref: '#/components/responses/GroupActivitiesSuccessResponse'
         400:
           $ref: '#/components/responses/BadRequestResponse'
         401:

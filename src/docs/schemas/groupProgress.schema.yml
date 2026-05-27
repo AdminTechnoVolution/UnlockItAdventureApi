@@ -23,16 +23,262 @@ components:
     UnlockGroupResponseData:
       type: object
       properties:
-        groupProgressId:
+        _id:
           type: string
           example: "507f1f77bcf86cd799439012"
+        userId:
+          type: string
+          example: "507f1f77bcf86cd799439013"
         groupId:
           type: string
           example: "507f1f77bcf86cd799439011"
+        partnerId:
+          type: array
+          items:
+            type: string
+          example: []
         status:
           type: string
-          description: in_progress (free group or after Google validation); validating only transient for paid groups
-          example: "in_progress"
+          enum:
+            - validating
+            - in_progress
+            - completed
+          example: in_progress
+        completedAt:
+          type: string
+          format: date-time
+          nullable: true
+        activities:
+          type: array
+          items:
+            $ref: '#/components/schemas/UnlockGroupActivityItem'
+        createdAt:
+          type: string
+          format: date-time
+        updatedAt:
+          type: string
+          format: date-time
+
+    UnlockGroupActivityItem:
+      type: object
+      properties:
+        key:
+          type: string
+          example: activity_1
+        completed:
+          type: boolean
+          example: false
+        updatedBy:
+          type: string
+          example: "507f1f77bcf86cd799439013"
+
+    UserSummary:
+      type: object
+      properties:
+        id:
+          type: string
+          example: "507f1f77bcf86cd799439013"
+        fullName:
+          type: string
+          example: Jane Doe
+        email:
+          type: string
+          format: email
+          example: jane@example.com
+
+    ActivityPhoto:
+      type: object
+      properties:
+        name:
+          type: string
+          example: "1779905183162_0453.webp"
+        url:
+          type: string
+          example: "https://storage.example.com/activity/photo.webp"
+        uploadedAt:
+          type: string
+          format: date-time
+          nullable: true
+        uploadedBy:
+          type: string
+          example: "507f1f77bcf86cd799439013"
+
+    GroupSummary:
+      type: object
+      properties:
+        id:
+          type: string
+          example: "507f1f77bcf86cd799439011"
+        name:
+          type: string
+          example: Seven Wonders
+        description:
+          type: string
+        imageUrl:
+          type: string
+        tags:
+          type: array
+          items:
+            type: string
+        additionalInfo:
+          type: array
+          items:
+            type: object
+
+    ProgressActivity:
+      type: object
+      properties:
+        key:
+          type: string
+          example: activity_1
+        completed:
+          type: boolean
+          example: true
+        completedAt:
+          type: string
+          format: date-time
+          nullable: true
+        notes:
+          type: string
+          nullable: true
+        photos:
+          type: array
+          items:
+            $ref: '#/components/schemas/ActivityPhoto'
+        updatedBy:
+          type: string
+        name:
+          type: string
+          nullable: true
+        description:
+          type: string
+          nullable: true
+        tips:
+          type: array
+          items:
+            type: string
+          nullable: true
+        imageUrl:
+          type: string
+          nullable: true
+        additionalInfo:
+          type: array
+          items:
+            type: object
+          nullable: true
+        tags:
+          type: array
+          items:
+            type: string
+          nullable: true
+        difficulty:
+          type: integer
+          nullable: true
+
+    GroupProgressItem:
+      type: object
+      properties:
+        id:
+          type: string
+          example: "507f1f77bcf86cd799439012"
+        status:
+          type: string
+          enum:
+            - validating
+            - in_progress
+            - completed
+          example: in_progress
+        completedAt:
+          type: string
+          format: date-time
+          nullable: true
+        createdAt:
+          type: string
+          format: date-time
+        updatedAt:
+          type: string
+          format: date-time
+        userId:
+          $ref: '#/components/schemas/UserSummary'
+        group:
+          $ref: '#/components/schemas/GroupSummary'
+        partners:
+          type: array
+          items:
+            $ref: '#/components/schemas/UserSummary'
+        activities:
+          type: array
+          items:
+            $ref: '#/components/schemas/ProgressActivity'
+
+    AddActivityPhotoResponseData:
+      type: object
+      properties:
+        photo:
+          $ref: '#/components/schemas/ActivityPhoto'
+
+    UnlockGroupResponse:
+      allOf:
+        - $ref: '#/components/schemas/BaseResponse'
+        - type: object
+          properties:
+            success:
+              type: boolean
+              example: true
+            messages:
+              type: array
+              items:
+                type: string
+            data:
+              $ref: '#/components/schemas/UnlockGroupResponseData'
+
+    GroupProgressListResponse:
+      allOf:
+        - $ref: '#/components/schemas/BaseResponse'
+        - type: object
+          properties:
+            success:
+              type: boolean
+              example: true
+            messages:
+              type: array
+              items:
+                type: string
+            data:
+              type: array
+              items:
+                $ref: '#/components/schemas/GroupProgressItem'
+
+    MessageOnlyResponse:
+      allOf:
+        - $ref: '#/components/schemas/BaseResponse'
+        - type: object
+          properties:
+            success:
+              type: boolean
+              example: true
+            messages:
+              type: array
+              items:
+                type: string
+            data:
+              nullable: true
+              example: null
+
+    AddActivityPhotoResponse:
+      allOf:
+        - $ref: '#/components/schemas/BaseResponse'
+        - type: object
+          properties:
+            success:
+              type: boolean
+              example: true
+            messages:
+              type: array
+              items:
+                type: string
+            data:
+              $ref: '#/components/schemas/AddActivityPhotoResponseData'
 
     AddPartnersSchema:
       type: object
@@ -94,3 +340,39 @@ components:
           type: string
           maxLength: 5000
           example: "Great experience visiting the site."
+
+    AddActivityPhotoSchema:
+      type: object
+      required:
+        - groupProgressId
+        - keyActivity
+        - photo
+      properties:
+        groupProgressId:
+          type: string
+          example: "507f1f77bcf86cd799439012"
+        keyActivity:
+          type: string
+          example: "activity_1"
+        photo:
+          type: string
+          format: binary
+          description: Activity photo file (jpeg, png, or webp)
+
+    RemoveActivityPhotoSchema:
+      type: object
+      required:
+        - groupProgressId
+        - keyActivity
+        - name
+      properties:
+        groupProgressId:
+          type: string
+          example: "507f1f77bcf86cd799439012"
+        keyActivity:
+          type: string
+          example: "activity_1"
+        name:
+          type: string
+          description: Photo file name stored in MongoDB and Azure (e.g. 1779905183162_0453.webp)
+          example: "1779905183162_0453.webp"
