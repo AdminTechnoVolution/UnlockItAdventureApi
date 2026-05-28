@@ -1,6 +1,6 @@
 {
   "name": "unlockit-adventure-api",
-  "version": "0.0.28",
+  "version": "0.0.30",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -27,6 +27,7 @@
     "decimal.js": "^10.6.0",
     "dotenv": "^17.2.2",
     "express": "^5.1.0",
+    "express-rate-limit": "^8.5.2",
     "firebase-admin": "^13.6.0",
     "flat": "^6.0.1",
     "google-auth-library": "^10.5.0",
@@ -41,6 +42,7 @@
     "node-cache": "^5.1.2",
     "node-cron": "^4.2.1",
     "nodemailer": "^7.0.5",
+    "rate-limit-redis": "^5.0.0",
     "redis": "^5.6.0",
     "sharp": "^0.34.3",
     "swagger-jsdoc": "^6.2.8",

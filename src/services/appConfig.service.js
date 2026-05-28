@@ -5,6 +5,7 @@ const AppConfigRepository = require('../repository/appConfig.repository');
 const cache = require('../../shared/config/cache');
 const consCache = require('../../shared/constants/constants.cache');
 const env = require('../../shared/constants/environmentSystemVariables');
+const BaseResponse = require('../../shared/commons/models/BaseResponse');
 
 const getConfigs = async (req = null) => {
     let configs = cache.get(consCache.CACHE_KEY_CONFIGS);
@@ -23,7 +24,20 @@ const getConfigByKey = async (key, req = null) => {
     return configs.find((config) => config.key === key) ?? null;
 };
 
+const getPublicConfigs = async (req = null) => {
+    const configs = await getConfigs(req);
+
+    const data = configs.map((config) => ({
+        key: config.key,
+        value: config.value,
+        description: config.description ?? null,
+    }));
+
+    return new BaseResponse(true, [], data);
+};
+
 module.exports = {
     getConfigs,
     getConfigByKey,
+    getPublicConfigs,
 };

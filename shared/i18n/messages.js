@@ -47,6 +47,7 @@ const ERROR_CODES = {
     CODE_GROUP_PROGRESS_UPDATE_FORBIDDEN: "CODE_GROUP_PROGRESS_UPDATE_FORBIDDEN",
     CODE_GROUP_PROGRESS_ACTIVITY_NOT_FOUND: "CODE_GROUP_PROGRESS_ACTIVITY_NOT_FOUND",
     CODE_GROUP_PROGRESS_UPDATE_NO_FIELDS: "CODE_GROUP_PROGRESS_UPDATE_NO_FIELDS",
+    CODE_RATE_LIMIT_EXCEEDED: "CODE_RATE_LIMIT_EXCEEDED",
     ERROR_BAD_REQUEST_RESPONSE: "ERROR_BAD_REQUEST_RESPONSE",
     ERROR_MALFORMED_BAD_REQUEST: "ERROR_MALFORMED_BAD_REQUEST",
     ERROR_INTERNAL_SERVER_ERROR: "INTERNAL_SERVER_ERROR",
@@ -358,6 +359,13 @@ const TRANSLATIONS = {
         pt: "Pelo menos um de completed, activityCompletedAt, groupCompletedAt ou notes é obrigatório.",
         fr: "Au moins un des champs completed, activityCompletedAt, groupCompletedAt ou notes est requis.",
         it: "Almeno uno tra completed, activityCompletedAt, groupCompletedAt o notes è obbligatorio."
+    },
+    [ERROR_CODES.CODE_RATE_LIMIT_EXCEEDED]: {
+        en: "Too many requests. Please try again later.",
+        es: "Demasiadas solicitudes. Inténtalo de nuevo más tarde.",
+        pt: "Muitas solicitações. Tente novamente mais tarde.",
+        fr: "Trop de requêtes. Veuillez réessayer plus tard.",
+        it: "Troppe richieste. Riprova più tardi."
     },
     [ERROR_CODES.FIELD_INVALID]: {
         en: "Invalid field: ",

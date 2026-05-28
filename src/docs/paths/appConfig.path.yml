@@ -1,0 +1,18 @@
+paths:
+  /api/configs:
+    get:
+      summary: Get public app configuration values
+      tags:
+        - Config
+      security:
+        - Bearer: []
+      parameters:
+        - $ref: '#/components/parameters/Authorization'
+        - $ref: '#/components/parameters/AcceptLanguage'
+      responses:
+        200:
+          $ref: '#/components/responses/AppConfigsSuccessResponse'
+        401:
+          $ref: '#/components/responses/UnauthorizedResponse'
+        500:
+          $ref: '#/components/responses/InternalServerErrorResponse'

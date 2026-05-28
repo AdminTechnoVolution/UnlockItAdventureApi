@@ -14,10 +14,9 @@ const swaggerOptions = {
         tags: [
             { name: "Health" },
             { name: "Auth" },
+            { name: "Config" },
             { name: "Groups & Activities" },
-            { name: "RTDN Google" },
-            { name: "Subscription" },
-            { name: "Users" }
+            { name: "Users" },
         ],
         components: {
             securitySchemes: {

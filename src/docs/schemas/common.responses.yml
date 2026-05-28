@@ -132,3 +132,10 @@ components:
         application/json:
           schema:
             $ref: '#/components/schemas/AddActivityPhotoResponse'
+
+    AppConfigsSuccessResponse:
+      description: Public app configuration list
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/AppConfigsResponse'
