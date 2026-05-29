@@ -91,7 +91,28 @@ const validateAddPartnersEligibility = async (userId, groupProgressId, partnerId
         throw new BusinessException(ERROR_CODES.CODE_PARTNER_EMAIL_NOT_FOUND, constants.HTTP_NOT_FOUND);
     }
 
+    validatePartnersMaxCount(groupProgress, partnerUsers, req);
+
     return { groupProgress, uniquePartnerEmails, partnerUsers };
+};
+
+const getNewPartnerIds = (groupProgress, partnerUsers) => {
+    const existingPartnerIds = new Set((groupProgress.partnerId || []).map((id) => id.toString()));
+
+    return partnerUsers
+        .map((user) => user._id)
+        .filter((partnerId) => !existingPartnerIds.has(partnerId.toString()));
+};
+
+const validatePartnersMaxCount = async (groupProgress, partnerUsers, req) => {
+    const maxPartnersConfig = await AppConfigService.getConfigByKey(AppConfigKey.GROUP_PARTNERS_MAX_COUNT, req);
+    const maxPartners = Number(maxPartnersConfig);
+    const newPartnersCount = getNewPartnerIds(groupProgress, partnerUsers).length;
+    const totalAfterAdd = (groupProgress.partnerId || []).length + newPartnersCount;
+
+    if (totalAfterAdd > maxPartners) {
+        throw new BusinessException(ERROR_CODES.CODE_PARTNERS_MAX_REACHED, constants.HTTP_BAD_REQUEST);
+    }
 };
 
 const validatePartnerEmails = async (userId, partnerEmails, req) => {
@@ -109,10 +130,7 @@ const validatePartnerEmails = async (userId, partnerEmails, req) => {
 };
 
 const appendPartnersToGroupProgress = (groupProgress, partnerUsers) => {
-    const existingPartnerIds = new Set((groupProgress.partnerId || []).map((id) => id.toString()));
-    const newPartnerIds = partnerUsers
-        .map((user) => user._id)
-        .filter((partnerId) => !existingPartnerIds.has(partnerId.toString()));
+    const newPartnerIds = getNewPartnerIds(groupProgress, partnerUsers);
 
     groupProgress.partnerId = [...(groupProgress.partnerId || []), ...newPartnerIds];
 };
