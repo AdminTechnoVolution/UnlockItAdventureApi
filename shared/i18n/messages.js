@@ -43,6 +43,7 @@ const ERROR_CODES = {
     CODE_PARTNER_EMAIL_NOT_FOUND: "CODE_PARTNER_EMAIL_NOT_FOUND",
     CODE_PARTNER_CANNOT_BE_SELF: "CODE_PARTNER_CANNOT_BE_SELF",
     CODE_PARTNER_NOT_FOUND: "CODE_PARTNER_NOT_FOUND",
+    CODE_PARTNERS_MAX_REACHED: "CODE_PARTNERS_MAX_REACHED",
     CODE_REMOVE_PARTNER_FORBIDDEN: "CODE_REMOVE_PARTNER_FORBIDDEN",
     CODE_GROUP_PROGRESS_UPDATE_FORBIDDEN: "CODE_GROUP_PROGRESS_UPDATE_FORBIDDEN",
     CODE_GROUP_PROGRESS_ACTIVITY_NOT_FOUND: "CODE_GROUP_PROGRESS_ACTIVITY_NOT_FOUND",
@@ -331,6 +332,13 @@ const TRANSLATIONS = {
         pt: "Parceiro não encontrado neste progresso do grupo.",
         fr: "Partenaire introuvable dans cette progression du groupe.",
         it: "Partner non trovato in questo progresso del gruppo."
+    },
+    [ERROR_CODES.CODE_PARTNERS_MAX_REACHED]: {
+        en: "Maximum number of partners reached for this adventure.",
+        es: "Se alcanzó el número máximo de compañeros para esta aventura.",
+        pt: "Número máximo de parceiros atingido para esta aventura.",
+        fr: "Nombre maximum de partenaires atteint pour cette aventure.",
+        it: "Numero massimo di partner raggiunto per questa avventura."
     },
     [ERROR_CODES.CODE_REMOVE_PARTNER_FORBIDDEN]: {
         en: "You can only remove yourself from this group progress.",
