@@ -49,9 +49,8 @@ const deleteUserProfilePhotos = async (userId) => {
     }
 };
 
-const uploadUserProfilePhoto = async (userId, buffer, req = null) => {
+const uploadUserProfilePhoto = async (userId, webpBuffer, req = null) => {
     try {
-        const webpBuffer = await convertToWebp(buffer);
         await deleteUserProfilePhotos(userId);
 
         const blobPath = buildUserProfileBlobPath(userId);

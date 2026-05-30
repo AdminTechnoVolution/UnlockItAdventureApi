@@ -14,6 +14,7 @@ const azureBlobStorage = require('../clients/azureBlob');
 const googleCloudVision = require('../clients/googleVision');
 const { ERROR_CODES } = require('../../shared/i18n/messages');
 const utilPhotoFile = require('../../shared/util/photoFileValidation');
+const profilePhotoProcessor = require('../../shared/util/profilePhotoProcessor');
 
 const updateProfile = async (req) => {
     const auth = req.headers['authorization'];
@@ -72,7 +73,8 @@ const updateProfilePhoto = async (req) => {
     }
 
     await googleCloudVision.validateImageContent(file.buffer, req);
-    const url = await azureBlobStorage.uploadUserProfilePhoto(userId.toString(), file.buffer, req);
+    const processedBuffer = await profilePhotoProcessor.processProfilePhoto(file.buffer, req);
+    const url = await azureBlobStorage.uploadUserProfilePhoto(userId.toString(), processedBuffer, req);
 
     user.profileImageUrl = url;
     const userSaved = await UserRepository.save(user, req);
