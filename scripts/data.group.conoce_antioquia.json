@@ -22,11 +22,11 @@
         {
             "key": "001",
             "name": {
-                "en": "Abejorral, town of balconies",
-                "es": "Abejorral, pueblo de balcones",
-                "pt": "Abejorral, vila das varandas",
-                "fr": "Abejorral, village aux balcons",
-                "it": "Abejorral, paese dei balconi"
+                "en": "Abejorral",
+                "es": "Abejorral",
+                "pt": "Abejorral",
+                "fr": "Abejorral",
+                "it": "Abejorral"
             },
             "description": {
                 "en": "Discover one of Antioquia's heritage towns, famous for its colonial architecture and cobblestone streets.",
@@ -68,11 +68,11 @@
         {
             "key": "002",
             "name": {
-                "en": "Abriaquí, gateway to the orchids",
-                "es": "Abriaquí, puerta de las orquídeas",
-                "pt": "Abriaquí, porta das orquídeas",
-                "fr": "Abriaquí, porte des orchidées",
-                "it": "Abriaquí, porta delle orchidee"
+                "en": "Abriaquí",
+                "es": "Abriaquí",
+                "pt": "Abriaquí",
+                "fr": "Abriaquí",
+                "it": "Abriaquí"
             },
             "description": {
                 "en": "A quiet western municipality, neighbor of Las Orquídeas National Natural Park.",
@@ -114,11 +114,11 @@
         {
             "key": "003",
             "name": {
-                "en": "Alejandría, pools of the east",
-                "es": "Alejandría, charcos del oriente",
-                "pt": "Alejandría, poços do leste",
-                "fr": "Alejandría, bassins de l'est",
-                "it": "Alejandría, pozze dell'est"
+                "en": "Alejandría",
+                "es": "Alejandría",
+                "pt": "Alejandría",
+                "fr": "Alejandría",
+                "it": "Alejandría"
             },
             "description": {
                 "en": "A town in eastern Antioquia surrounded by rivers, natural pools and nature.",
@@ -160,11 +160,11 @@
         {
             "key": "004",
             "name": {
-                "en": "Amagá, land of the railway",
-                "es": "Amagá, tierra del ferrocarril",
-                "pt": "Amagá, terra da ferrovia",
-                "fr": "Amagá, terre du chemin de fer",
-                "it": "Amagá, terra della ferrovia"
+                "en": "Amagá",
+                "es": "Amagá",
+                "pt": "Amagá",
+                "fr": "Amagá",
+                "it": "Amagá"
             },
             "description": {
                 "en": "Mining and railway cradle of southwestern Antioquia.",
@@ -206,11 +206,11 @@
         {
             "key": "005",
             "name": {
-                "en": "Amalfi, heart of the northeast",
-                "es": "Amalfi, corazón del nordeste",
-                "pt": "Amalfi, coração do nordeste",
-                "fr": "Amalfi, cœur du nord-est",
-                "it": "Amalfi, cuore del nord-est"
+                "en": "Amalfi",
+                "es": "Amalfi",
+                "pt": "Amalfi",
+                "fr": "Amalfi",
+                "it": "Amalfi"
             },
             "description": {
                 "en": "Mining and cattle town of the northeast, surrounded by mountains and rivers.",
@@ -252,11 +252,11 @@
         {
             "key": "006",
             "name": {
-                "en": "Andes, coffee and Cerro Tusa",
-                "es": "Andes, café y Cerro Tusa",
-                "pt": "Andes, café e Cerro Tusa",
-                "fr": "Andes, café et Cerro Tusa",
-                "it": "Andes, caffè e Cerro Tusa"
+                "en": "Andes",
+                "es": "Andes",
+                "pt": "Andes",
+                "fr": "Andes",
+                "it": "Andes"
             },
             "description": {
                 "en": "Major coffee town of the southwest, home to the imposing Cerro Tusa.",
@@ -298,11 +298,11 @@
         {
             "key": "007",
             "name": {
-                "en": "Angelópolis, water and mountain",
-                "es": "Angelópolis, agua y montaña",
-                "pt": "Angelópolis, água e montanha",
-                "fr": "Angelópolis, eau et montagne",
-                "it": "Angelópolis, acqua e montagna"
+                "en": "Angelópolis",
+                "es": "Angelópolis",
+                "pt": "Angelópolis",
+                "fr": "Angelópolis",
+                "it": "Angelópolis"
             },
             "description": {
                 "en": "A small southwestern town with mining tradition and abundant streams.",
@@ -344,11 +344,11 @@
         {
             "key": "008",
             "name": {
-                "en": "Angostura, land of Beato Marianito",
-                "es": "Angostura, tierra del Beato Marianito",
-                "pt": "Angostura, terra do Beato Marianito",
-                "fr": "Angostura, terre du Bienheureux Marianito",
-                "it": "Angostura, terra del Beato Marianito"
+                "en": "Angostura",
+                "es": "Angostura",
+                "pt": "Angostura",
+                "fr": "Angostura",
+                "it": "Angostura"
             },
             "description": {
                 "en": "A northern town known for its devotion to Blessed Mariano de Jesús Euse Hoyos.",
@@ -390,11 +390,11 @@
         {
             "key": "009",
             "name": {
-                "en": "Anorí, biodiversity of the northeast",
-                "es": "Anorí, biodiversidad del nordeste",
-                "pt": "Anorí, biodiversidade do nordeste",
-                "fr": "Anorí, biodiversité du nord-est",
-                "it": "Anorí, biodiversità del nord-est"
+                "en": "Anorí",
+                "es": "Anorí",
+                "pt": "Anorí",
+                "fr": "Anorí",
+                "it": "Anorí"
             },
             "description": {
                 "en": "A northeastern town recognized for its natural richness and biodiversity.",
@@ -436,11 +436,11 @@
         {
             "key": "010",
             "name": {
-                "en": "Anzá, heat of the canyon",
-                "es": "Anzá, calor del cañón",
-                "pt": "Anzá, calor do cânion",
-                "fr": "Anzá, chaleur du canyon",
-                "it": "Anzá, calore del canyon"
+                "en": "Anzá",
+                "es": "Anzá",
+                "pt": "Anzá",
+                "fr": "Anzá",
+                "it": "Anzá"
             },
             "description": {
                 "en": "A warm western municipality on the banks of the Cauca river.",
@@ -482,11 +482,11 @@
         {
             "key": "011",
             "name": {
-                "en": "Apartadó, capital of banana",
-                "es": "Apartadó, capital del banano",
-                "pt": "Apartadó, capital da banana",
-                "fr": "Apartadó, capitale de la banane",
-                "it": "Apartadó, capitale della banana"
+                "en": "Apartadó",
+                "es": "Apartadó",
+                "pt": "Apartadó",
+                "fr": "Apartadó",
+                "it": "Apartadó"
             },
             "description": {
                 "en": "Commercial hub of the Urabá region, surrounded by banana plantations.",
@@ -528,11 +528,11 @@
         {
             "key": "012",
             "name": {
-                "en": "Arboletes, mud volcano and sea",
-                "es": "Arboletes, volcán de lodo y mar",
-                "pt": "Arboletes, vulcão de lama e mar",
-                "fr": "Arboletes, volcan de boue et mer",
-                "it": "Arboletes, vulcano di fango e mare"
+                "en": "Arboletes",
+                "es": "Arboletes",
+                "pt": "Arboletes",
+                "fr": "Arboletes",
+                "it": "Arboletes"
             },
             "description": {
                 "en": "Caribbean destination famous for its mud volcano and its beaches.",
@@ -574,11 +574,11 @@
         {
             "key": "013",
             "name": {
-                "en": "Argelia, waterfalls of the east",
-                "es": "Argelia, cascadas del oriente",
-                "pt": "Argelia, cachoeiras do leste",
-                "fr": "Argelia, cascades de l'est",
-                "it": "Argelia, cascate dell'est"
+                "en": "Argelia",
+                "es": "Argelia",
+                "pt": "Argelia",
+                "fr": "Argelia",
+                "it": "Argelia"
             },
             "description": {
                 "en": "A far-eastern town surrounded by waterfalls and coffee crops.",
@@ -620,11 +620,11 @@
         {
             "key": "014",
             "name": {
-                "en": "Armenia Mantequilla, balcony of the west",
-                "es": "Armenia Mantequilla, balcón del occidente",
-                "pt": "Armenia Mantequilla, varanda do oeste",
-                "fr": "Armenia Mantequilla, balcon de l'ouest",
-                "it": "Armenia Mantequilla, balcone dell'ovest"
+                "en": "Armenia",
+                "es": "Armenia",
+                "pt": "Armenia",
+                "fr": "Armenia",
+                "it": "Armenia"
             },
             "description": {
                 "en": "A small western municipality known as 'Mantequilla'.",
@@ -666,11 +666,11 @@
         {
             "key": "015",
             "name": {
-                "en": "Barbosa, land of pineapple",
-                "es": "Barbosa, tierra de la piña",
-                "pt": "Barbosa, terra do abacaxi",
-                "fr": "Barbosa, terre de l'ananas",
-                "it": "Barbosa, terra dell'ananas"
+                "en": "Barbosa",
+                "es": "Barbosa",
+                "pt": "Barbosa",
+                "fr": "Barbosa",
+                "it": "Barbosa"
             },
             "description": {
                 "en": "A town in the north of the Aburrá Valley, famous for its pineapples and pools.",
@@ -712,11 +712,11 @@
         {
             "key": "016",
             "name": {
-                "en": "Bello, cradle of Marco Fidel Suárez",
-                "es": "Bello, cuna de Marco Fidel Suárez",
-                "pt": "Bello, berço de Marco Fidel Suárez",
-                "fr": "Bello, berceau de Marco Fidel Suárez",
-                "it": "Bello, culla di Marco Fidel Suárez"
+                "en": "Bello",
+                "es": "Bello",
+                "pt": "Bello",
+                "fr": "Bello",
+                "it": "Bello"
             },
             "description": {
                 "en": "Second city of the Aburrá Valley, birthplace of former president Marco Fidel Suárez.",
@@ -758,11 +758,11 @@
         {
             "key": "017",
             "name": {
-                "en": "Belmira, páramo and frailejones",
-                "es": "Belmira, páramo y frailejones",
-                "pt": "Belmira, páramo e frailejones",
-                "fr": "Belmira, páramo et frailejones",
-                "it": "Belmira, páramo e frailejones"
+                "en": "Belmira",
+                "es": "Belmira",
+                "pt": "Belmira",
+                "fr": "Belmira",
+                "it": "Belmira"
             },
             "description": {
                 "en": "A northern town famous for its páramo, a key water source for the valley.",
@@ -804,11 +804,11 @@
         {
             "key": "018",
             "name": {
-                "en": "Betania, viewpoints of the southwest",
-                "es": "Betania, miradores del suroeste",
-                "pt": "Betania, mirantes do sudoeste",
-                "fr": "Betania, points de vue du sud-ouest",
-                "it": "Betania, punti panoramici del sud-ovest"
+                "en": "Betania",
+                "es": "Betania",
+                "pt": "Betania",
+                "fr": "Betania",
+                "it": "Betania"
             },
             "description": {
                 "en": "A coffee town in the southwest with beautiful mountain landscapes.",
@@ -850,11 +850,11 @@
         {
             "key": "019",
             "name": {
-                "en": "Betulia, coffee of the southwest",
-                "es": "Betulia, café del suroeste",
-                "pt": "Betulia, café do sudoeste",
-                "fr": "Betulia, café du sud-ouest",
-                "it": "Betulia, caffè del sud-ovest"
+                "en": "Betulia",
+                "es": "Betulia",
+                "pt": "Betulia",
+                "fr": "Betulia",
+                "it": "Betulia"
             },
             "description": {
                 "en": "A coffee town of the southwest near the San Juan river canyon.",
@@ -896,11 +896,11 @@
         {
             "key": "020",
             "name": {
-                "en": "Briceño, mountains of the north",
-                "es": "Briceño, montañas del norte",
-                "pt": "Briceño, montanhas do norte",
-                "fr": "Briceño, montagnes du nord",
-                "it": "Briceño, montagne del nord"
+                "en": "Briceño",
+                "es": "Briceño",
+                "pt": "Briceño",
+                "fr": "Briceño",
+                "it": "Briceño"
             },
             "description": {
                 "en": "A northern town of Antioquia near the Cauca river canyon.",
@@ -942,11 +942,11 @@
         {
             "key": "021",
             "name": {
-                "en": "Buriticá, land of gold",
-                "es": "Buriticá, tierra de oro",
-                "pt": "Buriticá, terra do ouro",
-                "fr": "Buriticá, terre d'or",
-                "it": "Buriticá, terra d'oro"
+                "en": "Buriticá",
+                "es": "Buriticá",
+                "pt": "Buriticá",
+                "fr": "Buriticá",
+                "it": "Buriticá"
             },
             "description": {
                 "en": "A western town with an ancestral gold-mining tradition.",
@@ -988,11 +988,11 @@
         {
             "key": "022",
             "name": {
-                "en": "Cáceres, gold of the lower Cauca",
-                "es": "Cáceres, oro del bajo Cauca",
-                "pt": "Cáceres, ouro do baixo Cauca",
-                "fr": "Cáceres, or du bas Cauca",
-                "it": "Cáceres, oro del basso Cauca"
+                "en": "Cáceres",
+                "es": "Cáceres",
+                "pt": "Cáceres",
+                "fr": "Cáceres",
+                "it": "Cáceres"
             },
             "description": {
                 "en": "A warm town of the lower Cauca on the banks of the Cauca river.",
@@ -1034,11 +1034,11 @@
         {
             "key": "023",
             "name": {
-                "en": "Caicedo, mountains of the west",
-                "es": "Caicedo, montañas del occidente",
-                "pt": "Caicedo, montanhas do oeste",
-                "fr": "Caicedo, montagnes de l'ouest",
-                "it": "Caicedo, montagne dell'ovest"
+                "en": "Caicedo",
+                "es": "Caicedo",
+                "pt": "Caicedo",
+                "fr": "Caicedo",
+                "it": "Caicedo"
             },
             "description": {
                 "en": "A quiet western municipality surrounded by mountains.",
@@ -1080,11 +1080,11 @@
         {
             "key": "024",
             "name": {
-                "en": "Caldas, source of the Aburrá river",
-                "es": "Caldas, nacimiento del río Aburrá",
-                "pt": "Caldas, nascente do rio Aburrá",
-                "fr": "Caldas, source de la rivière Aburrá",
-                "it": "Caldas, sorgente del fiume Aburrá"
+                "en": "Caldas",
+                "es": "Caldas",
+                "pt": "Caldas",
+                "fr": "Caldas",
+                "it": "Caldas"
             },
             "description": {
                 "en": "A town in the south of the Aburrá Valley where the Medellín river is born.",
@@ -1126,11 +1126,11 @@
         {
             "key": "025",
             "name": {
-                "en": "Campamento, landscapes of the north",
-                "es": "Campamento, paisajes del norte",
-                "pt": "Campamento, paisagens do norte",
-                "fr": "Campamento, paysages du nord",
-                "it": "Campamento, paesaggi del nord"
+                "en": "Campamento",
+                "es": "Campamento",
+                "pt": "Campamento",
+                "fr": "Campamento",
+                "it": "Campamento"
             },
             "description": {
                 "en": "A northern town of Antioquia with coffee and cattle landscapes.",
@@ -1172,11 +1172,11 @@
         {
             "key": "026",
             "name": {
-                "en": "Cañasgordas, the royal road of the west",
-                "es": "Cañasgordas, camino real del occidente",
-                "pt": "Cañasgordas, caminho real do oeste",
-                "fr": "Cañasgordas, chemin royal de l'ouest",
-                "it": "Cañasgordas, strada reale dell'ovest"
+                "en": "Cañasgordas",
+                "es": "Cañasgordas",
+                "pt": "Cañasgordas",
+                "fr": "Cañasgordas",
+                "it": "Cañasgordas"
             },
             "description": {
                 "en": "A western town crossed by historic royal roads and mountain landscapes.",
@@ -1218,11 +1218,11 @@
         {
             "key": "027",
             "name": {
-                "en": "Caracolí, pools of the Magdalena Medio",
-                "es": "Caracolí, charcos del Magdalena Medio",
-                "pt": "Caracolí, poços do Magdalena Medio",
-                "fr": "Caracolí, bassins du Magdalena Medio",
-                "it": "Caracolí, pozze del Magdalena Medio"
+                "en": "Caracolí",
+                "es": "Caracolí",
+                "pt": "Caracolí",
+                "fr": "Caracolí",
+                "it": "Caracolí"
             },
             "description": {
                 "en": "A warm town of the Magdalena Medio with rivers and natural pools.",
@@ -1264,11 +1264,11 @@
         {
             "key": "028",
             "name": {
-                "en": "Caramanta, viewpoints and coffee",
-                "es": "Caramanta, miradores y café",
-                "pt": "Caramanta, mirantes e café",
-                "fr": "Caramanta, points de vue et café",
-                "it": "Caramanta, punti panoramici e caffè"
+                "en": "Caramanta",
+                "es": "Caramanta",
+                "pt": "Caramanta",
+                "fr": "Caramanta",
+                "it": "Caramanta"
             },
             "description": {
                 "en": "A southwestern town with coffee farms and panoramic mountain views.",
@@ -1310,11 +1310,11 @@
         {
             "key": "029",
             "name": {
-                "en": "Carepa, banana of Urabá",
-                "es": "Carepa, banano del Urabá",
-                "pt": "Carepa, banana do Urabá",
-                "fr": "Carepa, banane de l'Urabá",
-                "it": "Carepa, banana dell'Urabá"
+                "en": "Carepa",
+                "es": "Carepa",
+                "pt": "Carepa",
+                "fr": "Carepa",
+                "it": "Carepa"
             },
             "description": {
                 "en": "A town in the Urabá region surrounded by banana and plantain plantations.",
@@ -1356,11 +1356,11 @@
         {
             "key": "030",
             "name": {
-                "en": "Carolina del Príncipe, heritage town of the north",
-                "es": "Carolina del Príncipe, pueblo patrimonio del norte",
-                "pt": "Carolina del Príncipe, vila patrimônio do norte",
-                "fr": "Carolina del Príncipe, village patrimonial du nord",
-                "it": "Carolina del Príncipe, paese patrimonio del nord"
+                "en": "Carolina del Príncipe",
+                "es": "Carolina del Príncipe",
+                "pt": "Carolina del Príncipe",
+                "fr": "Carolina del Príncipe",
+                "it": "Carolina del Príncipe"
             },
             "description": {
                 "en": "A heritage town of northern Antioquia, near reservoirs and waterfalls.",
@@ -1402,11 +1402,11 @@
         {
             "key": "031",
             "name": {
-                "en": "Caucasia, capital of the lower Cauca",
-                "es": "Caucasia, capital del bajo Cauca",
-                "pt": "Caucasia, capital do baixo Cauca",
-                "fr": "Caucasia, capitale du bas Cauca",
-                "it": "Caucasia, capitale del basso Cauca"
+                "en": "Caucasia",
+                "es": "Caucasia",
+                "pt": "Caucasia",
+                "fr": "Caucasia",
+                "it": "Caucasia"
             },
             "description": {
                 "en": "The main town of the lower Cauca, on the banks of the Cauca river.",
@@ -1448,11 +1448,11 @@
         {
             "key": "032",
             "name": {
-                "en": "Chigorodó, gateway to Urabá",
-                "es": "Chigorodó, puerta del Urabá",
-                "pt": "Chigorodó, porta do Urabá",
-                "fr": "Chigorodó, porte de l'Urabá",
-                "it": "Chigorodó, porta dell'Urabá"
+                "en": "Chigorodó",
+                "es": "Chigorodó",
+                "pt": "Chigorodó",
+                "fr": "Chigorodó",
+                "it": "Chigorodó"
             },
             "description": {
                 "en": "A town in the Urabá region crossed by rivers and banana plantations.",
@@ -1494,11 +1494,11 @@
         {
             "key": "033",
             "name": {
-                "en": "Cisneros, the La Quiebra tunnel",
-                "es": "Cisneros, el túnel de La Quiebra",
-                "pt": "Cisneros, o túnel de La Quiebra",
-                "fr": "Cisneros, le tunnel de La Quiebra",
-                "it": "Cisneros, il tunnel di La Quiebra"
+                "en": "Cisneros",
+                "es": "Cisneros",
+                "pt": "Cisneros",
+                "fr": "Cisneros",
+                "it": "Cisneros"
             },
             "description": {
                 "en": "A northeastern railway town, home to the historic La Quiebra tunnel.",
@@ -1540,11 +1540,11 @@
         {
             "key": "034",
             "name": {
-                "en": "Ciudad Bolívar, coffee balcony",
-                "es": "Ciudad Bolívar, balcón cafetero",
-                "pt": "Ciudad Bolívar, varanda cafeeira",
-                "fr": "Ciudad Bolívar, balcon caféier",
-                "it": "Ciudad Bolívar, balcone del caffè"
+                "en": "Ciudad Bolívar",
+                "es": "Ciudad Bolívar",
+                "pt": "Ciudad Bolívar",
+                "fr": "Ciudad Bolívar",
+                "it": "Ciudad Bolívar"
             },
             "description": {
                 "en": "An important southwestern coffee town with mountain landscapes.",
@@ -1586,11 +1586,11 @@
         {
             "key": "035",
             "name": {
-                "en": "Cocorná, pools and waterfalls",
-                "es": "Cocorná, charcos y cascadas",
-                "pt": "Cocorná, poços e cachoeiras",
-                "fr": "Cocorná, bassins et cascades",
-                "it": "Cocorná, pozze e cascate"
+                "en": "Cocorná",
+                "es": "Cocorná",
+                "pt": "Cocorná",
+                "fr": "Cocorná",
+                "it": "Cocorná"
             },
             "description": {
                 "en": "An eastern town famous for its natural pools, waterfalls and ecotourism.",
@@ -1632,11 +1632,11 @@
         {
             "key": "036",
             "name": {
-                "en": "Concepción, colonial corner of the east",
-                "es": "Concepción, rincón colonial del oriente",
-                "pt": "Concepción, recanto colonial do leste",
-                "fr": "Concepción, coin colonial de l'est",
-                "it": "Concepción, angolo coloniale dell'est"
+                "en": "Concepción",
+                "es": "Concepción",
+                "pt": "Concepción",
+                "fr": "Concepción",
+                "it": "Concepción"
             },
             "description": {
                 "en": "A heritage eastern town with colonial streets and nearby streams.",
@@ -1678,11 +1678,11 @@
         {
             "key": "037",
             "name": {
-                "en": "Concordia, southwestern coffee corner",
-                "es": "Concordia, rincón cafetero del suroeste",
-                "pt": "Concordia, recanto cafeeiro do sudoeste",
-                "fr": "Concordia, coin caféier du sud-ouest",
-                "it": "Concordia, angolo del caffè del sud-ovest"
+                "en": "Concordia",
+                "es": "Concordia",
+                "pt": "Concordia",
+                "fr": "Concordia",
+                "it": "Concordia"
             },
             "description": {
                 "en": "A southwestern coffee town with traditional architecture and viewpoints.",
@@ -1724,11 +1724,11 @@
         {
             "key": "038",
             "name": {
-                "en": "Copacabana, faith and the Aburrá Valley",
-                "es": "Copacabana, fe y Valle de Aburrá",
-                "pt": "Copacabana, fé e Vale do Aburrá",
-                "fr": "Copacabana, foi et vallée d'Aburrá",
-                "it": "Copacabana, fede e Valle de Aburrá"
+                "en": "Copacabana",
+                "es": "Copacabana",
+                "pt": "Copacabana",
+                "fr": "Copacabana",
+                "it": "Copacabana"
             },
             "description": {
                 "en": "A town in the Aburrá Valley with religious tradition and surrounding hills.",
@@ -1770,11 +1770,11 @@
         {
             "key": "039",
             "name": {
-                "en": "Dabeiba, doorway to the far west",
-                "es": "Dabeiba, umbral del occidente lejano",
-                "pt": "Dabeiba, limiar do oeste distante",
-                "fr": "Dabeiba, seuil de l'ouest lointain",
-                "it": "Dabeiba, soglia dell'ovest lontano"
+                "en": "Dabeiba",
+                "es": "Dabeiba",
+                "pt": "Dabeiba",
+                "fr": "Dabeiba",
+                "it": "Dabeiba"
             },
             "description": {
                 "en": "A western town on the road to Urabá, surrounded by rivers and mountains.",
@@ -1816,11 +1816,11 @@
         {
             "key": "040",
             "name": {
-                "en": "Don Matías, textiles and dairy",
-                "es": "Don Matías, confección y lácteos",
-                "pt": "Don Matías, confecção e laticínios",
-                "fr": "Don Matías, textile et produits laitiers",
-                "it": "Don Matías, abbigliamento e latticini"
+                "en": "Don Matías",
+                "es": "Don Matías",
+                "pt": "Don Matías",
+                "fr": "Don Matías",
+                "it": "Don Matías"
             },
             "description": {
                 "en": "A northern town known for its garment industry and dairy products.",
@@ -1862,11 +1862,11 @@
         {
             "key": "041",
             "name": {
-                "en": "Ebéjico, balcony over the Cauca",
-                "es": "Ebéjico, balcón sobre el Cauca",
-                "pt": "Ebéjico, varanda sobre o Cauca",
-                "fr": "Ebéjico, balcon sur le Cauca",
-                "it": "Ebéjico, balcone sul Cauca"
+                "en": "Ebéjico",
+                "es": "Ebéjico",
+                "pt": "Ebéjico",
+                "fr": "Ebéjico",
+                "it": "Ebéjico"
             },
             "description": {
                 "en": "A western town with viewpoints over the Cauca canyon and panela tradition.",
@@ -1908,11 +1908,11 @@
         {
             "key": "042",
             "name": {
-                "en": "El Bagre, gold of the Nechí",
-                "es": "El Bagre, oro del Nechí",
-                "pt": "El Bagre, ouro do Nechí",
-                "fr": "El Bagre, or du Nechí",
-                "it": "El Bagre, oro del Nechí"
+                "en": "El Bagre",
+                "es": "El Bagre",
+                "pt": "El Bagre",
+                "fr": "El Bagre",
+                "it": "El Bagre"
             },
             "description": {
                 "en": "A warm lower-Cauca town with gold mining, on the banks of the Nechí river.",
@@ -1954,11 +1954,11 @@
         {
             "key": "043",
             "name": {
-                "en": "El Carmen de Viboral, town of ceramics",
-                "es": "El Carmen de Viboral, pueblo de la cerámica",
-                "pt": "El Carmen de Viboral, vila da cerâmica",
-                "fr": "El Carmen de Viboral, village de la céramique",
-                "it": "El Carmen de Viboral, paese della ceramica"
+                "en": "El Carmen de Viboral",
+                "es": "El Carmen de Viboral",
+                "pt": "El Carmen de Viboral",
+                "fr": "El Carmen de Viboral",
+                "it": "El Carmen de Viboral"
             },
             "description": {
                 "en": "An eastern town world-famous for its hand-painted artisanal ceramics.",
@@ -2000,11 +2000,11 @@
         {
             "key": "044",
             "name": {
-                "en": "El Santuario, garden of the east",
-                "es": "El Santuario, despensa del oriente",
-                "pt": "El Santuario, celeiro do leste",
-                "fr": "El Santuario, grenier de l'est",
-                "it": "El Santuario, dispensa dell'est"
+                "en": "El Santuario",
+                "es": "El Santuario",
+                "pt": "El Santuario",
+                "fr": "El Santuario",
+                "it": "El Santuario"
             },
             "description": {
                 "en": "An eastern town known for its vegetable crops and religious tradition.",
@@ -2046,11 +2046,11 @@
         {
             "key": "045",
             "name": {
-                "en": "Entrerríos, dairy of the north",
-                "es": "Entrerríos, lácteos del norte",
-                "pt": "Entrerríos, laticínios do norte",
-                "fr": "Entrerríos, produits laitiers du nord",
-                "it": "Entrerríos, latticini del nord"
+                "en": "Entrerríos",
+                "es": "Entrerríos",
+                "pt": "Entrerríos",
+                "fr": "Entrerríos",
+                "it": "Entrerríos"
             },
             "description": {
                 "en": "A northern town with dairy tradition, reservoirs and green landscapes.",
@@ -2092,11 +2092,11 @@
         {
             "key": "046",
             "name": {
-                "en": "Envigado, town of Fernando González",
-                "es": "Envigado, pueblo de Fernando González",
-                "pt": "Envigado, terra de Fernando González",
-                "fr": "Envigado, ville de Fernando González",
-                "it": "Envigado, città di Fernando González"
+                "en": "Envigado",
+                "es": "Envigado",
+                "pt": "Envigado",
+                "fr": "Envigado",
+                "it": "Envigado"
             },
             "description": {
                 "en": "A cultural city of the Aburrá Valley, home of philosopher Fernando González.",
@@ -2138,11 +2138,11 @@
         {
             "key": "047",
             "name": {
-                "en": "Fredonia, coffee and Cerro Combia",
-                "es": "Fredonia, café y Cerro Combia",
-                "pt": "Fredonia, café e Cerro Combia",
-                "fr": "Fredonia, café et Cerro Combia",
-                "it": "Fredonia, caffè e Cerro Combia"
+                "en": "Fredonia",
+                "es": "Fredonia",
+                "pt": "Fredonia",
+                "fr": "Fredonia",
+                "it": "Fredonia"
             },
             "description": {
                 "en": "A traditional southwestern coffee town near the Combia hill.",
@@ -2184,11 +2184,11 @@
         {
             "key": "048",
             "name": {
-                "en": "Frontino, the Páramo del Sol",
-                "es": "Frontino, el Páramo del Sol",
-                "pt": "Frontino, o Páramo del Sol",
-                "fr": "Frontino, le Páramo del Sol",
-                "it": "Frontino, il Páramo del Sol"
+                "en": "Frontino",
+                "es": "Frontino",
+                "pt": "Frontino",
+                "fr": "Frontino",
+                "it": "Frontino"
             },
             "description": {
                 "en": "A western town home to the Páramo del Sol and Las Orquídeas National Park.",
@@ -2230,11 +2230,11 @@
         {
             "key": "049",
             "name": {
-                "en": "Giraldo, the royal road and coffee",
-                "es": "Giraldo, camino real y café",
-                "pt": "Giraldo, caminho real e café",
-                "fr": "Giraldo, chemin royal et café",
-                "it": "Giraldo, strada reale e caffè"
+                "en": "Giraldo",
+                "es": "Giraldo",
+                "pt": "Giraldo",
+                "fr": "Giraldo",
+                "it": "Giraldo"
             },
             "description": {
                 "en": "A small western town crossed by the historic royal road, with coffee farms.",
@@ -2276,11 +2276,11 @@
         {
             "key": "050",
             "name": {
-                "en": "Girardota, the Fallen Lord and avocado",
-                "es": "Girardota, el Señor Caído y el aguacate",
-                "pt": "Girardota, o Senhor Caído e o abacate",
-                "fr": "Girardota, le Seigneur Tombé et l'avocat",
-                "it": "Girardota, il Signore Caduto e l'avocado"
+                "en": "Girardota",
+                "es": "Girardota",
+                "pt": "Girardota",
+                "fr": "Girardota",
+                "it": "Girardota"
             },
             "description": {
                 "en": "A town in the Aburrá Valley famous for its religious sanctuary and avocados.",
@@ -2322,11 +2322,11 @@
         {
             "key": "051",
             "name": {
-                "en": "Gómez Plata, reservoirs of the north",
-                "es": "Gómez Plata, embalses del norte",
-                "pt": "Gómez Plata, represas do norte",
-                "fr": "Gómez Plata, réservoirs du nord",
-                "it": "Gómez Plata, bacini del nord"
+                "en": "Gómez Plata",
+                "es": "Gómez Plata",
+                "pt": "Gómez Plata",
+                "fr": "Gómez Plata",
+                "it": "Gómez Plata"
             },
             "description": {
                 "en": "A northern town surrounded by reservoirs, viaducts and green landscapes.",
@@ -2368,11 +2368,11 @@
         {
             "key": "052",
             "name": {
-                "en": "Granada, memory of the east",
-                "es": "Granada, memoria del oriente",
-                "pt": "Granada, memória do leste",
-                "fr": "Granada, mémoire de l'est",
-                "it": "Granada, memoria dell'est"
+                "en": "Granada",
+                "es": "Granada",
+                "pt": "Granada",
+                "fr": "Granada",
+                "it": "Granada"
             },
             "description": {
                 "en": "An eastern town reborn through tourism, home to a moving memory museum.",
@@ -2414,11 +2414,11 @@
         {
             "key": "053",
             "name": {
-                "en": "Guadalupe, the Guadalupe falls",
-                "es": "Guadalupe, el Salto de Guadalupe",
-                "pt": "Guadalupe, a Cachoeira de Guadalupe",
-                "fr": "Guadalupe, la chute de Guadalupe",
-                "it": "Guadalupe, la cascata di Guadalupe"
+                "en": "Guadalupe",
+                "es": "Guadalupe",
+                "pt": "Guadalupe",
+                "fr": "Guadalupe",
+                "it": "Guadalupe"
             },
             "description": {
                 "en": "A northern town known for its impressive waterfall and nearby reservoir.",
@@ -2460,11 +2460,11 @@
         {
             "key": "054",
             "name": {
-                "en": "Guarne, gateway to the east",
-                "es": "Guarne, puerta del oriente",
-                "pt": "Guarne, porta do leste",
-                "fr": "Guarne, porte de l'est",
-                "it": "Guarne, porta dell'est"
+                "en": "Guarne",
+                "es": "Guarne",
+                "pt": "Guarne",
+                "fr": "Guarne",
+                "it": "Guarne"
             },
             "description": {
                 "en": "A nearby eastern town close to the Piedras Blancas and Arví nature parks.",
@@ -2506,11 +2506,11 @@
         {
             "key": "055",
             "name": {
-                "en": "Guatapé, the Rock and the zócalos",
-                "es": "Guatapé, la Piedra y los zócalos",
-                "pt": "Guatapé, a Pedra e os zócalos",
-                "fr": "Guatapé, le Rocher et les zócalos",
-                "it": "Guatapé, la Pietra e gli zócalos"
+                "en": "Guatapé",
+                "es": "Guatapé",
+                "pt": "Guatapé",
+                "fr": "Guatapé",
+                "it": "Guatapé"
             },
             "description": {
                 "en": "One of Antioquia's most colorful towns, famous for the Peñol Rock and its painted zócalos.",
@@ -2552,11 +2552,11 @@
         {
             "key": "056",
             "name": {
-                "en": "Heliconia, stones and waterfalls",
-                "es": "Heliconia, piedras y cascadas",
-                "pt": "Heliconia, pedras e cachoeiras",
-                "fr": "Heliconia, pierres et cascades",
-                "it": "Heliconia, pietre e cascate"
+                "en": "Heliconia",
+                "es": "Heliconia",
+                "pt": "Heliconia",
+                "fr": "Heliconia",
+                "it": "Heliconia"
             },
             "description": {
                 "en": "A nearby western town with cobblestone roads, waterfalls and pools.",
@@ -2598,11 +2598,11 @@
         {
             "key": "057",
             "name": {
-                "en": "Hispania, garden of the southwest",
-                "es": "Hispania, jardín del suroeste",
-                "pt": "Hispania, jardim do sudoeste",
-                "fr": "Hispania, jardin du sud-ouest",
-                "it": "Hispania, giardino del sud-ovest"
+                "en": "Hispania",
+                "es": "Hispania",
+                "pt": "Hispania",
+                "fr": "Hispania",
+                "it": "Hispania"
             },
             "description": {
                 "en": "A small coffee town of the southwest, by the San Juan river.",
@@ -2644,11 +2644,11 @@
         {
             "key": "058",
             "name": {
-                "en": "Itagüí, industrial heart of the south",
-                "es": "Itagüí, corazón industrial del sur",
-                "pt": "Itagüí, coração industrial do sul",
-                "fr": "Itagüí, cœur industriel du sud",
-                "it": "Itagüí, cuore industriale del sud"
+                "en": "Itagüí",
+                "es": "Itagüí",
+                "pt": "Itagüí",
+                "fr": "Itagüí",
+                "it": "Itagüí"
             },
             "description": {
                 "en": "An industrial city of the Aburrá Valley with parks and a lively commercial scene.",
@@ -2690,11 +2690,11 @@
         {
             "key": "059",
             "name": {
-                "en": "Ituango, mountains and the Cauca canyon",
-                "es": "Ituango, montañas y cañón del Cauca",
-                "pt": "Ituango, montanhas e cânion do Cauca",
-                "fr": "Ituango, montagnes et canyon du Cauca",
-                "it": "Ituango, montagne e canyon del Cauca"
+                "en": "Ituango",
+                "es": "Ituango",
+                "pt": "Ituango",
+                "fr": "Ituango",
+                "it": "Ituango"
             },
             "description": {
                 "en": "A northern town near the Cauca canyon and the Hidroituango project.",
@@ -2736,11 +2736,11 @@
         {
             "key": "060",
             "name": {
-                "en": "Jardín, the Cave of Splendor",
-                "es": "Jardín, la Cueva del Esplendor",
-                "pt": "Jardín, a Cova do Esplendor",
-                "fr": "Jardín, la Grotte du Splendeur",
-                "it": "Jardín, la Grotta dello Splendore"
+                "en": "Jardín",
+                "es": "Jardín",
+                "pt": "Jardín",
+                "fr": "Jardín",
+                "it": "Jardín"
             },
             "description": {
                 "en": "One of Colombia's most beautiful towns, with a colorful square and stunning nature.",
@@ -2782,11 +2782,11 @@
         {
             "key": "061",
             "name": {
-                "en": "Jericó, cradle of Mother Laura",
-                "es": "Jericó, cuna de la Madre Laura",
-                "pt": "Jericó, berço da Madre Laura",
-                "fr": "Jericó, berceau de Mère Laura",
-                "it": "Jericó, culla di Madre Laura"
+                "en": "Jericó",
+                "es": "Jericó",
+                "pt": "Jericó",
+                "fr": "Jericó",
+                "it": "Jericó"
             },
             "description": {
                 "en": "A heritage southwestern town, birthplace of Colombia's first saint, and home of the carriel.",
@@ -2828,11 +2828,11 @@
         {
             "key": "062",
             "name": {
-                "en": "La Ceja, flowers and faith",
-                "es": "La Ceja, flores y fe",
-                "pt": "La Ceja, flores e fé",
-                "fr": "La Ceja, fleurs et foi",
-                "it": "La Ceja, fiori e fede"
+                "en": "La Ceja",
+                "es": "La Ceja",
+                "pt": "La Ceja",
+                "fr": "La Ceja",
+                "it": "La Ceja"
             },
             "description": {
                 "en": "An eastern town with a beautiful basilica, flower crops and viewpoints.",
@@ -2874,11 +2874,11 @@
         {
             "key": "063",
             "name": {
-                "en": "La Estrella, the Romeral hill",
-                "es": "La Estrella, el Cerro El Romeral",
-                "pt": "La Estrella, o Cerro El Romeral",
-                "fr": "La Estrella, le Cerro El Romeral",
-                "it": "La Estrella, il Cerro El Romeral"
+                "en": "La Estrella",
+                "es": "La Estrella",
+                "pt": "La Estrella",
+                "fr": "La Estrella",
+                "it": "La Estrella"
             },
             "description": {
                 "en": "A southern Aburrá Valley town with a traditional heritage center and ecopark.",
@@ -2920,11 +2920,11 @@
         {
             "key": "064",
             "name": {
-                "en": "La Pintada, pools of the Cauca",
-                "es": "La Pintada, balnearios del Cauca",
-                "pt": "La Pintada, balneários do Cauca",
-                "fr": "La Pintada, lieux de baignade du Cauca",
-                "it": "La Pintada, aree balneari del Cauca"
+                "en": "La Pintada",
+                "es": "La Pintada",
+                "pt": "La Pintada",
+                "fr": "La Pintada",
+                "it": "La Pintada"
             },
             "description": {
                 "en": "A warm southwestern town on the Cauca river, popular for its bathing spots.",
@@ -2966,11 +2966,11 @@
         {
             "key": "065",
             "name": {
-                "en": "La Unión, land of potato and hydrangeas",
-                "es": "La Unión, tierra de la papa y las hortensias",
-                "pt": "La Unión, terra da batata e das hortênsias",
-                "fr": "La Unión, terre de la pomme de terre et des hortensias",
-                "it": "La Unión, terra della patata e delle ortensie"
+                "en": "La Unión",
+                "es": "La Unión",
+                "pt": "La Unión",
+                "fr": "La Unión",
+                "it": "La Unión"
             },
             "description": {
                 "en": "A cool eastern town famous for its potatoes and hydrangea fields.",
@@ -3012,11 +3012,11 @@
         {
             "key": "066",
             "name": {
-                "en": "Liborina, warmth of the Cauca canyon",
-                "es": "Liborina, calor del cañón del Cauca",
-                "pt": "Liborina, calor do cânion do Cauca",
-                "fr": "Liborina, chaleur du canyon du Cauca",
-                "it": "Liborina, calore del canyon del Cauca"
+                "en": "Liborina",
+                "es": "Liborina",
+                "pt": "Liborina",
+                "fr": "Liborina",
+                "it": "Liborina"
             },
             "description": {
                 "en": "A warm western town in the Cauca canyon with fruit and sugarcane farms.",
@@ -3058,11 +3058,11 @@
         {
             "key": "067",
             "name": {
-                "en": "Maceo, caves of the Magdalena Medio",
-                "es": "Maceo, cuevas del Magdalena Medio",
-                "pt": "Maceo, cavernas do Magdalena Medio",
-                "fr": "Maceo, grottes du Magdalena Medio",
-                "it": "Maceo, grotte del Magdalena Medio"
+                "en": "Maceo",
+                "es": "Maceo",
+                "pt": "Maceo",
+                "fr": "Maceo",
+                "it": "Maceo"
             },
             "description": {
                 "en": "A warm Magdalena Medio town known for its caves, rivers and natural pools.",
@@ -3104,11 +3104,11 @@
         {
             "key": "068",
             "name": {
-                "en": "Marinilla, historic and musical town",
-                "es": "Marinilla, pueblo histórico y musical",
-                "pt": "Marinilla, vila histórica e musical",
-                "fr": "Marinilla, village historique et musical",
-                "it": "Marinilla, paese storico e musicale"
+                "en": "Marinilla",
+                "es": "Marinilla",
+                "pt": "Marinilla",
+                "fr": "Marinilla",
+                "it": "Marinilla"
             },
             "description": {
                 "en": "A heritage eastern town with deep historical and musical traditions.",
@@ -3150,11 +3150,11 @@
         {
             "key": "069",
             "name": {
-                "en": "Medellín, the city of eternal spring",
-                "es": "Medellín, la ciudad de la eterna primavera",
-                "pt": "Medellín, a cidade da eterna primavera",
-                "fr": "Medellín, la ville du printemps éternel",
-                "it": "Medellín, la città dell'eterna primavera"
+                "en": "Medellín",
+                "es": "Medellín",
+                "pt": "Medellín",
+                "fr": "Medellín",
+                "it": "Medellín"
             },
             "description": {
                 "en": "The vibrant capital of Antioquia, known for its innovation, culture and warm people.",
@@ -3196,11 +3196,11 @@
         {
             "key": "070",
             "name": {
-                "en": "Montebello, viewpoints and coffee",
-                "es": "Montebello, miradores y café",
-                "pt": "Montebello, mirantes e café",
-                "fr": "Montebello, points de vue et café",
-                "it": "Montebello, punti panoramici e caffè"
+                "en": "Montebello",
+                "es": "Montebello",
+                "pt": "Montebello",
+                "fr": "Montebello",
+                "it": "Montebello"
             },
             "description": {
                 "en": "A small southwestern town with coffee farms and panoramic views.",
@@ -3242,11 +3242,11 @@
         {
             "key": "071",
             "name": {
-                "en": "Murindó, the Atrato and the jungle",
-                "es": "Murindó, el Atrato y la selva",
-                "pt": "Murindó, o Atrato e a selva",
-                "fr": "Murindó, l'Atrato et la jungle",
-                "it": "Murindó, l'Atrato e la giungla"
+                "en": "Murindó",
+                "es": "Murindó",
+                "pt": "Murindó",
+                "fr": "Murindó",
+                "it": "Murindó"
             },
             "description": {
                 "en": "A remote western town by the Atrato river, with lush jungle and rich culture.",
@@ -3288,11 +3288,11 @@
         {
             "key": "072",
             "name": {
-                "en": "Mutatá, jungle and crystal rivers",
-                "es": "Mutatá, selva y ríos cristalinos",
-                "pt": "Mutatá, selva e rios cristalinos",
-                "fr": "Mutatá, jungle et rivières cristallines",
-                "it": "Mutatá, giungla e fiumi cristallini"
+                "en": "Mutatá",
+                "es": "Mutatá",
+                "pt": "Mutatá",
+                "fr": "Mutatá",
+                "it": "Mutatá"
             },
             "description": {
                 "en": "A town on the way to Urabá, surrounded by jungle and clear rivers.",
@@ -3334,11 +3334,11 @@
         {
             "key": "073",
             "name": {
-                "en": "Nariño, pools and coffee of the south",
-                "es": "Nariño, charcos y café del sur",
-                "pt": "Nariño, poços e café do sul",
-                "fr": "Nariño, bassins et café du sud",
-                "it": "Nariño, pozze e caffè del sud"
+                "en": "Nariño",
+                "es": "Nariño",
+                "pt": "Nariño",
+                "fr": "Nariño",
+                "it": "Nariño"
             },
             "description": {
                 "en": "A southeastern town with rivers, natural pools and coffee farms.",
@@ -3380,11 +3380,11 @@
         {
             "key": "074",
             "name": {
-                "en": "Nechí, wetlands and fishing",
-                "es": "Nechí, ciénagas y pesca",
-                "pt": "Nechí, pântanos e pesca",
-                "fr": "Nechí, marais et pêche",
-                "it": "Nechí, paludi e pesca"
+                "en": "Nechí",
+                "es": "Nechí",
+                "pt": "Nechí",
+                "fr": "Nechí",
+                "it": "Nechí"
             },
             "description": {
                 "en": "A warm lower-Cauca town surrounded by wetlands, at the mouth of the Nechí river.",
@@ -3426,11 +3426,11 @@
         {
             "key": "075",
             "name": {
-                "en": "Necoclí, gateway to the Gulf of Urabá",
-                "es": "Necoclí, puerta del golfo de Urabá",
-                "pt": "Necoclí, porta do golfo de Urabá",
-                "fr": "Necoclí, porte du golfe d'Urabá",
-                "it": "Necoclí, porta del golfo di Urabá"
+                "en": "Necoclí",
+                "es": "Necoclí",
+                "pt": "Necoclí",
+                "fr": "Necoclí",
+                "it": "Necoclí"
             },
             "description": {
                 "en": "A Caribbean town with beaches and boat connections to Capurganá and Panama.",
@@ -3472,11 +3472,11 @@
         {
             "key": "076",
             "name": {
-                "en": "Olaya, archaeology of the canyon",
-                "es": "Olaya, arqueología del cañón",
-                "pt": "Olaya, arqueologia do cânion",
-                "fr": "Olaya, archéologie du canyon",
-                "it": "Olaya, archeologia del canyon"
+                "en": "Olaya",
+                "es": "Olaya",
+                "pt": "Olaya",
+                "fr": "Olaya",
+                "it": "Olaya"
             },
             "description": {
                 "en": "A warm western town near Santa Fe de Antioquia, with archaeological sites.",
@@ -3518,11 +3518,11 @@
         {
             "key": "077",
             "name": {
-                "en": "Peñol, the reservoir town",
-                "es": "Peñol, el pueblo del embalse",
-                "pt": "Peñol, a vila da represa",
-                "fr": "Peñol, le village du réservoir",
-                "it": "Peñol, il paese del bacino"
+                "en": "Peñol",
+                "es": "Peñol",
+                "pt": "Peñol",
+                "fr": "Peñol",
+                "it": "Peñol"
             },
             "description": {
                 "en": "An eastern town reborn by the great reservoir, with a replica of the old Peñol.",
@@ -3564,11 +3564,11 @@
         {
             "key": "078",
             "name": {
-                "en": "Peque, mountains of the west",
-                "es": "Peque, montañas del occidente",
-                "pt": "Peque, montanhas do oeste",
-                "fr": "Peque, montagnes de l'ouest",
-                "it": "Peque, montagne dell'ovest"
+                "en": "Peque",
+                "es": "Peque",
+                "pt": "Peque",
+                "fr": "Peque",
+                "it": "Peque"
             },
             "description": {
                 "en": "A small western mountain town with coffee and panela tradition.",
@@ -3610,11 +3610,11 @@
         {
             "key": "079",
             "name": {
-                "en": "Pueblorrico, coffee balconies",
-                "es": "Pueblorrico, balcones cafeteros",
-                "pt": "Pueblorrico, varandas cafeeiras",
-                "fr": "Pueblorrico, balcons caféiers",
-                "it": "Pueblorrico, balconi del caffè"
+                "en": "Pueblorrico",
+                "es": "Pueblorrico",
+                "pt": "Pueblorrico",
+                "fr": "Pueblorrico",
+                "it": "Pueblorrico"
             },
             "description": {
                 "en": "A southwestern coffee town with viewpoints and traditional architecture.",
@@ -3656,11 +3656,11 @@
         {
             "key": "080",
             "name": {
-                "en": "Puerto Berrío, port of the Magdalena",
-                "es": "Puerto Berrío, puerto del Magdalena",
-                "pt": "Puerto Berrío, porto do Magdalena",
-                "fr": "Puerto Berrío, port du Magdalena",
-                "it": "Puerto Berrío, porto del Magdalena"
+                "en": "Puerto Berrío",
+                "es": "Puerto Berrío",
+                "pt": "Puerto Berrío",
+                "fr": "Puerto Berrío",
+                "it": "Puerto Berrío"
             },
             "description": {
                 "en": "A historic river port on the Magdalena, with railway and fishing heritage.",
@@ -3702,11 +3702,11 @@
         {
             "key": "081",
             "name": {
-                "en": "Puerto Nare, rivers and wetlands",
-                "es": "Puerto Nare, ríos y ciénagas",
-                "pt": "Puerto Nare, rios e pântanos",
-                "fr": "Puerto Nare, rivières et marais",
-                "it": "Puerto Nare, fiumi e paludi"
+                "en": "Puerto Nare",
+                "es": "Puerto Nare",
+                "pt": "Puerto Nare",
+                "fr": "Puerto Nare",
+                "it": "Puerto Nare"
             },
             "description": {
                 "en": "A warm Magdalena Medio town at the meeting of the Nare and Magdalena rivers.",
@@ -3748,11 +3748,11 @@
         {
             "key": "082",
             "name": {
-                "en": "Puerto Triunfo, Hacienda Nápoles and Río Claro",
-                "es": "Puerto Triunfo, Hacienda Nápoles y Río Claro",
-                "pt": "Puerto Triunfo, Hacienda Nápoles e Río Claro",
-                "fr": "Puerto Triunfo, Hacienda Nápoles et Río Claro",
-                "it": "Puerto Triunfo, Hacienda Nápoles e Río Claro"
+                "en": "Puerto Triunfo",
+                "es": "Puerto Triunfo",
+                "pt": "Puerto Triunfo",
+                "fr": "Puerto Triunfo",
+                "it": "Puerto Triunfo"
             },
             "description": {
                 "en": "A Magdalena Medio town home to a famous theme park and the Río Claro canyon.",
@@ -3794,11 +3794,11 @@
         {
             "key": "083",
             "name": {
-                "en": "Remedios, gold of the northeast",
-                "es": "Remedios, oro del nordeste",
-                "pt": "Remedios, ouro do nordeste",
-                "fr": "Remedios, or du nord-est",
-                "it": "Remedios, oro del nord-est"
+                "en": "Remedios",
+                "es": "Remedios",
+                "pt": "Remedios",
+                "fr": "Remedios",
+                "it": "Remedios"
             },
             "description": {
                 "en": "A historic northeastern town with a deep-rooted gold-mining tradition.",
@@ -3840,11 +3840,11 @@
         {
             "key": "084",
             "name": {
-                "en": "El Retiro, wood and waterfalls",
-                "es": "El Retiro, madera y cascadas",
-                "pt": "El Retiro, madeira e cachoeiras",
-                "fr": "El Retiro, bois et cascades",
-                "it": "El Retiro, legno e cascate"
+                "en": "El Retiro",
+                "es": "El Retiro",
+                "pt": "El Retiro",
+                "fr": "El Retiro",
+                "it": "El Retiro"
             },
             "description": {
                 "en": "A heritage eastern town famous for its woodwork and the Tequendamita falls.",
@@ -3886,11 +3886,11 @@
         {
             "key": "085",
             "name": {
-                "en": "Rionegro, history of the east",
-                "es": "Rionegro, historia del oriente",
-                "pt": "Rionegro, história do leste",
-                "fr": "Rionegro, histoire de l'est",
-                "it": "Rionegro, storia dell'est"
+                "en": "Rionegro",
+                "es": "Rionegro",
+                "pt": "Rionegro",
+                "fr": "Rionegro",
+                "it": "Rionegro"
             },
             "description": {
                 "en": "A historic eastern city, cradle of Colombian constitutionalism and tourism hub.",
@@ -3932,11 +3932,11 @@
         {
             "key": "086",
             "name": {
-                "en": "Sabanalarga, canyon landscapes",
-                "es": "Sabanalarga, paisajes del cañón",
-                "pt": "Sabanalarga, paisagens do cânion",
-                "fr": "Sabanalarga, paysages du canyon",
-                "it": "Sabanalarga, paesaggi del canyon"
+                "en": "Sabanalarga",
+                "es": "Sabanalarga",
+                "pt": "Sabanalarga",
+                "fr": "Sabanalarga",
+                "it": "Sabanalarga"
             },
             "description": {
                 "en": "A western town near the Cauca canyon and the Ituango reservoir.",
@@ -3978,11 +3978,11 @@
         {
             "key": "087",
             "name": {
-                "en": "Sabaneta, faith and the Romera",
-                "es": "Sabaneta, fe y La Romera",
-                "pt": "Sabaneta, fé e La Romera",
-                "fr": "Sabaneta, foi et La Romera",
-                "it": "Sabaneta, fede e La Romera"
+                "en": "Sabaneta",
+                "es": "Sabaneta",
+                "pt": "Sabaneta",
+                "fr": "Sabaneta",
+                "it": "Sabaneta"
             },
             "description": {
                 "en": "A welcoming Aburrá Valley town known for its sanctuary and ecological park.",
@@ -4024,11 +4024,11 @@
         {
             "key": "088",
             "name": {
-                "en": "Salgar, coffee and waterfalls",
-                "es": "Salgar, café y cascadas",
-                "pt": "Salgar, café e cachoeiras",
-                "fr": "Salgar, café et cascades",
-                "it": "Salgar, caffè e cascate"
+                "en": "Salgar",
+                "es": "Salgar",
+                "pt": "Salgar",
+                "fr": "Salgar",
+                "it": "Salgar"
             },
             "description": {
                 "en": "A southwestern coffee town surrounded by mountains, rivers and waterfalls.",
@@ -4070,11 +4070,11 @@
         {
             "key": "089",
             "name": {
-                "en": "San Andrés de Cuerquia, balcony of the north",
-                "es": "San Andrés de Cuerquia, balcón del norte",
-                "pt": "San Andrés de Cuerquia, varanda do norte",
-                "fr": "San Andrés de Cuerquia, balcon du nord",
-                "it": "San Andrés de Cuerquia, balcone del nord"
+                "en": "San Andrés de Cuerquia",
+                "es": "San Andrés de Cuerquia",
+                "pt": "San Andrés de Cuerquia",
+                "fr": "San Andrés de Cuerquia",
+                "it": "San Andrés de Cuerquia"
             },
             "description": {
                 "en": "A northern town with panoramic views toward the Cauca canyon.",
@@ -4116,11 +4116,11 @@
         {
             "key": "090",
             "name": {
-                "en": "San Carlos, water capital",
-                "es": "San Carlos, capital hídrica",
-                "pt": "San Carlos, capital hídrica",
-                "fr": "San Carlos, capitale de l'eau",
-                "it": "San Carlos, capitale dell'acqua"
+                "en": "San Carlos",
+                "es": "San Carlos",
+                "pt": "San Carlos",
+                "fr": "San Carlos",
+                "it": "San Carlos"
             },
             "description": {
                 "en": "An eastern town known as the water capital, full of waterfalls and pools.",
@@ -4162,11 +4162,11 @@
         {
             "key": "091",
             "name": {
-                "en": "San Francisco, pools and rainforest",
-                "es": "San Francisco, charcos y bosque húmedo",
-                "pt": "San Francisco, poços e mata úmida",
-                "fr": "San Francisco, bassins et forêt humide",
-                "it": "San Francisco, pozze e foresta umida"
+                "en": "San Francisco",
+                "es": "San Francisco",
+                "pt": "San Francisco",
+                "fr": "San Francisco",
+                "it": "San Francisco"
             },
             "description": {
                 "en": "An eastern town rich in rivers, natural pools and humid forests.",
@@ -4208,11 +4208,11 @@
         {
             "key": "092",
             "name": {
-                "en": "San Jerónimo, warm getaway of the west",
-                "es": "San Jerónimo, descanso cálido del occidente",
-                "pt": "San Jerónimo, descanso quente do oeste",
-                "fr": "San Jerónimo, escapade chaude de l'ouest",
-                "it": "San Jerónimo, rifugio caldo dell'ovest"
+                "en": "San Jerónimo",
+                "es": "San Jerónimo",
+                "pt": "San Jerónimo",
+                "fr": "San Jerónimo",
+                "it": "San Jerónimo"
             },
             "description": {
                 "en": "A warm western town, a popular weekend getaway with pools and resorts.",
@@ -4254,11 +4254,11 @@
         {
             "key": "093",
             "name": {
-                "en": "San José de la Montaña, dairy of the heights",
-                "es": "San José de la Montaña, lácteos de las alturas",
-                "pt": "San José de la Montaña, laticínios das alturas",
-                "fr": "San José de la Montaña, produits laitiers des hauteurs",
-                "it": "San José de la Montaña, latticini delle alture"
+                "en": "San José de la Montaña",
+                "es": "San José de la Montaña",
+                "pt": "San José de la Montaña",
+                "fr": "San José de la Montaña",
+                "it": "San José de la Montaña"
             },
             "description": {
                 "en": "A cold northern town with dairy tradition and high-mountain landscapes.",
@@ -4300,11 +4300,11 @@
         {
             "key": "094",
             "name": {
-                "en": "San Juan de Urabá, Caribbean beaches",
-                "es": "San Juan de Urabá, playas del Caribe",
-                "pt": "San Juan de Urabá, praias do Caribe",
-                "fr": "San Juan de Urabá, plages des Caraïbes",
-                "it": "San Juan de Urabá, spiagge dei Caraibi"
+                "en": "San Juan de Urabá",
+                "es": "San Juan de Urabá",
+                "pt": "San Juan de Urabá",
+                "fr": "San Juan de Urabá",
+                "it": "San Juan de Urabá"
             },
             "description": {
                 "en": "A Caribbean coastal town with beaches and a strong coconut tradition.",
@@ -4346,11 +4346,11 @@
         {
             "key": "095",
             "name": {
-                "en": "San Luis, the Río Claro canyon",
-                "es": "San Luis, el cañón del Río Claro",
-                "pt": "San Luis, o cânion do Río Claro",
-                "fr": "San Luis, le canyon du Río Claro",
-                "it": "San Luis, il canyon del Río Claro"
+                "en": "San Luis",
+                "es": "San Luis",
+                "pt": "San Luis",
+                "fr": "San Luis",
+                "it": "San Luis"
             },
             "description": {
                 "en": "An eastern town with marble canyons, caves and tropical rainforest.",
@@ -4392,11 +4392,11 @@
         {
             "key": "096",
             "name": {
-                "en": "San Pedro de los Milagros, cheese and faith",
-                "es": "San Pedro de los Milagros, quesito y fe",
-                "pt": "San Pedro de los Milagros, queijo e fé",
-                "fr": "San Pedro de los Milagros, fromage et foi",
-                "it": "San Pedro de los Milagros, formaggio e fede"
+                "en": "San Pedro de los Milagros",
+                "es": "San Pedro de los Milagros",
+                "pt": "San Pedro de los Milagros",
+                "fr": "San Pedro de los Milagros",
+                "it": "San Pedro de los Milagros"
             },
             "description": {
                 "en": "A northern dairy town famous for its 'quesito' and religious devotion.",
@@ -4438,11 +4438,11 @@
         {
             "key": "097",
             "name": {
-                "en": "San Pedro de Urabá, savanna and cattle",
-                "es": "San Pedro de Urabá, sabana y ganadería",
-                "pt": "San Pedro de Urabá, savana e pecuária",
-                "fr": "San Pedro de Urabá, savane et élevage",
-                "it": "San Pedro de Urabá, savana e allevamento"
+                "en": "San Pedro de Urabá",
+                "es": "San Pedro de Urabá",
+                "pt": "San Pedro de Urabá",
+                "fr": "San Pedro de Urabá",
+                "it": "San Pedro de Urabá"
             },
             "description": {
                 "en": "An Urabá town set in cattle savannas with warm climate and local culture.",
@@ -4484,11 +4484,11 @@
         {
             "key": "098",
             "name": {
-                "en": "San Rafael, pools of the Guatapé river",
-                "es": "San Rafael, charcos del río Guatapé",
-                "pt": "San Rafael, poços do rio Guatapé",
-                "fr": "San Rafael, bassins de la rivière Guatapé",
-                "it": "San Rafael, pozze del fiume Guatapé"
+                "en": "San Rafael",
+                "es": "San Rafael",
+                "pt": "San Rafael",
+                "fr": "San Rafael",
+                "it": "San Rafael"
             },
             "description": {
                 "en": "An eastern town famous for the crystal-clear pools of the Guatapé river.",
@@ -4530,11 +4530,11 @@
         {
             "key": "099",
             "name": {
-                "en": "San Roque, coffee of the northeast",
-                "es": "San Roque, café del nordeste",
-                "pt": "San Roque, café do nordeste",
-                "fr": "San Roque, café du nord-est",
-                "it": "San Roque, caffè del nord-est"
+                "en": "San Roque",
+                "es": "San Roque",
+                "pt": "San Roque",
+                "fr": "San Roque",
+                "it": "San Roque"
             },
             "description": {
                 "en": "A northeastern town with coffee farms, rivers and green landscapes.",
@@ -4576,11 +4576,11 @@
         {
             "key": "100",
             "name": {
-                "en": "San Vicente, fields of the east",
-                "es": "San Vicente, campos del oriente",
-                "pt": "San Vicente, campos do leste",
-                "fr": "San Vicente, champs de l'est",
-                "it": "San Vicente, campi dell'est"
+                "en": "San Vicente",
+                "es": "San Vicente",
+                "pt": "San Vicente",
+                "fr": "San Vicente",
+                "it": "San Vicente"
             },
             "description": {
                 "en": "A cool eastern town with farmland and peaceful rural landscapes.",
@@ -4622,11 +4622,11 @@
         {
             "key": "101",
             "name": {
-                "en": "Santa Bárbara, balcony of the southwest",
-                "es": "Santa Bárbara, balcón del suroeste",
-                "pt": "Santa Bárbara, varanda do sudoeste",
-                "fr": "Santa Bárbara, balcon du sud-ouest",
-                "it": "Santa Bárbara, balcone del sud-ovest"
+                "en": "Santa Bárbara",
+                "es": "Santa Bárbara",
+                "pt": "Santa Bárbara",
+                "fr": "Santa Bárbara",
+                "it": "Santa Bárbara"
             },
             "description": {
                 "en": "A southwestern coffee town with sweeping views over the Cauca canyon.",
@@ -4668,11 +4668,11 @@
         {
             "key": "102",
             "name": {
-                "en": "Santa Fe de Antioquia, the colonial city",
-                "es": "Santa Fe de Antioquia, la ciudad colonial",
-                "pt": "Santa Fe de Antioquia, a cidade colonial",
-                "fr": "Santa Fe de Antioquia, la ville coloniale",
-                "it": "Santa Fe de Antioquia, la città coloniale"
+                "en": "Santa Fe de Antioquia",
+                "es": "Santa Fe de Antioquia",
+                "pt": "Santa Fe de Antioquia",
+                "fr": "Santa Fe de Antioquia",
+                "it": "Santa Fe de Antioquia"
             },
             "description": {
                 "en": "The former capital of Antioquia, a colonial jewel famous for the Western Bridge.",
@@ -4714,11 +4714,11 @@
         {
             "key": "103",
             "name": {
-                "en": "Santa Rosa de Osos, neo-Gothic cathedral",
-                "es": "Santa Rosa de Osos, catedral neogótica",
-                "pt": "Santa Rosa de Osos, catedral neogótica",
-                "fr": "Santa Rosa de Osos, cathédrale néogothique",
-                "it": "Santa Rosa de Osos, cattedrale neogotica"
+                "en": "Santa Rosa de Osos",
+                "es": "Santa Rosa de Osos",
+                "pt": "Santa Rosa de Osos",
+                "fr": "Santa Rosa de Osos",
+                "it": "Santa Rosa de Osos"
             },
             "description": {
                 "en": "A northern dairy town with a striking neo-Gothic cathedral and reservoirs.",
@@ -4760,11 +4760,11 @@
         {
             "key": "104",
             "name": {
-                "en": "Santo Domingo, land of Carrasquilla",
-                "es": "Santo Domingo, tierra de Carrasquilla",
-                "pt": "Santo Domingo, terra de Carrasquilla",
-                "fr": "Santo Domingo, terre de Carrasquilla",
-                "it": "Santo Domingo, terra di Carrasquilla"
+                "en": "Santo Domingo",
+                "es": "Santo Domingo",
+                "pt": "Santo Domingo",
+                "fr": "Santo Domingo",
+                "it": "Santo Domingo"
             },
             "description": {
                 "en": "A northeastern heritage town, birthplace of writer Tomás Carrasquilla.",
@@ -4806,11 +4806,11 @@
         {
             "key": "105",
             "name": {
-                "en": "Segovia, gold capital of the northeast",
-                "es": "Segovia, capital aurífera del nordeste",
-                "pt": "Segovia, capital aurífera do nordeste",
-                "fr": "Segovia, capitale aurifère du nord-est",
-                "it": "Segovia, capitale aurifera del nord-est"
+                "en": "Segovia",
+                "es": "Segovia",
+                "pt": "Segovia",
+                "fr": "Segovia",
+                "it": "Segovia"
             },
             "description": {
                 "en": "A northeastern town with one of the region's strongest gold-mining traditions.",
@@ -4852,11 +4852,11 @@
         {
             "key": "106",
             "name": {
-                "en": "Sonsón, páramo and heritage",
-                "es": "Sonsón, páramo y patrimonio",
-                "pt": "Sonsón, páramo e patrimônio",
-                "fr": "Sonsón, páramo et patrimoine",
-                "it": "Sonsón, páramo e patrimonio"
+                "en": "Sonsón",
+                "es": "Sonsón",
+                "pt": "Sonsón",
+                "fr": "Sonsón",
+                "it": "Sonsón"
             },
             "description": {
                 "en": "A historic southeastern town with a grand cathedral and its own páramo.",
@@ -4898,11 +4898,11 @@
         {
             "key": "107",
             "name": {
-                "en": "Sopetrán, warm fruit getaway",
-                "es": "Sopetrán, descanso cálido y frutal",
-                "pt": "Sopetrán, descanso quente e frutífero",
-                "fr": "Sopetrán, escapade chaude et fruitière",
-                "it": "Sopetrán, rifugio caldo e fruttifero"
+                "en": "Sopetrán",
+                "es": "Sopetrán",
+                "pt": "Sopetrán",
+                "fr": "Sopetrán",
+                "it": "Sopetrán"
             },
             "description": {
                 "en": "A warm western town famous for its mangoes, fruits and weekend resorts.",
@@ -4944,11 +4944,11 @@
         {
             "key": "108",
             "name": {
-                "en": "Támesis, petroglyphs and waterfalls",
-                "es": "Támesis, petroglifos y cascadas",
-                "pt": "Támesis, petróglifos e cachoeiras",
-                "fr": "Támesis, pétroglyphes et cascades",
-                "it": "Támesis, petroglifi e cascate"
+                "en": "Támesis",
+                "es": "Támesis",
+                "pt": "Támesis",
+                "fr": "Támesis",
+                "it": "Támesis"
             },
             "description": {
                 "en": "A southwestern town rich in indigenous petroglyphs, waterfalls and coffee.",
@@ -4990,11 +4990,11 @@
         {
             "key": "109",
             "name": {
-                "en": "Tarazá, warmth of the lower Cauca",
-                "es": "Tarazá, calor del bajo Cauca",
-                "pt": "Tarazá, calor do baixo Cauca",
-                "fr": "Tarazá, chaleur du bas Cauca",
-                "it": "Tarazá, calore del basso Cauca"
+                "en": "Tarazá",
+                "es": "Tarazá",
+                "pt": "Tarazá",
+                "fr": "Tarazá",
+                "it": "Tarazá"
             },
             "description": {
                 "en": "A warm lower-Cauca town surrounded by rivers and tropical landscapes.",
@@ -5036,11 +5036,11 @@
         {
             "key": "110",
             "name": {
-                "en": "Tarso, southwestern coffee balcony",
-                "es": "Tarso, balcón cafetero del suroeste",
-                "pt": "Tarso, varanda cafeeira do sudoeste",
-                "fr": "Tarso, balcon caféier du sud-ouest",
-                "it": "Tarso, balcone del caffè del sud-ovest"
+                "en": "Tarso",
+                "es": "Tarso",
+                "pt": "Tarso",
+                "fr": "Tarso",
+                "it": "Tarso"
             },
             "description": {
                 "en": "A small southwestern coffee town with viewpoints and a calm atmosphere.",
@@ -5082,11 +5082,11 @@
         {
             "key": "111",
             "name": {
-                "en": "Titiribí, the El Zancudo mines",
-                "es": "Titiribí, las minas de El Zancudo",
-                "pt": "Titiribí, as minas de El Zancudo",
-                "fr": "Titiribí, les mines d'El Zancudo",
-                "it": "Titiribí, le miniere di El Zancudo"
+                "en": "Titiribí",
+                "es": "Titiribí",
+                "pt": "Titiribí",
+                "fr": "Titiribí",
+                "it": "Titiribí"
             },
             "description": {
                 "en": "A southwestern town with a rich mining history at the legendary El Zancudo.",
@@ -5128,11 +5128,11 @@
         {
             "key": "112",
             "name": {
-                "en": "Toledo, landscapes of the Cauca canyon",
-                "es": "Toledo, paisajes del cañón del Cauca",
-                "pt": "Toledo, paisagens do cânion do Cauca",
-                "fr": "Toledo, paysages du canyon du Cauca",
-                "it": "Toledo, paesaggi del canyon del Cauca"
+                "en": "Toledo",
+                "es": "Toledo",
+                "pt": "Toledo",
+                "fr": "Toledo",
+                "it": "Toledo"
             },
             "description": {
                 "en": "A northern town with viewpoints toward the Cauca canyon and rural roads.",
@@ -5174,11 +5174,11 @@
         {
             "key": "113",
             "name": {
-                "en": "Turbo, port of Urabá",
-                "es": "Turbo, puerto del Urabá",
-                "pt": "Turbo, porto do Urabá",
-                "fr": "Turbo, port de l'Urabá",
-                "it": "Turbo, porto dell'Urabá"
+                "en": "Turbo",
+                "es": "Turbo",
+                "pt": "Turbo",
+                "fr": "Turbo",
+                "it": "Turbo"
             },
             "description": {
                 "en": "A major Caribbean port town of Urabá, gateway to the gulf beaches.",
@@ -5220,11 +5220,11 @@
         {
             "key": "114",
             "name": {
-                "en": "Uramita, rivers of the west",
-                "es": "Uramita, ríos del occidente",
-                "pt": "Uramita, rios do oeste",
-                "fr": "Uramita, rivières de l'ouest",
-                "it": "Uramita, fiumi dell'ovest"
+                "en": "Uramita",
+                "es": "Uramita",
+                "pt": "Uramita",
+                "fr": "Uramita",
+                "it": "Uramita"
             },
             "description": {
                 "en": "A western town with rivers, mountains and quiet rural surroundings.",
@@ -5266,11 +5266,11 @@
         {
             "key": "115",
             "name": {
-                "en": "Urrao, Páramo del Sol and the lagoon",
-                "es": "Urrao, Páramo del Sol y la laguna",
-                "pt": "Urrao, Páramo del Sol e a lagoa",
-                "fr": "Urrao, Páramo del Sol et la lagune",
-                "it": "Urrao, Páramo del Sol e la laguna"
+                "en": "Urrao",
+                "es": "Urrao",
+                "pt": "Urrao",
+                "fr": "Urrao",
+                "it": "Urrao"
             },
             "description": {
                 "en": "A large southwestern town, gateway to the Páramo del Sol and the Urrao lagoon.",
@@ -5312,11 +5312,11 @@
         {
             "key": "116",
             "name": {
-                "en": "Valdivia, road of the north",
-                "es": "Valdivia, camino del norte",
-                "pt": "Valdivia, caminho do norte",
-                "fr": "Valdivia, route du nord",
-                "it": "Valdivia, strada del nord"
+                "en": "Valdivia",
+                "es": "Valdivia",
+                "pt": "Valdivia",
+                "fr": "Valdivia",
+                "it": "Valdivia"
             },
             "description": {
                 "en": "A northern town in the Cauca canyon, a key crossroads toward the lower Cauca.",
@@ -5358,11 +5358,11 @@
         {
             "key": "117",
             "name": {
-                "en": "Valparaíso, coffee and haciendas",
-                "es": "Valparaíso, café y haciendas",
-                "pt": "Valparaíso, café e fazendas",
-                "fr": "Valparaíso, café et haciendas",
-                "it": "Valparaíso, caffè e haciendas"
+                "en": "Valparaíso",
+                "es": "Valparaíso",
+                "pt": "Valparaíso",
+                "fr": "Valparaíso",
+                "it": "Valparaíso"
             },
             "description": {
                 "en": "A southwestern town with coffee farms and traditional country haciendas.",
@@ -5404,11 +5404,11 @@
         {
             "key": "118",
             "name": {
-                "en": "Vegachí, gold and rivers of the northeast",
-                "es": "Vegachí, oro y ríos del nordeste",
-                "pt": "Vegachí, ouro e rios do nordeste",
-                "fr": "Vegachí, or et rivières du nord-est",
-                "it": "Vegachí, oro e fiumi del nord-est"
+                "en": "Vegachí",
+                "es": "Vegachí",
+                "pt": "Vegachí",
+                "fr": "Vegachí",
+                "it": "Vegachí"
             },
             "description": {
                 "en": "A northeastern town with mining tradition, rivers and warm landscapes.",
@@ -5450,11 +5450,11 @@
         {
             "key": "119",
             "name": {
-                "en": "Venecia, in the shadow of Cerro Tusa",
-                "es": "Venecia, a la sombra del Cerro Tusa",
-                "pt": "Venecia, à sombra do Cerro Tusa",
-                "fr": "Venecia, à l'ombre du Cerro Tusa",
-                "it": "Venecia, all'ombra del Cerro Tusa"
+                "en": "Venecia",
+                "es": "Venecia",
+                "pt": "Venecia",
+                "fr": "Venecia",
+                "it": "Venecia"
             },
             "description": {
                 "en": "A southwestern coffee town with the best views of the iconic Cerro Tusa.",
@@ -5496,11 +5496,11 @@
         {
             "key": "120",
             "name": {
-                "en": "Vigía del Fuerte, the Atrato and the jungle",
-                "es": "Vigía del Fuerte, el Atrato y la selva",
-                "pt": "Vigía del Fuerte, o Atrato e a selva",
-                "fr": "Vigía del Fuerte, l'Atrato et la jungle",
-                "it": "Vigía del Fuerte, l'Atrato e la giungla"
+                "en": "Vigía del Fuerte",
+                "es": "Vigía del Fuerte",
+                "pt": "Vigía del Fuerte",
+                "fr": "Vigía del Fuerte",
+                "it": "Vigía del Fuerte"
             },
             "description": {
                 "en": "A remote western town on the Atrato river, rich in jungle and Afro and indigenous culture.",
@@ -5542,11 +5542,11 @@
         {
             "key": "121",
             "name": {
-                "en": "Yalí, coffee and viewpoints of the northeast",
-                "es": "Yalí, café y miradores del nordeste",
-                "pt": "Yalí, café e mirantes do nordeste",
-                "fr": "Yalí, café et points de vue du nord-est",
-                "it": "Yalí, caffè e punti panoramici del nord-est"
+                "en": "Yalí",
+                "es": "Yalí",
+                "pt": "Yalí",
+                "fr": "Yalí",
+                "it": "Yalí"
             },
             "description": {
                 "en": "A northeastern coffee town with green mountains and panoramic views.",
@@ -5588,11 +5588,11 @@
         {
             "key": "122",
             "name": {
-                "en": "Yarumal, balcony of the north",
-                "es": "Yarumal, balcón del norte",
-                "pt": "Yarumal, varanda do norte",
-                "fr": "Yarumal, balcon du nord",
-                "it": "Yarumal, balcone del nord"
+                "en": "Yarumal",
+                "es": "Yarumal",
+                "pt": "Yarumal",
+                "fr": "Yarumal",
+                "it": "Yarumal"
             },
             "description": {
                 "en": "An important northern town with a grand basilica and the Alto de Ventanas viewpoint.",
@@ -5634,11 +5634,11 @@
         {
             "key": "123",
             "name": {
-                "en": "Yolombó, gold and the legend of Juana Sánchez",
-                "es": "Yolombó, oro y la leyenda de Juana Sánchez",
-                "pt": "Yolombó, ouro e a lenda de Juana Sánchez",
-                "fr": "Yolombó, or et la légende de Juana Sánchez",
-                "it": "Yolombó, oro e la leggenda di Juana Sánchez"
+                "en": "Yolombó",
+                "es": "Yolombó",
+                "pt": "Yolombó",
+                "fr": "Yolombó",
+                "it": "Yolombó"
             },
             "description": {
                 "en": "A northeastern town with gold history, coffee farms and rich folklore.",
@@ -5680,11 +5680,11 @@
         {
             "key": "124",
             "name": {
-                "en": "Yondó, wetlands of the Magdalena",
-                "es": "Yondó, ciénagas del Magdalena",
-                "pt": "Yondó, pântanos do Magdalena",
-                "fr": "Yondó, marais du Magdalena",
-                "it": "Yondó, paludi del Magdalena"
+                "en": "Yondó",
+                "es": "Yondó",
+                "pt": "Yondó",
+                "fr": "Yondó",
+                "it": "Yondó"
             },
             "description": {
                 "en": "A warm Magdalena Medio town surrounded by wetlands and oil-region culture.",
@@ -5726,11 +5726,11 @@
         {
             "key": "125",
             "name": {
-                "en": "Zaragoza, gold of the Nechí",
-                "es": "Zaragoza, oro del Nechí",
-                "pt": "Zaragoza, ouro do Nechí",
-                "fr": "Zaragoza, or du Nechí",
-                "it": "Zaragoza, oro del Nechí"
+                "en": "Zaragoza",
+                "es": "Zaragoza",
+                "pt": "Zaragoza",
+                "fr": "Zaragoza",
+                "it": "Zaragoza"
             },
             "description": {
                 "en": "A warm lower-Cauca town with a long gold-mining tradition on the Nechí river.",
