@@ -14,6 +14,9 @@
         "it": "Intraprendi la sfida definitiva dell'Antioquia: visita tutti i 125 comuni del dipartimento, uno per uno, e colleziona un'esperienza unica in ogni paese."
     },
     "imageUrl": "https://placehold.co/1200x800?text=Conoce+Antioquia",
+    "productsId": [
+        "product_discover_antioquia"
+    ],
     "isActive": true,
     "activities": [
         {
