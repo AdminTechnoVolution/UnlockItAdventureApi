@@ -91,7 +91,7 @@ const validateAddPartnersEligibility = async (userId, groupProgressId, partnerId
         throw new BusinessException(ERROR_CODES.CODE_PARTNER_EMAIL_NOT_FOUND, constants.HTTP_NOT_FOUND);
     }
 
-    validatePartnersMaxCount(groupProgress, partnerUsers, req);
+    await validatePartnersMaxCount(groupProgress, partnerUsers, req);
 
     return { groupProgress, uniquePartnerEmails, partnerUsers };
 };
