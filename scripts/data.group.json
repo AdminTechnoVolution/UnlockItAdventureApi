@@ -1,5 +1,8 @@
 [
     {
+        "_id": {
+            "$oid": "6a1ef278308d89433b9e8103"
+        },
         "name": {
             "en": "Welcome Pack",
             "es": "Paquete de Bienvenida",
@@ -14,7 +17,7 @@
             "fr": "Bienvenue à votre première aventure ! Ce pack de démarrage comprend 3 activités faciles parfaites pour des expériences en solo ou en couple.",
             "it": "Benvenuto alla tua prima avventura! Questo pacchetto iniziale include 3 attività facili perfette per esperienze in solitaria o in coppia."
         },
-        "imageUrl": "https://example.com/images/home_local_adventures.jpg",
+        "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1ef278308d89433b9e8103/6a1ef278308d89433b9e8103.webp",
         "isActive": true,
         "activities": [
             {
@@ -60,7 +63,7 @@
                         "Ordina qualcosa che non hai mai provato"
                     ]
                 },
-                "imageUrl": "https://example.com/activities/new_restaurant.jpg",
+                "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1ef278308d89433b9e8103/activities/001.webp",
                 "difficulty": 1
             },
             {
@@ -106,7 +109,7 @@
                         "Non preoccuparti della perfezione, divertiti!"
                     ]
                 },
-                "imageUrl": "https://example.com/activities/cook_recipe.jpg",
+                "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1ef278308d89433b9e8103/activities/002.webp",
                 "difficulty": 2
             },
             {
@@ -152,12 +155,15 @@
                         "Impara le regole insieme se è un nuovo gioco"
                     ]
                 },
-                "imageUrl": "https://example.com/activities/board_game.jpg",
+                "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1ef278308d89433b9e8103/activities/003.webp",
                 "difficulty": 1
             }
         ]
     },
     {
+        "_id": {
+            "$oid": "6949f50275714844685b301e"
+        },
         "name": {
             "en": "7 Wonders of the World",
             "es": "7 Maravillas del Mundo",
@@ -172,7 +178,7 @@
             "fr": "Explorez les sept merveilles du monde moderne avec détails, conseils et histoire.",
             "it": "Esplora le sette meraviglie del mondo moderno con dettagli, consigli e storia."
         },
-        "imageUrl": "https://example.com/images/seven_wonders_main.jpg",
+        "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6949f50275714844685b301e/6949f50275714844685b301e.webp",
         "productsId": [
             "product_seven_wonders"
         ],
@@ -256,7 +262,7 @@
                         "Periodo migliore: mesi secchi con temperature miti"
                     ]
                 },
-                "imageUrl": "https://example.com/activities/machu_picchu.jpg",
+                "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6949f50275714844685b301e/activities/001.webp",
                 "additionalInfo": {
                     "en": [
                         {
@@ -354,7 +360,7 @@
                         "Prevedi tempo extra per visitare i cenotes vicini"
                     ]
                 },
-                "imageUrl": "https://example.com/activities/chichen_itza.jpg",
+                "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6949f50275714844685b301e/activities/002.webp",
                 "additionalInfo": {
                     "en": [
                         {
@@ -447,7 +453,7 @@
                         "Fai attenzione ai tuoi effetti personali nelle zone affollate"
                     ]
                 },
-                "imageUrl": "https://example.com/activities/cristo_redentor.jpg",
+                "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6949f50275714844685b301e/activities/003.webp",
                 "additionalInfo": {
                     "en": [
                         {
@@ -540,7 +546,7 @@
                         "Prendi la funivia se vuoi risparmiare energia"
                     ]
                 },
-                "imageUrl": "https://example.com/activities/great_wall.jpg",
+                "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6949f50275714844685b301e/activities/004.webp",
                 "additionalInfo": {
                     "en": [
                         {
@@ -628,7 +634,7 @@
                         "Tieni contanti per piccoli acquisti all'interno del sito"
                     ]
                 },
-                "imageUrl": "https://example.com/activities/petra.jpg",
+                "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6949f50275714844685b301e/activities/005.webp",
                 "additionalInfo": {
                     "en": [
                         {
@@ -706,7 +712,7 @@
                         "Porta acqua e protezione solare, soprattutto in estate"
                     ]
                 },
-                "imageUrl": "https://example.com/activities/colosseum.jpg",
+                "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6949f50275714844685b301e/activities/006.webp",
                 "additionalInfo": {
                     "en": [
                         {
@@ -784,7 +790,7 @@
                         "Acquista i biglietti online per ridurre l'attesa"
                     ]
                 },
-                "imageUrl": "https://example.com/activities/taj_mahal.jpg",
+                "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6949f50275714844685b301e/activities/007.webp",
                 "additionalInfo": {
                     "en": [
                         {
