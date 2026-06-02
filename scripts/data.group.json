@@ -19,6 +19,12 @@
         },
         "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1ef278308d89433b9e8103/6a1ef278308d89433b9e8103.webp",
         "isActive": true,
+        "createdAt": {
+            "$date": "2026-05-01T00:00:00.000Z"
+        },
+        "updatedAt": {
+            "$date": "2026-05-01T00:00:00.000Z"
+        },
         "activities": [
             {
                 "key": "001",
@@ -183,6 +189,12 @@
             "product_seven_wonders"
         ],
         "isActive": true,
+        "createdAt": {
+            "$date": "2026-05-02T00:00:00.000Z"
+        },
+        "updatedAt": {
+            "$date": "2026-05-02T00:00:00.000Z"
+        },
         "activities": [
             {
                 "key": "001",

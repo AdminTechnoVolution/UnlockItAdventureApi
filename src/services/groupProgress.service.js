@@ -503,6 +503,7 @@ const mapGroupSummary = (group, lang) => ({
     imageUrl: group.imageUrl,
     tags: pickLanguage(group.tags, lang),
     additionalInfo: pickLanguage(group.additionalInfo, lang),
+    createdAt: group.createdAt,
 });
 
 const buildGroupActivitiesByKey = (activities, lang) => {

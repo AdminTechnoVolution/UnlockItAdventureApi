@@ -124,6 +124,9 @@ components:
           type: array
           items:
             type: object
+        createdAt:
+          type: string
+          format: date-time
 
     ProgressActivity:
       type: object

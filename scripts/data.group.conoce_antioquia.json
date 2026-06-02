@@ -21,6 +21,12 @@
         "product_discover_antioquia"
     ],
     "isActive": true,
+    "createdAt": {
+        "$date": "2026-05-03T00:00:00.000Z"
+    },
+    "updatedAt": {
+        "$date": "2026-05-03T00:00:00.000Z"
+    },
     "activities": [
         {
             "key": "001",
