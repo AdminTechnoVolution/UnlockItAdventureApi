@@ -1,0 +1,167 @@
+{
+    "_id": {
+        "$oid": "6a1ef278308d89433b9e8103"
+    },
+    "name": {
+        "en": "Welcome Pack",
+        "es": "Paquete de Bienvenida",
+        "pt": "Pacote de Boas-vindas",
+        "fr": "Pack de Bienvenue",
+        "it": "Pacchetto di Benvenuto"
+    },
+    "description": {
+        "en": "Welcome to your first adventure! This starter pack includes 3 easy activities perfect for solo or couple experiences.",
+        "es": "¡Bienvenido a tu primera aventura! Este paquete inicial incluye 3 actividades fáciles perfectas para experiencias en solitario o en pareja.",
+        "pt": "Bem-vindo à sua primeira aventura! Este pacote inicial inclui 3 atividades fáceis perfeitas para experiências solo ou em casal.",
+        "fr": "Bienvenue à votre première aventure ! Ce pack de démarrage comprend 3 activités faciles parfaites pour des expériences en solo ou en couple.",
+        "it": "Benvenuto alla tua prima avventura! Questo pacchetto iniziale include 3 attività facili perfette per esperienze in solitaria o in coppia."
+    },
+    "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1ef278308d89433b9e8103/6a1ef278308d89433b9e8103.webp",
+    "isActive": true,
+    "createdAt": {
+        "$date": "2026-05-01T00:00:00.000Z"
+    },
+    "updatedAt": {
+        "$date": "2026-05-01T00:00:00.000Z"
+    },
+    "activities": [
+        {
+            "key": "001",
+            "name": {
+                "en": "Try a new restaurant",
+                "es": "Prueba un restaurante nuevo",
+                "pt": "Experimente um novo restaurante",
+                "fr": "Essayez un nouveau restaurant",
+                "it": "Prova un nuovo ristorante"
+            },
+            "description": {
+                "en": "Visit a restaurant in your area that you've never tried before. Choose a different cuisine, a new café, or a food truck.",
+                "es": "Visita un restaurante en tu área que nunca hayas probado antes. Elige una cocina diferente, un nuevo café o un food truck.",
+                "pt": "Visite um restaurante em sua área que você nunca experimentou antes. Escolha uma culinária diferente, um novo café ou uma food truck.",
+                "fr": "Visitez un restaurant de votre région que vous n'avez jamais essayé auparavant. Choisissez une cuisine différente, un nouveau café ou un food truck.",
+                "it": "Visita un ristorante nella tua zona che non hai mai provato prima. Scegli una cucina diversa, un nuovo caffè o un food truck."
+            },
+            "tips": {
+                "en": [
+                    "Check online reviews beforehand",
+                    "Try the chef's recommendation or daily special",
+                    "Order something you've never tried"
+                ],
+                "es": [
+                    "Revisa reseñas en línea antes",
+                    "Prueba la recomendación del chef o el menú del día",
+                    "Pide algo que nunca hayas probado"
+                ],
+                "pt": [
+                    "Verifique avaliações online antes",
+                    "Experimente a recomendação do chef ou prato do dia",
+                    "Peça algo que você nunca experimentou"
+                ],
+                "fr": [
+                    "Consultez les avis en ligne avant",
+                    "Essayez la recommandation du chef ou le plat du jour",
+                    "Commandez quelque chose que vous n'avez jamais essayé"
+                ],
+                "it": [
+                    "Controlla le recensioni online prima",
+                    "Prova la raccomandazione dello chef o il piatto del giorno",
+                    "Ordina qualcosa che non hai mai provato"
+                ]
+            },
+            "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1ef278308d89433b9e8103/activities/001.webp",
+            "difficulty": 1
+        },
+        {
+            "key": "002",
+            "name": {
+                "en": "Cook a new recipe",
+                "es": "Cocina una nueva receta",
+                "pt": "Cozinhe uma nova receita",
+                "fr": "Cuisinez une nouvelle recette",
+                "it": "Cucina una nuova ricetta"
+            },
+            "description": {
+                "en": "Find a simple recipe online and cook it at home.",
+                "es": "Encuentra una receta simple en línea y cocínala en casa. ",
+                "pt": "Encontre uma receita simples online e cozinhe em casa.",
+                "fr": "Trouvez une recette simple en ligne et cuisinez-la à la maison.",
+                "it": "Trova una ricetta semplice online e cucinala a casa."
+            },
+            "tips": {
+                "en": [
+                    "Use ingredients you already have at home",
+                    "Try a cuisine from a different culture",
+                    "Don't worry about perfection, have fun!"
+                ],
+                "es": [
+                    "Usa ingredientes que ya tengas en casa",
+                    "Prueba una cocina de una cultura diferente",
+                    "No te preocupes por la perfección, ¡diviértete!"
+                ],
+                "pt": [
+                    "Use ingredientes que você já tem em casa",
+                    "Experimente uma culinária de uma cultura diferente",
+                    "Não se preocupe com a perfeição, divirta-se!"
+                ],
+                "fr": [
+                    "Utilisez des ingrédients que vous avez déjà à la maison",
+                    "Essayez une cuisine d'une culture différente",
+                    "Ne vous souciez pas de la perfection, amusez-vous !"
+                ],
+                "it": [
+                    "Usa ingredienti che hai già a casa",
+                    "Prova una cucina di una cultura diversa",
+                    "Non preoccuparti della perfezione, divertiti!"
+                ]
+            },
+            "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1ef278308d89433b9e8103/activities/002.webp",
+            "difficulty": 2
+        },
+        {
+            "key": "003",
+            "name": {
+                "en": "Play a Board/Card game",
+                "es": "Juega un Juego de Mesa/Cartas",
+                "pt": "Jogue um Jogo de Tabuleiro/Cartas",
+                "fr": "Jouez à un Jeu de Société/Cartes",
+                "it": "Gioca a un Gioco da Tavolo/Carte"
+            },
+            "description": {
+                "en": "Set up and play a board game or card game you already own, or learn a new game using a standard deck of cards.",
+                "es": "Configura y juega un juego de mesa o cartas que ya tengas, o aprende un juego nuevo usando una baraja estándar de cartas.",
+                "pt": "Monte e jogue um jogo de tabuleiro ou cartas que você já tem, ou aprenda um novo jogo usando um baralho padrão de cartas.",
+                "fr": "Installez et jouez à un jeu de société ou de cartes que vous possédez déjà, ou apprenez un nouveau jeu en utilisant un jeu de cartes standard.",
+                "it": "Prepara e gioca a un gioco da tavolo o di carte che già possiedi, o impara un nuovo gioco usando un mazzo standard di carte."
+            },
+            "tips": {
+                "en": [
+                    "Choose games you already own to keep it free",
+                    "Make snacks to enjoy while playing",
+                    "Learn the rules together if it's a new game"
+                ],
+                "es": [
+                    "Elige juegos que ya tengas para mantenerlo gratis",
+                    "Prepara bocadillos para disfrutar mientras juegas",
+                    "Aprende las reglas juntos si es un juego nuevo"
+                ],
+                "pt": [
+                    "Escolha jogos que você já tem para manter grátis",
+                    "Faça lanches para aproveitar enquanto joga",
+                    "Aprenda as regras juntos se for um jogo novo"
+                ],
+                "fr": [
+                    "Choisissez des jeux que vous possédez déjà pour rester gratuit",
+                    "Préparez des collations à déguster en jouant",
+                    "Apprenez les règles ensemble si c'est un nouveau jeu"
+                ],
+                "it": [
+                    "Scegli giochi che già possiedi per mantenerlo gratuito",
+                    "Prepara spuntini da gustare mentre giochi",
+                    "Impara le regole insieme se è un nuovo gioco"
+                ]
+            },
+            "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1ef278308d89433b9e8103/activities/003.webp",
+            "difficulty": 1
+        }
+    ]
+}
