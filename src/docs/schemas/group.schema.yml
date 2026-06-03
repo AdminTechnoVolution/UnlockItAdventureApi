@@ -39,14 +39,6 @@ components:
           maximum: 5
           example: 2
 
-    GroupPriceItem:
-      type: object
-      properties:
-        features:
-          type: array
-          items:
-            type: string
-
     GroupWithProgressFlags:
       type: object
       properties:
@@ -75,10 +67,6 @@ components:
           type: array
           items:
             $ref: '#/components/schemas/GroupActivityItem'
-        prices:
-          type: array
-          items:
-            $ref: '#/components/schemas/GroupPriceItem'
         additionalInfo:
           type: array
           items:
