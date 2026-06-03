@@ -1,9 +1,14 @@
 const mongoose = require('mongoose');
 const GroupProgressStatus = require('../../shared/constants/enums/EnumGroupProgressStatus');
 
+const PhotoSizeSchema = new mongoose.Schema({
+  size: { type: String, required: true },
+  url: { type: String, trim: true }
+}, { _id: false });
+
 const PhotoSchema = new mongoose.Schema({
   name: { type: String, required: true, trim: true },
-  url: { type: String, trim: true },
+  sizes: { type: [PhotoSizeSchema], default: [] },
   uploadedAt: { type: Date },
   uploadedBy: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true },
 }, { _id: false });

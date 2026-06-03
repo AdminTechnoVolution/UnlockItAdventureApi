@@ -1,11 +1,11 @@
 const path = require('path');
 const { BlobServiceClient } = require('@azure/storage-blob');
-const sharp = require('sharp');
 const logger = require('../../shared/config/logger');
 const filename = path.basename(__filename);
 const env = require('../../shared/constants/environmentSystemVariables');
 const constants = require('../../shared/constants/constants');
 const BusinessException = require('../../shared/commons/models/BusinessException');
+const { ACTIVITY_PHOTO_EXTENSION } = require('../../shared/constants/activityPhoto.constants');
 const { ERROR_CODES } = require('../../shared/i18n/messages');
 
 const PROFILE_PHOTO_MIME = 'image/webp';
@@ -15,8 +15,10 @@ const GROUP_PROGRESS_FOLDER = 'groupProgress';
 
 const buildUserProfileFolderPrefix = (userId) => `${USER_PROFILE_FOLDER}/${userId}/`;
 const buildUserProfileBlobPath = (userId) => `${USER_PROFILE_FOLDER}/${userId}/${userId}.${PROFILE_PHOTO_EXTENSION}`;
-const buildActivityPhotoBlobPath = (groupProgressId, keyActivity, fileName) =>
-    `${GROUP_PROGRESS_FOLDER}/${groupProgressId}/${keyActivity}/${fileName}`;
+const buildActivityPhotoFolderPrefix = (groupProgressId, keyActivity, pathPhotoName) =>
+    `${GROUP_PROGRESS_FOLDER}/${groupProgressId}/${keyActivity}/${pathPhotoName}/`;
+const buildActivityPhotoBlobPath = (groupProgressId, keyActivity, pathPhotoName, sizeKey) =>
+    `${buildActivityPhotoFolderPrefix(groupProgressId, keyActivity, pathPhotoName)}${sizeKey}.${ACTIVITY_PHOTO_EXTENSION}`;
 
 let blobServiceClient;
 
@@ -30,14 +32,6 @@ const getContainerClient = () => {
     }
 
     return blobServiceClient.getContainerClient(env.AZURE_STORAGE_CONTAINER_NAME);
-};
-
-const convertToWebp = async (buffer) => {
-    try {
-        return await sharp(buffer).webp().toBuffer();
-    } catch {
-        throw new BusinessException(ERROR_CODES.CODE_PHOTOS_ONLY, constants.HTTP_BAD_REQUEST);
-    }
 };
 
 const deleteUserProfilePhotos = async (userId) => {
@@ -73,42 +67,71 @@ const uploadUserProfilePhoto = async (userId, webpBuffer, req = null) => {
     }
 };
 
-const uploadActivityPhoto = async (groupProgressId, keyActivity, fileName, buffer, req = null) => {
+const uploadActivityPhotoVariant = async ({ containerClient, groupProgressId, keyActivity, pathPhotoName, sizeKey, webpBuffer }) => {
+    const blobPath = buildActivityPhotoBlobPath(groupProgressId, keyActivity, pathPhotoName, sizeKey);
+    const blockBlobClient = containerClient.getBlockBlobClient(blobPath);
+
+    await blockBlobClient.upload(webpBuffer, webpBuffer.length, {
+        blobHTTPHeaders: { blobContentType: PROFILE_PHOTO_MIME },
+    });
+
+    return blockBlobClient.url;
+};
+
+const uploadActivityPhotoVariants = async (groupProgressId, keyActivity, pathPhotoName, variantsMap, req = null) => {
     try {
-        const webpBuffer = await convertToWebp(buffer);
-        const blobPath = buildActivityPhotoBlobPath(groupProgressId, keyActivity, fileName);
         const containerClient = getContainerClient();
-        const blockBlobClient = containerClient.getBlockBlobClient(blobPath);
+        const entries = Object.entries(variantsMap);
 
-        await blockBlobClient.upload(webpBuffer, webpBuffer.length, {
-            blobHTTPHeaders: { blobContentType: PROFILE_PHOTO_MIME },
-        });
+        const urlsBySize = await Promise.all(
+            entries.map(async ([sizeKey, webpBuffer]) => {
+                const url = await uploadActivityPhotoVariant({
+                    containerClient,
+                    groupProgressId,
+                    keyActivity,
+                    pathPhotoName,
+                    sizeKey,
+                    webpBuffer,
+                });
 
-        return blockBlobClient.url;
+                return [sizeKey, url];
+            }),
+        );
+
+        return Object.fromEntries(urlsBySize);
     } catch (error) {
         if (error instanceof BusinessException) {
             throw error;
         }
 
-        logger.error({ message: `Error uploading activity photo to Azure Blob. groupProgressId=${groupProgressId}, keyActivity=${keyActivity}, fileName=${fileName}. Error: ${error.message}`, className: filename, req });
+        logger.error({
+            message: `Error uploading activity photo variants to Azure Blob. groupProgressId=${groupProgressId}, keyActivity=${keyActivity}, pathPhotoName=${pathPhotoName}. Error: ${error.message}`,
+            className: filename,
+            req,
+        });
 
         throw new BusinessException(ERROR_CODES.ERROR_INTERNAL_SERVER_ERROR, constants.HTTP_INTERNAL_SERVER);
     }
 };
 
-const deleteActivityPhoto = async (groupProgressId, keyActivity, fileName, req = null) => {
+const deleteActivityPhotoFolder = async (groupProgressId, keyActivity, pathPhotoName, req = null) => {
     try {
-        const blobPath = buildActivityPhotoBlobPath(groupProgressId, keyActivity, fileName);
         const containerClient = getContainerClient();
-        const blockBlobClient = containerClient.getBlockBlobClient(blobPath);
+        const prefix = buildActivityPhotoFolderPrefix(groupProgressId, keyActivity, pathPhotoName);
 
-        await blockBlobClient.deleteIfExists();
+        for await (const blob of containerClient.listBlobsFlat({ prefix })) {
+            await containerClient.deleteBlob(blob.name);
+        }
     } catch (error) {
         if (error instanceof BusinessException) {
             throw error;
         }
 
-        logger.error({ message: `Error deleting activity photo from Azure Blob. groupProgressId=${groupProgressId}, keyActivity=${keyActivity}, fileName=${fileName}. Error: ${error.message}`, className: filename, req });
+        logger.error({
+            message: `Error deleting activity photo folder from Azure Blob. groupProgressId=${groupProgressId}, keyActivity=${keyActivity}, pathPhotoName=${pathPhotoName}. Error: ${error.message}`,
+            className: filename,
+            req,
+        });
 
         throw new BusinessException(ERROR_CODES.ERROR_INTERNAL_SERVER_ERROR, constants.HTTP_INTERNAL_SERVER);
     }
@@ -116,10 +139,11 @@ const deleteActivityPhoto = async (groupProgressId, keyActivity, fileName, req =
 
 module.exports = {
     uploadUserProfilePhoto,
-    uploadActivityPhoto,
-    deleteActivityPhoto,
+    uploadActivityPhotoVariants,
+    deleteActivityPhotoFolder,
     buildUserProfileBlobPath,
     buildActivityPhotoBlobPath,
+    buildActivityPhotoFolderPrefix,
     PROFILE_PHOTO_MIME,
     PROFILE_PHOTO_EXTENSION,
 };

@@ -19,6 +19,7 @@ const googleCloudVision = require('../clients/googleVision');
 const { SUCCESS_CODES, ERROR_CODES } = require('../../shared/i18n/messages');
 const { translate, pickLanguage, generateSecureRandom } = require('../../shared/util/util');
 const utilPhotoFile = require('../../shared/util/photoFileValidation');
+const activityPhotoProcessor = require('../../shared/util/activityPhotoProcessor');
 
 const unlockGroup = async (req) => {
     const acceptLanguage = req.acceptLanguage;
@@ -213,9 +214,9 @@ const addActivityPhoto = async (req) => {
 
     await googleCloudVision.validateImageContent(file.buffer, req);
 
-    const photoName = buildActivityPhotoFileName();
+    const pathPhotoName = buildActivityPhotoPathName();
     const reservedPhoto = {
-        name: photoName,
+        name: pathPhotoName,
         uploadedBy: userId,
     };
 
@@ -228,20 +229,22 @@ const addActivityPhoto = async (req) => {
     const photoIndex = activity.photos.length - 1;
 
     try {
-        const urlPhoto = await azureBlobStorage.uploadActivityPhoto(
+        const variantsBuffers = await activityPhotoProcessor.processActivityPhotoVariants(file.buffer, req);
+        const urlsBySize = await azureBlobStorage.uploadActivityPhotoVariants(
             groupProgressId,
             keyActivity,
-            photoName,
-            file.buffer,
+            pathPhotoName,
+            variantsBuffers,
             req,
         );
 
-        activity.photos[photoIndex].url = urlPhoto;
+        activity.photos[photoIndex].sizes = Object.entries(urlsBySize).map(([size, url]) => ({ size, url }));
         activity.photos[photoIndex].uploadedAt = new Date();
         groupProgress.markModified('activities');
 
         await GroupProgressRepository.save(groupProgress, req);
     } catch (error) {
+        await azureBlobStorage.deleteActivityPhotoFolder(groupProgressId, keyActivity, pathPhotoName, req);
         activity.photos.splice(photoIndex, 1);
         groupProgress.markModified('activities');
         await GroupProgressRepository.save(groupProgress, req);
@@ -254,10 +257,10 @@ const addActivityPhoto = async (req) => {
     return new BaseResponse(true, [message], data);
 };
 
-const buildActivityPhotoFileName = () => {
+const buildActivityPhotoPathName = () => {
     const randomSuffix = String(generateSecureRandom(0, 9999)).padStart(4, '0');
 
-    return `${Date.now()}_${randomSuffix}.webp`;
+    return `${Date.now()}_${randomSuffix}`;
 };
 
 const removeActivityPhoto = async (req) => {
@@ -286,7 +289,7 @@ const removeActivityPhoto = async (req) => {
         throw new BusinessException(ERROR_CODES.CODE_ACTIVITY_PHOTO_NOT_FOUND, constants.HTTP_NOT_FOUND);
     }
 
-    await azureBlobStorage.deleteActivityPhoto(groupProgressId, keyActivity, name, req);
+    await azureBlobStorage.deleteActivityPhotoFolder(groupProgressId, keyActivity, name, req);
 
     activity.photos.splice(photoIndex, 1);
     activity.updatedBy = userId;
@@ -530,7 +533,7 @@ const mapGroupActivity = (activity, lang) => ({
 
 const mapActivityPhoto = (photo) => ({
     name: photo.name ?? null,
-    url: photo.url ?? null,
+    sizes: (photo.sizes || []).map(({ size, url }) => ({ size, url })),
     uploadedAt: photo.uploadedAt ?? null,
     uploadedBy: photo.uploadedBy ?? null,
 });
@@ -540,7 +543,9 @@ const mapProgressActivity = (progressActivity, groupActivity = {}) => ({
     completed: progressActivity.completed,
     completedAt: progressActivity.completedAt,
     notes: progressActivity.notes,
-    photos: (progressActivity.photos || []).filter((photo) => photo.url).map(mapActivityPhoto),
+    photos: (progressActivity.photos || [])
+        .filter((photo) => (photo.sizes || []).some((sizeItem) => sizeItem.url))
+        .map(mapActivityPhoto),
     updatedBy: progressActivity.updatedBy,
     name: groupActivity.name ?? null,
     description: groupActivity.description ?? null,
