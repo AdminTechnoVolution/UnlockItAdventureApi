@@ -2,6 +2,7 @@ paths:
   /api/configs:
     get:
       summary: Get public app configuration values
+      description: Retrieves app configuration or settings values.
       tags:
         - Config
       security:

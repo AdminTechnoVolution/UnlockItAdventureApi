@@ -16,6 +16,7 @@ const swaggerOptions = {
             { name: "Auth" },
             { name: "Config" },
             { name: "Groups & Activities" },
+            { name: "Group Progress" },
             { name: "Users" },
         ],
         components: {

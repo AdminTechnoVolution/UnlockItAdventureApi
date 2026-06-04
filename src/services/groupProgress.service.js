@@ -30,6 +30,7 @@ const unlockGroup = async (req) => {
     const userId = new ObjectId(decoded.id);
 
     const group = await validateUnlockEligibility(userId, groupId, req);
+    validateProductIdBelongsToGroup(group, productId);
     const paidGroup = isPaidGroup(group);
     const activities = buildInitialActivities(group.activities, userId);
 
@@ -416,6 +417,22 @@ const isPaidGroup = (group) => {
         && group.productsId.some((id) => typeof id === 'string' && id.trim().length > 0);
 };
 
+const validateProductIdBelongsToGroup = (group, productId) => {
+    if (productId === undefined || productId === null) {
+        return;
+    }
+
+    const allowedProductIds = (group.productsId || [])
+        .filter((id) => typeof id === 'string')
+        .map((id) => id.trim());
+
+    const isAllowed = allowedProductIds.some((id) => id === productId);
+
+    if (!isAllowed) {
+        throw new BusinessException(ERROR_CODES.CODE_PRODUCT_ID_NOT_IN_GROUP, constants.HTTP_BAD_REQUEST);
+    }
+};
+
 const validateUnlockEligibility = async (userId, groupId, req) => {
     const group = await GroupRepository.findById(groupId, req);
 
@@ -443,7 +460,7 @@ const validateGooglePlayPurchase = async ({ group, groupId, purchaseToken, produ
     try {
         // TODO: Validar compra contra Google Play Console (purchaseToken / productId).
         // - Verificar purchaseToken con Google Play Developer API (subscriptions/in-app products).
-        // - Confirmar que productId coincide con group.productsId.
+        // - productId vs group.productsId ya validado en validateProductIdBelongsToGroup.
         // - Rechazar con BusinessException si el pago no es válido o ya fue consumido.
         // - Si el servicio de google no responde reintentar varias veces antes de fallar.
         // - Si el servicio responde pero no es válido, loggear detalles y eliminar el registro de la DB.
