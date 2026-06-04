@@ -77,10 +77,6 @@ const mapGroupLang = (group, lang) => {
             tips: util.pickLanguage(a.tips, lang),
             additionalInfo: util.pickLanguage(a.additionalInfo, lang),
         })),
-        prices: group.prices?.map(p => ({
-            ...p,
-            features: util.pickLanguage(p.features, lang)
-        }))
     }
 };
 

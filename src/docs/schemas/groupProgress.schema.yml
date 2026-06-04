@@ -91,10 +91,18 @@ components:
       properties:
         name:
           type: string
-          example: "1779905183162_0453.webp"
-        url:
-          type: string
-          example: "https://storage.example.com/activity/photo.webp"
+          example: "1779905183162_0453"
+        sizes:
+          type: array
+          items:
+            type: object
+            properties:
+              size:
+                type: string
+                example: small
+              url:
+                type: string
+                example: "https://storage.example.com/groupProgress/507f1f77bcf86cd799439011/activity_1/1779905183162_0453/small.webp"
         uploadedAt:
           type: string
           format: date-time
@@ -124,6 +132,9 @@ components:
           type: array
           items:
             type: object
+        createdAt:
+          type: string
+          format: date-time
 
     ProgressActivity:
       type: object
