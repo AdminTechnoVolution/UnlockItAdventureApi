@@ -1,6 +1,7 @@
 /api/health:
   get:
     summary: Healthcheck
+    description: Checks if the API is running and healthy.
     tags:
       - Health
     responses:

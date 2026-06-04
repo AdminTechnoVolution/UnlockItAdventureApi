@@ -2,6 +2,7 @@ paths:
   /api/user/profile:
     put:
       summary: Update authenticated user profile
+      description: Updates the profile information of the authenticated user.
       tags:
         - Users
       security:
@@ -32,6 +33,7 @@ paths:
   /api/user/profile/photo:
     put:
       summary: Update user profile photo
+      description: Updates the profile photo of the authenticated user.
       tags:
         - Users
       security:
