@@ -38,6 +38,7 @@ const ERROR_CODES = {
     CODE_GROUP_NOT_ACTIVE: "CODE_GROUP_NOT_ACTIVE",
     CODE_GROUP_ALREADY_UNLOCKED: "CODE_GROUP_ALREADY_UNLOCKED",
     CODE_GOOGLE_PLAY_VALIDATION_FAILED: "CODE_GOOGLE_PLAY_VALIDATION_FAILED",
+    CODE_PRODUCT_ID_NOT_IN_GROUP: "CODE_PRODUCT_ID_NOT_IN_GROUP",
     CODE_GROUP_PROGRESS_NOT_FOUND: "CODE_GROUP_PROGRESS_NOT_FOUND",
     CODE_GROUP_PROGRESS_FORBIDDEN: "CODE_GROUP_PROGRESS_FORBIDDEN",
     CODE_PARTNER_EMAIL_NOT_FOUND: "CODE_PARTNER_EMAIL_NOT_FOUND",
@@ -297,6 +298,13 @@ const TRANSLATIONS = {
         pt: "A validação do pagamento falhou. Verifique sua compra e tente novamente.",
         fr: "La validation du paiement a échoué. Vérifiez votre achat et réessayez.",
         it: "La validazione del pagamento non è riuscita. Verifica il tuo acquisto e riprova."
+    },
+    [ERROR_CODES.CODE_PRODUCT_ID_NOT_IN_GROUP]: {
+        en: "The product id does not belong to this group.",
+        es: "El id de producto no pertenece a este grupo.",
+        pt: "O id do produto não pertence a este grupo.",
+        fr: "L'identifiant produit n'appartient pas à ce groupe.",
+        it: "L'id prodotto non appartiene a questo gruppo."
     },
     [ERROR_CODES.CODE_GROUP_PROGRESS_NOT_FOUND]: {
         en: "Group progress not found.",
