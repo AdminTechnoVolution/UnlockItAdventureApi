@@ -395,7 +395,7 @@ const fillGroupProgressActivity = (groupProgress, { keyActivity, completed, acti
 };
 
 const fillGroupProgress = (groupProgress, groupCompletedAt) => {
-    if (groupCompletedAt !== undefined) {
+    if (groupCompletedAt !== undefined && groupCompletedAt !== '') {
         groupProgress.completedAt = groupCompletedAt;
     }
 

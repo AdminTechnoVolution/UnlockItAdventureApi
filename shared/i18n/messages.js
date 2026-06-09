@@ -258,11 +258,11 @@ const TRANSLATIONS = {
         it: "Utente non trovato"
     },
     [ERROR_CODES.CODE_USERNAME_EXISTS]: {
-        en: "Username is already taken",
-        es: "El nombre de usuario ya está en uso",
-        pt: "O nome de usuário já está em uso",
-        fr: "Ce nom d'utilisateur est déjà utilisé",
-        it: "Il nome utente è già in uso"
+        en: "Could not update profile. Try again or later.",
+        es: "No se pudo actualizar el perfil. Inténtalo de nuevo más tarde.",
+        pt: "Não foi possível atualizar o perfil. Tente novamente mais tarde.",
+        fr: "Impossible de mettre à jour le profil. Réessayez plus tard.",
+        it: "Impossibile aggiornare il profilo. Riprova più tardi."
     },
     [FIELDS.FULL_NAME]: {
         en: "full name",
@@ -321,11 +321,11 @@ const TRANSLATIONS = {
         it: "Solo il proprietario del gruppo può aggiungere partner."
     },
     [ERROR_CODES.CODE_PARTNER_EMAIL_NOT_FOUND]: {
-        en: "Some of the emails were not found.",
-        es: "Alguno de los correos no fueron encontrados.",
-        pt: "Alguns dos emails não foram encontrados.",
-        fr: "Certains emails n'ont pas été trouvés.",
-        it: "Alcune email non sono state trovate."
+        en: "Unable to add one or more partners. Please verify the information and try again.",
+        es: "No se pudieron agregar uno o más compañeros. Verifica la información e inténtalo de nuevo.",
+        pt: "Não foi possível adicionar um ou mais parceiros. Verifique as informações e tente novamente.",
+        fr: "Impossible d'ajouter un ou plusieurs partenaires. Vérifiez les informations et réessayez.",
+        it: "Impossibile aggiungere uno o più partner. Verifica le informazioni e riprova."
     },
     [ERROR_CODES.CODE_PARTNER_CANNOT_BE_SELF]: {
         en: "You cannot add yourself as a partner.",

@@ -1,7 +1,7 @@
 [
   {
     "key": "activity.photos.max_per_user",
-    "value": 2,
+    "value": 5,
     "description": "Maximum number of photos a user can upload per activity"
   },
   {
@@ -35,12 +35,12 @@
   },
   {
     "key": "group.partners.max_count",
-    "value": 2,
+    "value": 5,
     "description": "Maximum number of partners per group progress"
   },
   {
     "key": "user.profile.photo.max_file_size_mb",
-    "value": 5,
+    "value": 20,
     "description": "Maximum file size for profile photo upload (MB)"
   },
   {
