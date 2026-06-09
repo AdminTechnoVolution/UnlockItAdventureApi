@@ -77,14 +77,16 @@ const updateGroupProgressSchema = Joi.object({
         .messages({
             'date.format': ERROR_CODES.FIELD_INVALID,
         }),
-    groupCompletedAt: Joi.date().iso().optional().allow(null)
+    groupCompletedAt: Joi.alternatives().try(
+        Joi.valid(''),
+        Joi.date().iso(),
+    ).optional().allow(null)
         .messages({
+            'alternatives.match': ERROR_CODES.FIELD_INVALID,
             'date.format': ERROR_CODES.FIELD_INVALID,
         }),
-    notes: Joi.string().trim().min(1).max(5000).optional().allow(null)
+    notes: Joi.string().trim().max(5000).optional().allow(null, '')
         .messages({
-            'string.min': ERROR_CODES.FIELD_MIN,
-            'string.empty': ERROR_CODES.FIELD_REQUIRED,
             'string.max': ERROR_CODES.FIELD_MAX,
         }),
 })
