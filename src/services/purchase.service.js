@@ -114,12 +114,20 @@ const validateAndRecordGooglePlayPurchase = async ({
     return purchase;
 };
 
-const markPurchaseRefunded = async (purchaseToken, notificationType, req) => {
-    const purchase = await PurchaseRepository.findByPurchaseToken(purchaseToken, req);
+const markPurchaseRefunded = async ({ purchaseToken, orderId, notificationType }, req) => {
+    let purchase = null;
+
+    if (purchaseToken) {
+        purchase = await PurchaseRepository.findByPurchaseToken(purchaseToken, req);
+    }
+
+    if (!purchase && orderId) {
+        purchase = await PurchaseRepository.findOneByFilter({ orderId }, req);
+    }
 
     if (!purchase) {
         logger.warn({
-            message: `RTDN refund: purchase not found for purchaseToken=${purchaseToken}`,
+            message: `RTDN refund: purchase not found for purchaseToken=${purchaseToken}, orderId=${orderId}`,
             className: filename,
             req,
         });
