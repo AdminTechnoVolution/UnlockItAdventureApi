@@ -22,7 +22,17 @@ const updateProfilePhoto = async (req, res, next) => {
     }
 };
 
+const deleteAccount = async (req, res, next) => {
+    try {
+        const jsonResponse = await UserService.deleteAccount(req);
+        res.status(200).json(jsonResponse);
+    } catch (err) {
+        next(err);
+    }
+};
+
 module.exports = {
     updateProfile,
     updateProfilePhoto,
+    deleteAccount,
 };

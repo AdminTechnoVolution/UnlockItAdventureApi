@@ -140,10 +140,12 @@ const deleteActivityPhotoFolder = async (groupProgressId, keyActivity, pathPhoto
 module.exports = {
     uploadUserProfilePhoto,
     uploadActivityPhotoVariants,
+    deleteUserProfilePhotos,
     deleteActivityPhotoFolder,
     buildUserProfileBlobPath,
     buildActivityPhotoBlobPath,
     buildActivityPhotoFolderPrefix,
     PROFILE_PHOTO_MIME,
     PROFILE_PHOTO_EXTENSION,
+    USER_PROFILE_FOLDER,
 };

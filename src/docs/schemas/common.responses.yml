@@ -98,6 +98,13 @@ components:
           schema:
             $ref: '#/components/schemas/UpdateProfilePhotoResponse'
 
+    DeleteAccountSuccessResponse:
+      description: Account deleted successfully
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/BaseResponse'
+
     GroupActivitiesSuccessResponse:
       description: Group activities list
       content:

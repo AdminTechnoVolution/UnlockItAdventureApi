@@ -32,8 +32,18 @@ const save = async (fcmToken, req = null) => {
     }
 };
 
+const deleteByUserId = async (userId, req = null) => {
+    try {
+        return await FCMToken.deleteOne({ userId });
+    } catch (err) {
+        logger.error(`Error in deleteByUserId. Error: ${err}`, { className: filename, req: req });
+        throw new DataLayerException(ERROR_CODES.ERROR_INTERNAL_SERVER_ERROR);
+    }
+};
+
 module.exports = {
     findOneByFilter,
     findOneByFilterAndPullToken,
     save,
+    deleteByUserId,
 };
