@@ -273,8 +273,28 @@ const logout = async (req) => {
     return new BaseResponse(true, []);
 };
 
+const revokeAllAuthTokensForUser = async (userId) => {
+    const userIdStr = userId.toString();
+    const accessPattern = util.getKeyRedis(`${consCache.REDIS_KEY_ACCESS_TOKEN}${userIdStr}:*`);
+    const refreshPattern = util.getKeyRedis(`${consCache.REDIS_KEY_REFRESH_TOKEN}${userIdStr}:*`);
+    const keysToDelete = [];
+
+    for await (const key of redisClient.scanIterator({ MATCH: accessPattern, COUNT: 100 })) {
+        keysToDelete.push(key);
+    }
+
+    for await (const key of redisClient.scanIterator({ MATCH: refreshPattern, COUNT: 100 })) {
+        keysToDelete.push(key);
+    }
+
+    if (keysToDelete.length > 0) {
+        await Promise.all(keysToDelete.map((key) => redisClient.del(key)));
+    }
+};
+
 module.exports = {
     socialLogin,
     refreshToken,
     logout,
+    revokeAllAuthTokensForUser,
 };

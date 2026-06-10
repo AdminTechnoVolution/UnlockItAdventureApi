@@ -63,6 +63,7 @@ const SUCCESS_CODES = {
     CODE_UPDATE_GROUP_PROGRESS_SUCCESS: "CODE_UPDATE_GROUP_PROGRESS_SUCCESS",
     CODE_ACTIVITY_PHOTO_UPLOAD_SUCCESS: "CODE_ACTIVITY_PHOTO_UPLOAD_SUCCESS",
     CODE_PHOTO_DELETE_SUCCESS: "CODE_PHOTO_DELETE_SUCCESS",
+    CODE_DELETE_ACCOUNT_SUCCESS: "CODE_DELETE_ACCOUNT_SUCCESS",
 };
 
 const TRANSLATIONS = {
@@ -475,6 +476,13 @@ const TRANSLATIONS = {
         pt: "Foto excluída com sucesso.",
         fr: "Photo supprimée avec succès.",
         it: "Foto eliminata con successo."
+    },
+    [SUCCESS_CODES.CODE_DELETE_ACCOUNT_SUCCESS]: {
+        en: "Your account has been deleted successfully.",
+        es: "Tu cuenta ha sido eliminada exitosamente.",
+        pt: "Sua conta foi excluída com sucesso.",
+        fr: "Votre compte a été supprimé avec succès.",
+        it: "Il tuo account è stato eliminato con successo."
     }
 };
 

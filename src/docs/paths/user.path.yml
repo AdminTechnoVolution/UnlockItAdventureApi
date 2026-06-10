@@ -30,6 +30,27 @@ paths:
         500:
           $ref: '#/components/responses/InternalServerErrorResponse'
 
+  /api/user/delete-account:
+    delete:
+      summary: Delete authenticated user account
+      description: Permanently deletes the authenticated user account and all associated personal data (profile photo, FCM tokens, owned group progress, partner photos uploaded by the user, and partner memberships).
+      tags:
+        - Users
+      security:
+        - Bearer: []
+      parameters:
+        - $ref: '#/components/parameters/Authorization'
+        - $ref: '#/components/parameters/AcceptLanguage'
+      responses:
+        200:
+          $ref: '#/components/responses/DeleteAccountSuccessResponse'
+        401:
+          $ref: '#/components/responses/UnauthorizedResponse'
+        404:
+          $ref: '#/components/responses/NotFoundResponse'
+        500:
+          $ref: '#/components/responses/InternalServerErrorResponse'
+
   /api/user/profile/photo:
     put:
       summary: Update user profile photo

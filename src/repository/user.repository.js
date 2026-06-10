@@ -33,6 +33,15 @@ const save = async (user, req = null) => {
     }
 };
 
+const deleteById = async (userId, req = null) => {
+    try {
+        return await User.deleteOne({ _id: userId });
+    } catch (err) {
+        logger.error(`Error in deleteById. Error: ${err}`, { className: filename, req: req });
+        throw new DataLayerException(ERROR_CODES.ERROR_INTERNAL_SERVER_ERROR);
+    }
+};
+
 const findByEmails = async (emails, req = null) => {
     try {
         const normalizedEmails = emails.map((email) => email.toLowerCase().trim());
@@ -49,4 +58,5 @@ module.exports = {
     save,
     existsByFilter,
     findByEmails,
+    deleteById,
 };

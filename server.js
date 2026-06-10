@@ -23,6 +23,7 @@ const healthRoutes = require('./src/routes/health.route');
 const authRoutes = require('./src/routes/auth.route');
 const userRoutes = require('./src/routes/user.route');
 const appConfigRoutes = require('./src/routes/appConfig.route');
+const googlePlayRoutes = require('./src/routes/googlePlay.route');
 
 const app = express();
 
@@ -52,6 +53,7 @@ const registerApiRoutes = () => {
     app.use('/api/auth/', authRoutes);
     app.use('/api/', userRoutes);
     app.use('/api/', appConfigRoutes);
+    app.use('/api/', googlePlayRoutes);
     app.use(errorHandler);
 };
 

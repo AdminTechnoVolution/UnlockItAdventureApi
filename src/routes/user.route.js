@@ -10,4 +10,6 @@ router.put('/user/profile', validateToken, validateBody(UserValidator.updateProf
 
 router.put('/user/profile/photo', validateToken, ...uploadProfilePhoto, UserController.updateProfilePhoto);
 
+router.delete('/user/delete-account', validateToken, UserController.deleteAccount);
+
 module.exports = router;

@@ -100,6 +100,60 @@ const findByUserIdWithRelations = async (userId, req = null) => findWithRelation
 
 const findByPartnerIdWithRelations = async (partnerId, req = null) => findWithRelations({ partnerId }, req);
 
+const findByUserId = async (userId, req = null) => {
+    try {
+        return await GroupProgress.find({ userId }).lean();
+    } catch (err) {
+        logger.error(`Error in findByUserId. Error: ${err}`, { className: filename, req: req });
+        throw new DataLayerException(ERROR_CODES.ERROR_INTERNAL_SERVER_ERROR);
+    }
+};
+
+const deleteById = async (id, req = null) => {
+    try {
+        return await GroupProgress.deleteOne({ _id: id });
+    } catch (err) {
+        logger.error(`Error in deleteById. Error: ${err}`, { className: filename, req: req });
+        throw new DataLayerException(ERROR_CODES.ERROR_INTERNAL_SERVER_ERROR);
+    }
+};
+
+const deleteManyByUserId = async (userId, req = null) => {
+    try {
+        return await GroupProgress.deleteMany({ userId });
+    } catch (err) {
+        logger.error(`Error in deleteManyByUserId. Error: ${err}`, { className: filename, req: req });
+        throw new DataLayerException(ERROR_CODES.ERROR_INTERNAL_SERVER_ERROR);
+    }
+};
+
+const findForeignWithPhotosByUploader = async (userId, req = null) => {
+    try {
+        return await GroupProgress.find({
+            userId: { $ne: userId },
+            $or: [
+                { partnerId: userId },
+                { 'activities.photos.uploadedBy': userId },
+            ],
+        });
+    } catch (err) {
+        logger.error(`Error in findForeignWithPhotosByUploader. Error: ${err}`, { className: filename, req: req });
+        throw new DataLayerException(ERROR_CODES.ERROR_INTERNAL_SERVER_ERROR);
+    }
+};
+
+const pullPartnerFromAll = async (userId, req = null) => {
+    try {
+        return await GroupProgress.updateMany(
+            { partnerId: userId },
+            { $pull: { partnerId: userId } },
+        );
+    } catch (err) {
+        logger.error(`Error in pullPartnerFromAll. Error: ${err}`, { className: filename, req: req });
+        throw new DataLayerException(ERROR_CODES.ERROR_INTERNAL_SERVER_ERROR);
+    }
+};
+
 module.exports = {
     find,
     existsByFilter,
@@ -108,4 +162,9 @@ module.exports = {
     findOneByFilter,
     findByUserIdWithRelations,
     findByPartnerIdWithRelations,
+    findByUserId,
+    deleteById,
+    deleteManyByUserId,
+    findForeignWithPhotosByUploader,
+    pullPartnerFromAll,
 };
