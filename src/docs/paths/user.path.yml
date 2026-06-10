@@ -33,7 +33,7 @@ paths:
   /api/user/delete-account:
     delete:
       summary: Delete authenticated user account
-      description: Permanently deletes the authenticated user account and all associated personal data (profile photo, FCM tokens, owned group progress, partner photos uploaded by the user, and partner memberships). Group aggregate stats are preserved.
+      description: Permanently deletes the authenticated user account and all associated personal data (profile photo, FCM tokens, owned group progress, partner photos uploaded by the user, and partner memberships).
       tags:
         - Users
       security:

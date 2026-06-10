@@ -19,6 +19,17 @@ components:
           maxLength: 256
           description: Required only for paid groups (when group.productsId is set). Google Play product id.
           example: "product_seven_wonders"
+        priceAmountMicros:
+          type: integer
+          format: int64
+          description: Optional client-reported price in micros (analytics only, not used for payment validation).
+          example: 4990000
+        priceCurrencyCode:
+          type: string
+          minLength: 3
+          maxLength: 3
+          description: Optional ISO 4217 currency code (analytics only).
+          example: "USD"
 
     UnlockGroupResponseData:
       type: object

@@ -17,6 +17,16 @@ const unlockGroupSchema = Joi.object({
         .messages({
             'string.max': ERROR_CODES.FIELD_MAX,
         }),
+    priceAmountMicros: Joi.number().integer().positive().optional()
+        .messages({
+            'number.base': ERROR_CODES.FIELD_INVALID,
+            'number.integer': ERROR_CODES.FIELD_INVALID,
+            'number.positive': ERROR_CODES.FIELD_INVALID,
+        }),
+    priceCurrencyCode: Joi.string().trim().length(3).uppercase().optional()
+        .messages({
+            'string.length': ERROR_CODES.FIELD_INVALID,
+        }),
 });
 
 const addPartnersSchema = Joi.object({

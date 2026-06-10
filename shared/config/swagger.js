@@ -18,6 +18,7 @@ const swaggerOptions = {
             { name: "Groups & Activities" },
             { name: "Group Progress" },
             { name: "Users" },
+            { name: "Google Play" },
         ],
         components: {
             securitySchemes: {

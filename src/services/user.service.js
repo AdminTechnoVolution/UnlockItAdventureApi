@@ -12,6 +12,8 @@ const constants = require('../../shared/constants/constants');
 const jwt = require('../../shared/util/jwt');
 const AppConfigKey = require('../../shared/constants/enums/EnumAppConfigKey');
 const AuthService = require('./auth.service');
+const GroupProgressService = require('./groupProgress.service');
+const PurchaseRepository = require('../repository/purchase.repository');
 const azureBlobStorage = require('../clients/azureBlob');
 const googleCloudVision = require('../clients/googleVision');
 const { ERROR_CODES, SUCCESS_CODES } = require('../../shared/i18n/messages');
@@ -115,6 +117,7 @@ const deleteAccount = async (req) => {
 
     await deleteUserProfilePhotoIfExists(user, req);
     await FCMTokenRepository.deleteByUserId(userId, req);
+    await PurchaseRepository.deleteManyByUserId(userId, req);
     await deleteOwnedGroupProgressWithAzureCleanup(userId, req);
     await deletePartnerPhotosFromForeignGroupProgress(userId, req);
     await GroupProgressRepository.pullPartnerFromAll(userId, req);
@@ -146,36 +149,12 @@ const deleteUserProfilePhotoIfExists = async (user, req) => {
     }
 };
 
-const deleteActivityPhotosFromGroupProgress = async (groupProgress, req) => {
-    const groupProgressId = groupProgress._id.toString();
-
-    for (const activity of groupProgress.activities || []) {
-        for (const photo of activity.photos || []) {
-            if (!photo.name) {
-                continue;
-            }
-
-            try {
-                await azureBlobStorage.deleteActivityPhotoFolder(groupProgressId, activity.key, photo.name, req);
-            } catch (error) {
-                logger.error({
-                    message: `Failed to delete activity photo on account delete. groupProgressId=${groupProgressId}, keyActivity=${activity.key}, photoName=${photo.name}. Error: ${error.message}`,
-                    className: filename,
-                    req,
-                });
-            }
-        }
-    }
-};
-
 const deleteOwnedGroupProgressWithAzureCleanup = async (userId, req) => {
     const groupProgressList = await GroupProgressRepository.findByUserId(userId, req);
 
     for (const groupProgress of groupProgressList) {
-        await deleteActivityPhotosFromGroupProgress(groupProgress, req);
+        await GroupProgressService.deleteGroupProgressWithAzureCleanup(groupProgress._id, req);
     }
-
-    await GroupProgressRepository.deleteManyByUserId(userId, req);
 };
 
 const deletePartnerPhotosFromForeignGroupProgress = async (userId, req) => {

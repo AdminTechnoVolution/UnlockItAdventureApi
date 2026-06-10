@@ -20,13 +20,14 @@ const { SUCCESS_CODES, ERROR_CODES } = require('../../shared/i18n/messages');
 const { translate, pickLanguage, generateSecureRandom } = require('../../shared/util/util');
 const utilPhotoFile = require('../../shared/util/photoFileValidation');
 const activityPhotoProcessor = require('../../shared/util/activityPhotoProcessor');
+const PurchaseService = require('./purchase.service');
 
 const unlockGroup = async (req) => {
     const acceptLanguage = req.acceptLanguage;
     const auth = req.headers['authorization'];
     const { decoded } = jwt.verifyJwtToken(auth, true);
 
-    const { groupId, purchaseToken, productId } = req.body;
+    const { groupId, purchaseToken, productId, priceAmountMicros, priceCurrencyCode } = req.body;
     const userId = new ObjectId(decoded.id);
 
     const group = await validateUnlockEligibility(userId, groupId, req);
@@ -45,9 +46,22 @@ const unlockGroup = async (req) => {
     let saved = await GroupProgressRepository.save(groupProgress, req);
 
     if (paidGroup) {
-        await validateGooglePlayPurchase({ group, groupId, purchaseToken, productId }, req);
-        saved.status = GroupProgressStatus.IN_PROGRESS;
-        saved = await GroupProgressRepository.save(saved, req);
+        try {
+            await PurchaseService.validateAndRecordGooglePlayPurchase({
+                userId,
+                groupProgressId: saved._id,
+                group,
+                purchaseToken,
+                productId,
+                priceAmountMicros,
+                priceCurrencyCode,
+            }, req);
+            saved.status = GroupProgressStatus.IN_PROGRESS;
+            saved = await GroupProgressRepository.save(saved, req);
+        } catch (error) {
+            await deleteGroupProgressWithAzureCleanup(saved._id, req);
+            throw error;
+        }
     }
 
     const message = translate(SUCCESS_CODES.CODE_UNLOCK_GROUP_SUCCESS, acceptLanguage);
@@ -452,23 +466,38 @@ const validateUnlockEligibility = async (userId, groupId, req) => {
     return group;
 };
 
-const validateGooglePlayPurchase = async ({ group, groupId, purchaseToken, productId }, req) => {
-    if (!purchaseToken || !productId) {
-        throw new BusinessException(ERROR_CODES.ERROR_BAD_REQUEST_RESPONSE, constants.HTTP_BAD_REQUEST);
+const deleteActivityPhotosFromGroupProgressDoc = async (groupProgress, req) => {
+    const groupProgressId = groupProgress._id.toString();
+
+    for (const activity of groupProgress.activities || []) {
+        for (const photo of activity.photos || []) {
+            if (!photo.name) {
+                continue;
+            }
+
+            try {
+                await azureBlobStorage.deleteActivityPhotoFolder(groupProgressId, activity.key, photo.name, req);
+            } catch (error) {
+                logger.error({
+                    message: `Failed to delete activity photo. groupProgressId=${groupProgressId}, keyActivity=${activity.key}, photoName=${photo.name}. Error: ${error.message}`,
+                    className: filename,
+                    req,
+                });
+            }
+        }
+    }
+};
+
+const deleteGroupProgressWithAzureCleanup = async (groupProgressId, req) => {
+    const groupProgress = await GroupProgressRepository.findById(groupProgressId, req);
+
+    if (!groupProgress) {
+        return;
     }
 
-    try {
-        // TODO: Validar compra contra Google Play Console (purchaseToken / productId).
-        // - Verificar purchaseToken con Google Play Developer API (subscriptions/in-app products).
-        // - productId vs group.productsId ya validado en validateProductIdBelongsToGroup.
-        // - Rechazar con BusinessException si el pago no es válido o ya fue consumido.
-        // - Si el servicio de google no responde reintentar varias veces antes de fallar.
-        // - Si el servicio responde pero no es válido, loggear detalles y eliminar el registro de la DB.
-        logger.info({ message: `TODO: Google Play validation pending for groupId=${groupId}, productId=${productId}, productsId=${group.productsId.join(',')}, purchaseTokenReceived=${Boolean(purchaseToken)}`, className: filename, req: req });
-    } catch (error) {
-        logger.error({ message: `Error validating Google Play purchase for groupId=${groupId}, productId=${productId}. Error: ${error.message}`, className: filename, req: req });
-        throw new BusinessException(ERROR_CODES.CODE_GOOGLE_PLAY_VALIDATION_FAILED, constants.HTTP_BAD_REQUEST);
-    }
+    const leanDoc = groupProgress.toObject ? groupProgress.toObject() : groupProgress;
+    await deleteActivityPhotosFromGroupProgressDoc(leanDoc, req);
+    await GroupProgressRepository.deleteById(groupProgressId, req);
 };
 
 const buildInitialActivities = (groupActivities, userId) => {
@@ -601,4 +630,5 @@ module.exports = {
     removeActivityPhoto,
     getMyGroupProgress,
     getSharedGroupProgress,
+    deleteGroupProgressWithAzureCleanup,
 };

@@ -109,6 +109,15 @@ const findByUserId = async (userId, req = null) => {
     }
 };
 
+const deleteById = async (id, req = null) => {
+    try {
+        return await GroupProgress.deleteOne({ _id: id });
+    } catch (err) {
+        logger.error(`Error in deleteById. Error: ${err}`, { className: filename, req: req });
+        throw new DataLayerException(ERROR_CODES.ERROR_INTERNAL_SERVER_ERROR);
+    }
+};
+
 const deleteManyByUserId = async (userId, req = null) => {
     try {
         return await GroupProgress.deleteMany({ userId });
@@ -154,6 +163,7 @@ module.exports = {
     findByUserIdWithRelations,
     findByPartnerIdWithRelations,
     findByUserId,
+    deleteById,
     deleteManyByUserId,
     findForeignWithPhotosByUploader,
     pullPartnerFromAll,
