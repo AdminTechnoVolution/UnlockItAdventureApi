@@ -2,7 +2,7 @@ paths:
   /api/google-play/rtdn:
     post:
       summary: Google Play Real-Time Developer Notifications
-      description: Pub/Sub push endpoint for Google Play billing events (one-time product refunds). Authenticated via Google Pub/Sub JWT (not app Bearer token).
+      description: Pub/Sub push endpoint for Google Play billing events (one-time product refunds via oneTimeProductNotification or voidedPurchaseNotification from Play Console). Authenticated via Google Pub/Sub JWT (not app Bearer token).
       tags:
         - Google Play
       security: []

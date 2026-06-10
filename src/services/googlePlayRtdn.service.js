@@ -1,6 +1,7 @@
 const path = require('path');
 const logger = require('../../shared/config/logger');
 const filename = path.basename(__filename);
+const env = require('../../shared/constants/environmentSystemVariables');
 const googlePlayConstants = require('../../shared/constants/googlePlay.constants');
 const PurchaseService = require('./purchase.service');
 const GroupProgressService = require('./groupProgress.service');
@@ -27,16 +28,76 @@ const processRtdnMessage = async (req) => {
         return;
     }
 
+    logPackageNameMismatch(notification.packageName, req);
+
+    if (notification.voidedPurchaseNotification) {
+        await handleVoidedPurchaseNotification(notification.voidedPurchaseNotification, req);
+        return;
+    }
+
     if (notification.oneTimeProductNotification) {
         await handleOneTimeProductNotification(notification.oneTimeProductNotification, req);
         return;
     }
 
     logger.info({
-        message: `RTDN notification ignored (no oneTimeProductNotification). packageName=${notification.packageName}`,
+        message: `RTDN notification ignored (unsupported type). packageName=${notification.packageName}`,
         className: filename,
         req,
     });
+};
+
+const logPackageNameMismatch = (packageName, req) => {
+    if (!packageName || !env.GOOGLE_PLAY_PACKAGE_NAME) {
+        return;
+    }
+
+    if (packageName !== env.GOOGLE_PLAY_PACKAGE_NAME) {
+        logger.warn({
+            message: `RTDN packageName mismatch. received=${packageName}, expected=${env.GOOGLE_PLAY_PACKAGE_NAME}`,
+            className: filename,
+            req,
+        });
+    }
+};
+
+const processPurchaseRefund = async ({ purchaseToken, orderId, notificationType }, req) => {
+    const purchase = await PurchaseService.markPurchaseRefunded({
+        purchaseToken,
+        orderId,
+        notificationType,
+    }, req);
+
+    if (purchase?.groupProgressId) {
+        await GroupProgressService.deleteGroupProgressWithAzureCleanup(purchase.groupProgressId, req);
+    }
+
+    return purchase;
+};
+
+const handleVoidedPurchaseNotification = async (voidedNotification, req) => {
+    const { purchaseToken, orderId, productType, refundType } = voidedNotification;
+
+    if (productType !== googlePlayConstants.VOIDED_PRODUCT_TYPE_ONE_TIME) {
+        logger.info({
+            message: `RTDN voided purchase ignored (not one-time). productType=${productType}, orderId=${orderId}`,
+            className: filename,
+            req,
+        });
+        return;
+    }
+
+    logger.info({
+        message: `RTDN voided one-time purchase. orderId=${orderId}, refundType=${refundType}`,
+        className: filename,
+        req,
+    });
+
+    await processPurchaseRefund({
+        purchaseToken,
+        orderId,
+        notificationType: googlePlayConstants.RTDN_VOIDED_PURCHASE_NOTIFICATION,
+    }, req);
 };
 
 const handleOneTimeProductNotification = async (oneTimeNotification, req) => {
@@ -52,12 +113,11 @@ const handleOneTimeProductNotification = async (oneTimeNotification, req) => {
     }
 
     if (notificationType === googlePlayConstants.RTDN_ONE_TIME_PRODUCT_CANCELED) {
-        const purchase = await PurchaseService.markPurchaseRefunded(purchaseToken, notificationType, req);
-
-        if (purchase?.groupProgressId) {
-            await GroupProgressService.deleteGroupProgressWithAzureCleanup(purchase.groupProgressId, req);
-        }
-
+        await processPurchaseRefund({
+            purchaseToken,
+            orderId: null,
+            notificationType,
+        }, req);
         return;
     }
 
