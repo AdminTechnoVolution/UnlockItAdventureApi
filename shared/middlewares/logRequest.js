@@ -35,6 +35,8 @@ function sanitize(body, files) {
 }
 
 function logRequest(req, res, next) {
+    req._requestStartTime = Date.now();
+
     const bodyAndFilesSanitized = JSON.stringify(sanitize(req.body, req.files));
     const message = `Incoming Method: [${req.method}] Path: [${req.originalUrl}] Body: ${bodyAndFilesSanitized}`;
 

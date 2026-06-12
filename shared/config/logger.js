@@ -2,7 +2,6 @@ require('winston-daily-rotate-file');
 const requestContext = require('./requestContext');
 const winston = require('winston');
 const { combine, timestamp, printf, errors } = winston.format;
-const constants = require('../constants/constants');
 const MAX_CORRID_WIDTH = 0;
 const MAX_CLASSNAME_WIDTH = 0;
 const MAX_LEVEL_WIDTH = 0;
@@ -26,9 +25,20 @@ const logFormat = printf(({ timestamp, level, message, className, stack, req }) 
         correlationId = requestContext.get()?.correlationId || '';
     }
 
-    const paddedCorrelationId = `[${constants.HEADER_CORRELATION_ID}=${correlationId}]`.padEnd(MAX_CORRID_WIDTH);
+    const parts = [
+        timestamp,
+        paddedLevel,
+        paddedClassName,
+        paddedIp,
+    ];
 
-    return `${timestamp} ${paddedLevel} ${paddedClassName} ${paddedIp} ${paddedCorrelationId} : ${stack || message}`;
+    if (correlationId) {
+        parts.push(`[${correlationId}]`.padEnd(MAX_CORRID_WIDTH));
+    }
+
+    parts.push(stack || message);
+
+    return parts.join(' ');
 });
 
 const logger = winston.createLogger({
