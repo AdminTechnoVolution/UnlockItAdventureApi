@@ -46,21 +46,29 @@ const getProgressByUserId = async (userId, req) => {
 
 const addFieldsToGroups = (groups, groupProgress, userId) => {
     const userIdStr = userId.toString();
+    const flagsByGroupId = new Map();
 
-    const groupProgressMap = new Map(
-        groupProgress.map(gp => [gp.groupId.toString(), gp])
-    );
+    groupProgress.forEach((gp) => {
+        const groupIdStr = gp.groupId?.toString();
+        if (!groupIdStr) return;
 
-    groups.forEach(g => {
-        g.unlocked = false;
-        g.sharedWithMe = false;
+        const flags = flagsByGroupId.get(groupIdStr) || { unlocked: false, sharedWithMe: false };
 
-        const gp = groupProgressMap.get(g._id.toString());
-        if (!gp) return;
+        if (gp.userId?.toString() === userIdStr) {
+            flags.unlocked = true;
+        }
 
-        if (gp.userId?.toString() === userIdStr) g.unlocked = true;
+        if (gp.partnerId?.some((partnerId) => partnerId.toString() === userIdStr)) {
+            flags.sharedWithMe = true;
+        }
 
-        if (gp.partnerId?.some((partnerId) => partnerId.toString() === userIdStr)) g.sharedWithMe = true;
+        flagsByGroupId.set(groupIdStr, flags);
+    });
+
+    groups.forEach((g) => {
+        const flags = flagsByGroupId.get(g._id.toString());
+        g.unlocked = flags?.unlocked ?? false;
+        g.sharedWithMe = flags?.sharedWithMe ?? false;
     });
 };
 
