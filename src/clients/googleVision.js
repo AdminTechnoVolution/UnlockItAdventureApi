@@ -15,7 +15,6 @@ const BLOCKED_LIKELIHOODS = new Set(['LIKELY', 'VERY_LIKELY']);
 
 const SAFE_SEARCH_CATEGORIES = {
     ADULT: 'adult',
-    RACY: 'racy',
     VIOLENCE: 'violence',
 };
 
