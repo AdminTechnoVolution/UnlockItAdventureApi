@@ -72,7 +72,54 @@
                 ]
             },
             "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/001.webp",
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "amazonas",
+                    "nature escape",
+                    "outdoor activity",
+                    "scenic route",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air"
+                ],
+                "es": [
+                    "amazonas",
+                    "escapada natural",
+                    "actividad al aire libre",
+                    "ruta escenica",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre"
+                ],
+                "pt": [
+                    "amazonas",
+                    "escapada natural",
+                    "atividade ao ar livre",
+                    "rota cenica",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre"
+                ],
+                "fr": [
+                    "amazonas",
+                    "escapade nature",
+                    "activite en plein air",
+                    "itineraire panoramique",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre"
+                ],
+                "it": [
+                    "amazonas",
+                    "fuga nella natura",
+                    "attivita all aperto",
+                    "percorso panoramico",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta"
+                ]
+            }
         },
         {
             "key": "002",
@@ -118,7 +165,54 @@
                 ]
             },
             "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/002.webp",
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "antioquia",
+                    "food scene",
+                    "local cuisine",
+                    "culinary plan",
+                    "history",
+                    "cultural heritage",
+                    "architecture"
+                ],
+                "es": [
+                    "antioquia",
+                    "escena gastronomica",
+                    "cocina local",
+                    "plan culinario",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitectura"
+                ],
+                "pt": [
+                    "antioquia",
+                    "cena gastronomica",
+                    "culinaria local",
+                    "plano culinario",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitetura"
+                ],
+                "fr": [
+                    "antioquia",
+                    "scene gastronomique",
+                    "cuisine locale",
+                    "plan culinaire",
+                    "histoire",
+                    "patrimoine culturel",
+                    "architecture"
+                ],
+                "it": [
+                    "antioquia",
+                    "scena gastronomica",
+                    "cucina locale",
+                    "piano culinario",
+                    "storia",
+                    "patrimonio culturale",
+                    "architettura"
+                ]
+            }
         },
         {
             "key": "003",
@@ -164,7 +258,54 @@
                 ]
             },
             "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/003.webp",
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "arauca",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "nightlife",
+                    "music culture",
+                    "social plan"
+                ],
+                "es": [
+                    "arauca",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "vida nocturna",
+                    "cultura musical",
+                    "plan social"
+                ],
+                "pt": [
+                    "arauca",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "vida noturna",
+                    "cultura musical",
+                    "plano social"
+                ],
+                "fr": [
+                    "arauca",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "vie nocturne",
+                    "culture musicale",
+                    "plan social"
+                ],
+                "it": [
+                    "arauca",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "vita notturna",
+                    "cultura musicale",
+                    "piano sociale"
+                ]
+            }
         },
         {
             "key": "004",
@@ -210,7 +351,54 @@
                 ]
             },
             "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/004.webp",
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "atlántico",
+                    "history",
+                    "cultural heritage",
+                    "architecture",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air"
+                ],
+                "es": [
+                    "atlántico",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitectura",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre"
+                ],
+                "pt": [
+                    "atlântico",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitetura",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre"
+                ],
+                "fr": [
+                    "atlantique",
+                    "histoire",
+                    "patrimoine culturel",
+                    "architecture",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre"
+                ],
+                "it": [
+                    "atlantico",
+                    "storia",
+                    "patrimonio culturale",
+                    "architettura",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta"
+                ]
+            }
         },
         {
             "key": "005",
@@ -256,7 +444,54 @@
                 ]
             },
             "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/005.webp",
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "bolívar",
+                    "history",
+                    "cultural heritage",
+                    "architecture",
+                    "nature escape",
+                    "outdoor activity",
+                    "scenic route"
+                ],
+                "es": [
+                    "bolívar",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitectura",
+                    "escapada natural",
+                    "actividad al aire libre",
+                    "ruta escenica"
+                ],
+                "pt": [
+                    "bolívar",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitetura",
+                    "escapada natural",
+                    "atividade ao ar livre",
+                    "rota cenica"
+                ],
+                "fr": [
+                    "bolívar",
+                    "histoire",
+                    "patrimoine culturel",
+                    "architecture",
+                    "escapade nature",
+                    "activite en plein air",
+                    "itineraire panoramique"
+                ],
+                "it": [
+                    "bolívar",
+                    "storia",
+                    "patrimonio culturale",
+                    "architettura",
+                    "fuga nella natura",
+                    "attivita all aperto",
+                    "percorso panoramico"
+                ]
+            }
         },
         {
             "key": "006",
@@ -302,7 +537,54 @@
                 ]
             },
             "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/006.webp",
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "boyacá",
+                    "history",
+                    "cultural heritage",
+                    "architecture",
+                    "nature escape",
+                    "outdoor activity",
+                    "scenic route"
+                ],
+                "es": [
+                    "boyacá",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitectura",
+                    "escapada natural",
+                    "actividad al aire libre",
+                    "ruta escenica"
+                ],
+                "pt": [
+                    "boyacá",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitetura",
+                    "escapada natural",
+                    "atividade ao ar livre",
+                    "rota cenica"
+                ],
+                "fr": [
+                    "boyacá",
+                    "histoire",
+                    "patrimoine culturel",
+                    "architecture",
+                    "escapade nature",
+                    "activite en plein air",
+                    "itineraire panoramique"
+                ],
+                "it": [
+                    "boyacá",
+                    "storia",
+                    "patrimonio culturale",
+                    "architettura",
+                    "fuga nella natura",
+                    "attivita all aperto",
+                    "percorso panoramico"
+                ]
+            }
         },
         {
             "key": "007",
@@ -348,7 +630,54 @@
                 ]
             },
             "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/007.webp",
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "caldas",
+                    "food scene",
+                    "local cuisine",
+                    "culinary plan",
+                    "nightlife",
+                    "music culture",
+                    "social plan"
+                ],
+                "es": [
+                    "caldas",
+                    "escena gastronomica",
+                    "cocina local",
+                    "plan culinario",
+                    "vida nocturna",
+                    "cultura musical",
+                    "plan social"
+                ],
+                "pt": [
+                    "caldas",
+                    "cena gastronomica",
+                    "culinaria local",
+                    "plano culinario",
+                    "vida noturna",
+                    "cultura musical",
+                    "plano social"
+                ],
+                "fr": [
+                    "caldas",
+                    "scene gastronomique",
+                    "cuisine locale",
+                    "plan culinaire",
+                    "vie nocturne",
+                    "culture musicale",
+                    "plan social"
+                ],
+                "it": [
+                    "caldas",
+                    "scena gastronomica",
+                    "cucina locale",
+                    "piano culinario",
+                    "vita notturna",
+                    "cultura musicale",
+                    "piano sociale"
+                ]
+            }
         },
         {
             "key": "008",
@@ -394,7 +723,54 @@
                 ]
             },
             "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/008.webp",
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "caquetá",
+                    "nature escape",
+                    "outdoor activity",
+                    "scenic route",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air"
+                ],
+                "es": [
+                    "caquetá",
+                    "escapada natural",
+                    "actividad al aire libre",
+                    "ruta escenica",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre"
+                ],
+                "pt": [
+                    "caquetá",
+                    "escapada natural",
+                    "atividade ao ar livre",
+                    "rota cenica",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre"
+                ],
+                "fr": [
+                    "caquetá",
+                    "escapade nature",
+                    "activite en plein air",
+                    "itineraire panoramique",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre"
+                ],
+                "it": [
+                    "caquetá",
+                    "fuga nella natura",
+                    "attivita all aperto",
+                    "percorso panoramico",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta"
+                ]
+            }
         },
         {
             "key": "009",
@@ -440,7 +816,54 @@
                 ]
             },
             "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/009.webp",
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "casanare",
+                    "nightlife",
+                    "music culture",
+                    "social plan",
+                    "creative moment",
+                    "art and design",
+                    "visual culture"
+                ],
+                "es": [
+                    "casanare",
+                    "vida nocturna",
+                    "cultura musical",
+                    "plan social",
+                    "momento creativo",
+                    "arte y diseno",
+                    "cultura visual"
+                ],
+                "pt": [
+                    "casanare",
+                    "vida noturna",
+                    "cultura musical",
+                    "plano social",
+                    "momento criativo",
+                    "arte e design",
+                    "cultura visual"
+                ],
+                "fr": [
+                    "casanare",
+                    "vie nocturne",
+                    "culture musicale",
+                    "plan social",
+                    "moment creatif",
+                    "art et design",
+                    "culture visuelle"
+                ],
+                "it": [
+                    "casanare",
+                    "vita notturna",
+                    "cultura musicale",
+                    "piano sociale",
+                    "momento creativo",
+                    "arte e design",
+                    "cultura visiva"
+                ]
+            }
         },
         {
             "key": "010",
@@ -486,7 +909,54 @@
                 ]
             },
             "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/010.webp",
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "cauca",
+                    "history",
+                    "cultural heritage",
+                    "architecture",
+                    "nature escape",
+                    "outdoor activity",
+                    "scenic route"
+                ],
+                "es": [
+                    "cauca",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitectura",
+                    "escapada natural",
+                    "actividad al aire libre",
+                    "ruta escenica"
+                ],
+                "pt": [
+                    "cauca",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitetura",
+                    "escapada natural",
+                    "atividade ao ar livre",
+                    "rota cenica"
+                ],
+                "fr": [
+                    "cauca",
+                    "histoire",
+                    "patrimoine culturel",
+                    "architecture",
+                    "escapade nature",
+                    "activite en plein air",
+                    "itineraire panoramique"
+                ],
+                "it": [
+                    "cauca",
+                    "storia",
+                    "patrimonio culturale",
+                    "architettura",
+                    "fuga nella natura",
+                    "attivita all aperto",
+                    "percorso panoramico"
+                ]
+            }
         },
         {
             "key": "011",
@@ -532,7 +1002,54 @@
                 ]
             },
             "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/011.webp",
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "cesar",
+                    "nature escape",
+                    "outdoor activity",
+                    "scenic route",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air"
+                ],
+                "es": [
+                    "cesar",
+                    "escapada natural",
+                    "actividad al aire libre",
+                    "ruta escenica",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre"
+                ],
+                "pt": [
+                    "cesar",
+                    "escapada natural",
+                    "atividade ao ar livre",
+                    "rota cenica",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre"
+                ],
+                "fr": [
+                    "cesar",
+                    "escapade nature",
+                    "activite en plein air",
+                    "itineraire panoramique",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre"
+                ],
+                "it": [
+                    "cesar",
+                    "fuga nella natura",
+                    "attivita all aperto",
+                    "percorso panoramico",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta"
+                ]
+            }
         },
         {
             "key": "012",
@@ -578,7 +1095,54 @@
                 ]
             },
             "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/012.webp",
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "chocó",
+                    "nature escape",
+                    "outdoor activity",
+                    "scenic route",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air"
+                ],
+                "es": [
+                    "chocó",
+                    "escapada natural",
+                    "actividad al aire libre",
+                    "ruta escenica",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre"
+                ],
+                "pt": [
+                    "chocó",
+                    "escapada natural",
+                    "atividade ao ar livre",
+                    "rota cenica",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre"
+                ],
+                "fr": [
+                    "chocó",
+                    "escapade nature",
+                    "activite en plein air",
+                    "itineraire panoramique",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre"
+                ],
+                "it": [
+                    "chocó",
+                    "fuga nella natura",
+                    "attivita all aperto",
+                    "percorso panoramico",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta"
+                ]
+            }
         },
         {
             "key": "013",
@@ -624,7 +1188,54 @@
                 ]
             },
             "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/013.webp",
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "córdoba",
+                    "food scene",
+                    "local cuisine",
+                    "culinary plan",
+                    "history",
+                    "cultural heritage",
+                    "architecture"
+                ],
+                "es": [
+                    "córdoba",
+                    "escena gastronomica",
+                    "cocina local",
+                    "plan culinario",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitectura"
+                ],
+                "pt": [
+                    "córdoba",
+                    "cena gastronomica",
+                    "culinaria local",
+                    "plano culinario",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitetura"
+                ],
+                "fr": [
+                    "córdoba",
+                    "scene gastronomique",
+                    "cuisine locale",
+                    "plan culinaire",
+                    "histoire",
+                    "patrimoine culturel",
+                    "architecture"
+                ],
+                "it": [
+                    "córdoba",
+                    "scena gastronomica",
+                    "cucina locale",
+                    "piano culinario",
+                    "storia",
+                    "patrimonio culturale",
+                    "architettura"
+                ]
+            }
         },
         {
             "key": "014",
@@ -670,7 +1281,54 @@
                 ]
             },
             "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/014.webp",
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "cundinamarca",
+                    "history",
+                    "cultural heritage",
+                    "architecture",
+                    "nature escape",
+                    "outdoor activity",
+                    "scenic route"
+                ],
+                "es": [
+                    "cundinamarca",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitectura",
+                    "escapada natural",
+                    "actividad al aire libre",
+                    "ruta escenica"
+                ],
+                "pt": [
+                    "cundinamarca",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitetura",
+                    "escapada natural",
+                    "atividade ao ar livre",
+                    "rota cenica"
+                ],
+                "fr": [
+                    "cundinamarca",
+                    "histoire",
+                    "patrimoine culturel",
+                    "architecture",
+                    "escapade nature",
+                    "activite en plein air",
+                    "itineraire panoramique"
+                ],
+                "it": [
+                    "cundinamarca",
+                    "storia",
+                    "patrimonio culturale",
+                    "architettura",
+                    "fuga nella natura",
+                    "attivita all aperto",
+                    "percorso panoramico"
+                ]
+            }
         },
         {
             "key": "015",
@@ -716,7 +1374,39 @@
                 ]
             },
             "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/015.webp",
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "guainía",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air"
+                ],
+                "es": [
+                    "guainía",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre"
+                ],
+                "pt": [
+                    "guainía",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre"
+                ],
+                "fr": [
+                    "guainía",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre"
+                ],
+                "it": [
+                    "guainía",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta"
+                ]
+            }
         },
         {
             "key": "016",
@@ -762,7 +1452,54 @@
                 ]
             },
             "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/016.webp",
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "guaviare",
+                    "nature escape",
+                    "outdoor activity",
+                    "scenic route",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air"
+                ],
+                "es": [
+                    "guaviare",
+                    "escapada natural",
+                    "actividad al aire libre",
+                    "ruta escenica",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre"
+                ],
+                "pt": [
+                    "guaviare",
+                    "escapada natural",
+                    "atividade ao ar livre",
+                    "rota cenica",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre"
+                ],
+                "fr": [
+                    "guaviare",
+                    "escapade nature",
+                    "activite en plein air",
+                    "itineraire panoramique",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre"
+                ],
+                "it": [
+                    "guaviare",
+                    "fuga nella natura",
+                    "attivita all aperto",
+                    "percorso panoramico",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta"
+                ]
+            }
         },
         {
             "key": "017",
@@ -808,7 +1545,54 @@
                 ]
             },
             "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/017.webp",
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "huila",
+                    "nature escape",
+                    "outdoor activity",
+                    "scenic route",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air"
+                ],
+                "es": [
+                    "huila",
+                    "escapada natural",
+                    "actividad al aire libre",
+                    "ruta escenica",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre"
+                ],
+                "pt": [
+                    "huila",
+                    "escapada natural",
+                    "atividade ao ar livre",
+                    "rota cenica",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre"
+                ],
+                "fr": [
+                    "huila",
+                    "escapade nature",
+                    "activite en plein air",
+                    "itineraire panoramique",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre"
+                ],
+                "it": [
+                    "huila",
+                    "fuga nella natura",
+                    "attivita all aperto",
+                    "percorso panoramico",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta"
+                ]
+            }
         },
         {
             "key": "018",
@@ -854,7 +1638,54 @@
                 ]
             },
             "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/018.webp",
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "guajira",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "creative moment",
+                    "art and design",
+                    "visual culture"
+                ],
+                "es": [
+                    "guajira",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "momento creativo",
+                    "arte y diseno",
+                    "cultura visual"
+                ],
+                "pt": [
+                    "guajira",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "momento criativo",
+                    "arte e design",
+                    "cultura visual"
+                ],
+                "fr": [
+                    "guajira",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "moment creatif",
+                    "art et design",
+                    "culture visuelle"
+                ],
+                "it": [
+                    "guajira",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "momento creativo",
+                    "arte e design",
+                    "cultura visiva"
+                ]
+            }
         },
         {
             "key": "019",
@@ -900,7 +1731,54 @@
                 ]
             },
             "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/019.webp",
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "magdalena",
+                    "history",
+                    "cultural heritage",
+                    "architecture",
+                    "nature escape",
+                    "outdoor activity",
+                    "scenic route"
+                ],
+                "es": [
+                    "magdalena",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitectura",
+                    "escapada natural",
+                    "actividad al aire libre",
+                    "ruta escenica"
+                ],
+                "pt": [
+                    "magdalena",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitetura",
+                    "escapada natural",
+                    "atividade ao ar livre",
+                    "rota cenica"
+                ],
+                "fr": [
+                    "magdalena",
+                    "histoire",
+                    "patrimoine culturel",
+                    "architecture",
+                    "escapade nature",
+                    "activite en plein air",
+                    "itineraire panoramique"
+                ],
+                "it": [
+                    "magdalena",
+                    "storia",
+                    "patrimonio culturale",
+                    "architettura",
+                    "fuga nella natura",
+                    "attivita all aperto",
+                    "percorso panoramico"
+                ]
+            }
         },
         {
             "key": "020",
@@ -946,7 +1824,54 @@
                 ]
             },
             "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/020.webp",
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "meta",
+                    "nature escape",
+                    "outdoor activity",
+                    "scenic route",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air"
+                ],
+                "es": [
+                    "meta",
+                    "escapada natural",
+                    "actividad al aire libre",
+                    "ruta escenica",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre"
+                ],
+                "pt": [
+                    "meta",
+                    "escapada natural",
+                    "atividade ao ar livre",
+                    "rota cenica",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre"
+                ],
+                "fr": [
+                    "meta",
+                    "escapade nature",
+                    "activite en plein air",
+                    "itineraire panoramique",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre"
+                ],
+                "it": [
+                    "meta",
+                    "fuga nella natura",
+                    "attivita all aperto",
+                    "percorso panoramico",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta"
+                ]
+            }
         },
         {
             "key": "021",
@@ -992,7 +1917,39 @@
                 ]
             },
             "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/021.webp",
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "nariño",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air"
+                ],
+                "es": [
+                    "nariño",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre"
+                ],
+                "pt": [
+                    "nariño",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre"
+                ],
+                "fr": [
+                    "nariño",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre"
+                ],
+                "it": [
+                    "nariño",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta"
+                ]
+            }
         },
         {
             "key": "022",
@@ -1038,7 +1995,54 @@
                 ]
             },
             "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/022.webp",
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "north",
+                    "santander",
+                    "history",
+                    "cultural heritage",
+                    "architecture",
+                    "nature escape",
+                    "outdoor activity"
+                ],
+                "es": [
+                    "norte",
+                    "santander",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitectura",
+                    "escapada natural",
+                    "actividad al aire libre"
+                ],
+                "pt": [
+                    "norte",
+                    "santander",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitetura",
+                    "escapada natural",
+                    "atividade ao ar livre"
+                ],
+                "fr": [
+                    "norte",
+                    "santander",
+                    "histoire",
+                    "patrimoine culturel",
+                    "architecture",
+                    "escapade nature",
+                    "activite en plein air"
+                ],
+                "it": [
+                    "norte",
+                    "santander",
+                    "storia",
+                    "patrimonio culturale",
+                    "architettura",
+                    "fuga nella natura",
+                    "attivita all aperto"
+                ]
+            }
         },
         {
             "key": "023",
@@ -1084,7 +2088,54 @@
                 ]
             },
             "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/023.webp",
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "putumayo",
+                    "nature escape",
+                    "outdoor activity",
+                    "scenic route",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air"
+                ],
+                "es": [
+                    "putumayo",
+                    "escapada natural",
+                    "actividad al aire libre",
+                    "ruta escenica",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre"
+                ],
+                "pt": [
+                    "putumayo",
+                    "escapada natural",
+                    "atividade ao ar livre",
+                    "rota cenica",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre"
+                ],
+                "fr": [
+                    "putumayo",
+                    "escapade nature",
+                    "activite en plein air",
+                    "itineraire panoramique",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre"
+                ],
+                "it": [
+                    "putumayo",
+                    "fuga nella natura",
+                    "attivita all aperto",
+                    "percorso panoramico",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta"
+                ]
+            }
         },
         {
             "key": "024",
@@ -1130,7 +2181,54 @@
                 ]
             },
             "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/024.webp",
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "quindío",
+                    "food scene",
+                    "local cuisine",
+                    "culinary plan",
+                    "history",
+                    "cultural heritage",
+                    "architecture"
+                ],
+                "es": [
+                    "quindío",
+                    "escena gastronomica",
+                    "cocina local",
+                    "plan culinario",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitectura"
+                ],
+                "pt": [
+                    "quindío",
+                    "cena gastronomica",
+                    "culinaria local",
+                    "plano culinario",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitetura"
+                ],
+                "fr": [
+                    "quindío",
+                    "scene gastronomique",
+                    "cuisine locale",
+                    "plan culinaire",
+                    "histoire",
+                    "patrimoine culturel",
+                    "architecture"
+                ],
+                "it": [
+                    "quindío",
+                    "scena gastronomica",
+                    "cucina locale",
+                    "piano culinario",
+                    "storia",
+                    "patrimonio culturale",
+                    "architettura"
+                ]
+            }
         },
         {
             "key": "025",
@@ -1176,7 +2274,54 @@
                 ]
             },
             "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/025.webp",
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "risaralda",
+                    "food scene",
+                    "local cuisine",
+                    "culinary plan",
+                    "nightlife",
+                    "music culture",
+                    "social plan"
+                ],
+                "es": [
+                    "risaralda",
+                    "escena gastronomica",
+                    "cocina local",
+                    "plan culinario",
+                    "vida nocturna",
+                    "cultura musical",
+                    "plan social"
+                ],
+                "pt": [
+                    "risaralda",
+                    "cena gastronomica",
+                    "culinaria local",
+                    "plano culinario",
+                    "vida noturna",
+                    "cultura musical",
+                    "plano social"
+                ],
+                "fr": [
+                    "risaralda",
+                    "scene gastronomique",
+                    "cuisine locale",
+                    "plan culinaire",
+                    "vie nocturne",
+                    "culture musicale",
+                    "plan social"
+                ],
+                "it": [
+                    "risaralda",
+                    "scena gastronomica",
+                    "cucina locale",
+                    "piano culinario",
+                    "vita notturna",
+                    "cultura musicale",
+                    "piano sociale"
+                ]
+            }
         },
         {
             "key": "026",
@@ -1222,7 +2367,54 @@
                 ]
             },
             "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/026.webp",
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "andrés",
+                    "providencia",
+                    "nature escape",
+                    "outdoor activity",
+                    "scenic route",
+                    "water plan",
+                    "coastal vibe"
+                ],
+                "es": [
+                    "andrés",
+                    "providencia",
+                    "escapada natural",
+                    "actividad al aire libre",
+                    "ruta escenica",
+                    "plan acuatico",
+                    "ambiente costero"
+                ],
+                "pt": [
+                    "andrés",
+                    "providência",
+                    "escapada natural",
+                    "atividade ao ar livre",
+                    "rota cenica",
+                    "plano aquatico",
+                    "clima litoraneo"
+                ],
+                "fr": [
+                    "andrés",
+                    "providencia",
+                    "escapade nature",
+                    "activite en plein air",
+                    "itineraire panoramique",
+                    "plan aquatique",
+                    "ambiance cotiere"
+                ],
+                "it": [
+                    "andrés",
+                    "providencia",
+                    "fuga nella natura",
+                    "attivita all aperto",
+                    "percorso panoramico",
+                    "piano acquatico",
+                    "atmosfera costiera"
+                ]
+            }
         },
         {
             "key": "027",
@@ -1268,7 +2460,54 @@
                 ]
             },
             "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/027.webp",
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "santander",
+                    "nature escape",
+                    "outdoor activity",
+                    "scenic route",
+                    "nightlife",
+                    "music culture",
+                    "social plan"
+                ],
+                "es": [
+                    "santander",
+                    "escapada natural",
+                    "actividad al aire libre",
+                    "ruta escenica",
+                    "vida nocturna",
+                    "cultura musical",
+                    "plan social"
+                ],
+                "pt": [
+                    "santander",
+                    "escapada natural",
+                    "atividade ao ar livre",
+                    "rota cenica",
+                    "vida noturna",
+                    "cultura musical",
+                    "plano social"
+                ],
+                "fr": [
+                    "santander",
+                    "escapade nature",
+                    "activite en plein air",
+                    "itineraire panoramique",
+                    "vie nocturne",
+                    "culture musicale",
+                    "plan social"
+                ],
+                "it": [
+                    "santander",
+                    "fuga nella natura",
+                    "attivita all aperto",
+                    "percorso panoramico",
+                    "vita notturna",
+                    "cultura musicale",
+                    "piano sociale"
+                ]
+            }
         },
         {
             "key": "028",
@@ -1314,7 +2553,54 @@
                 ]
             },
             "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/028.webp",
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "sucre",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "nightlife",
+                    "music culture",
+                    "social plan"
+                ],
+                "es": [
+                    "sucre",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "vida nocturna",
+                    "cultura musical",
+                    "plan social"
+                ],
+                "pt": [
+                    "sucre",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "vida noturna",
+                    "cultura musical",
+                    "plano social"
+                ],
+                "fr": [
+                    "sucre",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "vie nocturne",
+                    "culture musicale",
+                    "plan social"
+                ],
+                "it": [
+                    "sucre",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "vita notturna",
+                    "cultura musicale",
+                    "piano sociale"
+                ]
+            }
         },
         {
             "key": "029",
@@ -1360,7 +2646,54 @@
                 ]
             },
             "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/029.webp",
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "tolima",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "nightlife",
+                    "music culture",
+                    "social plan"
+                ],
+                "es": [
+                    "tolima",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "vida nocturna",
+                    "cultura musical",
+                    "plan social"
+                ],
+                "pt": [
+                    "tolima",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "vida noturna",
+                    "cultura musical",
+                    "plano social"
+                ],
+                "fr": [
+                    "tolima",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "vie nocturne",
+                    "culture musicale",
+                    "plan social"
+                ],
+                "it": [
+                    "tolima",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "vita notturna",
+                    "cultura musicale",
+                    "piano sociale"
+                ]
+            }
         },
         {
             "key": "030",
@@ -1406,7 +2739,54 @@
                 ]
             },
             "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/030.webp",
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "valle",
+                    "cauca",
+                    "nature escape",
+                    "outdoor activity",
+                    "scenic route",
+                    "water plan",
+                    "coastal vibe"
+                ],
+                "es": [
+                    "valle",
+                    "cauca",
+                    "escapada natural",
+                    "actividad al aire libre",
+                    "ruta escenica",
+                    "plan acuatico",
+                    "ambiente costero"
+                ],
+                "pt": [
+                    "valle",
+                    "cauca",
+                    "escapada natural",
+                    "atividade ao ar livre",
+                    "rota cenica",
+                    "plano aquatico",
+                    "clima litoraneo"
+                ],
+                "fr": [
+                    "valle",
+                    "cauca",
+                    "escapade nature",
+                    "activite en plein air",
+                    "itineraire panoramique",
+                    "plan aquatique",
+                    "ambiance cotiere"
+                ],
+                "it": [
+                    "valle",
+                    "cauca",
+                    "fuga nella natura",
+                    "attivita all aperto",
+                    "percorso panoramico",
+                    "piano acquatico",
+                    "atmosfera costiera"
+                ]
+            }
         },
         {
             "key": "031",
@@ -1452,7 +2832,54 @@
                 ]
             },
             "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/031.webp",
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "vaupés",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "creative moment",
+                    "art and design",
+                    "visual culture"
+                ],
+                "es": [
+                    "vaupés",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "momento creativo",
+                    "arte y diseno",
+                    "cultura visual"
+                ],
+                "pt": [
+                    "vaupés",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "momento criativo",
+                    "arte e design",
+                    "cultura visual"
+                ],
+                "fr": [
+                    "vaupés",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "moment creatif",
+                    "art et design",
+                    "culture visuelle"
+                ],
+                "it": [
+                    "vaupés",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "momento creativo",
+                    "arte e design",
+                    "cultura visiva"
+                ]
+            }
         },
         {
             "key": "032",
@@ -1498,7 +2925,126 @@
                 ]
             },
             "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/032.webp",
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "vichada",
+                    "nature escape",
+                    "outdoor activity",
+                    "scenic route",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air"
+                ],
+                "es": [
+                    "vichada",
+                    "escapada natural",
+                    "actividad al aire libre",
+                    "ruta escenica",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre"
+                ],
+                "pt": [
+                    "vichada",
+                    "escapada natural",
+                    "atividade ao ar livre",
+                    "rota cenica",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre"
+                ],
+                "fr": [
+                    "vichada",
+                    "escapade nature",
+                    "activite en plein air",
+                    "itineraire panoramique",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre"
+                ],
+                "it": [
+                    "vichada",
+                    "fuga nella natura",
+                    "attivita all aperto",
+                    "percorso panoramico",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta"
+                ]
+            }
         }
-    ]
+    ],
+    "tags": {
+        "en": [
+            "discover colombia",
+            "colombia",
+            "culture",
+            "nature",
+            "adventure",
+            "local experiences",
+            "travel",
+            "sightseeing",
+            "food",
+            "history",
+            "outdoor plans",
+            "bucket list"
+        ],
+        "es": [
+            "descubre colombia",
+            "colombia",
+            "cultura",
+            "naturaleza",
+            "aventura",
+            "experiencias locales",
+            "viaje",
+            "turismo",
+            "gastronomia",
+            "historia",
+            "planes al aire libre",
+            "lista de deseos"
+        ],
+        "pt": [
+            "descubra colombia",
+            "colombia",
+            "cultura",
+            "natureza",
+            "aventura",
+            "experiencias locais",
+            "viagem",
+            "turismo",
+            "gastronomia",
+            "historia",
+            "planos ao ar livre",
+            "lista de desejos"
+        ],
+        "fr": [
+            "decouvrir colombie",
+            "colombie",
+            "culture",
+            "nature",
+            "aventure",
+            "experiences locales",
+            "voyage",
+            "tourisme",
+            "gastronomie",
+            "histoire",
+            "activites en plein air",
+            "liste de reves"
+        ],
+        "it": [
+            "scopri colombia",
+            "colombia",
+            "cultura",
+            "natura",
+            "avventura",
+            "esperienze locali",
+            "viaggio",
+            "turismo",
+            "gastronomia",
+            "storia",
+            "attivita all aperto",
+            "lista dei desideri"
+        ]
+    }
 }

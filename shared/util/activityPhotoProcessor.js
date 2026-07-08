@@ -57,7 +57,8 @@ const processActivityPhotoVariants = async (buffer, req = null) => {
     const { maxDimension, sizesPx, webpQuality } = await loadActivityPhotoConfig(req);
 
     try {
-        const baseImage = sharp(buffer)
+        const imageInput = buffer?.filePath || buffer;
+        const baseImage = sharp(imageInput)
             .rotate()
             .resize({
                 width: maxDimension,
@@ -93,6 +94,51 @@ const processActivityPhotoVariants = async (buffer, req = null) => {
     }
 };
 
+const createActivityPhotoVariantStream = (imageInput, { maxDimension, maxPx, webpQuality }) => {
+    const source = imageInput?.filePath || imageInput;
+
+    return sharp(source)
+        .rotate()
+        .resize({
+            width: maxDimension,
+            height: maxDimension,
+            fit: 'inside',
+            withoutEnlargement: true,
+        })
+        .resize({
+            width: maxPx,
+            height: maxPx,
+            fit: 'inside',
+            withoutEnlargement: true,
+        })
+        .webp({ quality: webpQuality });
+};
+
+const processActivityPhotoVariantsStreaming = async (imageInput, onVariant, req = null) => {
+    const { maxDimension, sizesPx, webpQuality } = await loadActivityPhotoConfig(req);
+
+    const sizeKeys = Object.keys(sizesPx);
+
+    for (const [sizeKey, maxPx] of Object.entries(sizesPx)) {
+        const variantStream = createActivityPhotoVariantStream(imageInput, {
+            maxDimension,
+            maxPx,
+            webpQuality,
+        });
+
+        await onVariant(sizeKey, variantStream);
+    }
+
+    logger.info({
+        message: `Uploaded activity photo variants via stream. sizes=${sizeKeys.join(',')}`,
+        className: filename,
+        req,
+    });
+};
+
 module.exports = {
     processActivityPhotoVariants,
+    processActivityPhotoVariantsStreaming,
+    createActivityPhotoVariantStream,
+    loadActivityPhotoConfig,
 };

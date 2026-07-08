@@ -7,11 +7,11 @@ const { MIME_TO_EXTENSIONS, SHARP_FORMAT_TO_MIME } = require('../constants/image
 const { ERROR_CODES } = require('../i18n/messages');
 const AppConfigService = require('../../src/services/appConfig.service');
 
-const validateImageBufferContent = async (buffer, declaredMime, allowedMimes) => {
+const validateImageBufferContent = async (imageInput, declaredMime, allowedMimes) => {
     let metadata;
 
     try {
-        metadata = await sharp(buffer).metadata();
+        metadata = await sharp(imageInput).metadata();
     } catch {
         throw new BusinessException(ERROR_CODES.CODE_PHOTOS_ONLY, constants.HTTP_BAD_REQUEST);
     }
@@ -58,7 +58,13 @@ const validatePhotoFile = async (file, req, { maxFileSizeMbConfigKey }) => {
         throw new BusinessException(ERROR_CODES.CODE_PHOTO_INVALID_EXTENSION, constants.HTTP_BAD_REQUEST);
     }
 
-    await validateImageBufferContent(file.buffer, file.mimetype, allowedMimes);
+    const imageInput = file.path || file.buffer;
+
+    if (!imageInput) {
+        throw new BusinessException(ERROR_CODES.CODE_PHOTOS_ONLY, constants.HTTP_BAD_REQUEST);
+    }
+
+    await validateImageBufferContent(imageInput, file.mimetype, allowedMimes);
 };
 
 module.exports = {

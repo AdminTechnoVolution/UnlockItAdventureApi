@@ -133,6 +133,53 @@
                         "value": "Guatapé / El Peñol"
                     }
                 ]
+            },
+            "tags": {
+                "en": [
+                    "guatapé",
+                    "climb",
+                    "colombia",
+                    "history",
+                    "cultural heritage",
+                    "architecture",
+                    "nature escape"
+                ],
+                "es": [
+                    "visitar",
+                    "guatapé",
+                    "colombia",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitectura",
+                    "escapada natural"
+                ],
+                "pt": [
+                    "visitar",
+                    "guatapé",
+                    "colômbia",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitetura",
+                    "escapada natural"
+                ],
+                "fr": [
+                    "visiter",
+                    "guatapé",
+                    "colombie",
+                    "histoire",
+                    "patrimoine culturel",
+                    "architecture",
+                    "escapade nature"
+                ],
+                "it": [
+                    "visitare",
+                    "guatapé",
+                    "colombia",
+                    "storia",
+                    "patrimonio culturale",
+                    "architettura",
+                    "fuga nella natura"
+                ]
             }
         },
         {
@@ -245,6 +292,53 @@
                         "name": "Città",
                         "value": "Santa Marta"
                     }
+                ]
+            },
+            "tags": {
+                "en": [
+                    "tayrona",
+                    "national",
+                    "colombia",
+                    "history",
+                    "cultural heritage",
+                    "architecture",
+                    "nature escape"
+                ],
+                "es": [
+                    "visitar",
+                    "parque",
+                    "colombia",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitectura",
+                    "escapada natural"
+                ],
+                "pt": [
+                    "visitar",
+                    "parque",
+                    "colômbia",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitetura",
+                    "escapada natural"
+                ],
+                "fr": [
+                    "visiter",
+                    "parc",
+                    "colombie",
+                    "histoire",
+                    "patrimoine culturel",
+                    "architecture",
+                    "escapade nature"
+                ],
+                "it": [
+                    "visitare",
+                    "parco",
+                    "colombia",
+                    "storia",
+                    "patrimonio culturale",
+                    "architettura",
+                    "fuga nella natura"
                 ]
             }
         },
@@ -359,6 +453,53 @@
                         "value": "La Macarena"
                     }
                 ]
+            },
+            "tags": {
+                "en": [
+                    "caño",
+                    "cristales",
+                    "colombia",
+                    "history",
+                    "cultural heritage",
+                    "architecture",
+                    "water plan"
+                ],
+                "es": [
+                    "visitar",
+                    "caño",
+                    "colombia",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitectura",
+                    "plan acuatico"
+                ],
+                "pt": [
+                    "visitar",
+                    "caño",
+                    "colômbia",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitetura",
+                    "plano aquatico"
+                ],
+                "fr": [
+                    "visiter",
+                    "caño",
+                    "colombie",
+                    "histoire",
+                    "patrimoine culturel",
+                    "architecture",
+                    "plan aquatique"
+                ],
+                "it": [
+                    "visitare",
+                    "caño",
+                    "colombia",
+                    "storia",
+                    "patrimonio culturale",
+                    "architettura",
+                    "piano acquatico"
+                ]
             }
         },
         {
@@ -471,6 +612,53 @@
                         "name": "Città",
                         "value": "Zipaquirá"
                     }
+                ]
+            },
+            "tags": {
+                "en": [
+                    "excursion",
+                    "salt",
+                    "colombia",
+                    "history",
+                    "cultural heritage",
+                    "architecture",
+                    "nature escape"
+                ],
+                "es": [
+                    "realizar",
+                    "excursión",
+                    "colombia",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitectura",
+                    "escapada natural"
+                ],
+                "pt": [
+                    "excursão",
+                    "catedral",
+                    "colômbia",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitetura",
+                    "escapada natural"
+                ],
+                "fr": [
+                    "excursion",
+                    "cathédrale",
+                    "colombie",
+                    "histoire",
+                    "patrimoine culturel",
+                    "architecture",
+                    "escapade nature"
+                ],
+                "it": [
+                    "escursione",
+                    "alla",
+                    "colombia",
+                    "storia",
+                    "patrimonio culturale",
+                    "architettura",
+                    "fuga nella natura"
                 ]
             }
         },
@@ -585,6 +773,53 @@
                         "value": "Villavieja"
                     }
                 ]
+            },
+            "tags": {
+                "en": [
+                    "stargaze",
+                    "tatacoa",
+                    "colombia",
+                    "history",
+                    "cultural heritage",
+                    "architecture",
+                    "water plan"
+                ],
+                "es": [
+                    "estrellas",
+                    "desierto",
+                    "colombia",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitectura",
+                    "plan acuatico"
+                ],
+                "pt": [
+                    "estrelas",
+                    "deserto",
+                    "colômbia",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitetura",
+                    "plano aquatico"
+                ],
+                "fr": [
+                    "observer",
+                    "étoiles",
+                    "colombie",
+                    "histoire",
+                    "patrimoine culturel",
+                    "architecture",
+                    "plan aquatique"
+                ],
+                "it": [
+                    "guardare",
+                    "stelle",
+                    "colombia",
+                    "storia",
+                    "patrimonio culturale",
+                    "architettura",
+                    "piano acquatico"
+                ]
             }
         },
         {
@@ -697,6 +932,53 @@
                         "name": "Città",
                         "value": "Inírida"
                     }
+                ]
+            },
+            "tags": {
+                "en": [
+                    "mavecure",
+                    "hills",
+                    "colombia",
+                    "history",
+                    "cultural heritage",
+                    "architecture",
+                    "water plan"
+                ],
+                "es": [
+                    "visitar",
+                    "cerros",
+                    "colombia",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitectura",
+                    "plan acuatico"
+                ],
+                "pt": [
+                    "visitar",
+                    "cerros",
+                    "colômbia",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitetura",
+                    "plano aquatico"
+                ],
+                "fr": [
+                    "visiter",
+                    "collines",
+                    "colombie",
+                    "histoire",
+                    "patrimoine culturel",
+                    "architecture",
+                    "plan aquatique"
+                ],
+                "it": [
+                    "visitare",
+                    "cerros",
+                    "colombia",
+                    "storia",
+                    "patrimonio culturale",
+                    "architettura",
+                    "piano acquatico"
                 ]
             }
         },
@@ -811,6 +1093,53 @@
                         "value": "Manizales / Pereira"
                     }
                 ]
+            },
+            "tags": {
+                "en": [
+                    "nevados",
+                    "national",
+                    "colombia",
+                    "history",
+                    "cultural heritage",
+                    "architecture",
+                    "nature escape"
+                ],
+                "es": [
+                    "visitar",
+                    "parque",
+                    "colombia",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitectura",
+                    "escapada natural"
+                ],
+                "pt": [
+                    "visitar",
+                    "parque",
+                    "colômbia",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitetura",
+                    "escapada natural"
+                ],
+                "fr": [
+                    "visiter",
+                    "parc",
+                    "colombie",
+                    "histoire",
+                    "patrimoine culturel",
+                    "architecture",
+                    "escapade nature"
+                ],
+                "it": [
+                    "visitare",
+                    "parco",
+                    "colombia",
+                    "storia",
+                    "patrimonio culturale",
+                    "architettura",
+                    "fuga nella natura"
+                ]
             }
         },
         {
@@ -923,6 +1252,53 @@
                         "name": "Città",
                         "value": "Ipiales"
                     }
+                ]
+            },
+            "tags": {
+                "en": [
+                    "lajas",
+                    "sanctuary",
+                    "colombia",
+                    "history",
+                    "cultural heritage",
+                    "architecture",
+                    "water plan"
+                ],
+                "es": [
+                    "visitar",
+                    "santuario",
+                    "colombia",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitectura",
+                    "plan acuatico"
+                ],
+                "pt": [
+                    "visitar",
+                    "santuário",
+                    "colômbia",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitetura",
+                    "plano aquatico"
+                ],
+                "fr": [
+                    "visiter",
+                    "sanctuaire",
+                    "colombie",
+                    "histoire",
+                    "patrimoine culturel",
+                    "architecture",
+                    "plan aquatique"
+                ],
+                "it": [
+                    "visitare",
+                    "santuario",
+                    "colombia",
+                    "storia",
+                    "patrimonio culturale",
+                    "architettura",
+                    "piano acquatico"
                 ]
             }
         },
@@ -1037,6 +1413,53 @@
                         "value": "Salento"
                     }
                 ]
+            },
+            "tags": {
+                "en": [
+                    "cocora",
+                    "valley",
+                    "colombia",
+                    "history",
+                    "cultural heritage",
+                    "architecture",
+                    "nature escape"
+                ],
+                "es": [
+                    "recorrer",
+                    "valle",
+                    "colombia",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitectura",
+                    "escapada natural"
+                ],
+                "pt": [
+                    "percorrer",
+                    "vale",
+                    "colômbia",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitetura",
+                    "escapada natural"
+                ],
+                "fr": [
+                    "parcourir",
+                    "vallée",
+                    "colombie",
+                    "histoire",
+                    "patrimoine culturel",
+                    "architecture",
+                    "escapade nature"
+                ],
+                "it": [
+                    "esplorare",
+                    "valle",
+                    "colombia",
+                    "storia",
+                    "patrimonio culturale",
+                    "architettura",
+                    "fuga nella natura"
+                ]
             }
         },
         {
@@ -1149,6 +1572,53 @@
                         "name": "Città",
                         "value": "Sierra Nevada de Santa Marta"
                     }
+                ]
+            },
+            "tags": {
+                "en": [
+                    "trek",
+                    "lost",
+                    "colombia",
+                    "history",
+                    "cultural heritage",
+                    "architecture",
+                    "water plan"
+                ],
+                "es": [
+                    "realizar",
+                    "travesía",
+                    "colombia",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitectura",
+                    "plan acuatico"
+                ],
+                "pt": [
+                    "realizar",
+                    "travessia",
+                    "colômbia",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitetura",
+                    "plano aquatico"
+                ],
+                "fr": [
+                    "trek",
+                    "vers",
+                    "colombie",
+                    "histoire",
+                    "patrimoine culturel",
+                    "architecture",
+                    "plan aquatique"
+                ],
+                "it": [
+                    "trekking",
+                    "verso",
+                    "colombia",
+                    "storia",
+                    "patrimonio culturale",
+                    "architettura",
+                    "piano acquatico"
                 ]
             }
         },
@@ -1263,6 +1733,53 @@
                         "value": "Cartagena"
                     }
                 ]
+            },
+            "tags": {
+                "en": [
+                    "walk",
+                    "through",
+                    "colombia",
+                    "history",
+                    "cultural heritage",
+                    "architecture",
+                    "water plan"
+                ],
+                "es": [
+                    "caminar",
+                    "ciudad",
+                    "colombia",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitectura",
+                    "plan acuatico"
+                ],
+                "pt": [
+                    "caminhar",
+                    "pela",
+                    "colômbia",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitetura",
+                    "plano aquatico"
+                ],
+                "fr": [
+                    "promener",
+                    "dans",
+                    "colombie",
+                    "histoire",
+                    "patrimoine culturel",
+                    "architecture",
+                    "plan aquatique"
+                ],
+                "it": [
+                    "camminare",
+                    "città",
+                    "colombia",
+                    "storia",
+                    "patrimonio culturale",
+                    "architettura",
+                    "piano acquatico"
+                ]
             }
         },
         {
@@ -1375,6 +1892,53 @@
                         "name": "Città",
                         "value": "Cartagena"
                     }
+                ]
+            },
+            "tags": {
+                "en": [
+                    "rosario",
+                    "islands",
+                    "colombia",
+                    "history",
+                    "cultural heritage",
+                    "architecture",
+                    "water plan"
+                ],
+                "es": [
+                    "visitar",
+                    "islas",
+                    "colombia",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitectura",
+                    "plan acuatico"
+                ],
+                "pt": [
+                    "visitar",
+                    "ilhas",
+                    "colômbia",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitetura",
+                    "plano aquatico"
+                ],
+                "fr": [
+                    "visiter",
+                    "îles",
+                    "colombie",
+                    "histoire",
+                    "patrimoine culturel",
+                    "architecture",
+                    "plan aquatique"
+                ],
+                "it": [
+                    "visitare",
+                    "isole",
+                    "colombia",
+                    "storia",
+                    "patrimonio culturale",
+                    "architettura",
+                    "piano acquatico"
                 ]
             }
         },
@@ -1489,6 +2053,53 @@
                         "value": "Archipiélago de San Bernardo"
                     }
                 ]
+            },
+            "tags": {
+                "en": [
+                    "mucura",
+                    "island",
+                    "colombia",
+                    "history",
+                    "cultural heritage",
+                    "architecture",
+                    "water plan"
+                ],
+                "es": [
+                    "visitar",
+                    "isla",
+                    "colombia",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitectura",
+                    "plan acuatico"
+                ],
+                "pt": [
+                    "visitar",
+                    "ilha",
+                    "colômbia",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitetura",
+                    "plano aquatico"
+                ],
+                "fr": [
+                    "visiter",
+                    "múcura",
+                    "colombie",
+                    "histoire",
+                    "patrimoine culturel",
+                    "architecture",
+                    "plan aquatique"
+                ],
+                "it": [
+                    "visitare",
+                    "isola",
+                    "colombia",
+                    "storia",
+                    "patrimonio culturale",
+                    "architettura",
+                    "piano acquatico"
+                ]
             }
         },
         {
@@ -1601,6 +2212,53 @@
                         "name": "Città",
                         "value": "Bogotá"
                     }
+                ]
+            },
+            "tags": {
+                "en": [
+                    "climb",
+                    "monserrate",
+                    "colombia",
+                    "history",
+                    "cultural heritage",
+                    "architecture",
+                    "water plan"
+                ],
+                "es": [
+                    "subir",
+                    "cerro",
+                    "colombia",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitectura",
+                    "plan acuatico"
+                ],
+                "pt": [
+                    "subir",
+                    "cerro",
+                    "colômbia",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitetura",
+                    "plano aquatico"
+                ],
+                "fr": [
+                    "monter",
+                    "cerro",
+                    "colombie",
+                    "histoire",
+                    "patrimoine culturel",
+                    "architecture",
+                    "plan aquatique"
+                ],
+                "it": [
+                    "salire",
+                    "cerro",
+                    "colombia",
+                    "storia",
+                    "patrimonio culturale",
+                    "architettura",
+                    "piano acquatico"
                 ]
             }
         },
@@ -1715,6 +2373,53 @@
                         "value": "Mocoa"
                     }
                 ]
+            },
+            "tags": {
+                "en": [
+                    "swim",
+                    "world",
+                    "colombia",
+                    "history",
+                    "cultural heritage",
+                    "architecture",
+                    "nature escape"
+                ],
+                "es": [
+                    "bañarse",
+                    "cascada",
+                    "colombia",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitectura",
+                    "escapada natural"
+                ],
+                "pt": [
+                    "tomar",
+                    "banho",
+                    "colômbia",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitetura",
+                    "escapada natural"
+                ],
+                "fr": [
+                    "baigner",
+                    "dans",
+                    "colombie",
+                    "histoire",
+                    "patrimoine culturel",
+                    "architecture",
+                    "escapade nature"
+                ],
+                "it": [
+                    "bagno",
+                    "nella",
+                    "colombia",
+                    "storia",
+                    "patrimonio culturale",
+                    "architettura",
+                    "fuga nella natura"
+                ]
             }
         },
         {
@@ -1827,6 +2532,53 @@
                         "name": "Città",
                         "value": "San Andrés"
                     }
+                ]
+            },
+            "tags": {
+                "en": [
+                    "snorkeling",
+                    "andres",
+                    "colombia",
+                    "history",
+                    "cultural heritage",
+                    "architecture",
+                    "water plan"
+                ],
+                "es": [
+                    "practicar",
+                    "snorkeling",
+                    "colombia",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitectura",
+                    "plan acuatico"
+                ],
+                "pt": [
+                    "praticar",
+                    "snorkeling",
+                    "colômbia",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitetura",
+                    "plano aquatico"
+                ],
+                "fr": [
+                    "snorkeling",
+                    "andrés",
+                    "colombie",
+                    "histoire",
+                    "patrimoine culturel",
+                    "architecture",
+                    "plan aquatique"
+                ],
+                "it": [
+                    "snorkeling",
+                    "andrés",
+                    "colombia",
+                    "storia",
+                    "patrimonio culturale",
+                    "architettura",
+                    "piano acquatico"
                 ]
             }
         },
@@ -1941,6 +2693,53 @@
                         "value": "Punta Gallinas"
                     }
                 ]
+            },
+            "tags": {
+                "en": [
+                    "taroa",
+                    "dunes",
+                    "colombia",
+                    "history",
+                    "cultural heritage",
+                    "architecture",
+                    "water plan"
+                ],
+                "es": [
+                    "visitar",
+                    "dunas",
+                    "colombia",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitectura",
+                    "plan acuatico"
+                ],
+                "pt": [
+                    "visitar",
+                    "dunas",
+                    "colômbia",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitetura",
+                    "plano aquatico"
+                ],
+                "fr": [
+                    "visiter",
+                    "dunes",
+                    "colombie",
+                    "histoire",
+                    "patrimoine culturel",
+                    "architecture",
+                    "plan aquatique"
+                ],
+                "it": [
+                    "visitare",
+                    "dune",
+                    "colombia",
+                    "storia",
+                    "patrimonio culturale",
+                    "architettura",
+                    "piano acquatico"
+                ]
             }
         },
         {
@@ -2053,6 +2852,53 @@
                         "name": "Città",
                         "value": "Guatavita"
                     }
+                ]
+            },
+            "tags": {
+                "en": [
+                    "guatavita",
+                    "lake",
+                    "colombia",
+                    "history",
+                    "cultural heritage",
+                    "architecture",
+                    "water plan"
+                ],
+                "es": [
+                    "visitar",
+                    "laguna",
+                    "colombia",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitectura",
+                    "plan acuatico"
+                ],
+                "pt": [
+                    "visitar",
+                    "lagoa",
+                    "colômbia",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitetura",
+                    "plano aquatico"
+                ],
+                "fr": [
+                    "visiter",
+                    "lagune",
+                    "colombie",
+                    "histoire",
+                    "patrimoine culturel",
+                    "architecture",
+                    "plan aquatique"
+                ],
+                "it": [
+                    "visitare",
+                    "laguna",
+                    "colombia",
+                    "storia",
+                    "patrimonio culturale",
+                    "architettura",
+                    "piano acquatico"
                 ]
             }
         },
@@ -2167,6 +3013,53 @@
                         "value": "Bogotá"
                     }
                 ]
+            },
+            "tags": {
+                "en": [
+                    "gold",
+                    "museum",
+                    "colombia",
+                    "history",
+                    "cultural heritage",
+                    "architecture",
+                    "water plan"
+                ],
+                "es": [
+                    "visitar",
+                    "museo",
+                    "colombia",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitectura",
+                    "plan acuatico"
+                ],
+                "pt": [
+                    "visitar",
+                    "museu",
+                    "colômbia",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitetura",
+                    "plano aquatico"
+                ],
+                "fr": [
+                    "visiter",
+                    "musée",
+                    "colombie",
+                    "histoire",
+                    "patrimoine culturel",
+                    "architecture",
+                    "plan aquatique"
+                ],
+                "it": [
+                    "visitare",
+                    "museo",
+                    "colombia",
+                    "storia",
+                    "patrimonio culturale",
+                    "architettura",
+                    "piano acquatico"
+                ]
             }
         },
         {
@@ -2279,6 +3172,53 @@
                         "name": "Città",
                         "value": "Aratoca"
                     }
+                ]
+            },
+            "tags": {
+                "en": [
+                    "chicamocha",
+                    "canyon",
+                    "colombia",
+                    "history",
+                    "cultural heritage",
+                    "architecture",
+                    "water plan"
+                ],
+                "es": [
+                    "visitar",
+                    "cañón",
+                    "colombia",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitectura",
+                    "plan acuatico"
+                ],
+                "pt": [
+                    "visitar",
+                    "cânion",
+                    "colômbia",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitetura",
+                    "plano aquatico"
+                ],
+                "fr": [
+                    "visiter",
+                    "canyon",
+                    "colombie",
+                    "histoire",
+                    "patrimoine culturel",
+                    "architecture",
+                    "plan aquatique"
+                ],
+                "it": [
+                    "visitare",
+                    "canyon",
+                    "colombia",
+                    "storia",
+                    "patrimonio culturale",
+                    "architettura",
+                    "piano acquatico"
                 ]
             }
         },
@@ -2393,6 +3333,53 @@
                         "value": "Buenaventura"
                     }
                 ]
+            },
+            "tags": {
+                "en": [
+                    "malpelo",
+                    "island",
+                    "colombia",
+                    "history",
+                    "cultural heritage",
+                    "architecture",
+                    "water plan"
+                ],
+                "es": [
+                    "visitar",
+                    "isla",
+                    "colombia",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitectura",
+                    "plan acuatico"
+                ],
+                "pt": [
+                    "visitar",
+                    "ilha",
+                    "colômbia",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitetura",
+                    "plano aquatico"
+                ],
+                "fr": [
+                    "visiter",
+                    "malpelo",
+                    "colombie",
+                    "histoire",
+                    "patrimoine culturel",
+                    "architecture",
+                    "plan aquatique"
+                ],
+                "it": [
+                    "visitare",
+                    "isola",
+                    "colombia",
+                    "storia",
+                    "patrimonio culturale",
+                    "architettura",
+                    "piano acquatico"
+                ]
             }
         },
         {
@@ -2505,6 +3492,53 @@
                         "name": "Città",
                         "value": "Santa Marta"
                     }
+                ]
+            },
+            "tags": {
+                "en": [
+                    "quinta",
+                    "pedro",
+                    "colombia",
+                    "history",
+                    "cultural heritage",
+                    "architecture",
+                    "water plan"
+                ],
+                "es": [
+                    "visitar",
+                    "quinta",
+                    "colombia",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitectura",
+                    "plan acuatico"
+                ],
+                "pt": [
+                    "visitar",
+                    "quinta",
+                    "colômbia",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitetura",
+                    "plano aquatico"
+                ],
+                "fr": [
+                    "visiter",
+                    "quinta",
+                    "colombie",
+                    "histoire",
+                    "patrimoine culturel",
+                    "architecture",
+                    "plan aquatique"
+                ],
+                "it": [
+                    "visitare",
+                    "quinta",
+                    "colombia",
+                    "storia",
+                    "patrimonio culturale",
+                    "architettura",
+                    "piano acquatico"
                 ]
             }
         },
@@ -2619,6 +3653,53 @@
                         "value": "Soacha"
                     }
                 ]
+            },
+            "tags": {
+                "en": [
+                    "tequendama",
+                    "falls",
+                    "colombia",
+                    "history",
+                    "cultural heritage",
+                    "architecture",
+                    "water plan"
+                ],
+                "es": [
+                    "visitar",
+                    "salto",
+                    "colombia",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitectura",
+                    "plan acuatico"
+                ],
+                "pt": [
+                    "visitar",
+                    "salto",
+                    "colômbia",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitetura",
+                    "plano aquatico"
+                ],
+                "fr": [
+                    "visiter",
+                    "salto",
+                    "colombie",
+                    "histoire",
+                    "patrimoine culturel",
+                    "architecture",
+                    "plan aquatique"
+                ],
+                "it": [
+                    "visitare",
+                    "salto",
+                    "colombia",
+                    "storia",
+                    "patrimonio culturale",
+                    "architettura",
+                    "piano acquatico"
+                ]
             }
         },
         {
@@ -2731,6 +3812,53 @@
                         "name": "Città",
                         "value": "Aquitania"
                     }
+                ]
+            },
+            "tags": {
+                "en": [
+                    "tota",
+                    "lake",
+                    "colombia",
+                    "history",
+                    "cultural heritage",
+                    "architecture",
+                    "water plan"
+                ],
+                "es": [
+                    "visitar",
+                    "laguna",
+                    "colombia",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitectura",
+                    "plan acuatico"
+                ],
+                "pt": [
+                    "visitar",
+                    "lagoa",
+                    "colômbia",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitetura",
+                    "plano aquatico"
+                ],
+                "fr": [
+                    "visiter",
+                    "lagune",
+                    "colombie",
+                    "histoire",
+                    "patrimoine culturel",
+                    "architecture",
+                    "plan aquatique"
+                ],
+                "it": [
+                    "visitare",
+                    "laguna",
+                    "colombia",
+                    "storia",
+                    "patrimonio culturale",
+                    "architettura",
+                    "piano acquatico"
                 ]
             }
         },
@@ -2845,6 +3973,53 @@
                         "value": "San Agustín"
                     }
                 ]
+            },
+            "tags": {
+                "en": [
+                    "agustín",
+                    "archaeological",
+                    "colombia",
+                    "history",
+                    "cultural heritage",
+                    "architecture",
+                    "nature escape"
+                ],
+                "es": [
+                    "visitar",
+                    "parque",
+                    "colombia",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitectura",
+                    "escapada natural"
+                ],
+                "pt": [
+                    "visitar",
+                    "parque",
+                    "colômbia",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitetura",
+                    "escapada natural"
+                ],
+                "fr": [
+                    "visiter",
+                    "parc",
+                    "colombie",
+                    "histoire",
+                    "patrimoine culturel",
+                    "architecture",
+                    "escapade nature"
+                ],
+                "it": [
+                    "visitare",
+                    "parco",
+                    "colombia",
+                    "storia",
+                    "patrimonio culturale",
+                    "architettura",
+                    "fuga nella natura"
+                ]
             }
         },
         {
@@ -2957,6 +4132,53 @@
                         "name": "Città",
                         "value": "San José del Guaviare"
                     }
+                ]
+            },
+            "tags": {
+                "en": [
+                    "chiribiquete",
+                    "national",
+                    "colombia",
+                    "nature escape",
+                    "outdoor activity",
+                    "scenic route",
+                    "water plan"
+                ],
+                "es": [
+                    "visitar",
+                    "parque",
+                    "colombia",
+                    "escapada natural",
+                    "actividad al aire libre",
+                    "ruta escenica",
+                    "plan acuatico"
+                ],
+                "pt": [
+                    "visitar",
+                    "parque",
+                    "colômbia",
+                    "escapada natural",
+                    "atividade ao ar livre",
+                    "rota cenica",
+                    "plano aquatico"
+                ],
+                "fr": [
+                    "visiter",
+                    "parc",
+                    "colombie",
+                    "escapade nature",
+                    "activite en plein air",
+                    "itineraire panoramique",
+                    "plan aquatique"
+                ],
+                "it": [
+                    "visitare",
+                    "parco",
+                    "colombia",
+                    "fuga nella natura",
+                    "attivita all aperto",
+                    "percorso panoramico",
+                    "piano acquatico"
                 ]
             }
         },
@@ -3071,6 +4293,48 @@
                         "value": "Múltiples ciudades"
                     }
                 ]
+            },
+            "tags": {
+                "en": [
+                    "sleep",
+                    "glamping",
+                    "colombia",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air"
+                ],
+                "es": [
+                    "dormir",
+                    "glamping",
+                    "colombia",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre"
+                ],
+                "pt": [
+                    "dormir",
+                    "glamping",
+                    "colômbia",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre"
+                ],
+                "fr": [
+                    "dormir",
+                    "dans",
+                    "colombie",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre"
+                ],
+                "it": [
+                    "dormire",
+                    "glamping",
+                    "colombia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta"
+                ]
             }
         },
         {
@@ -3183,6 +4447,53 @@
                         "name": "Città",
                         "value": "Salento / Manizales / Pereira"
                     }
+                ]
+            },
+            "tags": {
+                "en": [
+                    "coffee",
+                    "tour",
+                    "colombia",
+                    "food scene",
+                    "local cuisine",
+                    "culinary plan",
+                    "water plan"
+                ],
+                "es": [
+                    "realizar",
+                    "tour",
+                    "colombia",
+                    "escena gastronomica",
+                    "cocina local",
+                    "plan culinario",
+                    "plan acuatico"
+                ],
+                "pt": [
+                    "tour",
+                    "café",
+                    "colômbia",
+                    "cena gastronomica",
+                    "culinaria local",
+                    "plano culinario",
+                    "plano aquatico"
+                ],
+                "fr": [
+                    "tour",
+                    "café",
+                    "colombie",
+                    "scene gastronomique",
+                    "cuisine locale",
+                    "plan culinaire",
+                    "plan aquatique"
+                ],
+                "it": [
+                    "tour",
+                    "caffè",
+                    "colombia",
+                    "scena gastronomica",
+                    "cucina locale",
+                    "piano culinario",
+                    "piano acquatico"
                 ]
             }
         },
@@ -3297,6 +4608,53 @@
                         "value": "Leticia / Riohacha"
                     }
                 ]
+            },
+            "tags": {
+                "en": [
+                    "participate",
+                    "volunteer",
+                    "colombia",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "creative moment"
+                ],
+                "es": [
+                    "participar",
+                    "voluntariado",
+                    "colombia",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "momento creativo"
+                ],
+                "pt": [
+                    "participar",
+                    "voluntariado",
+                    "colômbia",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "momento criativo"
+                ],
+                "fr": [
+                    "participer",
+                    "bénévolat",
+                    "colombie",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "moment creatif"
+                ],
+                "it": [
+                    "partecipare",
+                    "volontariato",
+                    "colombia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "momento creativo"
+                ]
             }
         },
         {
@@ -3409,6 +4767,48 @@
                         "name": "Città",
                         "value": "Acandí"
                     }
+                ]
+            },
+            "tags": {
+                "en": [
+                    "triganá",
+                    "capurganá",
+                    "colombia",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air"
+                ],
+                "es": [
+                    "visitar",
+                    "triganá",
+                    "colombia",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre"
+                ],
+                "pt": [
+                    "visitar",
+                    "triganá",
+                    "colômbia",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre"
+                ],
+                "fr": [
+                    "visiter",
+                    "triganá",
+                    "colombie",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre"
+                ],
+                "it": [
+                    "visitare",
+                    "triganá",
+                    "colombia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta"
                 ]
             }
         },
@@ -3523,6 +4923,48 @@
                         "value": "Puerto Triunfo"
                     }
                 ]
+            },
+            "tags": {
+                "en": [
+                    "hacienda",
+                    "nápoles",
+                    "colombia",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air"
+                ],
+                "es": [
+                    "visitar",
+                    "hacienda",
+                    "colombia",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre"
+                ],
+                "pt": [
+                    "visitar",
+                    "fazenda",
+                    "colômbia",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre"
+                ],
+                "fr": [
+                    "visiter",
+                    "hacienda",
+                    "colombie",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre"
+                ],
+                "it": [
+                    "visitare",
+                    "hacienda",
+                    "colombia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta"
+                ]
             }
         },
         {
@@ -3635,6 +5077,53 @@
                         "name": "Città",
                         "value": "Bahía Solano / Nuquí / Ladrilleros"
                     }
+                ]
+            },
+            "tags": {
+                "en": [
+                    "humpback",
+                    "whales",
+                    "colombia",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "nightlife"
+                ],
+                "es": [
+                    "ballenas",
+                    "jorobadas",
+                    "colombia",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "vida nocturna"
+                ],
+                "pt": [
+                    "baleias",
+                    "jubarte",
+                    "colômbia",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "vida noturna"
+                ],
+                "fr": [
+                    "observer",
+                    "baleines",
+                    "colombie",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "vie nocturne"
+                ],
+                "it": [
+                    "avvistare",
+                    "balene恢復",
+                    "colombia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "vita notturna"
                 ]
             }
         },
@@ -3749,6 +5238,53 @@
                         "value": "Múltiples ubicaciones"
                     }
                 ]
+            },
+            "tags": {
+                "en": [
+                    "participate",
+                    "yoga",
+                    "colombia",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "creative moment"
+                ],
+                "es": [
+                    "participar",
+                    "retiro",
+                    "colombia",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "momento creativo"
+                ],
+                "pt": [
+                    "participar",
+                    "retiro",
+                    "colômbia",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "momento criativo"
+                ],
+                "fr": [
+                    "participer",
+                    "retraite",
+                    "colombie",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "moment creatif"
+                ],
+                "it": [
+                    "partecipare",
+                    "ritiro",
+                    "colombia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "momento creativo"
+                ]
             }
         },
         {
@@ -3861,6 +5397,48 @@
                         "name": "Città",
                         "value": "San José del Guaviare"
                     }
+                ]
+            },
+            "tags": {
+                "en": [
+                    "discover",
+                    "rock",
+                    "colombia",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air"
+                ],
+                "es": [
+                    "descubrir",
+                    "pinturas",
+                    "colombia",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre"
+                ],
+                "pt": [
+                    "descobrir",
+                    "pinturas",
+                    "colômbia",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre"
+                ],
+                "fr": [
+                    "découvrir",
+                    "peintures",
+                    "colombie",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre"
+                ],
+                "it": [
+                    "scoprire",
+                    "pitture",
+                    "colombia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta"
                 ]
             }
         },
@@ -3975,6 +5553,48 @@
                         "value": "Múltiples ubicaciones"
                     }
                 ]
+            },
+            "tags": {
+                "en": [
+                    "live",
+                    "experience",
+                    "colombia",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air"
+                ],
+                "es": [
+                    "vivir",
+                    "experiencia",
+                    "colombia",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre"
+                ],
+                "pt": [
+                    "viver",
+                    "experiência",
+                    "colômbia",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre"
+                ],
+                "fr": [
+                    "vivre",
+                    "expérience",
+                    "colombie",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre"
+                ],
+                "it": [
+                    "vivere",
+                    "esperienza",
+                    "colombia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta"
+                ]
             }
         },
         {
@@ -4087,6 +5707,53 @@
                         "name": "Città",
                         "value": "Isla Malpelo"
                     }
+                ]
+            },
+            "tags": {
+                "en": [
+                    "swim",
+                    "hammerhead",
+                    "colombia",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "nightlife"
+                ],
+                "es": [
+                    "nadar",
+                    "tiburones",
+                    "colombia",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "vida nocturna"
+                ],
+                "pt": [
+                    "nadar",
+                    "tubarões",
+                    "colômbia",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "vida noturna"
+                ],
+                "fr": [
+                    "nager",
+                    "requins",
+                    "colombie",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "vie nocturne"
+                ],
+                "it": [
+                    "nuotare",
+                    "squali",
+                    "colombia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "vita notturna"
                 ]
             }
         },
@@ -4201,6 +5868,53 @@
                         "value": "Barichara"
                     }
                 ]
+            },
+            "tags": {
+                "en": [
+                    "barichara",
+                    "colombia",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "nightlife",
+                    "music culture"
+                ],
+                "es": [
+                    "visitar",
+                    "barichara",
+                    "colombia",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "vida nocturna"
+                ],
+                "pt": [
+                    "visitar",
+                    "barichara",
+                    "colômbia",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "vida noturna"
+                ],
+                "fr": [
+                    "visiter",
+                    "barichara",
+                    "colombie",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "vie nocturne"
+                ],
+                "it": [
+                    "visitare",
+                    "barichara",
+                    "colombia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "vita notturna"
+                ]
             }
         },
         {
@@ -4313,6 +6027,48 @@
                         "name": "Città",
                         "value": "Leticia / Puerto Nariño"
                     }
+                ]
+            },
+            "tags": {
+                "en": [
+                    "colombian",
+                    "amazon",
+                    "colombia",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air"
+                ],
+                "es": [
+                    "visitar",
+                    "amazonas",
+                    "colombia",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre"
+                ],
+                "pt": [
+                    "visitar",
+                    "amazonas",
+                    "colômbia",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre"
+                ],
+                "fr": [
+                    "visiter",
+                    "amazonie",
+                    "colombie",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre"
+                ],
+                "it": [
+                    "visitare",
+                    "azzorria",
+                    "colombia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta"
                 ]
             }
         },
@@ -4427,6 +6183,53 @@
                         "value": "Medellín"
                     }
                 ]
+            },
+            "tags": {
+                "en": [
+                    "attend",
+                    "flower",
+                    "colombia",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "nightlife"
+                ],
+                "es": [
+                    "asistir",
+                    "feria",
+                    "colombia",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "vida nocturna"
+                ],
+                "pt": [
+                    "assistir",
+                    "feira",
+                    "colômbia",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "vida noturna"
+                ],
+                "fr": [
+                    "assister",
+                    "foire",
+                    "colombie",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "vie nocturne"
+                ],
+                "it": [
+                    "partecipare",
+                    "alla",
+                    "colombia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "vita notturna"
+                ]
             }
         },
         {
@@ -4539,6 +6342,53 @@
                         "name": "Città",
                         "value": "Pasto"
                     }
+                ]
+            },
+            "tags": {
+                "en": [
+                    "attend",
+                    "blacks",
+                    "colombia",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "creative moment"
+                ],
+                "es": [
+                    "asistir",
+                    "carnaval",
+                    "colombia",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "momento creativo"
+                ],
+                "pt": [
+                    "assistir",
+                    "carnaval",
+                    "colômbia",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "momento criativo"
+                ],
+                "fr": [
+                    "assister",
+                    "carnaval",
+                    "colombie",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "moment creatif"
+                ],
+                "it": [
+                    "partecipare",
+                    "carnevale",
+                    "colombia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "momento creativo"
                 ]
             }
         },
@@ -4653,6 +6503,53 @@
                         "value": "Barranquilla"
                     }
                 ]
+            },
+            "tags": {
+                "en": [
+                    "attend",
+                    "barranquilla",
+                    "colombia",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "nightlife"
+                ],
+                "es": [
+                    "asistir",
+                    "carnaval",
+                    "colombia",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "vida nocturna"
+                ],
+                "pt": [
+                    "assistir",
+                    "carnaval",
+                    "colômbia",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "vida noturna"
+                ],
+                "fr": [
+                    "assister",
+                    "carnaval",
+                    "colombie",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "vie nocturne"
+                ],
+                "it": [
+                    "partecipare",
+                    "carnevale",
+                    "colombia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "vita notturna"
+                ]
             }
         },
         {
@@ -4765,6 +6662,53 @@
                         "name": "Città",
                         "value": "Riosucio"
                     }
+                ]
+            },
+            "tags": {
+                "en": [
+                    "attend",
+                    "devil",
+                    "colombia",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "creative moment"
+                ],
+                "es": [
+                    "asistir",
+                    "carnaval",
+                    "colombia",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "momento creativo"
+                ],
+                "pt": [
+                    "assistir",
+                    "carnaval",
+                    "colômbia",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "momento criativo"
+                ],
+                "fr": [
+                    "assister",
+                    "carnaval",
+                    "colombie",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "moment creatif"
+                ],
+                "it": [
+                    "partecipare",
+                    "carnevale",
+                    "colombia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "momento creativo"
                 ]
             }
         },
@@ -4879,6 +6823,53 @@
                         "value": "Palomino"
                     }
                 ]
+            },
+            "tags": {
+                "en": [
+                    "tubing",
+                    "down",
+                    "colombia",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "active plan"
+                ],
+                "es": [
+                    "recorrer",
+                    "palomino",
+                    "colombia",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "plan activo"
+                ],
+                "pt": [
+                    "descer",
+                    "palomino",
+                    "colômbia",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "plano ativo"
+                ],
+                "fr": [
+                    "descendre",
+                    "rivière",
+                    "colombie",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "plan actif"
+                ],
+                "it": [
+                    "tubing",
+                    "fiume",
+                    "colombia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "piano attivo"
+                ]
             }
         },
         {
@@ -4991,6 +6982,48 @@
                         "name": "Città",
                         "value": "Bogotá"
                     }
+                ]
+            },
+            "tags": {
+                "en": [
+                    "plaza",
+                    "bolívar",
+                    "colombia",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air"
+                ],
+                "es": [
+                    "visitar",
+                    "plaza",
+                    "colombia",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre"
+                ],
+                "pt": [
+                    "visitar",
+                    "praça",
+                    "colômbia",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre"
+                ],
+                "fr": [
+                    "visiter",
+                    "plaza",
+                    "colombie",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre"
+                ],
+                "it": [
+                    "visitare",
+                    "plaza",
+                    "colombia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta"
                 ]
             }
         },
@@ -5105,6 +7138,53 @@
                         "value": "Cartagena"
                     }
                 ]
+            },
+            "tags": {
+                "en": [
+                    "felipe",
+                    "barajas",
+                    "colombia",
+                    "history",
+                    "cultural heritage",
+                    "architecture",
+                    "water plan"
+                ],
+                "es": [
+                    "visitar",
+                    "castillo",
+                    "colombia",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitectura",
+                    "plan acuatico"
+                ],
+                "pt": [
+                    "visitar",
+                    "castelo",
+                    "colômbia",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitetura",
+                    "plano aquatico"
+                ],
+                "fr": [
+                    "visiter",
+                    "château",
+                    "colombie",
+                    "histoire",
+                    "patrimoine culturel",
+                    "architecture",
+                    "plan aquatique"
+                ],
+                "it": [
+                    "visitare",
+                    "castello",
+                    "colombia",
+                    "storia",
+                    "patrimonio culturale",
+                    "architettura",
+                    "piano acquatico"
+                ]
             }
         },
         {
@@ -5217,6 +7297,48 @@
                         "name": "Città",
                         "value": "Villa de Leyva"
                     }
+                ]
+            },
+            "tags": {
+                "en": [
+                    "villa",
+                    "leyva",
+                    "colombia",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air"
+                ],
+                "es": [
+                    "visitar",
+                    "villa",
+                    "colombia",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre"
+                ],
+                "pt": [
+                    "visitar",
+                    "villa",
+                    "colômbia",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre"
+                ],
+                "fr": [
+                    "visiter",
+                    "villa",
+                    "colombie",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre"
+                ],
+                "it": [
+                    "visitare",
+                    "villa",
+                    "colombia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta"
                 ]
             }
         },
@@ -5331,6 +7453,53 @@
                         "value": "El Cocuy"
                     }
                 ]
+            },
+            "tags": {
+                "en": [
+                    "trek",
+                    "cocuy",
+                    "colombia",
+                    "nature escape",
+                    "outdoor activity",
+                    "scenic route",
+                    "water plan"
+                ],
+                "es": [
+                    "realizar",
+                    "senderismo",
+                    "colombia",
+                    "escapada natural",
+                    "actividad al aire libre",
+                    "ruta escenica",
+                    "plan acuatico"
+                ],
+                "pt": [
+                    "trekking",
+                    "parque",
+                    "colômbia",
+                    "escapada natural",
+                    "atividade ao ar livre",
+                    "rota cenica",
+                    "plano aquatico"
+                ],
+                "fr": [
+                    "randonnée",
+                    "dans",
+                    "colombie",
+                    "escapade nature",
+                    "activite en plein air",
+                    "itineraire panoramique",
+                    "plan aquatique"
+                ],
+                "it": [
+                    "trekking",
+                    "parco",
+                    "colombia",
+                    "fuga nella natura",
+                    "attivita all aperto",
+                    "percorso panoramico",
+                    "piano acquatico"
+                ]
             }
         },
         {
@@ -5443,6 +7612,48 @@
                         "name": "Città",
                         "value": "Santa Fe de Antioquia"
                     }
+                ]
+            },
+            "tags": {
+                "en": [
+                    "santa",
+                    "antioquia",
+                    "colombia",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air"
+                ],
+                "es": [
+                    "visitar",
+                    "santa",
+                    "colombia",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre"
+                ],
+                "pt": [
+                    "visitar",
+                    "santa",
+                    "colômbia",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre"
+                ],
+                "fr": [
+                    "visiter",
+                    "santa",
+                    "colombie",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre"
+                ],
+                "it": [
+                    "visitare",
+                    "santa",
+                    "colombia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta"
                 ]
             }
         },
@@ -5557,6 +7768,46 @@
                         "value": "San Félix / San Gil"
                     }
                 ]
+            },
+            "tags": {
+                "en": [
+                    "paragliding",
+                    "colombia",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air"
+                ],
+                "es": [
+                    "volar",
+                    "parapente",
+                    "colombia",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre"
+                ],
+                "pt": [
+                    "voar",
+                    "parapente",
+                    "colômbia",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre"
+                ],
+                "fr": [
+                    "parapente",
+                    "colombie",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre"
+                ],
+                "it": [
+                    "volare",
+                    "parapendio",
+                    "colombia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta"
+                ]
             }
         },
         {
@@ -5669,6 +7920,53 @@
                         "name": "Città",
                         "value": "San Antonio del Tequendama"
                     }
+                ]
+            },
+            "tags": {
+                "en": [
+                    "excursion",
+                    "chicaque",
+                    "colombia",
+                    "nature escape",
+                    "outdoor activity",
+                    "scenic route",
+                    "water plan"
+                ],
+                "es": [
+                    "realizar",
+                    "excursión",
+                    "colombia",
+                    "escapada natural",
+                    "actividad al aire libre",
+                    "ruta escenica",
+                    "plan acuatico"
+                ],
+                "pt": [
+                    "excursão",
+                    "parque",
+                    "colômbia",
+                    "escapada natural",
+                    "atividade ao ar livre",
+                    "rota cenica",
+                    "plano aquatico"
+                ],
+                "fr": [
+                    "excursion",
+                    "parc",
+                    "colombie",
+                    "escapade nature",
+                    "activite en plein air",
+                    "itineraire panoramique",
+                    "plan aquatique"
+                ],
+                "it": [
+                    "escursione",
+                    "parco",
+                    "colombia",
+                    "fuga nella natura",
+                    "attivita all aperto",
+                    "percorso panoramico",
+                    "piano acquatico"
                 ]
             }
         },
@@ -5783,6 +8081,53 @@
                         "value": "Puerto Carreño"
                     }
                 ]
+            },
+            "tags": {
+                "en": [
+                    "tuparro",
+                    "national",
+                    "colombia",
+                    "nature escape",
+                    "outdoor activity",
+                    "scenic route",
+                    "water plan"
+                ],
+                "es": [
+                    "visitar",
+                    "parque",
+                    "colombia",
+                    "escapada natural",
+                    "actividad al aire libre",
+                    "ruta escenica",
+                    "plan acuatico"
+                ],
+                "pt": [
+                    "visitar",
+                    "parque",
+                    "colômbia",
+                    "escapada natural",
+                    "atividade ao ar livre",
+                    "rota cenica",
+                    "plano aquatico"
+                ],
+                "fr": [
+                    "visiter",
+                    "parc",
+                    "colombie",
+                    "escapade nature",
+                    "activite en plein air",
+                    "itineraire panoramique",
+                    "plan aquatique"
+                ],
+                "it": [
+                    "visitare",
+                    "parco",
+                    "colombia",
+                    "fuga nella natura",
+                    "attivita all aperto",
+                    "percorso panoramico",
+                    "piano acquatico"
+                ]
             }
         },
         {
@@ -5895,6 +8240,53 @@
                         "name": "Città",
                         "value": "Venecia"
                     }
+                ]
+            },
+            "tags": {
+                "en": [
+                    "climb",
+                    "cerro",
+                    "colombia",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "active plan"
+                ],
+                "es": [
+                    "subir",
+                    "cerro",
+                    "colombia",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "plan activo"
+                ],
+                "pt": [
+                    "subir",
+                    "cerro",
+                    "colômbia",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "plano ativo"
+                ],
+                "fr": [
+                    "monter",
+                    "cerro",
+                    "colombie",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "plan actif"
+                ],
+                "it": [
+                    "salire",
+                    "cerro",
+                    "colombia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "piano attivo"
                 ]
             }
         },
@@ -6009,6 +8401,53 @@
                         "value": "La Playa de Belén"
                     }
                 ]
+            },
+            "tags": {
+                "en": [
+                    "estoraques",
+                    "natural",
+                    "colombia",
+                    "nature escape",
+                    "outdoor activity",
+                    "scenic route",
+                    "water plan"
+                ],
+                "es": [
+                    "conocer",
+                    "parque",
+                    "colombia",
+                    "escapada natural",
+                    "actividad al aire libre",
+                    "ruta escenica",
+                    "plan acuatico"
+                ],
+                "pt": [
+                    "conhecer",
+                    "parque",
+                    "colômbia",
+                    "escapada natural",
+                    "atividade ao ar livre",
+                    "rota cenica",
+                    "plano aquatico"
+                ],
+                "fr": [
+                    "découvrir",
+                    "parc",
+                    "colombie",
+                    "escapade nature",
+                    "activite en plein air",
+                    "itineraire panoramique",
+                    "plan aquatique"
+                ],
+                "it": [
+                    "esplorare",
+                    "parco",
+                    "colombia",
+                    "fuga nella natura",
+                    "attivita all aperto",
+                    "percorso panoramico",
+                    "piano acquatico"
+                ]
             }
         },
         {
@@ -6121,6 +8560,53 @@
                         "name": "Città",
                         "value": "Buenaventura"
                     }
+                ]
+            },
+            "tags": {
+                "en": [
+                    "uramba",
+                    "bahía",
+                    "colombia",
+                    "nature escape",
+                    "outdoor activity",
+                    "scenic route",
+                    "water plan"
+                ],
+                "es": [
+                    "visitar",
+                    "parque",
+                    "colombia",
+                    "escapada natural",
+                    "actividad al aire libre",
+                    "ruta escenica",
+                    "plan acuatico"
+                ],
+                "pt": [
+                    "visitar",
+                    "parque",
+                    "colômbia",
+                    "escapada natural",
+                    "atividade ao ar livre",
+                    "rota cenica",
+                    "plano aquatico"
+                ],
+                "fr": [
+                    "visiter",
+                    "parc",
+                    "colombie",
+                    "escapade nature",
+                    "activite en plein air",
+                    "itineraire panoramique",
+                    "plan aquatique"
+                ],
+                "it": [
+                    "visitare",
+                    "parco",
+                    "colombia",
+                    "fuga nella natura",
+                    "attivita all aperto",
+                    "percorso panoramico",
+                    "piano acquatico"
                 ]
             }
         },
@@ -6235,6 +8721,48 @@
                         "value": "Guadalupe"
                     }
                 ]
+            },
+            "tags": {
+                "en": [
+                    "swim",
+                    "gachas",
+                    "colombia",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air"
+                ],
+                "es": [
+                    "bañarse",
+                    "quebrada",
+                    "colombia",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre"
+                ],
+                "pt": [
+                    "banhar",
+                    "quebrada",
+                    "colômbia",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre"
+                ],
+                "fr": [
+                    "baigner",
+                    "dans",
+                    "colombie",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre"
+                ],
+                "it": [
+                    "bagno",
+                    "nella",
+                    "colombia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta"
+                ]
             }
         },
         {
@@ -6347,6 +8875,53 @@
                         "name": "Città",
                         "value": "Buga / Darién"
                     }
+                ]
+            },
+            "tags": {
+                "en": [
+                    "excursion",
+                    "buga",
+                    "colombia",
+                    "nature escape",
+                    "outdoor activity",
+                    "scenic route",
+                    "water plan"
+                ],
+                "es": [
+                    "realizar",
+                    "excursión",
+                    "colombia",
+                    "escapada natural",
+                    "actividad al aire libre",
+                    "ruta escenica",
+                    "plan acuatico"
+                ],
+                "pt": [
+                    "excursão",
+                    "buga",
+                    "colômbia",
+                    "escapada natural",
+                    "atividade ao ar livre",
+                    "rota cenica",
+                    "plano aquatico"
+                ],
+                "fr": [
+                    "excursion",
+                    "buga",
+                    "colombie",
+                    "escapade nature",
+                    "activite en plein air",
+                    "itineraire panoramique",
+                    "plan aquatique"
+                ],
+                "it": [
+                    "escursione",
+                    "buga",
+                    "colombia",
+                    "fuga nella natura",
+                    "attivita all aperto",
+                    "percorso panoramico",
+                    "piano acquatico"
                 ]
             }
         },
@@ -6461,6 +9036,53 @@
                         "value": "Cocorná"
                     }
                 ]
+            },
+            "tags": {
+                "en": [
+                    "melcocho",
+                    "river",
+                    "colombia",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "active plan"
+                ],
+                "es": [
+                    "recorrer",
+                    "melcocho",
+                    "colombia",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "plan activo"
+                ],
+                "pt": [
+                    "percorrer",
+                    "melcocho",
+                    "colômbia",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "plano ativo"
+                ],
+                "fr": [
+                    "explorer",
+                    "rivière",
+                    "colombie",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "plan actif"
+                ],
+                "it": [
+                    "esplorare",
+                    "fiume",
+                    "colombia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "piano attivo"
+                ]
             }
         },
         {
@@ -6573,6 +9195,48 @@
                         "name": "Città",
                         "value": "Medellín (Santa Elena)"
                     }
+                ]
+            },
+            "tags": {
+                "en": [
+                    "silletero",
+                    "farms",
+                    "colombia",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air"
+                ],
+                "es": [
+                    "visitar",
+                    "fincas",
+                    "colombia",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre"
+                ],
+                "pt": [
+                    "visitar",
+                    "fazendas",
+                    "colômbia",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre"
+                ],
+                "fr": [
+                    "visiter",
+                    "fermes",
+                    "colombie",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre"
+                ],
+                "it": [
+                    "visitare",
+                    "aziende",
+                    "colombia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta"
                 ]
             }
         },
@@ -6687,6 +9351,53 @@
                         "value": "Cali"
                     }
                 ]
+            },
+            "tags": {
+                "en": [
+                    "dance",
+                    "salsa",
+                    "colombia",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "nightlife"
+                ],
+                "es": [
+                    "bailar",
+                    "salsa",
+                    "colombia",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "vida nocturna"
+                ],
+                "pt": [
+                    "dançar",
+                    "salsa",
+                    "colômbia",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "vida noturna"
+                ],
+                "fr": [
+                    "danser",
+                    "salsa",
+                    "colombie",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "vie nocturne"
+                ],
+                "it": [
+                    "ballare",
+                    "salsa",
+                    "colombia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "vita notturna"
+                ]
             }
         },
         {
@@ -6799,6 +9510,48 @@
                         "name": "Città",
                         "value": "Mahates"
                     }
+                ]
+            },
+            "tags": {
+                "en": [
+                    "basilio",
+                    "palenque",
+                    "colombia",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air"
+                ],
+                "es": [
+                    "visitar",
+                    "basilio",
+                    "colombia",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre"
+                ],
+                "pt": [
+                    "visitar",
+                    "basilio",
+                    "colômbia",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre"
+                ],
+                "fr": [
+                    "visiter",
+                    "basilio",
+                    "colombie",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre"
+                ],
+                "it": [
+                    "visitare",
+                    "basilio",
+                    "colombia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta"
                 ]
             }
         },
@@ -6913,6 +9666,48 @@
                         "value": "Santa Rosa de Cabal"
                     }
                 ]
+            },
+            "tags": {
+                "en": [
+                    "enjoy",
+                    "springs",
+                    "colombia",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air"
+                ],
+                "es": [
+                    "disfrutar",
+                    "termales",
+                    "colombia",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre"
+                ],
+                "pt": [
+                    "desfrutar",
+                    "águas",
+                    "colômbia",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre"
+                ],
+                "fr": [
+                    "profiter",
+                    "sources",
+                    "colombie",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre"
+                ],
+                "it": [
+                    "godersi",
+                    "terme",
+                    "colombia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta"
+                ]
             }
         },
         {
@@ -7025,6 +9820,43 @@
                         "name": "Città",
                         "value": "San Gil"
                     }
+                ]
+            },
+            "tags": {
+                "en": [
+                    "rafting",
+                    "colombia",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air"
+                ],
+                "es": [
+                    "rafting",
+                    "colombia",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre"
+                ],
+                "pt": [
+                    "rafting",
+                    "colômbia",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre"
+                ],
+                "fr": [
+                    "rafting",
+                    "colombie",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre"
+                ],
+                "it": [
+                    "rafting",
+                    "colombia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta"
                 ]
             }
         },
@@ -7139,6 +9971,43 @@
                         "value": "Flandes / Feudal"
                     }
                 ]
+            },
+            "tags": {
+                "en": [
+                    "skydiving",
+                    "colombia",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air"
+                ],
+                "es": [
+                    "paracaidismo",
+                    "colombia",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre"
+                ],
+                "pt": [
+                    "paraquedismo",
+                    "colômbia",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre"
+                ],
+                "fr": [
+                    "parachutisme",
+                    "colombie",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre"
+                ],
+                "it": [
+                    "paracadutismo",
+                    "colombia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta"
+                ]
             }
         },
         {
@@ -7251,6 +10120,53 @@
                         "name": "Città",
                         "value": "Mocoa"
                     }
+                ]
+            },
+            "tags": {
+                "en": [
+                    "hornoyaco",
+                    "waterfalls",
+                    "colombia",
+                    "nature escape",
+                    "outdoor activity",
+                    "scenic route",
+                    "water plan"
+                ],
+                "es": [
+                    "visitar",
+                    "cascadas",
+                    "colombia",
+                    "escapada natural",
+                    "actividad al aire libre",
+                    "ruta escenica",
+                    "plan acuatico"
+                ],
+                "pt": [
+                    "visitar",
+                    "cachoeiras",
+                    "colômbia",
+                    "escapada natural",
+                    "atividade ao ar livre",
+                    "rota cenica",
+                    "plano aquatico"
+                ],
+                "fr": [
+                    "visiter",
+                    "cascades",
+                    "colombie",
+                    "escapade nature",
+                    "activite en plein air",
+                    "itineraire panoramique",
+                    "plan aquatique"
+                ],
+                "it": [
+                    "visitare",
+                    "cascate",
+                    "colombia",
+                    "fuga nella natura",
+                    "attivita all aperto",
+                    "percorso panoramico",
+                    "piano acquatico"
                 ]
             }
         },
@@ -7365,6 +10281,53 @@
                         "value": "Villavicencio / Yopal"
                     }
                 ]
+            },
+            "tags": {
+                "en": [
+                    "sunset",
+                    "eastern",
+                    "colombia",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "great views"
+                ],
+                "es": [
+                    "atardecer",
+                    "llanos",
+                    "colombia",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "grandes vistas"
+                ],
+                "pt": [
+                    "llanos",
+                    "orientales",
+                    "colômbia",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "grandes vistas"
+                ],
+                "fr": [
+                    "admirer",
+                    "coucher",
+                    "colombie",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "belles vues"
+                ],
+                "it": [
+                    "ammirare",
+                    "tramonto",
+                    "colombia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "grandi viste"
+                ]
             }
         },
         {
@@ -7477,6 +10440,48 @@
                         "name": "Città",
                         "value": "Minca"
                     }
+                ]
+            },
+            "tags": {
+                "en": [
+                    "casa",
+                    "elemento",
+                    "colombia",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air"
+                ],
+                "es": [
+                    "subir",
+                    "hasta",
+                    "colombia",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre"
+                ],
+                "pt": [
+                    "subir",
+                    "casa",
+                    "colômbia",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre"
+                ],
+                "fr": [
+                    "monter",
+                    "casa",
+                    "colombie",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre"
+                ],
+                "it": [
+                    "salire",
+                    "fino",
+                    "colombia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta"
                 ]
             }
         },
@@ -7591,6 +10596,48 @@
                         "value": "Abejorral"
                     }
                 ]
+            },
+            "tags": {
+                "en": [
+                    "house",
+                    "abejorral",
+                    "colombia",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air"
+                ],
+                "es": [
+                    "visitar",
+                    "casa",
+                    "colombia",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre"
+                ],
+                "pt": [
+                    "visitar",
+                    "casa",
+                    "colômbia",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre"
+                ],
+                "fr": [
+                    "visiter",
+                    "casa",
+                    "colombie",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre"
+                ],
+                "it": [
+                    "visitare",
+                    "casa",
+                    "colombia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta"
+                ]
             }
         },
         {
@@ -7703,6 +10750,48 @@
                         "name": "Città",
                         "value": "Nuquí"
                     }
+                ]
+            },
+            "tags": {
+                "en": [
+                    "surf",
+                    "punta",
+                    "colombia",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air"
+                ],
+                "es": [
+                    "practicar",
+                    "surf",
+                    "colombia",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre"
+                ],
+                "pt": [
+                    "praticar",
+                    "surf",
+                    "colômbia",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre"
+                ],
+                "fr": [
+                    "pratiquer",
+                    "surf",
+                    "colombie",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre"
+                ],
+                "it": [
+                    "praticare",
+                    "surf",
+                    "colombia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta"
                 ]
             }
         },
@@ -7817,6 +10906,48 @@
                         "value": "Mompox"
                     }
                 ]
+            },
+            "tags": {
+                "en": [
+                    "santa",
+                    "cruz",
+                    "colombia",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air"
+                ],
+                "es": [
+                    "visitar",
+                    "santa",
+                    "colombia",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre"
+                ],
+                "pt": [
+                    "visitar",
+                    "santa",
+                    "colômbia",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre"
+                ],
+                "fr": [
+                    "visiter",
+                    "santa",
+                    "colombie",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre"
+                ],
+                "it": [
+                    "visitare",
+                    "santa",
+                    "colombia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta"
+                ]
             }
         },
         {
@@ -7929,6 +11060,48 @@
                         "name": "Città",
                         "value": "Medellín"
                     }
+                ]
+            },
+            "tags": {
+                "en": [
+                    "comuna",
+                    "graffiti",
+                    "colombia",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air"
+                ],
+                "es": [
+                    "realizar",
+                    "grafiti",
+                    "colombia",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre"
+                ],
+                "pt": [
+                    "grafiti",
+                    "tour",
+                    "colômbia",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre"
+                ],
+                "fr": [
+                    "graffiti",
+                    "tour",
+                    "colombie",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre"
+                ],
+                "it": [
+                    "graffiti",
+                    "tour",
+                    "colombia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta"
                 ]
             }
         },
@@ -8043,6 +11216,47 @@
                         "value": "Leticia / Tabatinga"
                     }
                 ]
+            },
+            "tags": {
+                "en": [
+                    "leticia",
+                    "colombia",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air"
+                ],
+                "es": [
+                    "viajar",
+                    "desde",
+                    "colombia",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre"
+                ],
+                "pt": [
+                    "viajar",
+                    "leticia",
+                    "colômbia",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre"
+                ],
+                "fr": [
+                    "voyager",
+                    "leticia",
+                    "colombie",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre"
+                ],
+                "it": [
+                    "viaggiare",
+                    "leticia",
+                    "colombia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta"
+                ]
             }
         },
         {
@@ -8155,6 +11369,53 @@
                         "name": "Città",
                         "value": "Medellín"
                     }
+                ]
+            },
+            "tags": {
+                "en": [
+                    "museum",
+                    "antioquia",
+                    "colombia",
+                    "history",
+                    "cultural heritage",
+                    "architecture",
+                    "water plan"
+                ],
+                "es": [
+                    "visitar",
+                    "museo",
+                    "colombia",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitectura",
+                    "plan acuatico"
+                ],
+                "pt": [
+                    "visitar",
+                    "museu",
+                    "colômbia",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitetura",
+                    "plano aquatico"
+                ],
+                "fr": [
+                    "visiter",
+                    "musée",
+                    "colombie",
+                    "histoire",
+                    "patrimoine culturel",
+                    "architecture",
+                    "plan aquatique"
+                ],
+                "it": [
+                    "visitare",
+                    "museo",
+                    "colombia",
+                    "storia",
+                    "patrimonio culturale",
+                    "architettura",
+                    "piano acquatico"
                 ]
             }
         },
@@ -8269,6 +11530,48 @@
                         "value": "Pasto"
                     }
                 ]
+            },
+            "tags": {
+                "en": [
+                    "trek",
+                    "galeras",
+                    "colombia",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air"
+                ],
+                "es": [
+                    "realizar",
+                    "trekking",
+                    "colombia",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre"
+                ],
+                "pt": [
+                    "trekking",
+                    "vulcão",
+                    "colômbia",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre"
+                ],
+                "fr": [
+                    "trekking",
+                    "volcan",
+                    "colombie",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre"
+                ],
+                "it": [
+                    "trekking",
+                    "vulcano",
+                    "colombia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta"
+                ]
             }
         },
         {
@@ -8381,6 +11684,48 @@
                         "name": "Città",
                         "value": "Nemocón"
                     }
+                ]
+            },
+            "tags": {
+                "en": [
+                    "enter",
+                    "salt",
+                    "colombia",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air"
+                ],
+                "es": [
+                    "entrar",
+                    "minas",
+                    "colombia",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre"
+                ],
+                "pt": [
+                    "entrar",
+                    "minas",
+                    "colômbia",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre"
+                ],
+                "fr": [
+                    "entrer",
+                    "dans",
+                    "colombie",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre"
+                ],
+                "it": [
+                    "entrare",
+                    "nelle",
+                    "colombia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta"
                 ]
             }
         },
@@ -8495,6 +11840,48 @@
                         "value": "San José del Guaviare"
                     }
                 ]
+            },
+            "tags": {
+                "en": [
+                    "river",
+                    "colors",
+                    "colombia",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air"
+                ],
+                "es": [
+                    "visitar",
+                    "colores",
+                    "colombia",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre"
+                ],
+                "pt": [
+                    "visitar",
+                    "cores",
+                    "colômbia",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre"
+                ],
+                "fr": [
+                    "visiter",
+                    "rivière",
+                    "colombie",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre"
+                ],
+                "it": [
+                    "visitare",
+                    "fiume",
+                    "colombia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta"
+                ]
             }
         },
         {
@@ -8607,6 +11994,53 @@
                         "name": "Città",
                         "value": "San Bernardo"
                     }
+                ]
+            },
+            "tags": {
+                "en": [
+                    "spend",
+                    "night",
+                    "colombia",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "nightlife"
+                ],
+                "es": [
+                    "pasar",
+                    "noche",
+                    "colombia",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "vida nocturna"
+                ],
+                "pt": [
+                    "passar",
+                    "noite",
+                    "colômbia",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "vida noturna"
+                ],
+                "fr": [
+                    "passer",
+                    "nuit",
+                    "colombie",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "vie nocturne"
+                ],
+                "it": [
+                    "passare",
+                    "notte",
+                    "colombia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "vita notturna"
                 ]
             }
         },
@@ -8721,6 +12155,53 @@
                         "value": "Isla Gorgona"
                     }
                 ]
+            },
+            "tags": {
+                "en": [
+                    "gorgona",
+                    "national",
+                    "colombia",
+                    "nature escape",
+                    "outdoor activity",
+                    "scenic route",
+                    "water plan"
+                ],
+                "es": [
+                    "visitar",
+                    "parque",
+                    "colombia",
+                    "escapada natural",
+                    "actividad al aire libre",
+                    "ruta escenica",
+                    "plan acuatico"
+                ],
+                "pt": [
+                    "visitar",
+                    "parque",
+                    "colômbia",
+                    "escapada natural",
+                    "atividade ao ar livre",
+                    "rota cenica",
+                    "plano aquatico"
+                ],
+                "fr": [
+                    "visiter",
+                    "parc",
+                    "colombie",
+                    "escapade nature",
+                    "activite en plein air",
+                    "itineraire panoramique",
+                    "plan aquatique"
+                ],
+                "it": [
+                    "visitare",
+                    "parco",
+                    "colombia",
+                    "fuga nella natura",
+                    "attivita all aperto",
+                    "percorso panoramico",
+                    "piano acquatico"
+                ]
             }
         },
         {
@@ -8833,6 +12314,53 @@
                         "name": "Città",
                         "value": "San José de Suaita"
                     }
+                ]
+            },
+            "tags": {
+                "en": [
+                    "caballeros",
+                    "waterfall",
+                    "colombia",
+                    "nature escape",
+                    "outdoor activity",
+                    "scenic route",
+                    "water plan"
+                ],
+                "es": [
+                    "visitar",
+                    "cascada",
+                    "colombia",
+                    "escapada natural",
+                    "actividad al aire libre",
+                    "ruta escenica",
+                    "plan acuatico"
+                ],
+                "pt": [
+                    "visitar",
+                    "cachoeira",
+                    "colômbia",
+                    "escapada natural",
+                    "atividade ao ar livre",
+                    "rota cenica",
+                    "plano aquatico"
+                ],
+                "fr": [
+                    "visiter",
+                    "cascade",
+                    "colombie",
+                    "escapade nature",
+                    "activite en plein air",
+                    "itineraire panoramique",
+                    "plan aquatique"
+                ],
+                "it": [
+                    "visitare",
+                    "cascata",
+                    "colombia",
+                    "fuga nella natura",
+                    "attivita all aperto",
+                    "percorso panoramico",
+                    "piano acquatico"
                 ]
             }
         },
@@ -8947,6 +12475,53 @@
                         "value": "Buenaventura / Bahía Solano"
                     }
                 ]
+            },
+            "tags": {
+                "en": [
+                    "cargo",
+                    "colombia",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "nightlife",
+                    "music culture"
+                ],
+                "es": [
+                    "viajar",
+                    "barco",
+                    "colombia",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "vida nocturna"
+                ],
+                "pt": [
+                    "viajar",
+                    "barco",
+                    "colômbia",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "vida noturna"
+                ],
+                "fr": [
+                    "voyager",
+                    "cargo",
+                    "colombie",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "vie nocturne"
+                ],
+                "it": [
+                    "viaggiare",
+                    "nave",
+                    "colombia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "vita notturna"
+                ]
             }
         },
         {
@@ -9059,6 +12634,48 @@
                         "name": "Città",
                         "value": "Cabo de la Vela"
                     }
+                ]
+            },
+            "tags": {
+                "en": [
+                    "discover",
+                    "pilón",
+                    "colombia",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air"
+                ],
+                "es": [
+                    "conocer",
+                    "pilón",
+                    "colombia",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre"
+                ],
+                "pt": [
+                    "conhecer",
+                    "pilón",
+                    "colômbia",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre"
+                ],
+                "fr": [
+                    "découvrir",
+                    "pilón",
+                    "colombie",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre"
+                ],
+                "it": [
+                    "conoscere",
+                    "pilón",
+                    "colombia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta"
                 ]
             }
         },
@@ -9173,6 +12790,53 @@
                         "value": "Cabo de la Vela"
                     }
                 ]
+            },
+            "tags": {
+                "en": [
+                    "sunset",
+                    "cabo",
+                    "colombia",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "great views"
+                ],
+                "es": [
+                    "atardecer",
+                    "desde",
+                    "colombia",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "grandes vistas"
+                ],
+                "pt": [
+                    "farol",
+                    "cabo",
+                    "colômbia",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "grandes vistas"
+                ],
+                "fr": [
+                    "admirer",
+                    "coucher",
+                    "colombie",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "belles vues"
+                ],
+                "it": [
+                    "guardare",
+                    "tramonto",
+                    "colombia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "grandi viste"
+                ]
             }
         },
         {
@@ -9285,6 +12949,48 @@
                         "name": "Città",
                         "value": "Cabo de la Vela"
                     }
+                ]
+            },
+            "tags": {
+                "en": [
+                    "practice",
+                    "kitesurfing",
+                    "colombia",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air"
+                ],
+                "es": [
+                    "practicar",
+                    "kitesurf",
+                    "colombia",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre"
+                ],
+                "pt": [
+                    "praticar",
+                    "kitesurf",
+                    "colômbia",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre"
+                ],
+                "fr": [
+                    "pratiquer",
+                    "kitesurf",
+                    "colombie",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre"
+                ],
+                "it": [
+                    "praticare",
+                    "kitesurf",
+                    "colombia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta"
                 ]
             }
         },
@@ -9399,6 +13105,48 @@
                         "value": "Cartagena (Isla Barú)"
                     }
                 ]
+            },
+            "tags": {
+                "en": [
+                    "national",
+                    "aviary",
+                    "colombia",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air"
+                ],
+                "es": [
+                    "visitar",
+                    "aviario",
+                    "colombia",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre"
+                ],
+                "pt": [
+                    "visitar",
+                    "aviário",
+                    "colômbia",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre"
+                ],
+                "fr": [
+                    "visiter",
+                    "aviary",
+                    "colombie",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre"
+                ],
+                "it": [
+                    "visitare",
+                    "aviario",
+                    "colombia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta"
+                ]
             }
         },
         {
@@ -9511,6 +13259,53 @@
                         "name": "Città",
                         "value": "Los Santos"
                     }
+                ]
+            },
+            "tags": {
+                "en": [
+                    "climb",
+                    "mesa",
+                    "colombia",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "active plan"
+                ],
+                "es": [
+                    "escalar",
+                    "mesa",
+                    "colombia",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "plan activo"
+                ],
+                "pt": [
+                    "escalar",
+                    "mesa",
+                    "colômbia",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "plano ativo"
+                ],
+                "fr": [
+                    "escalader",
+                    "mesa",
+                    "colombie",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "plan actif"
+                ],
+                "it": [
+                    "scalare",
+                    "mesa",
+                    "colombia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "piano attivo"
                 ]
             }
         },
@@ -9625,6 +13420,53 @@
                         "value": "Buenaventura"
                     }
                 ]
+            },
+            "tags": {
+                "en": [
+                    "cipriano",
+                    "natural",
+                    "colombia",
+                    "nature escape",
+                    "outdoor activity",
+                    "scenic route",
+                    "water plan"
+                ],
+                "es": [
+                    "visitar",
+                    "reserva",
+                    "colombia",
+                    "escapada natural",
+                    "actividad al aire libre",
+                    "ruta escenica",
+                    "plan acuatico"
+                ],
+                "pt": [
+                    "visitar",
+                    "reserva",
+                    "colômbia",
+                    "escapada natural",
+                    "atividade ao ar livre",
+                    "rota cenica",
+                    "plano aquatico"
+                ],
+                "fr": [
+                    "visiter",
+                    "réserve",
+                    "colombie",
+                    "escapade nature",
+                    "activite en plein air",
+                    "itineraire panoramique",
+                    "plan aquatique"
+                ],
+                "it": [
+                    "visitare",
+                    "riserva",
+                    "colombia",
+                    "fuga nella natura",
+                    "attivita all aperto",
+                    "percorso panoramico",
+                    "piano acquatico"
+                ]
             }
         },
         {
@@ -9737,6 +13579,48 @@
                         "name": "Città",
                         "value": "Múltiples regiones"
                     }
+                ]
+            },
+            "tags": {
+                "en": [
+                    "meet",
+                    "ancestral",
+                    "colombia",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air"
+                ],
+                "es": [
+                    "conocer",
+                    "comunidad",
+                    "colombia",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre"
+                ],
+                "pt": [
+                    "conhecer",
+                    "comunidade",
+                    "colômbia",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre"
+                ],
+                "fr": [
+                    "rencontrer",
+                    "communauté",
+                    "colombie",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre"
+                ],
+                "it": [
+                    "conoscere",
+                    "comunità",
+                    "colombia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta"
                 ]
             }
         },
@@ -9851,6 +13735,48 @@
                         "value": "Paz de Ariporo / Hato Corozal"
                     }
                 ]
+            },
+            "tags": {
+                "en": [
+                    "safari",
+                    "eastern",
+                    "colombia",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air"
+                ],
+                "es": [
+                    "realizar",
+                    "safari",
+                    "colombia",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre"
+                ],
+                "pt": [
+                    "realizar",
+                    "safári",
+                    "colômbia",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre"
+                ],
+                "fr": [
+                    "safari",
+                    "dans",
+                    "colombie",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre"
+                ],
+                "it": [
+                    "safari",
+                    "llanos",
+                    "colombia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta"
+                ]
             }
         },
         {
@@ -9963,6 +13889,53 @@
                         "name": "Città",
                         "value": "Villavicencio"
                     }
+                ]
+            },
+            "tags": {
+                "en": [
+                    "enjoy",
+                    "joropo",
+                    "colombia",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "nightlife"
+                ],
+                "es": [
+                    "disfrutar",
+                    "festival",
+                    "colombia",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "vida nocturna"
+                ],
+                "pt": [
+                    "desfrutar",
+                    "festival",
+                    "colômbia",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "vida noturna"
+                ],
+                "fr": [
+                    "profiter",
+                    "festival",
+                    "colombie",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "vie nocturne"
+                ],
+                "it": [
+                    "godersi",
+                    "festival",
+                    "colombia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "vita notturna"
                 ]
             }
         },
@@ -10077,6 +14050,53 @@
                         "value": "Múltiples"
                     }
                 ]
+            },
+            "tags": {
+                "en": [
+                    "least",
+                    "departments",
+                    "colombia",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "creative moment"
+                ],
+                "es": [
+                    "conocer",
+                    "menos",
+                    "colombia",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "momento creativo"
+                ],
+                "pt": [
+                    "conhecer",
+                    "pelo",
+                    "colômbia",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "momento criativo"
+                ],
+                "fr": [
+                    "découvrir",
+                    "moins",
+                    "colombie",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "moment creatif"
+                ],
+                "it": [
+                    "conoscere",
+                    "almeno",
+                    "colombia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "momento creativo"
+                ]
             }
         },
         {
@@ -10189,6 +14209,53 @@
                         "name": "Città",
                         "value": "Múltiples pueblos"
                     }
+                ]
+            },
+            "tags": {
+                "en": [
+                    "tour",
+                    "heritage",
+                    "colombia",
+                    "history",
+                    "cultural heritage",
+                    "architecture",
+                    "nature escape"
+                ],
+                "es": [
+                    "recorrer",
+                    "pueblos",
+                    "colombia",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitectura",
+                    "escapada natural"
+                ],
+                "pt": [
+                    "percorrer",
+                    "cidades",
+                    "colômbia",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitetura",
+                    "escapada natural"
+                ],
+                "fr": [
+                    "parcourir",
+                    "villes",
+                    "colombie",
+                    "histoire",
+                    "patrimoine culturel",
+                    "architecture",
+                    "escapade nature"
+                ],
+                "it": [
+                    "girare",
+                    "borghi",
+                    "colombia",
+                    "storia",
+                    "patrimonio culturale",
+                    "architettura",
+                    "fuga nella natura"
                 ]
             }
         },
@@ -10303,6 +14370,53 @@
                         "value": "Cali"
                     }
                 ]
+            },
+            "tags": {
+                "en": [
+                    "participate",
+                    "petronio",
+                    "colombia",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "nightlife"
+                ],
+                "es": [
+                    "participar",
+                    "festival",
+                    "colombia",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "vida nocturna"
+                ],
+                "pt": [
+                    "participar",
+                    "festival",
+                    "colômbia",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "vida noturna"
+                ],
+                "fr": [
+                    "participer",
+                    "festival",
+                    "colombie",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "vie nocturne"
+                ],
+                "it": [
+                    "partecipare",
+                    "festival",
+                    "colombia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "vita notturna"
+                ]
             }
         },
         {
@@ -10415,6 +14529,48 @@
                         "name": "Città",
                         "value": "Girón"
                     }
+                ]
+            },
+            "tags": {
+                "en": [
+                    "juan",
+                    "girón",
+                    "colombia",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air"
+                ],
+                "es": [
+                    "visitar",
+                    "juan",
+                    "colombia",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre"
+                ],
+                "pt": [
+                    "visitar",
+                    "juan",
+                    "colômbia",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre"
+                ],
+                "fr": [
+                    "visiter",
+                    "juan",
+                    "colombie",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre"
+                ],
+                "it": [
+                    "visitare",
+                    "juan",
+                    "colombia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta"
                 ]
             }
         },
@@ -10529,6 +14685,48 @@
                         "value": "Galerazamba"
                     }
                 ]
+            },
+            "tags": {
+                "en": [
+                    "galerazamba",
+                    "salt",
+                    "colombia",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air"
+                ],
+                "es": [
+                    "visitar",
+                    "salinas",
+                    "colombia",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre"
+                ],
+                "pt": [
+                    "visitar",
+                    "salinas",
+                    "colômbia",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre"
+                ],
+                "fr": [
+                    "visiter",
+                    "salines",
+                    "colombie",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre"
+                ],
+                "it": [
+                    "visitare",
+                    "saline",
+                    "colombia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta"
+                ]
             }
         },
         {
@@ -10641,6 +14839,53 @@
                         "name": "Città",
                         "value": "Cartagena / San Blas"
                     }
+                ]
+            },
+            "tags": {
+                "en": [
+                    "sail",
+                    "sailboat",
+                    "colombia",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "nightlife"
+                ],
+                "es": [
+                    "navegar",
+                    "velero",
+                    "colombia",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "vida nocturna"
+                ],
+                "pt": [
+                    "navegar",
+                    "veleiro",
+                    "colômbia",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "vida noturna"
+                ],
+                "fr": [
+                    "naviguer",
+                    "voilier",
+                    "colombie",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "vie nocturne"
+                ],
+                "it": [
+                    "navigare",
+                    "barca",
+                    "colombia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "vita notturna"
                 ]
             }
         },
@@ -10755,6 +15000,53 @@
                         "value": "Mocoa / Leticia"
                     }
                 ]
+            },
+            "tags": {
+                "en": [
+                    "participate",
+                    "ancestral",
+                    "colombia",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "creative moment"
+                ],
+                "es": [
+                    "participar",
+                    "ceremonia",
+                    "colombia",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "momento creativo"
+                ],
+                "pt": [
+                    "participar",
+                    "cerimônia",
+                    "colômbia",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "momento criativo"
+                ],
+                "fr": [
+                    "participer",
+                    "cérémonie",
+                    "colombie",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "moment creatif"
+                ],
+                "it": [
+                    "partecipare",
+                    "cerimonia",
+                    "colombia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "momento creativo"
+                ]
             }
         },
         {
@@ -10867,6 +15159,48 @@
                         "name": "Città",
                         "value": "Cartagena"
                     }
+                ]
+            },
+            "tags": {
+                "en": [
+                    "yacht",
+                    "ride",
+                    "colombia",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air"
+                ],
+                "es": [
+                    "pasear",
+                    "yate",
+                    "colombia",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre"
+                ],
+                "pt": [
+                    "passear",
+                    "iate",
+                    "colômbia",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre"
+                ],
+                "fr": [
+                    "tour",
+                    "yacht",
+                    "colombie",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre"
+                ],
+                "it": [
+                    "giro",
+                    "yacht",
+                    "colombia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta"
                 ]
             }
         },
@@ -10981,6 +15315,53 @@
                         "value": "Múltiples regiones"
                     }
                 ]
+            },
+            "tags": {
+                "en": [
+                    "taste",
+                    "typical",
+                    "colombia",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "nightlife"
+                ],
+                "es": [
+                    "probar",
+                    "plato",
+                    "colombia",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "vida nocturna"
+                ],
+                "pt": [
+                    "provar",
+                    "prato",
+                    "colômbia",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "vida noturna"
+                ],
+                "fr": [
+                    "gôuter",
+                    "plat",
+                    "colombie",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "vie nocturne"
+                ],
+                "it": [
+                    "assaggiare",
+                    "piatto",
+                    "colombia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "vita notturna"
+                ]
             }
         },
         {
@@ -11093,6 +15474,53 @@
                         "name": "Città",
                         "value": "Nuquí / Bahía Solano"
                     }
+                ]
+            },
+            "tags": {
+                "en": [
+                    "utría",
+                    "national",
+                    "colombia",
+                    "nature escape",
+                    "outdoor activity",
+                    "scenic route",
+                    "water plan"
+                ],
+                "es": [
+                    "visitar",
+                    "parque",
+                    "colombia",
+                    "escapada natural",
+                    "actividad al aire libre",
+                    "ruta escenica",
+                    "plan acuatico"
+                ],
+                "pt": [
+                    "visitar",
+                    "parque",
+                    "colômbia",
+                    "escapada natural",
+                    "atividade ao ar livre",
+                    "rota cenica",
+                    "plano aquatico"
+                ],
+                "fr": [
+                    "visiter",
+                    "parc",
+                    "colombie",
+                    "escapade nature",
+                    "activite en plein air",
+                    "itineraire panoramique",
+                    "plan aquatique"
+                ],
+                "it": [
+                    "visitare",
+                    "parco",
+                    "colombia",
+                    "fuga nella natura",
+                    "attivita all aperto",
+                    "percorso panoramico",
+                    "piano acquatico"
                 ]
             }
         },
@@ -11207,6 +15635,48 @@
                         "value": "Archipiélago de San Bernardo"
                     }
                 ]
+            },
+            "tags": {
+                "en": [
+                    "santa",
+                    "cruz",
+                    "colombia",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air"
+                ],
+                "es": [
+                    "visitar",
+                    "santa",
+                    "colombia",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre"
+                ],
+                "pt": [
+                    "visitar",
+                    "santa",
+                    "colômbia",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre"
+                ],
+                "fr": [
+                    "visiter",
+                    "santa",
+                    "colombie",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre"
+                ],
+                "it": [
+                    "visitare",
+                    "santa",
+                    "colombia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta"
+                ]
             }
         },
         {
@@ -11320,9 +15790,123 @@
                         "value": "Vetas / California"
                     }
                 ]
+            },
+            "tags": {
+                "en": [
+                    "páramo",
+                    "santurbán",
+                    "colombia",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air"
+                ],
+                "es": [
+                    "conocer",
+                    "complejo",
+                    "colombia",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre"
+                ],
+                "pt": [
+                    "conhecer",
+                    "complexo",
+                    "colômbia",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre"
+                ],
+                "fr": [
+                    "découvrir",
+                    "complexe",
+                    "colombie",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre"
+                ],
+                "it": [
+                    "conoscere",
+                    "complesso",
+                    "colombia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta"
+                ]
             }
         }
     ],
     "createdAt": "2026-06-10T00:00:00.000Z",
-    "updatedAt": "2026-06-10T00:00:00.000Z"
+    "updatedAt": "2026-06-10T00:00:00.000Z",
+    "tags": {
+        "en": [
+            "100 things",
+            "colombia",
+            "to do",
+            "adventure",
+            "culture",
+            "food",
+            "nature",
+            "travel plans",
+            "weekend ideas",
+            "bucket list",
+            "local experiences",
+            "outdoor plans"
+        ],
+        "es": [
+            "100 cosas",
+            "colombia",
+            "para hacer",
+            "aventura",
+            "cultura",
+            "gastronomia",
+            "naturaleza",
+            "planes de viaje",
+            "ideas de fin de semana",
+            "lista de deseos",
+            "experiencias locales",
+            "planes al aire libre"
+        ],
+        "pt": [
+            "100 coisas",
+            "colombia",
+            "para fazer",
+            "aventura",
+            "cultura",
+            "gastronomia",
+            "natureza",
+            "planos de viagem",
+            "ideias de fim de semana",
+            "lista de desejos",
+            "experiencias locais",
+            "planos ao ar livre"
+        ],
+        "fr": [
+            "100 choses",
+            "colombie",
+            "a faire",
+            "aventure",
+            "culture",
+            "gastronomie",
+            "nature",
+            "plans de voyage",
+            "idees de week end",
+            "liste de reves",
+            "experiences locales",
+            "activites en plein air"
+        ],
+        "it": [
+            "100 cose",
+            "colombia",
+            "da fare",
+            "avventura",
+            "cultura",
+            "gastronomia",
+            "natura",
+            "piani di viaggio",
+            "idee per il fine settimana",
+            "lista dei desideri",
+            "esperienze locali",
+            "attivita all aperto"
+        ]
+    }
 }

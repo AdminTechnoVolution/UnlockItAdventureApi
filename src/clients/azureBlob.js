@@ -78,6 +78,32 @@ const uploadActivityPhotoVariant = async ({ containerClient, groupProgressId, ke
     return blockBlobClient.url;
 };
 
+const uploadActivityPhotoVariantStream = async ({ containerClient, groupProgressId, keyActivity, pathPhotoName, sizeKey, webpStream, req = null }) => {
+    try {
+        const targetContainerClient = containerClient || getContainerClient();
+        const blobPath = buildActivityPhotoBlobPath(groupProgressId, keyActivity, pathPhotoName, sizeKey);
+        const blockBlobClient = targetContainerClient.getBlockBlobClient(blobPath);
+
+        await blockBlobClient.uploadStream(webpStream, 4 * 1024 * 1024, 5, {
+            blobHTTPHeaders: { blobContentType: PROFILE_PHOTO_MIME },
+        });
+
+        return blockBlobClient.url;
+    } catch (error) {
+        if (error instanceof BusinessException) {
+            throw error;
+        }
+
+        logger.error({
+            message: `Error uploading streamed activity photo variant to Azure Blob. groupProgressId=${groupProgressId}, keyActivity=${keyActivity}, pathPhotoName=${pathPhotoName}, sizeKey=${sizeKey}. Error: ${error.message}`,
+            className: filename,
+            req,
+        });
+
+        throw new BusinessException(ERROR_CODES.ERROR_INTERNAL_SERVER_ERROR, constants.HTTP_INTERNAL_SERVER);
+    }
+};
+
 const uploadActivityPhotoVariants = async (groupProgressId, keyActivity, pathPhotoName, variantsMap, req = null) => {
     try {
         const containerClient = getContainerClient();
@@ -140,8 +166,10 @@ const deleteActivityPhotoFolder = async (groupProgressId, keyActivity, pathPhoto
 module.exports = {
     uploadUserProfilePhoto,
     uploadActivityPhotoVariants,
+    uploadActivityPhotoVariantStream,
     deleteUserProfilePhotos,
     deleteActivityPhotoFolder,
+    getContainerClient,
     buildUserProfileBlobPath,
     buildActivityPhotoBlobPath,
     buildActivityPhotoFolderPrefix,
