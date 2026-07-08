@@ -10,7 +10,6 @@ const mongoose = require('./shared/config/mongo');
 const redisClient = require('./shared/config/redis');
 const errorHandler = require('./shared/middlewares/errorHandler');
 const setHeaders = require('./shared/middlewares/setHeaders');
-const logHeaders = require('./shared/middlewares/logHeaders');
 const logRequest = require('./shared/middlewares/logRequest');
 const logResponse = require('./shared/middlewares/logResponse');
 const { createGlobalRateLimiter, createAuthRateLimiter } = require('./shared/middlewares/rateLimit');
@@ -34,7 +33,6 @@ app.use(helmet());
 app.use(express.json({ limit: env.BODY_JSON_LIMIT }));
 app.use(express.urlencoded({ extended: true, limit: env.BODY_JSON_LIMIT }));
 app.use(logRequest);
-app.use(logHeaders);
 app.use(logResponse);
 
 const server = http.createServer(app);
