@@ -124,7 +124,54 @@
                     }
                 ]
             },
-            "difficulty": 1
+            "difficulty": 1,
+            "tags": {
+                "en": [
+                    "movies",
+                    "movie date",
+                    "history",
+                    "cultural heritage",
+                    "architecture",
+                    "water plan",
+                    "coastal vibe"
+                ],
+                "es": [
+                    "cine",
+                    "cita de cine",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitectura",
+                    "plan acuatico",
+                    "ambiente costero"
+                ],
+                "pt": [
+                    "cinema",
+                    "encontro no cinema",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitetura",
+                    "plano aquatico",
+                    "clima litoraneo"
+                ],
+                "fr": [
+                    "cinéma",
+                    "rendez vous cinéma",
+                    "histoire",
+                    "patrimoine culturel",
+                    "architecture",
+                    "plan aquatique",
+                    "ambiance cotiere"
+                ],
+                "it": [
+                    "cinema",
+                    "appuntamento al cinema",
+                    "storia",
+                    "patrimonio culturale",
+                    "architettura",
+                    "piano acquatico",
+                    "atmosfera costiera"
+                ]
+            }
         },
         {
             "key": "002",
@@ -222,7 +269,54 @@
                     }
                 ]
             },
-            "difficulty": 1
+            "difficulty": 1,
+            "tags": {
+                "en": [
+                    "have",
+                    "dinner",
+                    "romantic dinner",
+                    "food scene",
+                    "local cuisine",
+                    "culinary plan",
+                    "water plan"
+                ],
+                "es": [
+                    "cenar",
+                    "restaurante",
+                    "cena romántica",
+                    "escena gastronomica",
+                    "cocina local",
+                    "plan culinario",
+                    "plan acuatico"
+                ],
+                "pt": [
+                    "jantar",
+                    "restaurante",
+                    "jantar romântico",
+                    "cena gastronomica",
+                    "culinaria local",
+                    "plano culinario",
+                    "plano aquatico"
+                ],
+                "fr": [
+                    "dîner",
+                    "restaurant",
+                    "dîner romantique",
+                    "scene gastronomique",
+                    "cuisine locale",
+                    "plan culinaire",
+                    "plan aquatique"
+                ],
+                "it": [
+                    "cenare",
+                    "ristorante",
+                    "cena romantica",
+                    "scena gastronomica",
+                    "cucina locale",
+                    "piano culinario",
+                    "piano acquatico"
+                ]
+            }
         },
         {
             "key": "003",
@@ -320,7 +414,54 @@
                     }
                 ]
             },
-            "difficulty": 1
+            "difficulty": 1,
+            "tags": {
+                "en": [
+                    "walk",
+                    "through",
+                    "calm walk",
+                    "history",
+                    "cultural heritage",
+                    "architecture",
+                    "nature escape"
+                ],
+                "es": [
+                    "caminar",
+                    "parque",
+                    "paseo tranquilo",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitectura",
+                    "escapada natural"
+                ],
+                "pt": [
+                    "caminhar",
+                    "pelo",
+                    "passeio tranquilo",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitetura",
+                    "escapada natural"
+                ],
+                "fr": [
+                    "promener",
+                    "dans",
+                    "promenade tranquille",
+                    "histoire",
+                    "patrimoine culturel",
+                    "architecture",
+                    "escapade nature"
+                ],
+                "it": [
+                    "passeggiare",
+                    "parco",
+                    "passeggiata tranquilla",
+                    "storia",
+                    "patrimonio culturale",
+                    "architettura",
+                    "fuga nella natura"
+                ]
+            }
         },
         {
             "key": "004",
@@ -418,7 +559,54 @@
                     }
                 ]
             },
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "picnic",
+                    "outdoor picnic",
+                    "food scene",
+                    "local cuisine",
+                    "culinary plan",
+                    "water plan",
+                    "coastal vibe"
+                ],
+                "es": [
+                    "picnic",
+                    "picnic al aire libre",
+                    "escena gastronomica",
+                    "cocina local",
+                    "plan culinario",
+                    "plan acuatico",
+                    "ambiente costero"
+                ],
+                "pt": [
+                    "piquenique",
+                    "piquenique ao ar livre",
+                    "cena gastronomica",
+                    "culinaria local",
+                    "plano culinario",
+                    "plano aquatico",
+                    "clima litoraneo"
+                ],
+                "fr": [
+                    "journée",
+                    "pique",
+                    "pique nique en plein air",
+                    "scene gastronomique",
+                    "cuisine locale",
+                    "plan culinaire",
+                    "plan aquatique"
+                ],
+                "it": [
+                    "giornata",
+                    "picnic",
+                    "picnic all aperto",
+                    "scena gastronomica",
+                    "cucina locale",
+                    "piano culinario",
+                    "piano acquatico"
+                ]
+            }
         },
         {
             "key": "005",
@@ -516,7 +704,54 @@
                     }
                 ]
             },
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "cook",
+                    "something",
+                    "couple cooking",
+                    "food scene",
+                    "local cuisine",
+                    "culinary plan",
+                    "creative moment"
+                ],
+                "es": [
+                    "cocinar",
+                    "algo",
+                    "cocina en pareja",
+                    "escena gastronomica",
+                    "cocina local",
+                    "plan culinario",
+                    "momento creativo"
+                ],
+                "pt": [
+                    "cozinhar",
+                    "algo",
+                    "cozinha em casal",
+                    "cena gastronomica",
+                    "culinaria local",
+                    "plano culinario",
+                    "momento criativo"
+                ],
+                "fr": [
+                    "cuisiner",
+                    "quelque",
+                    "cuisine en couple",
+                    "scene gastronomique",
+                    "cuisine locale",
+                    "plan culinaire",
+                    "moment creatif"
+                ],
+                "it": [
+                    "cucinare",
+                    "qualcosa",
+                    "cucina di coppia",
+                    "scena gastronomica",
+                    "cucina locale",
+                    "piano culinario",
+                    "momento creativo"
+                ]
+            }
         },
         {
             "key": "006",
@@ -614,7 +849,54 @@
                     }
                 ]
             },
-            "difficulty": 3
+            "difficulty": 3,
+            "tags": {
+                "en": [
+                    "outside",
+                    "short getaway",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "creative moment",
+                    "art and design"
+                ],
+                "es": [
+                    "viajar",
+                    "fuera",
+                    "escapada corta",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "momento creativo"
+                ],
+                "pt": [
+                    "viajar",
+                    "fora",
+                    "escapada curta",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "momento criativo"
+                ],
+                "fr": [
+                    "voyager",
+                    "hors",
+                    "petite escapade",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "moment creatif"
+                ],
+                "it": [
+                    "viaggiare",
+                    "fuori",
+                    "fuga breve",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "momento creativo"
+                ]
+            }
         },
         {
             "key": "007",
@@ -712,7 +994,54 @@
                     }
                 ]
             },
-            "difficulty": 1
+            "difficulty": 1,
+            "tags": {
+                "en": [
+                    "museum",
+                    "cultural visit",
+                    "history",
+                    "cultural heritage",
+                    "architecture",
+                    "water plan",
+                    "coastal vibe"
+                ],
+                "es": [
+                    "museo",
+                    "visita cultural",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitectura",
+                    "plan acuatico",
+                    "ambiente costero"
+                ],
+                "pt": [
+                    "museu",
+                    "visita cultural",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitetura",
+                    "plano aquatico",
+                    "clima litoraneo"
+                ],
+                "fr": [
+                    "visiter",
+                    "musée",
+                    "visite culturelle",
+                    "histoire",
+                    "patrimoine culturel",
+                    "architecture",
+                    "plan aquatique"
+                ],
+                "it": [
+                    "visitare",
+                    "museo",
+                    "visita culturale",
+                    "storia",
+                    "patrimonio culturale",
+                    "architettura",
+                    "piano acquatico"
+                ]
+            }
         },
         {
             "key": "008",
@@ -810,7 +1139,54 @@
                     }
                 ]
             },
-            "difficulty": 1
+            "difficulty": 1,
+            "tags": {
+                "en": [
+                    "order",
+                    "dinner",
+                    "dinner at home",
+                    "food scene",
+                    "local cuisine",
+                    "culinary plan",
+                    "history"
+                ],
+                "es": [
+                    "pedir",
+                    "cena",
+                    "cena en casa",
+                    "escena gastronomica",
+                    "cocina local",
+                    "plan culinario",
+                    "historia"
+                ],
+                "pt": [
+                    "pedir",
+                    "jantar",
+                    "jantar em casa",
+                    "cena gastronomica",
+                    "culinaria local",
+                    "plano culinario",
+                    "historia"
+                ],
+                "fr": [
+                    "commander",
+                    "dîner",
+                    "dîner à la maison",
+                    "scene gastronomique",
+                    "cuisine locale",
+                    "plan culinaire",
+                    "histoire"
+                ],
+                "it": [
+                    "ordinare",
+                    "cena",
+                    "cena a casa",
+                    "scena gastronomica",
+                    "cucina locale",
+                    "piano culinario",
+                    "storia"
+                ]
+            }
         },
         {
             "key": "009",
@@ -908,7 +1284,54 @@
                     }
                 ]
             },
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "beach",
+                    "beach day",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "creative moment",
+                    "art and design"
+                ],
+                "es": [
+                    "playa",
+                    "día de playa",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "momento creativo",
+                    "arte y diseno"
+                ],
+                "pt": [
+                    "praia",
+                    "dia de praia",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "momento criativo",
+                    "arte e design"
+                ],
+                "fr": [
+                    "plage",
+                    "journée plage",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "moment creatif",
+                    "art et design"
+                ],
+                "it": [
+                    "spiaggia",
+                    "giornata in spiaggia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "momento creativo",
+                    "arte e design"
+                ]
+            }
         },
         {
             "key": "010",
@@ -1006,7 +1429,54 @@
                     }
                 ]
             },
-            "difficulty": 1
+            "difficulty": 1,
+            "tags": {
+                "en": [
+                    "prepare",
+                    "dessert",
+                    "couple baking",
+                    "food scene",
+                    "local cuisine",
+                    "culinary plan",
+                    "nightlife"
+                ],
+                "es": [
+                    "preparar",
+                    "postre",
+                    "repostería en pareja",
+                    "escena gastronomica",
+                    "cocina local",
+                    "plan culinario",
+                    "vida nocturna"
+                ],
+                "pt": [
+                    "preparar",
+                    "sobremesa",
+                    "confeitaria em casal",
+                    "cena gastronomica",
+                    "culinaria local",
+                    "plano culinario",
+                    "vida noturna"
+                ],
+                "fr": [
+                    "préparer",
+                    "dessert",
+                    "pâtisserie en couple",
+                    "scene gastronomique",
+                    "cuisine locale",
+                    "plan culinaire",
+                    "vie nocturne"
+                ],
+                "it": [
+                    "preparare",
+                    "dolce",
+                    "pasticceria in coppia",
+                    "scena gastronomica",
+                    "cucina locale",
+                    "piano culinario",
+                    "vita notturna"
+                ]
+            }
         },
         {
             "key": "011",
@@ -1104,7 +1574,54 @@
                     }
                 ]
             },
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "paint",
+                    "picture",
+                    "art activity",
+                    "creative moment",
+                    "art and design",
+                    "visual culture",
+                    "romantic plan"
+                ],
+                "es": [
+                    "pintar",
+                    "cuadro",
+                    "actividad artística",
+                    "momento creativo",
+                    "arte y diseno",
+                    "cultura visual",
+                    "plan romantico"
+                ],
+                "pt": [
+                    "pintar",
+                    "quadro",
+                    "atividade artística",
+                    "momento criativo",
+                    "arte e design",
+                    "cultura visual",
+                    "plano romantico"
+                ],
+                "fr": [
+                    "peindre",
+                    "tableau",
+                    "activité artistique",
+                    "moment creatif",
+                    "art et design",
+                    "culture visuelle",
+                    "plan romantique"
+                ],
+                "it": [
+                    "dipingere",
+                    "quadro",
+                    "attività artistica",
+                    "momento creativo",
+                    "arte e design",
+                    "cultura visiva",
+                    "piano romantico"
+                ]
+            }
         },
         {
             "key": "012",
@@ -1202,7 +1719,54 @@
                     }
                 ]
             },
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "cycling",
+                    "bike ride",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "creative moment",
+                    "art and design"
+                ],
+                "es": [
+                    "salir",
+                    "bicicleta",
+                    "paseo en bicicleta",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "momento creativo"
+                ],
+                "pt": [
+                    "sair",
+                    "bicicleta",
+                    "passeio de bicicleta",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "momento criativo"
+                ],
+                "fr": [
+                    "vélo",
+                    "balade à vélo",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "moment creatif",
+                    "art et design"
+                ],
+                "it": [
+                    "uscire",
+                    "bicicletta",
+                    "giro in bicicletta",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "momento creativo"
+                ]
+            }
         },
         {
             "key": "013",
@@ -1300,7 +1864,54 @@
                     }
                 ]
             },
-            "difficulty": 1
+            "difficulty": 1,
+            "tags": {
+                "en": [
+                    "bake",
+                    "homemade",
+                    "homemade baking",
+                    "food scene",
+                    "local cuisine",
+                    "culinary plan",
+                    "creative moment"
+                ],
+                "es": [
+                    "galletas",
+                    "caseras",
+                    "repostería casera",
+                    "escena gastronomica",
+                    "cocina local",
+                    "plan culinario",
+                    "momento creativo"
+                ],
+                "pt": [
+                    "biscoitos",
+                    "caseiros",
+                    "confeitaria caseira",
+                    "cena gastronomica",
+                    "culinaria local",
+                    "plano culinario",
+                    "momento criativo"
+                ],
+                "fr": [
+                    "biscuits",
+                    "maison",
+                    "pâtisserie maison",
+                    "scene gastronomique",
+                    "cuisine locale",
+                    "plan culinaire",
+                    "moment creatif"
+                ],
+                "it": [
+                    "biscotti",
+                    "fatti",
+                    "dolci fatti in casa",
+                    "scena gastronomica",
+                    "cucina locale",
+                    "piano culinario",
+                    "momento creativo"
+                ]
+            }
         },
         {
             "key": "014",
@@ -1398,7 +2009,54 @@
                     }
                 ]
             },
-            "difficulty": 1
+            "difficulty": 1,
+            "tags": {
+                "en": [
+                    "series",
+                    "marathon",
+                    "at home marathon",
+                    "history",
+                    "cultural heritage",
+                    "architecture",
+                    "water plan"
+                ],
+                "es": [
+                    "maratón",
+                    "series",
+                    "maratón en casa",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitectura",
+                    "plan acuatico"
+                ],
+                "pt": [
+                    "maratona",
+                    "séries",
+                    "maratona em casa",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitetura",
+                    "plano aquatico"
+                ],
+                "fr": [
+                    "marathon",
+                    "séries",
+                    "marathon à la maison",
+                    "histoire",
+                    "patrimoine culturel",
+                    "architecture",
+                    "plan aquatique"
+                ],
+                "it": [
+                    "guardare",
+                    "maratona",
+                    "maratona a casa",
+                    "storia",
+                    "patrimonio culturale",
+                    "architettura",
+                    "piano acquatico"
+                ]
+            }
         },
         {
             "key": "015",
@@ -1496,7 +2154,54 @@
                     }
                 ]
             },
-            "difficulty": 1
+            "difficulty": 1,
+            "tags": {
+                "en": [
+                    "together",
+                    "puzzle",
+                    "focus challenge",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "creative moment"
+                ],
+                "es": [
+                    "armar",
+                    "rompecabezas",
+                    "reto de concentración",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "momento creativo"
+                ],
+                "pt": [
+                    "montar",
+                    "quebra",
+                    "desafio de concentração",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "momento criativo"
+                ],
+                "fr": [
+                    "assembler",
+                    "puzzle",
+                    "défi de concentration",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "moment creatif"
+                ],
+                "it": [
+                    "comporre",
+                    "puzzle",
+                    "sfida di concentrazione",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "momento creativo"
+                ]
+            }
         },
         {
             "key": "016",
@@ -1594,7 +2299,54 @@
                     }
                 ]
             },
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "concert",
+                    "live music",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "nightlife",
+                    "music culture"
+                ],
+                "es": [
+                    "concierto",
+                    "música en vivo",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "vida nocturna",
+                    "cultura musical"
+                ],
+                "pt": [
+                    "show",
+                    "música ao vivo",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "vida noturna",
+                    "cultura musical"
+                ],
+                "fr": [
+                    "concert",
+                    "musique live",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "vie nocturne",
+                    "culture musicale"
+                ],
+                "it": [
+                    "concerto",
+                    "musica dal vivo",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "vita notturna",
+                    "cultura musicale"
+                ]
+            }
         },
         {
             "key": "017",
@@ -1692,7 +2444,54 @@
                     }
                 ]
             },
-            "difficulty": 1
+            "difficulty": 1,
+            "tags": {
+                "en": [
+                    "viewpoint",
+                    "scenic viewpoint",
+                    "nightlife",
+                    "music culture",
+                    "social plan",
+                    "creative moment",
+                    "art and design"
+                ],
+                "es": [
+                    "mirador",
+                    "vista panorámica",
+                    "vida nocturna",
+                    "cultura musical",
+                    "plan social",
+                    "momento creativo",
+                    "arte y diseno"
+                ],
+                "pt": [
+                    "mirante",
+                    "vista panorâmica",
+                    "vida noturna",
+                    "cultura musical",
+                    "plano social",
+                    "momento criativo",
+                    "arte e design"
+                ],
+                "fr": [
+                    "belvédère",
+                    "vue panoramique",
+                    "vie nocturne",
+                    "culture musicale",
+                    "plan social",
+                    "moment creatif",
+                    "art et design"
+                ],
+                "it": [
+                    "punto",
+                    "panoramico",
+                    "vista panoramica",
+                    "vita notturna",
+                    "cultura musicale",
+                    "piano sociale",
+                    "momento creativo"
+                ]
+            }
         },
         {
             "key": "018",
@@ -1790,7 +2589,54 @@
                     }
                 ]
             },
-            "difficulty": 1
+            "difficulty": 1,
+            "tags": {
+                "en": [
+                    "animals and nature outing",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "creative moment",
+                    "art and design",
+                    "visual culture"
+                ],
+                "es": [
+                    "zoológico",
+                    "salida de animales y naturaleza",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "momento creativo",
+                    "arte y diseno"
+                ],
+                "pt": [
+                    "zoológico",
+                    "passeio de animais e natureza",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "momento criativo",
+                    "arte e design"
+                ],
+                "fr": [
+                    "visiter",
+                    "sortie animaux et nature",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "moment creatif",
+                    "art et design"
+                ],
+                "it": [
+                    "visitare",
+                    "uscita animali e natura",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "momento creativo",
+                    "arte e design"
+                ]
+            }
         },
         {
             "key": "019",
@@ -1888,7 +2734,54 @@
                     }
                 ]
             },
-            "difficulty": 1
+            "difficulty": 1,
+            "tags": {
+                "en": [
+                    "shopping",
+                    "couple shopping",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "creative moment",
+                    "art and design"
+                ],
+                "es": [
+                    "compras",
+                    "compras en pareja",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "momento creativo",
+                    "arte y diseno"
+                ],
+                "pt": [
+                    "compras",
+                    "compras em casal",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "momento criativo",
+                    "arte e design"
+                ],
+                "fr": [
+                    "shopping",
+                    "shopping en couple",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "moment creatif",
+                    "art et design"
+                ],
+                "it": [
+                    "shopping",
+                    "shopping di coppia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "momento creativo",
+                    "arte e design"
+                ]
+            }
         },
         {
             "key": "020",
@@ -1986,7 +2879,54 @@
                     }
                 ]
             },
-            "difficulty": 3
+            "difficulty": 3,
+            "tags": {
+                "en": [
+                    "kayaking",
+                    "water adventure",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "creative moment",
+                    "art and design"
+                ],
+                "es": [
+                    "remar",
+                    "kayak",
+                    "aventura acuática",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "momento creativo"
+                ],
+                "pt": [
+                    "remar",
+                    "caiaque",
+                    "aventura aquática",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "momento criativo"
+                ],
+                "fr": [
+                    "kayak",
+                    "aventure aquatique",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "moment creatif",
+                    "art et design"
+                ],
+                "it": [
+                    "kayak",
+                    "avventura acquatica",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "momento creativo",
+                    "arte e design"
+                ]
+            }
         },
         {
             "key": "021",
@@ -2084,7 +3024,54 @@
                     }
                 ]
             },
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "tour",
+                    "guided experience",
+                    "food scene",
+                    "local cuisine",
+                    "culinary plan",
+                    "history",
+                    "cultural heritage"
+                ],
+                "es": [
+                    "tour",
+                    "experiencia guiada",
+                    "escena gastronomica",
+                    "cocina local",
+                    "plan culinario",
+                    "historia",
+                    "patrimonio cultural"
+                ],
+                "pt": [
+                    "tour",
+                    "experiência guiada",
+                    "cena gastronomica",
+                    "culinaria local",
+                    "plano culinario",
+                    "historia",
+                    "patrimonio cultural"
+                ],
+                "fr": [
+                    "visite",
+                    "guidée",
+                    "expérience guidée",
+                    "scene gastronomique",
+                    "cuisine locale",
+                    "plan culinaire",
+                    "histoire"
+                ],
+                "it": [
+                    "tour",
+                    "esperienza guidata",
+                    "scena gastronomica",
+                    "cucina locale",
+                    "piano culinario",
+                    "storia",
+                    "patrimonio culturale"
+                ]
+            }
         },
         {
             "key": "022",
@@ -2182,7 +3169,54 @@
                     }
                 ]
             },
-            "difficulty": 1
+            "difficulty": 1,
+            "tags": {
+                "en": [
+                    "circus",
+                    "family friendly show",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "creative moment",
+                    "art and design"
+                ],
+                "es": [
+                    "circo",
+                    "espectáculo familiar",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "momento creativo",
+                    "arte y diseno"
+                ],
+                "pt": [
+                    "circo",
+                    "espetáculo familiar",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "momento criativo",
+                    "arte e design"
+                ],
+                "fr": [
+                    "cirque",
+                    "spectacle familial",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "moment creatif",
+                    "art et design"
+                ],
+                "it": [
+                    "circo",
+                    "spettacolo per famiglie",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "momento creativo",
+                    "arte e design"
+                ]
+            }
         },
         {
             "key": "023",
@@ -2280,7 +3314,54 @@
                     }
                 ]
             },
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "party",
+                    "social plan",
+                    "nightlife",
+                    "music culture",
+                    "creative moment",
+                    "art and design",
+                    "visual culture"
+                ],
+                "es": [
+                    "fiesta",
+                    "plan social",
+                    "vida nocturna",
+                    "cultura musical",
+                    "momento creativo",
+                    "arte y diseno",
+                    "cultura visual"
+                ],
+                "pt": [
+                    "festa",
+                    "plano social",
+                    "vida noturna",
+                    "cultura musical",
+                    "momento criativo",
+                    "arte e design",
+                    "cultura visual"
+                ],
+                "fr": [
+                    "fête",
+                    "sortie sociale",
+                    "vie nocturne",
+                    "culture musicale",
+                    "plan social",
+                    "moment creatif",
+                    "art et design"
+                ],
+                "it": [
+                    "festa",
+                    "piano sociale",
+                    "vita notturna",
+                    "cultura musicale",
+                    "momento creativo",
+                    "arte e design",
+                    "cultura visiva"
+                ]
+            }
         },
         {
             "key": "024",
@@ -2378,7 +3459,54 @@
                     }
                 ]
             },
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "nature",
+                    "reserve",
+                    "protected nature",
+                    "nature escape",
+                    "outdoor activity",
+                    "scenic route",
+                    "water plan"
+                ],
+                "es": [
+                    "reserva",
+                    "natural",
+                    "naturaleza protegida",
+                    "escapada natural",
+                    "actividad al aire libre",
+                    "ruta escenica",
+                    "plan acuatico"
+                ],
+                "pt": [
+                    "reserva",
+                    "natural",
+                    "natureza protegida",
+                    "escapada natural",
+                    "atividade ao ar livre",
+                    "rota cenica",
+                    "plano aquatico"
+                ],
+                "fr": [
+                    "visiter",
+                    "réserve",
+                    "nature protégée",
+                    "escapade nature",
+                    "activite en plein air",
+                    "itineraire panoramique",
+                    "plan aquatique"
+                ],
+                "it": [
+                    "visitare",
+                    "riserva",
+                    "natura protetta",
+                    "fuga nella natura",
+                    "attivita all aperto",
+                    "percorso panoramico",
+                    "piano acquatico"
+                ]
+            }
         },
         {
             "key": "025",
@@ -2476,7 +3604,54 @@
                     }
                 ]
             },
-            "difficulty": 1
+            "difficulty": 1,
+            "tags": {
+                "en": [
+                    "cream",
+                    "sweet date",
+                    "nature escape",
+                    "outdoor activity",
+                    "scenic route",
+                    "water plan",
+                    "coastal vibe"
+                ],
+                "es": [
+                    "helado",
+                    "cita dulce",
+                    "escapada natural",
+                    "actividad al aire libre",
+                    "ruta escenica",
+                    "plan acuatico",
+                    "ambiente costero"
+                ],
+                "pt": [
+                    "tomar",
+                    "sorvete",
+                    "encontro doce",
+                    "escapada natural",
+                    "atividade ao ar livre",
+                    "rota cenica",
+                    "plano aquatico"
+                ],
+                "fr": [
+                    "manger",
+                    "glace",
+                    "rendez vous gourmand",
+                    "escapade nature",
+                    "activite en plein air",
+                    "itineraire panoramique",
+                    "plan aquatique"
+                ],
+                "it": [
+                    "prendere",
+                    "gelato",
+                    "appuntamento dolce",
+                    "fuga nella natura",
+                    "attivita all aperto",
+                    "percorso panoramico",
+                    "piano acquatico"
+                ]
+            }
         },
         {
             "key": "026",
@@ -2574,7 +3749,54 @@
                     }
                 ]
             },
-            "difficulty": 1
+            "difficulty": 1,
+            "tags": {
+                "en": [
+                    "attend",
+                    "birthday",
+                    "social celebration",
+                    "food scene",
+                    "local cuisine",
+                    "culinary plan",
+                    "water plan"
+                ],
+                "es": [
+                    "asistir",
+                    "cumpleaños",
+                    "celebración social",
+                    "escena gastronomica",
+                    "cocina local",
+                    "plan culinario",
+                    "plan acuatico"
+                ],
+                "pt": [
+                    "aniversário",
+                    "celebração social",
+                    "cena gastronomica",
+                    "culinaria local",
+                    "plano culinario",
+                    "plano aquatico",
+                    "clima litoraneo"
+                ],
+                "fr": [
+                    "assister",
+                    "anniversaire",
+                    "célébration sociale",
+                    "scene gastronomique",
+                    "cuisine locale",
+                    "plan culinaire",
+                    "plan aquatique"
+                ],
+                "it": [
+                    "partecipare",
+                    "compleanno",
+                    "celebrazione sociale",
+                    "scena gastronomica",
+                    "cucina locale",
+                    "piano culinario",
+                    "piano acquatico"
+                ]
+            }
         },
         {
             "key": "027",
@@ -2672,7 +3894,54 @@
                     }
                 ]
             },
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "deep",
+                    "conversation",
+                    "deep conversation",
+                    "nightlife",
+                    "music culture",
+                    "social plan",
+                    "creative moment"
+                ],
+                "es": [
+                    "noche",
+                    "conversación",
+                    "conversación íntima",
+                    "vida nocturna",
+                    "cultura musical",
+                    "plan social",
+                    "momento creativo"
+                ],
+                "pt": [
+                    "noite",
+                    "conversa",
+                    "conversa íntima",
+                    "vida noturna",
+                    "cultura musical",
+                    "plano social",
+                    "momento criativo"
+                ],
+                "fr": [
+                    "soirée",
+                    "conversation",
+                    "conversation intime",
+                    "vie nocturne",
+                    "culture musicale",
+                    "plan social",
+                    "moment creatif"
+                ],
+                "it": [
+                    "serata",
+                    "conversazione",
+                    "conversazione intima",
+                    "vita notturna",
+                    "cultura musicale",
+                    "piano sociale",
+                    "momento creativo"
+                ]
+            }
         },
         {
             "key": "028",
@@ -2770,7 +4039,54 @@
                     }
                 ]
             },
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "wedding",
+                    "romantic celebration",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "nightlife",
+                    "music culture"
+                ],
+                "es": [
+                    "boda",
+                    "celebración romántica",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "vida nocturna",
+                    "cultura musical"
+                ],
+                "pt": [
+                    "casamento",
+                    "celebração romântica",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "vida noturna",
+                    "cultura musical"
+                ],
+                "fr": [
+                    "mariage",
+                    "célébration romantique",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "vie nocturne",
+                    "culture musicale"
+                ],
+                "it": [
+                    "matrimonio",
+                    "celebrazione romantica",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "vita notturna",
+                    "cultura musicale"
+                ]
+            }
         },
         {
             "key": "029",
@@ -2868,7 +4184,54 @@
                     }
                 ]
             },
-            "difficulty": 3
+            "difficulty": 3,
+            "tags": {
+                "en": [
+                    "waterfall",
+                    "nature hike",
+                    "nature escape",
+                    "outdoor activity",
+                    "scenic route",
+                    "water plan",
+                    "coastal vibe"
+                ],
+                "es": [
+                    "cascada",
+                    "caminata natural",
+                    "escapada natural",
+                    "actividad al aire libre",
+                    "ruta escenica",
+                    "plan acuatico",
+                    "ambiente costero"
+                ],
+                "pt": [
+                    "cachoeira",
+                    "caminhada na natureza",
+                    "escapada natural",
+                    "atividade ao ar livre",
+                    "rota cenica",
+                    "plano aquatico",
+                    "clima litoraneo"
+                ],
+                "fr": [
+                    "voir",
+                    "cascade",
+                    "randonnée nature",
+                    "escapade nature",
+                    "activite en plein air",
+                    "itineraire panoramique",
+                    "plan aquatique"
+                ],
+                "it": [
+                    "cascata",
+                    "camminata nella natura",
+                    "fuga nella natura",
+                    "attivita all aperto",
+                    "percorso panoramico",
+                    "piano acquatico",
+                    "atmosfera costiera"
+                ]
+            }
         },
         {
             "key": "030",
@@ -2966,7 +4329,54 @@
                     }
                 ]
             },
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "exercise",
+                    "together",
+                    "active routine",
+                    "creative moment",
+                    "art and design",
+                    "visual culture",
+                    "active plan"
+                ],
+                "es": [
+                    "ejercicio",
+                    "juntos",
+                    "rutina activa",
+                    "momento creativo",
+                    "arte y diseno",
+                    "cultura visual",
+                    "plan activo"
+                ],
+                "pt": [
+                    "exercícios",
+                    "juntos",
+                    "rotina ativa",
+                    "momento criativo",
+                    "arte e design",
+                    "cultura visual",
+                    "plano ativo"
+                ],
+                "fr": [
+                    "sport",
+                    "ensemble",
+                    "routine active",
+                    "moment creatif",
+                    "art et design",
+                    "culture visuelle",
+                    "plan actif"
+                ],
+                "it": [
+                    "allenarsi",
+                    "insieme",
+                    "routine attiva",
+                    "momento creativo",
+                    "arte e design",
+                    "cultura visiva",
+                    "piano attivo"
+                ]
+            }
         },
         {
             "key": "031",
@@ -3064,7 +4474,54 @@
                     }
                 ]
             },
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "cook",
+                    "favorite",
+                    "meaningful cooking",
+                    "food scene",
+                    "local cuisine",
+                    "culinary plan",
+                    "water plan"
+                ],
+                "es": [
+                    "cocinar",
+                    "comidas",
+                    "cocina emocional",
+                    "escena gastronomica",
+                    "cocina local",
+                    "plan culinario",
+                    "plan acuatico"
+                ],
+                "pt": [
+                    "cozinhar",
+                    "suas",
+                    "cozinha afetiva",
+                    "cena gastronomica",
+                    "culinaria local",
+                    "plano culinario",
+                    "plano aquatico"
+                ],
+                "fr": [
+                    "cuisiner",
+                    "plats",
+                    "cuisine émotionnelle",
+                    "scene gastronomique",
+                    "cuisine locale",
+                    "plan culinaire",
+                    "plan aquatique"
+                ],
+                "it": [
+                    "cucinare",
+                    "vostri",
+                    "cucina emotiva",
+                    "scena gastronomica",
+                    "cucina locale",
+                    "piano culinario",
+                    "piano acquatico"
+                ]
+            }
         },
         {
             "key": "032",
@@ -3162,7 +4619,54 @@
                     }
                 ]
             },
-            "difficulty": 4
+            "difficulty": 4,
+            "tags": {
+                "en": [
+                    "camping",
+                    "couple camping",
+                    "food scene",
+                    "local cuisine",
+                    "culinary plan",
+                    "nature escape",
+                    "outdoor activity"
+                ],
+                "es": [
+                    "acampar",
+                    "camping en pareja",
+                    "escena gastronomica",
+                    "cocina local",
+                    "plan culinario",
+                    "escapada natural",
+                    "actividad al aire libre"
+                ],
+                "pt": [
+                    "acampar",
+                    "acampamento em casal",
+                    "cena gastronomica",
+                    "culinaria local",
+                    "plano culinario",
+                    "escapada natural",
+                    "atividade ao ar livre"
+                ],
+                "fr": [
+                    "camper",
+                    "camping en couple",
+                    "scene gastronomique",
+                    "cuisine locale",
+                    "plan culinaire",
+                    "escapade nature",
+                    "activite en plein air"
+                ],
+                "it": [
+                    "campeggio",
+                    "campeggio di coppia",
+                    "scena gastronomica",
+                    "cucina locale",
+                    "piano culinario",
+                    "fuga nella natura",
+                    "attivita all aperto"
+                ]
+            }
         },
         {
             "key": "033",
@@ -3260,7 +4764,54 @@
                     }
                 ]
             },
-            "difficulty": 1
+            "difficulty": 1,
+            "tags": {
+                "en": [
+                    "walk",
+                    "rain",
+                    "spontaneous moment",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "creative moment"
+                ],
+                "es": [
+                    "caminar",
+                    "bajo",
+                    "momento espontáneo",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "momento creativo"
+                ],
+                "pt": [
+                    "caminhar",
+                    "chuva",
+                    "momento espontâneo",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "momento criativo"
+                ],
+                "fr": [
+                    "marcher",
+                    "sous",
+                    "moment spontané",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "moment creatif"
+                ],
+                "it": [
+                    "camminare",
+                    "sotto",
+                    "momento spontaneo",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "momento creativo"
+                ]
+            }
         },
         {
             "key": "034",
@@ -3358,7 +4909,54 @@
                     }
                 ]
             },
-            "difficulty": 1
+            "difficulty": 1,
+            "tags": {
+                "en": [
+                    "sunset",
+                    "romantic sunset",
+                    "food scene",
+                    "local cuisine",
+                    "culinary plan",
+                    "water plan",
+                    "coastal vibe"
+                ],
+                "es": [
+                    "atardecer",
+                    "atardecer romántico",
+                    "escena gastronomica",
+                    "cocina local",
+                    "plan culinario",
+                    "plan acuatico",
+                    "ambiente costero"
+                ],
+                "pt": [
+                    "pôr do sol romântico",
+                    "cena gastronomica",
+                    "culinaria local",
+                    "plano culinario",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre"
+                ],
+                "fr": [
+                    "regarder",
+                    "coucher",
+                    "coucher de soleil romantique",
+                    "scene gastronomique",
+                    "cuisine locale",
+                    "plan culinaire",
+                    "plan aquatique"
+                ],
+                "it": [
+                    "guardare",
+                    "tramonto",
+                    "tramonto romantico",
+                    "scena gastronomica",
+                    "cucina locale",
+                    "piano culinario",
+                    "piano acquatico"
+                ]
+            }
         },
         {
             "key": "035",
@@ -3456,7 +5054,54 @@
                     }
                 ]
             },
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "sunrise",
+                    "special sunrise",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "nightlife",
+                    "music culture"
+                ],
+                "es": [
+                    "amanecer",
+                    "amanecer especial",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "vida nocturna",
+                    "cultura musical"
+                ],
+                "pt": [
+                    "nascer",
+                    "amanhecer especial",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "vida noturna",
+                    "cultura musical"
+                ],
+                "fr": [
+                    "regarder",
+                    "lever",
+                    "lever de soleil spécial",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "vie nocturne"
+                ],
+                "it": [
+                    "guardare",
+                    "alba",
+                    "alba speciale",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "vita notturna"
+                ]
+            }
         },
         {
             "key": "036",
@@ -3554,7 +5199,54 @@
                     }
                 ]
             },
-            "difficulty": 1
+            "difficulty": 1,
+            "tags": {
+                "en": [
+                    "have",
+                    "breakfast",
+                    "morning date",
+                    "food scene",
+                    "local cuisine",
+                    "culinary plan",
+                    "water plan"
+                ],
+                "es": [
+                    "desayunar",
+                    "cafetería",
+                    "cita matutina",
+                    "escena gastronomica",
+                    "cocina local",
+                    "plan culinario",
+                    "plan acuatico"
+                ],
+                "pt": [
+                    "tomar",
+                    "café",
+                    "encontro matinal",
+                    "cena gastronomica",
+                    "culinaria local",
+                    "plano culinario",
+                    "plano aquatico"
+                ],
+                "fr": [
+                    "prendre",
+                    "petit",
+                    "rendez vous matinal",
+                    "scene gastronomique",
+                    "cuisine locale",
+                    "plan culinaire",
+                    "plan aquatique"
+                ],
+                "it": [
+                    "colazione",
+                    "caffetteria",
+                    "appuntamento mattutino",
+                    "scena gastronomica",
+                    "cucina locale",
+                    "piano culinario",
+                    "piano acquatico"
+                ]
+            }
         },
         {
             "key": "037",
@@ -3652,7 +5344,54 @@
                     }
                 ]
             },
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "read",
+                    "same",
+                    "shared reading",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "creative moment"
+                ],
+                "es": [
+                    "leer",
+                    "mismo",
+                    "lectura compartida",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "momento creativo"
+                ],
+                "pt": [
+                    "mesmo",
+                    "livro",
+                    "leitura compartilhada",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "momento criativo"
+                ],
+                "fr": [
+                    "lire",
+                    "même",
+                    "lecture partagée",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "moment creatif"
+                ],
+                "it": [
+                    "leggere",
+                    "stesso",
+                    "lettura condivisa",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "momento creativo"
+                ]
+            }
         },
         {
             "key": "038",
@@ -3750,7 +5489,54 @@
                     }
                 ]
             },
-            "difficulty": 1
+            "difficulty": 1,
+            "tags": {
+                "en": [
+                    "stand",
+                    "comedy",
+                    "comedy night",
+                    "history",
+                    "cultural heritage",
+                    "architecture",
+                    "creative moment"
+                ],
+                "es": [
+                    "stand",
+                    "comedy",
+                    "noche de comedia",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitectura",
+                    "momento creativo"
+                ],
+                "pt": [
+                    "show",
+                    "stand",
+                    "noite de comédia",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitetura",
+                    "momento criativo"
+                ],
+                "fr": [
+                    "voir",
+                    "spectacle",
+                    "soirée comédie",
+                    "histoire",
+                    "patrimoine culturel",
+                    "architecture",
+                    "moment creatif"
+                ],
+                "it": [
+                    "vedere",
+                    "spettacolo",
+                    "serata comedy",
+                    "storia",
+                    "patrimonio culturale",
+                    "architettura",
+                    "momento creativo"
+                ]
+            }
         },
         {
             "key": "039",
@@ -3848,7 +5634,54 @@
                     }
                 ]
             },
-            "difficulty": 1
+            "difficulty": 1,
+            "tags": {
+                "en": [
+                    "look",
+                    "childhood",
+                    "personal memories",
+                    "history",
+                    "cultural heritage",
+                    "architecture",
+                    "creative moment"
+                ],
+                "es": [
+                    "revisar",
+                    "fotos",
+                    "recuerdos personales",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitectura",
+                    "momento creativo"
+                ],
+                "pt": [
+                    "fotos",
+                    "infância",
+                    "memórias pessoais",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitetura",
+                    "momento criativo"
+                ],
+                "fr": [
+                    "regarder",
+                    "photos",
+                    "souvenirs personnels",
+                    "histoire",
+                    "patrimoine culturel",
+                    "architecture",
+                    "moment creatif"
+                ],
+                "it": [
+                    "riguardare",
+                    "foto",
+                    "ricordi personali",
+                    "storia",
+                    "patrimonio culturale",
+                    "architettura",
+                    "momento creativo"
+                ]
+            }
         },
         {
             "key": "040",
@@ -3946,7 +5779,54 @@
                     }
                 ]
             },
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "sing",
+                    "karaoke",
+                    "fun karaoke",
+                    "creative moment",
+                    "art and design",
+                    "visual culture",
+                    "romantic plan"
+                ],
+                "es": [
+                    "cantar",
+                    "karaoke",
+                    "karaoke divertido",
+                    "momento creativo",
+                    "arte y diseno",
+                    "cultura visual",
+                    "plan romantico"
+                ],
+                "pt": [
+                    "cantar",
+                    "karaokê",
+                    "karaokê divertido",
+                    "momento criativo",
+                    "arte e design",
+                    "cultura visual",
+                    "plano romantico"
+                ],
+                "fr": [
+                    "chanter",
+                    "karaoké",
+                    "karaoké amusant",
+                    "moment creatif",
+                    "art et design",
+                    "culture visuelle",
+                    "plan romantique"
+                ],
+                "it": [
+                    "cantare",
+                    "karaoke",
+                    "karaoke divertente",
+                    "momento creativo",
+                    "arte e design",
+                    "cultura visiva",
+                    "piano romantico"
+                ]
+            }
         },
         {
             "key": "041",
@@ -4044,7 +5924,54 @@
                     }
                 ]
             },
-            "difficulty": 1
+            "difficulty": 1,
+            "tags": {
+                "en": [
+                    "care",
+                    "plant",
+                    "shared care",
+                    "creative moment",
+                    "art and design",
+                    "visual culture",
+                    "romantic plan"
+                ],
+                "es": [
+                    "cuidar",
+                    "planta",
+                    "cuidado compartido",
+                    "momento creativo",
+                    "arte y diseno",
+                    "cultura visual",
+                    "plan romantico"
+                ],
+                "pt": [
+                    "cuidar",
+                    "planta",
+                    "cuidado compartilhado",
+                    "momento criativo",
+                    "arte e design",
+                    "cultura visual",
+                    "plano romantico"
+                ],
+                "fr": [
+                    "prendre",
+                    "soin",
+                    "soin partagé",
+                    "moment creatif",
+                    "art et design",
+                    "culture visuelle",
+                    "plan romantique"
+                ],
+                "it": [
+                    "prendersi",
+                    "cura",
+                    "cura condivisa",
+                    "momento creativo",
+                    "arte e design",
+                    "cultura visiva",
+                    "piano romantico"
+                ]
+            }
         },
         {
             "key": "042",
@@ -4142,7 +6069,54 @@
                     }
                 ]
             },
-            "difficulty": 1
+            "difficulty": 1,
+            "tags": {
+                "en": [
+                    "asian",
+                    "food",
+                    "culinary experience",
+                    "food scene",
+                    "local cuisine",
+                    "culinary plan",
+                    "water plan"
+                ],
+                "es": [
+                    "probar",
+                    "comida",
+                    "experiencia gastronómica",
+                    "escena gastronomica",
+                    "cocina local",
+                    "plan culinario",
+                    "plan acuatico"
+                ],
+                "pt": [
+                    "experimentar",
+                    "comida",
+                    "experiência gastronômica",
+                    "cena gastronomica",
+                    "culinaria local",
+                    "plano culinario",
+                    "plano aquatico"
+                ],
+                "fr": [
+                    "goûter",
+                    "cuisine",
+                    "expérience gastronomique",
+                    "scene gastronomique",
+                    "cuisine locale",
+                    "plan culinaire",
+                    "plan aquatique"
+                ],
+                "it": [
+                    "provare",
+                    "cucina",
+                    "esperienza gastronomica",
+                    "scena gastronomica",
+                    "cucina locale",
+                    "piano culinario",
+                    "piano acquatico"
+                ]
+            }
         },
         {
             "key": "043",
@@ -4240,7 +6214,54 @@
                     }
                 ]
             },
-            "difficulty": 1
+            "difficulty": 1,
+            "tags": {
+                "en": [
+                    "dress",
+                    "alike",
+                    "playful detail",
+                    "nature escape",
+                    "outdoor activity",
+                    "scenic route",
+                    "water plan"
+                ],
+                "es": [
+                    "vestir",
+                    "iguales",
+                    "detalle divertido",
+                    "escapada natural",
+                    "actividad al aire libre",
+                    "ruta escenica",
+                    "plan acuatico"
+                ],
+                "pt": [
+                    "vestir",
+                    "roupas",
+                    "detalhe divertido",
+                    "escapada natural",
+                    "atividade ao ar livre",
+                    "rota cenica",
+                    "plano aquatico"
+                ],
+                "fr": [
+                    "habiller",
+                    "pareil",
+                    "détail amusant",
+                    "escapade nature",
+                    "activite en plein air",
+                    "itineraire panoramique",
+                    "plan aquatique"
+                ],
+                "it": [
+                    "vestirsi",
+                    "uguali",
+                    "dettaglio divertente",
+                    "fuga nella natura",
+                    "attivita all aperto",
+                    "percorso panoramico",
+                    "piano acquatico"
+                ]
+            }
         },
         {
             "key": "044",
@@ -4338,7 +6359,54 @@
                     }
                 ]
             },
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "wear",
+                    "couple",
+                    "creative plan",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "nightlife"
+                ],
+                "es": [
+                    "disfraz",
+                    "pareja",
+                    "plan creativo",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "vida nocturna"
+                ],
+                "pt": [
+                    "usar",
+                    "fantasia",
+                    "plano criativo",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "vida noturna"
+                ],
+                "fr": [
+                    "porter",
+                    "costume",
+                    "plan créatif",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "vie nocturne"
+                ],
+                "it": [
+                    "indossare",
+                    "costume",
+                    "piano creativo",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "vita notturna"
+                ]
+            }
         },
         {
             "key": "045",
@@ -4436,7 +6504,54 @@
                     }
                 ]
             },
-            "difficulty": 1
+            "difficulty": 1,
+            "tags": {
+                "en": [
+                    "video",
+                    "game",
+                    "game at home",
+                    "creative moment",
+                    "art and design",
+                    "visual culture",
+                    "romantic plan"
+                ],
+                "es": [
+                    "jugar",
+                    "videojuego",
+                    "juego en casa",
+                    "momento creativo",
+                    "arte y diseno",
+                    "cultura visual",
+                    "plan romantico"
+                ],
+                "pt": [
+                    "jogar",
+                    "videogame",
+                    "jogo em casa",
+                    "momento criativo",
+                    "arte e design",
+                    "cultura visual",
+                    "plano romantico"
+                ],
+                "fr": [
+                    "jouer",
+                    "vidéo",
+                    "jeu à la maison",
+                    "moment creatif",
+                    "art et design",
+                    "culture visuelle",
+                    "plan romantique"
+                ],
+                "it": [
+                    "giocare",
+                    "videogioco",
+                    "gioco in casa",
+                    "momento creativo",
+                    "arte e design",
+                    "cultura visiva",
+                    "piano romantico"
+                ]
+            }
         },
         {
             "key": "046",
@@ -4534,7 +6649,54 @@
                     }
                 ]
             },
-            "difficulty": 3
+            "difficulty": 3,
+            "tags": {
+                "en": [
+                    "language",
+                    "together",
+                    "shared learning",
+                    "food scene",
+                    "local cuisine",
+                    "culinary plan",
+                    "creative moment"
+                ],
+                "es": [
+                    "aprender",
+                    "nuevo",
+                    "aprendizaje compartido",
+                    "escena gastronomica",
+                    "cocina local",
+                    "plan culinario",
+                    "momento creativo"
+                ],
+                "pt": [
+                    "aprender",
+                    "novo",
+                    "aprendizado compartilhado",
+                    "cena gastronomica",
+                    "culinaria local",
+                    "plano culinario",
+                    "momento criativo"
+                ],
+                "fr": [
+                    "apprendre",
+                    "nouvelle",
+                    "apprentissage partagé",
+                    "scene gastronomique",
+                    "cuisine locale",
+                    "plan culinaire",
+                    "moment creatif"
+                ],
+                "it": [
+                    "imparare",
+                    "nuova",
+                    "apprendimento condiviso",
+                    "scena gastronomica",
+                    "cucina locale",
+                    "piano culinario",
+                    "momento creativo"
+                ]
+            }
         },
         {
             "key": "047",
@@ -4632,7 +6794,54 @@
                     }
                 ]
             },
-            "difficulty": 1
+            "difficulty": 1,
+            "tags": {
+                "en": [
+                    "facial",
+                    "cleansing",
+                    "couple self care",
+                    "nightlife",
+                    "music culture",
+                    "social plan",
+                    "creative moment"
+                ],
+                "es": [
+                    "hacerse",
+                    "limpieza",
+                    "autocuidado en pareja",
+                    "vida nocturna",
+                    "cultura musical",
+                    "plan social",
+                    "momento creativo"
+                ],
+                "pt": [
+                    "limpeza",
+                    "facial",
+                    "autocuidado em casal",
+                    "vida noturna",
+                    "cultura musical",
+                    "plano social",
+                    "momento criativo"
+                ],
+                "fr": [
+                    "soin",
+                    "visage",
+                    "soin de soi en couple",
+                    "vie nocturne",
+                    "culture musicale",
+                    "plan social",
+                    "moment creatif"
+                ],
+                "it": [
+                    "pulizia",
+                    "viso",
+                    "cura di sé in coppia",
+                    "vita notturna",
+                    "cultura musicale",
+                    "piano sociale",
+                    "momento creativo"
+                ]
+            }
         },
         {
             "key": "048",
@@ -4730,7 +6939,54 @@
                     }
                 ]
             },
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "dancing",
+                    "dancing date",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "nightlife",
+                    "music culture"
+                ],
+                "es": [
+                    "bailar",
+                    "baile en pareja",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "vida nocturna",
+                    "cultura musical"
+                ],
+                "pt": [
+                    "dançar",
+                    "encontro dançante",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "vida noturna",
+                    "cultura musical"
+                ],
+                "fr": [
+                    "danser",
+                    "sortie danse",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "vie nocturne",
+                    "culture musicale"
+                ],
+                "it": [
+                    "ballare",
+                    "appuntamento danzante",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "vita notturna",
+                    "cultura musicale"
+                ]
+            }
         },
         {
             "key": "049",
@@ -4828,7 +7084,54 @@
                     }
                 ]
             },
-            "difficulty": 1
+            "difficulty": 1,
+            "tags": {
+                "en": [
+                    "documentary",
+                    "documentary night",
+                    "history",
+                    "cultural heritage",
+                    "architecture",
+                    "nature escape",
+                    "outdoor activity"
+                ],
+                "es": [
+                    "documental",
+                    "cine documental",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitectura",
+                    "escapada natural",
+                    "actividad al aire libre"
+                ],
+                "pt": [
+                    "documentário",
+                    "noite de documentário",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitetura",
+                    "escapada natural",
+                    "atividade ao ar livre"
+                ],
+                "fr": [
+                    "regarder",
+                    "documentaire",
+                    "soirée documentaire",
+                    "histoire",
+                    "patrimoine culturel",
+                    "architecture",
+                    "escapade nature"
+                ],
+                "it": [
+                    "guardare",
+                    "documentario",
+                    "serata documentario",
+                    "storia",
+                    "patrimonio culturale",
+                    "architettura",
+                    "fuga nella natura"
+                ]
+            }
         },
         {
             "key": "050",
@@ -4926,7 +7229,54 @@
                     }
                 ]
             },
-            "difficulty": 1
+            "difficulty": 1,
+            "tags": {
+                "en": [
+                    "afternoon",
+                    "listening",
+                    "music and memories",
+                    "nightlife",
+                    "music culture",
+                    "social plan",
+                    "creative moment"
+                ],
+                "es": [
+                    "tarde",
+                    "escuchar",
+                    "música y memoria",
+                    "vida nocturna",
+                    "cultura musical",
+                    "plan social",
+                    "momento creativo"
+                ],
+                "pt": [
+                    "tarde",
+                    "ouvindo",
+                    "música e memórias",
+                    "vida noturna",
+                    "cultura musical",
+                    "plano social",
+                    "momento criativo"
+                ],
+                "fr": [
+                    "après",
+                    "midi",
+                    "musique et souvenirs",
+                    "vie nocturne",
+                    "culture musicale",
+                    "plan social",
+                    "moment creatif"
+                ],
+                "it": [
+                    "pomeriggio",
+                    "ascoltare",
+                    "musica e ricordi",
+                    "vita notturna",
+                    "cultura musicale",
+                    "piano sociale",
+                    "momento creativo"
+                ]
+            }
         },
         {
             "key": "051",
@@ -5024,7 +7374,54 @@
                     }
                 ]
             },
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "assemble",
+                    "piece",
+                    "practical project",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "creative moment"
+                ],
+                "es": [
+                    "armar",
+                    "algún",
+                    "proyecto práctico",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "momento creativo"
+                ],
+                "pt": [
+                    "montar",
+                    "algum",
+                    "projeto prático",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "momento criativo"
+                ],
+                "fr": [
+                    "monter",
+                    "meuble",
+                    "projet pratique",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "moment creatif"
+                ],
+                "it": [
+                    "montare",
+                    "mobile",
+                    "progetto pratico",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "momento creativo"
+                ]
+            }
         },
         {
             "key": "052",
@@ -5122,7 +7519,54 @@
                     }
                 ]
             },
-            "difficulty": 1
+            "difficulty": 1,
+            "tags": {
+                "en": [
+                    "kite",
+                    "outdoor game",
+                    "creative moment",
+                    "art and design",
+                    "visual culture",
+                    "active plan",
+                    "movement"
+                ],
+                "es": [
+                    "elevar",
+                    "cometa",
+                    "juego al aire libre",
+                    "momento creativo",
+                    "arte y diseno",
+                    "cultura visual",
+                    "plan activo"
+                ],
+                "pt": [
+                    "empinar",
+                    "pipa",
+                    "jogo ao ar livre",
+                    "momento criativo",
+                    "arte e design",
+                    "cultura visual",
+                    "plano ativo"
+                ],
+                "fr": [
+                    "voler",
+                    "cerf",
+                    "jeu en plein air",
+                    "moment creatif",
+                    "art et design",
+                    "culture visuelle",
+                    "plan actif"
+                ],
+                "it": [
+                    "volare",
+                    "aquilone",
+                    "gioco all aperto",
+                    "momento creativo",
+                    "arte e design",
+                    "cultura visiva",
+                    "piano attivo"
+                ]
+            }
         },
         {
             "key": "053",
@@ -5220,7 +7664,54 @@
                     }
                 ]
             },
-            "difficulty": 1
+            "difficulty": 1,
+            "tags": {
+                "en": [
+                    "pillow",
+                    "fight",
+                    "game at home",
+                    "creative moment",
+                    "art and design",
+                    "visual culture",
+                    "romantic plan"
+                ],
+                "es": [
+                    "guerra",
+                    "almohadas",
+                    "juego en casa",
+                    "momento creativo",
+                    "arte y diseno",
+                    "cultura visual",
+                    "plan romantico"
+                ],
+                "pt": [
+                    "guerra",
+                    "travesseiros",
+                    "jogo em casa",
+                    "momento criativo",
+                    "arte e design",
+                    "cultura visual",
+                    "plano romantico"
+                ],
+                "fr": [
+                    "bataille",
+                    "oreillers",
+                    "jeu à la maison",
+                    "moment creatif",
+                    "art et design",
+                    "culture visuelle",
+                    "plan romantique"
+                ],
+                "it": [
+                    "battaglia",
+                    "cuscini",
+                    "gioco in casa",
+                    "momento creativo",
+                    "arte e design",
+                    "cultura visiva",
+                    "piano romantico"
+                ]
+            }
         },
         {
             "key": "054",
@@ -5318,7 +7809,54 @@
                     }
                 ]
             },
-            "difficulty": 1
+            "difficulty": 1,
+            "tags": {
+                "en": [
+                    "have",
+                    "pajama",
+                    "night at home",
+                    "nightlife",
+                    "music culture",
+                    "social plan",
+                    "creative moment"
+                ],
+                "es": [
+                    "pijamada",
+                    "noche en casa",
+                    "vida nocturna",
+                    "cultura musical",
+                    "plan social",
+                    "momento creativo",
+                    "arte y diseno"
+                ],
+                "pt": [
+                    "noite",
+                    "pijama",
+                    "noite em casa",
+                    "vida noturna",
+                    "cultura musical",
+                    "plano social",
+                    "momento criativo"
+                ],
+                "fr": [
+                    "soirée",
+                    "pyjama",
+                    "soirée à la maison",
+                    "vie nocturne",
+                    "culture musicale",
+                    "plan social",
+                    "moment creatif"
+                ],
+                "it": [
+                    "serata",
+                    "pigiama",
+                    "serata a casa",
+                    "vita notturna",
+                    "cultura musicale",
+                    "piano sociale",
+                    "momento creativo"
+                ]
+            }
         },
         {
             "key": "055",
@@ -5416,7 +7954,54 @@
                     }
                 ]
             },
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "stargaze",
+                    "night sky watching",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "nightlife",
+                    "music culture"
+                ],
+                "es": [
+                    "observar",
+                    "estrellas",
+                    "observación nocturna",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "vida nocturna"
+                ],
+                "pt": [
+                    "observar",
+                    "estrelas",
+                    "observação noturna",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "vida noturna"
+                ],
+                "fr": [
+                    "observer",
+                    "étoiles",
+                    "observation nocturne",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "vie nocturne"
+                ],
+                "it": [
+                    "osservare",
+                    "stelle",
+                    "osservazione notturna",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "vita notturna"
+                ]
+            }
         },
         {
             "key": "056",
@@ -5514,7 +8099,54 @@
                     }
                 ]
             },
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "have",
+                    "themed",
+                    "themed date",
+                    "food scene",
+                    "local cuisine",
+                    "culinary plan",
+                    "water plan"
+                ],
+                "es": [
+                    "cita",
+                    "temática",
+                    "cita temática",
+                    "escena gastronomica",
+                    "cocina local",
+                    "plan culinario",
+                    "plan acuatico"
+                ],
+                "pt": [
+                    "encontro",
+                    "temático",
+                    "encontro temático",
+                    "cena gastronomica",
+                    "culinaria local",
+                    "plano culinario",
+                    "plano aquatico"
+                ],
+                "fr": [
+                    "rendez",
+                    "vous",
+                    "rendez vous à thème",
+                    "scene gastronomique",
+                    "cuisine locale",
+                    "plan culinaire",
+                    "plan aquatique"
+                ],
+                "it": [
+                    "appuntamento",
+                    "tema",
+                    "appuntamento a tema",
+                    "scena gastronomica",
+                    "cucina locale",
+                    "piano culinario",
+                    "piano acquatico"
+                ]
+            }
         },
         {
             "key": "057",
@@ -5612,7 +8244,54 @@
                     }
                 ]
             },
-            "difficulty": 1
+            "difficulty": 1,
+            "tags": {
+                "en": [
+                    "walk",
+                    "pets",
+                    "pet walk",
+                    "nature escape",
+                    "outdoor activity",
+                    "scenic route",
+                    "water plan"
+                ],
+                "es": [
+                    "pasear",
+                    "mascotas",
+                    "paseo con mascotas",
+                    "escapada natural",
+                    "actividad al aire libre",
+                    "ruta escenica",
+                    "plan acuatico"
+                ],
+                "pt": [
+                    "passear",
+                    "seus",
+                    "passeio com animais",
+                    "escapada natural",
+                    "atividade ao ar livre",
+                    "rota cenica",
+                    "plano aquatico"
+                ],
+                "fr": [
+                    "promener",
+                    "animaux",
+                    "promenade avec les animaux",
+                    "escapade nature",
+                    "activite en plein air",
+                    "itineraire panoramique",
+                    "plan aquatique"
+                ],
+                "it": [
+                    "portare",
+                    "spasso",
+                    "passeggiata con animali",
+                    "fuga nella natura",
+                    "attivita all aperto",
+                    "percorso panoramico",
+                    "piano acquatico"
+                ]
+            }
         },
         {
             "key": "058",
@@ -5710,7 +8389,54 @@
                     }
                 ]
             },
-            "difficulty": 1
+            "difficulty": 1,
+            "tags": {
+                "en": [
+                    "walk",
+                    "destination",
+                    "spontaneous walk",
+                    "food scene",
+                    "local cuisine",
+                    "culinary plan",
+                    "water plan"
+                ],
+                "es": [
+                    "salir",
+                    "caminar",
+                    "paseo espontáneo",
+                    "escena gastronomica",
+                    "cocina local",
+                    "plan culinario",
+                    "plan acuatico"
+                ],
+                "pt": [
+                    "sair",
+                    "caminhar",
+                    "passeio espontâneo",
+                    "cena gastronomica",
+                    "culinaria local",
+                    "plano culinario",
+                    "plano aquatico"
+                ],
+                "fr": [
+                    "sortir",
+                    "marcher",
+                    "promenade spontanée",
+                    "scene gastronomique",
+                    "cuisine locale",
+                    "plan culinaire",
+                    "plan aquatique"
+                ],
+                "it": [
+                    "uscire",
+                    "camminare",
+                    "passeggiata spontanea",
+                    "scena gastronomica",
+                    "cucina locale",
+                    "piano culinario",
+                    "piano acquatico"
+                ]
+            }
         },
         {
             "key": "059",
@@ -5808,7 +8534,54 @@
                     }
                 ]
             },
-            "difficulty": 3
+            "difficulty": 3,
+            "tags": {
+                "en": [
+                    "bonfire",
+                    "fireside night",
+                    "food scene",
+                    "local cuisine",
+                    "culinary plan",
+                    "history",
+                    "cultural heritage"
+                ],
+                "es": [
+                    "fogata",
+                    "noche alrededor del fuego",
+                    "escena gastronomica",
+                    "cocina local",
+                    "plan culinario",
+                    "historia",
+                    "patrimonio cultural"
+                ],
+                "pt": [
+                    "fogueira",
+                    "noite ao redor do fogo",
+                    "cena gastronomica",
+                    "culinaria local",
+                    "plano culinario",
+                    "historia",
+                    "patrimonio cultural"
+                ],
+                "fr": [
+                    "camp",
+                    "soirée autour du feu",
+                    "scene gastronomique",
+                    "cuisine locale",
+                    "plan culinaire",
+                    "histoire",
+                    "patrimoine culturel"
+                ],
+                "it": [
+                    "falò",
+                    "serata attorno al fuoco",
+                    "scena gastronomica",
+                    "cucina locale",
+                    "piano culinario",
+                    "storia",
+                    "patrimonio culturale"
+                ]
+            }
         },
         {
             "key": "060",
@@ -5906,7 +8679,54 @@
                     }
                 ]
             },
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "have",
+                    "photo",
+                    "creative photo session",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "creative moment"
+                ],
+                "es": [
+                    "sesión",
+                    "fotos",
+                    "sesión creativa",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "momento creativo"
+                ],
+                "pt": [
+                    "sessão",
+                    "fotos",
+                    "sessão criativa",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "momento criativo"
+                ],
+                "fr": [
+                    "séance",
+                    "photo",
+                    "séance créative",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "moment creatif"
+                ],
+                "it": [
+                    "servizio",
+                    "fotografico",
+                    "sessione creativa",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "momento creativo"
+                ]
+            }
         },
         {
             "key": "061",
@@ -6004,7 +8824,54 @@
                     }
                 ]
             },
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "crafts",
+                    "couple crafts",
+                    "creative moment",
+                    "art and design",
+                    "visual culture",
+                    "romantic plan",
+                    "shared moments"
+                ],
+                "es": [
+                    "manualidades",
+                    "manualidades en pareja",
+                    "momento creativo",
+                    "arte y diseno",
+                    "cultura visual",
+                    "plan romantico",
+                    "momentos compartidos"
+                ],
+                "pt": [
+                    "artesanato",
+                    "artesanato em casal",
+                    "momento criativo",
+                    "arte e design",
+                    "cultura visual",
+                    "plano romantico",
+                    "momentos compartilhados"
+                ],
+                "fr": [
+                    "activités",
+                    "manuelles",
+                    "travaux manuels en couple",
+                    "moment creatif",
+                    "art et design",
+                    "culture visuelle",
+                    "plan romantique"
+                ],
+                "it": [
+                    "lavoretti",
+                    "creativi",
+                    "lavoretti di coppia",
+                    "momento creativo",
+                    "arte e design",
+                    "cultura visiva",
+                    "piano romantico"
+                ]
+            }
         },
         {
             "key": "062",
@@ -6102,7 +8969,54 @@
                     }
                 ]
             },
-            "difficulty": 1
+            "difficulty": 1,
+            "tags": {
+                "en": [
+                    "board",
+                    "games",
+                    "board games",
+                    "creative moment",
+                    "art and design",
+                    "visual culture",
+                    "local shopping"
+                ],
+                "es": [
+                    "jugar",
+                    "juegos",
+                    "juegos de mesa",
+                    "momento creativo",
+                    "arte y diseno",
+                    "cultura visual",
+                    "compras locales"
+                ],
+                "pt": [
+                    "jogar",
+                    "jogos",
+                    "jogos de tabuleiro",
+                    "momento criativo",
+                    "arte e design",
+                    "cultura visual",
+                    "compras locais"
+                ],
+                "fr": [
+                    "jouer",
+                    "jeux",
+                    "jeux de société",
+                    "moment creatif",
+                    "art et design",
+                    "culture visuelle",
+                    "shopping local"
+                ],
+                "it": [
+                    "giocare",
+                    "giochi",
+                    "giochi da tavolo",
+                    "momento creativo",
+                    "arte e design",
+                    "cultura visiva",
+                    "acquisti locali"
+                ]
+            }
         },
         {
             "key": "063",
@@ -6200,7 +9114,54 @@
                     }
                 ]
             },
-            "difficulty": 1
+            "difficulty": 1,
+            "tags": {
+                "en": [
+                    "write",
+                    "wish",
+                    "symbolic ritual",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "creative moment"
+                ],
+                "es": [
+                    "escribir",
+                    "deseo",
+                    "ritual simbólico",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "momento creativo"
+                ],
+                "pt": [
+                    "escrever",
+                    "desejo",
+                    "ritual simbólico",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "momento criativo"
+                ],
+                "fr": [
+                    "écrire",
+                    "ballon",
+                    "rituel symbolique",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "moment creatif"
+                ],
+                "it": [
+                    "scrivere",
+                    "desiderio",
+                    "rituale simbolico",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "momento creativo"
+                ]
+            }
         },
         {
             "key": "064",
@@ -6298,7 +9259,54 @@
                     }
                 ]
             },
-            "difficulty": 1
+            "difficulty": 1,
+            "tags": {
+                "en": [
+                    "childhood",
+                    "candy",
+                    "childhood memory",
+                    "history",
+                    "cultural heritage",
+                    "architecture",
+                    "creative moment"
+                ],
+                "es": [
+                    "comer",
+                    "dulce",
+                    "recuerdo de infancia",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitectura",
+                    "momento creativo"
+                ],
+                "pt": [
+                    "comer",
+                    "doce",
+                    "memória de infância",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitetura",
+                    "momento criativo"
+                ],
+                "fr": [
+                    "manger",
+                    "friandise",
+                    "souvenir d enfance",
+                    "histoire",
+                    "patrimoine culturel",
+                    "architecture",
+                    "moment creatif"
+                ],
+                "it": [
+                    "mangiare",
+                    "dolce",
+                    "ricordo d infanzia",
+                    "storia",
+                    "patrimonio culturale",
+                    "architettura",
+                    "momento creativo"
+                ]
+            }
         },
         {
             "key": "065",
@@ -6396,7 +9404,54 @@
                     }
                 ]
             },
-            "difficulty": 1
+            "difficulty": 1,
+            "tags": {
+                "en": [
+                    "order",
+                    "pizza",
+                    "pizza night",
+                    "food scene",
+                    "local cuisine",
+                    "culinary plan",
+                    "creative moment"
+                ],
+                "es": [
+                    "pedir",
+                    "pizza",
+                    "noche de pizza",
+                    "escena gastronomica",
+                    "cocina local",
+                    "plan culinario",
+                    "momento creativo"
+                ],
+                "pt": [
+                    "pedir",
+                    "pizza",
+                    "noite de pizza",
+                    "cena gastronomica",
+                    "culinaria local",
+                    "plano culinario",
+                    "momento criativo"
+                ],
+                "fr": [
+                    "commander",
+                    "pizza",
+                    "soirée pizza",
+                    "scene gastronomique",
+                    "cuisine locale",
+                    "plan culinaire",
+                    "moment creatif"
+                ],
+                "it": [
+                    "ordinare",
+                    "pizza",
+                    "serata pizza",
+                    "scena gastronomica",
+                    "cucina locale",
+                    "piano culinario",
+                    "momento creativo"
+                ]
+            }
         },
         {
             "key": "066",
@@ -6494,7 +9549,54 @@
                     }
                 ]
             },
-            "difficulty": 1
+            "difficulty": 1,
+            "tags": {
+                "en": [
+                    "buffet",
+                    "buffet experience",
+                    "food scene",
+                    "local cuisine",
+                    "culinary plan",
+                    "nightlife",
+                    "music culture"
+                ],
+                "es": [
+                    "buffet",
+                    "experiencia gastronómica abundante",
+                    "escena gastronomica",
+                    "cocina local",
+                    "plan culinario",
+                    "vida nocturna",
+                    "cultura musical"
+                ],
+                "pt": [
+                    "buffet",
+                    "experiência de buffet",
+                    "cena gastronomica",
+                    "culinaria local",
+                    "plano culinario",
+                    "vida noturna",
+                    "cultura musical"
+                ],
+                "fr": [
+                    "buffet",
+                    "expérience buffet",
+                    "scene gastronomique",
+                    "cuisine locale",
+                    "plan culinaire",
+                    "vie nocturne",
+                    "culture musicale"
+                ],
+                "it": [
+                    "buffet",
+                    "esperienza buffet",
+                    "scena gastronomica",
+                    "cucina locale",
+                    "piano culinario",
+                    "vita notturna",
+                    "cultura musicale"
+                ]
+            }
         },
         {
             "key": "067",
@@ -6592,7 +9694,54 @@
                     }
                 ]
             },
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "save",
+                    "shared",
+                    "shared savings goal",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "creative moment"
+                ],
+                "es": [
+                    "ahorrar",
+                    "plan",
+                    "meta financiera compartida",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "momento creativo"
+                ],
+                "pt": [
+                    "economizar",
+                    "plano",
+                    "meta financeira compartilhada",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "momento criativo"
+                ],
+                "fr": [
+                    "économiser",
+                    "projet",
+                    "objectif financier commun",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "moment creatif"
+                ],
+                "it": [
+                    "risparmiare",
+                    "progetto",
+                    "obiettivo finanziario condiviso",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "momento creativo"
+                ]
+            }
         },
         {
             "key": "068",
@@ -6690,7 +9839,54 @@
                     }
                 ]
             },
-            "difficulty": 1
+            "difficulty": 1,
+            "tags": {
+                "en": [
+                    "admire",
+                    "full",
+                    "full moon night",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "creative moment"
+                ],
+                "es": [
+                    "apreciar",
+                    "luna",
+                    "noche lunar",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "momento creativo"
+                ],
+                "pt": [
+                    "apreciar",
+                    "cheia",
+                    "noite de lua cheia",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "momento criativo"
+                ],
+                "fr": [
+                    "admirer",
+                    "pleine",
+                    "nuit de pleine lune",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "moment creatif"
+                ],
+                "it": [
+                    "ammirare",
+                    "luna",
+                    "notte di luna piena",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "momento creativo"
+                ]
+            }
         },
         {
             "key": "069",
@@ -6788,7 +9984,54 @@
                     }
                 ]
             },
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "write",
+                    "letters",
+                    "romantic letter",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "creative moment"
+                ],
+                "es": [
+                    "escribirse",
+                    "carta",
+                    "carta romántica",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "momento creativo"
+                ],
+                "pt": [
+                    "escrever",
+                    "cartas",
+                    "carta romântica",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "momento criativo"
+                ],
+                "fr": [
+                    "écrire",
+                    "lettre",
+                    "lettre romantique",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "moment creatif"
+                ],
+                "it": [
+                    "scriversi",
+                    "lettera",
+                    "lettera romantica",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "momento creativo"
+                ]
+            }
         },
         {
             "key": "070",
@@ -6886,7 +10129,54 @@
                     }
                 ]
             },
-            "difficulty": 1
+            "difficulty": 1,
+            "tags": {
+                "en": [
+                    "bracelet",
+                    "each",
+                    "handmade gift",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "creative moment"
+                ],
+                "es": [
+                    "pulsera",
+                    "otro",
+                    "detalle hecho a mano",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "momento creativo"
+                ],
+                "pt": [
+                    "pulseira",
+                    "outro",
+                    "detalhe feito à mão",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "momento criativo"
+                ],
+                "fr": [
+                    "bracelet",
+                    "autre",
+                    "cadeau fait main",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "moment creatif"
+                ],
+                "it": [
+                    "braccialetto",
+                    "altro",
+                    "dettaglio fatto a mano",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "momento creativo"
+                ]
+            }
         },
         {
             "key": "071",
@@ -6984,7 +10274,54 @@
                     }
                 ]
             },
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "small",
+                    "town",
+                    "small town getaway",
+                    "food scene",
+                    "local cuisine",
+                    "culinary plan",
+                    "history"
+                ],
+                "es": [
+                    "visitar",
+                    "pueblito",
+                    "escapada de pueblo",
+                    "escena gastronomica",
+                    "cocina local",
+                    "plan culinario",
+                    "historia"
+                ],
+                "pt": [
+                    "visitar",
+                    "cidadezinha",
+                    "escapada para uma vila",
+                    "cena gastronomica",
+                    "culinaria local",
+                    "plano culinario",
+                    "historia"
+                ],
+                "fr": [
+                    "visiter",
+                    "petit",
+                    "escapade dans un village",
+                    "scene gastronomique",
+                    "cuisine locale",
+                    "plan culinaire",
+                    "histoire"
+                ],
+                "it": [
+                    "visitare",
+                    "paesino",
+                    "gita in un paesino",
+                    "scena gastronomica",
+                    "cucina locale",
+                    "piano culinario",
+                    "storia"
+                ]
+            }
         },
         {
             "key": "072",
@@ -7082,7 +10419,54 @@
                     }
                 ]
             },
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "couple relaxation",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "creative moment",
+                    "art and design",
+                    "visual culture"
+                ],
+                "es": [
+                    "relajación en pareja",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "momento creativo",
+                    "arte y diseno",
+                    "cultura visual"
+                ],
+                "pt": [
+                    "relaxamento em casal",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "momento criativo",
+                    "arte e design",
+                    "cultura visual"
+                ],
+                "fr": [
+                    "relaxation en couple",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "moment creatif",
+                    "art et design",
+                    "culture visuelle"
+                ],
+                "it": [
+                    "relax di coppia",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "momento creativo",
+                    "arte e design",
+                    "cultura visiva"
+                ]
+            }
         },
         {
             "key": "073",
@@ -7180,7 +10564,54 @@
                     }
                 ]
             },
-            "difficulty": 1
+            "difficulty": 1,
+            "tags": {
+                "en": [
+                    "have",
+                    "dinner",
+                    "family dinner",
+                    "food scene",
+                    "local cuisine",
+                    "culinary plan",
+                    "history"
+                ],
+                "es": [
+                    "cenar",
+                    "familia",
+                    "encuentro familiar",
+                    "escena gastronomica",
+                    "cocina local",
+                    "plan culinario",
+                    "historia"
+                ],
+                "pt": [
+                    "jantar",
+                    "família",
+                    "jantar em família",
+                    "cena gastronomica",
+                    "culinaria local",
+                    "plano culinario",
+                    "historia"
+                ],
+                "fr": [
+                    "dîner",
+                    "famille",
+                    "dîner en famille",
+                    "scene gastronomique",
+                    "cuisine locale",
+                    "plan culinaire",
+                    "histoire"
+                ],
+                "it": [
+                    "cenare",
+                    "famiglia",
+                    "cena in famiglia",
+                    "scena gastronomica",
+                    "cucina locale",
+                    "piano culinario",
+                    "storia"
+                ]
+            }
         },
         {
             "key": "074",
@@ -7278,7 +10709,54 @@
                     }
                 ]
             },
-            "difficulty": 1
+            "difficulty": 1,
+            "tags": {
+                "en": [
+                    "burgers",
+                    "casual meal",
+                    "nature escape",
+                    "outdoor activity",
+                    "scenic route",
+                    "water plan",
+                    "coastal vibe"
+                ],
+                "es": [
+                    "hamburguesas",
+                    "comida casual",
+                    "escapada natural",
+                    "actividad al aire libre",
+                    "ruta escenica",
+                    "plan acuatico",
+                    "ambiente costero"
+                ],
+                "pt": [
+                    "sair",
+                    "comer",
+                    "refeição casual",
+                    "escapada natural",
+                    "atividade ao ar livre",
+                    "rota cenica",
+                    "plano aquatico"
+                ],
+                "fr": [
+                    "manger",
+                    "burgers",
+                    "repas décontracté",
+                    "escapade nature",
+                    "activite en plein air",
+                    "itineraire panoramique",
+                    "plan aquatique"
+                ],
+                "it": [
+                    "mangiare",
+                    "hamburger",
+                    "pasto informale",
+                    "fuga nella natura",
+                    "attivita all aperto",
+                    "percorso panoramico",
+                    "piano acquatico"
+                ]
+            }
         },
         {
             "key": "075",
@@ -7376,7 +10854,54 @@
                     }
                 ]
             },
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "family",
+                    "outing",
+                    "family outing",
+                    "food scene",
+                    "local cuisine",
+                    "culinary plan",
+                    "creative moment"
+                ],
+                "es": [
+                    "paseo",
+                    "familiar",
+                    "salida familiar",
+                    "escena gastronomica",
+                    "cocina local",
+                    "plan culinario",
+                    "momento creativo"
+                ],
+                "pt": [
+                    "passeio",
+                    "família",
+                    "passeio familiar",
+                    "cena gastronomica",
+                    "culinaria local",
+                    "plano culinario",
+                    "momento criativo"
+                ],
+                "fr": [
+                    "sortie",
+                    "famille",
+                    "sortie en famille",
+                    "scene gastronomique",
+                    "cuisine locale",
+                    "plan culinaire",
+                    "moment creatif"
+                ],
+                "it": [
+                    "gita",
+                    "famiglia",
+                    "uscita in famiglia",
+                    "scena gastronomica",
+                    "cucina locale",
+                    "piano culinario",
+                    "momento creativo"
+                ]
+            }
         },
         {
             "key": "076",
@@ -7474,7 +10999,54 @@
                     }
                 ]
             },
-            "difficulty": 5
+            "difficulty": 5,
+            "tags": {
+                "en": [
+                    "another",
+                    "international trip",
+                    "food scene",
+                    "local cuisine",
+                    "culinary plan",
+                    "nightlife",
+                    "music culture"
+                ],
+                "es": [
+                    "viajar",
+                    "otro",
+                    "viaje internacional",
+                    "escena gastronomica",
+                    "cocina local",
+                    "plan culinario",
+                    "vida nocturna"
+                ],
+                "pt": [
+                    "viajar",
+                    "outro",
+                    "viagem internacional",
+                    "cena gastronomica",
+                    "culinaria local",
+                    "plano culinario",
+                    "vida noturna"
+                ],
+                "fr": [
+                    "voyager",
+                    "dans",
+                    "voyage international",
+                    "scene gastronomique",
+                    "cuisine locale",
+                    "plan culinaire",
+                    "vie nocturne"
+                ],
+                "it": [
+                    "viaggiare",
+                    "altro",
+                    "viaggio internazionale",
+                    "scena gastronomica",
+                    "cucina locale",
+                    "piano culinario",
+                    "vita notturna"
+                ]
+            }
         },
         {
             "key": "077",
@@ -7572,7 +11144,54 @@
                     }
                 ]
             },
-            "difficulty": 1
+            "difficulty": 1,
+            "tags": {
+                "en": [
+                    "group",
+                    "friends",
+                    "plan with friends",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "nightlife"
+                ],
+                "es": [
+                    "salir",
+                    "grupo",
+                    "plan con amigos",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "vida nocturna"
+                ],
+                "pt": [
+                    "sair",
+                    "grupo",
+                    "plano com amigos",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "vida noturna"
+                ],
+                "fr": [
+                    "sortir",
+                    "groupe",
+                    "sortie entre amis",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "vie nocturne"
+                ],
+                "it": [
+                    "uscire",
+                    "gruppo",
+                    "piano con amici",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "vita notturna"
+                ]
+            }
         },
         {
             "key": "078",
@@ -7670,7 +11289,54 @@
                     }
                 ]
             },
-            "difficulty": 1
+            "difficulty": 1,
+            "tags": {
+                "en": [
+                    "pancakes",
+                    "homemade breakfast",
+                    "food scene",
+                    "local cuisine",
+                    "culinary plan",
+                    "creative moment",
+                    "art and design"
+                ],
+                "es": [
+                    "preparar",
+                    "panqueques",
+                    "desayuno casero",
+                    "escena gastronomica",
+                    "cocina local",
+                    "plan culinario",
+                    "momento creativo"
+                ],
+                "pt": [
+                    "preparar",
+                    "panquecas",
+                    "café da manhã caseiro",
+                    "cena gastronomica",
+                    "culinaria local",
+                    "plano culinario",
+                    "momento criativo"
+                ],
+                "fr": [
+                    "préparer",
+                    "pancakes",
+                    "petit déjeuner maison",
+                    "scene gastronomique",
+                    "cuisine locale",
+                    "plan culinaire",
+                    "moment creatif"
+                ],
+                "it": [
+                    "preparare",
+                    "pancake",
+                    "colazione fatta in casa",
+                    "scena gastronomica",
+                    "cucina locale",
+                    "piano culinario",
+                    "momento creativo"
+                ]
+            }
         },
         {
             "key": "079",
@@ -7768,7 +11434,54 @@
                     }
                 ]
             },
-            "difficulty": 1
+            "difficulty": 1,
+            "tags": {
+                "en": [
+                    "tacos",
+                    "mexican dinner",
+                    "food scene",
+                    "local cuisine",
+                    "culinary plan",
+                    "nightlife",
+                    "music culture"
+                ],
+                "es": [
+                    "cenar",
+                    "tacos",
+                    "cena mexicana",
+                    "escena gastronomica",
+                    "cocina local",
+                    "plan culinario",
+                    "vida nocturna"
+                ],
+                "pt": [
+                    "sair",
+                    "comer",
+                    "jantar mexicano",
+                    "cena gastronomica",
+                    "culinaria local",
+                    "plano culinario",
+                    "vida noturna"
+                ],
+                "fr": [
+                    "manger",
+                    "tacos",
+                    "dîner mexicain",
+                    "scene gastronomique",
+                    "cuisine locale",
+                    "plan culinaire",
+                    "vie nocturne"
+                ],
+                "it": [
+                    "mangiare",
+                    "tacos",
+                    "cena messicana",
+                    "scena gastronomica",
+                    "cucina locale",
+                    "piano culinario",
+                    "vita notturna"
+                ]
+            }
         },
         {
             "key": "080",
@@ -7866,7 +11579,54 @@
                     }
                 ]
             },
-            "difficulty": 3
+            "difficulty": 3,
+            "tags": {
+                "en": [
+                    "amusement",
+                    "park",
+                    "theme park fun",
+                    "nature escape",
+                    "outdoor activity",
+                    "scenic route",
+                    "water plan"
+                ],
+                "es": [
+                    "parque",
+                    "diversiones",
+                    "diversión extrema",
+                    "escapada natural",
+                    "actividad al aire libre",
+                    "ruta escenica",
+                    "plan acuatico"
+                ],
+                "pt": [
+                    "parque",
+                    "diversões",
+                    "diversão no parque",
+                    "escapada natural",
+                    "atividade ao ar livre",
+                    "rota cenica",
+                    "plano aquatico"
+                ],
+                "fr": [
+                    "dans",
+                    "parc",
+                    "parc d attractions",
+                    "escapade nature",
+                    "activite en plein air",
+                    "itineraire panoramique",
+                    "plan aquatique"
+                ],
+                "it": [
+                    "parco",
+                    "divertimenti",
+                    "divertimento al luna park",
+                    "fuga nella natura",
+                    "attivita all aperto",
+                    "percorso panoramico",
+                    "piano acquatico"
+                ]
+            }
         },
         {
             "key": "081",
@@ -7964,7 +11724,54 @@
                     }
                 ]
             },
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "casino",
+                    "casino night",
+                    "nightlife",
+                    "music culture",
+                    "social plan",
+                    "creative moment",
+                    "art and design"
+                ],
+                "es": [
+                    "casino",
+                    "noche de azar",
+                    "vida nocturna",
+                    "cultura musical",
+                    "plan social",
+                    "momento creativo",
+                    "arte y diseno"
+                ],
+                "pt": [
+                    "cassino",
+                    "noite de cassino",
+                    "vida noturna",
+                    "cultura musical",
+                    "plano social",
+                    "momento criativo",
+                    "arte e design"
+                ],
+                "fr": [
+                    "casino",
+                    "soirée casino",
+                    "vie nocturne",
+                    "culture musicale",
+                    "plan social",
+                    "moment creatif",
+                    "art et design"
+                ],
+                "it": [
+                    "casinò",
+                    "serata al casinò",
+                    "vita notturna",
+                    "cultura musicale",
+                    "piano sociale",
+                    "momento creativo",
+                    "arte e design"
+                ]
+            }
         },
         {
             "key": "082",
@@ -8062,7 +11869,54 @@
                     }
                 ]
             },
-            "difficulty": 1
+            "difficulty": 1,
+            "tags": {
+                "en": [
+                    "plush",
+                    "machine",
+                    "playful challenge",
+                    "creative moment",
+                    "art and design",
+                    "visual culture",
+                    "romantic plan"
+                ],
+                "es": [
+                    "sacar",
+                    "peluche",
+                    "reto divertido",
+                    "momento creativo",
+                    "arte y diseno",
+                    "cultura visual",
+                    "plan romantico"
+                ],
+                "pt": [
+                    "pegar",
+                    "pelúcia",
+                    "desafio divertido",
+                    "momento criativo",
+                    "arte e design",
+                    "cultura visual",
+                    "plano romantico"
+                ],
+                "fr": [
+                    "gagner",
+                    "peluche",
+                    "défi amusant",
+                    "moment creatif",
+                    "art et design",
+                    "culture visuelle",
+                    "plan romantique"
+                ],
+                "it": [
+                    "prendere",
+                    "peluche",
+                    "sfida divertente",
+                    "momento creativo",
+                    "arte e design",
+                    "cultura visiva",
+                    "piano romantico"
+                ]
+            }
         },
         {
             "key": "083",
@@ -8160,7 +12014,54 @@
                     }
                 ]
             },
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "family",
+                    "tree",
+                    "family history",
+                    "history",
+                    "cultural heritage",
+                    "architecture",
+                    "creative moment"
+                ],
+                "es": [
+                    "árbol",
+                    "genealógico",
+                    "historia familiar",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitectura",
+                    "momento creativo"
+                ],
+                "pt": [
+                    "árvore",
+                    "genealógica",
+                    "história familiar",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitetura",
+                    "momento criativo"
+                ],
+                "fr": [
+                    "arbre",
+                    "généalogique",
+                    "histoire familiale",
+                    "histoire",
+                    "patrimoine culturel",
+                    "architecture",
+                    "moment creatif"
+                ],
+                "it": [
+                    "creare",
+                    "albero",
+                    "storia familiare",
+                    "storia",
+                    "patrimonio culturale",
+                    "architettura",
+                    "momento creativo"
+                ]
+            }
         },
         {
             "key": "084",
@@ -8258,7 +12159,54 @@
                     }
                 ]
             },
-            "difficulty": 3
+            "difficulty": 3,
+            "tags": {
+                "en": [
+                    "total",
+                    "disconnection",
+                    "conscious disconnection",
+                    "food scene",
+                    "local cuisine",
+                    "culinary plan",
+                    "water plan"
+                ],
+                "es": [
+                    "desconexión",
+                    "total",
+                    "desconexión consciente",
+                    "escena gastronomica",
+                    "cocina local",
+                    "plan culinario",
+                    "plan acuatico"
+                ],
+                "pt": [
+                    "desconexão",
+                    "total",
+                    "desconexão consciente",
+                    "cena gastronomica",
+                    "culinaria local",
+                    "plano culinario",
+                    "plano aquatico"
+                ],
+                "fr": [
+                    "journée",
+                    "déconnexion",
+                    "déconnexion consciente",
+                    "scene gastronomique",
+                    "cuisine locale",
+                    "plan culinaire",
+                    "plan aquatique"
+                ],
+                "it": [
+                    "giornata",
+                    "disconnessione",
+                    "disconnessione consapevole",
+                    "scena gastronomica",
+                    "cucina locale",
+                    "piano culinario",
+                    "piano acquatico"
+                ]
+            }
         },
         {
             "key": "085",
@@ -8356,7 +12304,54 @@
                     }
                 ]
             },
-            "difficulty": 1
+            "difficulty": 1,
+            "tags": {
+                "en": [
+                    "water",
+                    "fight",
+                    "water game",
+                    "creative moment",
+                    "art and design",
+                    "visual culture",
+                    "romantic plan"
+                ],
+                "es": [
+                    "guerra",
+                    "agua",
+                    "juego con agua",
+                    "momento creativo",
+                    "arte y diseno",
+                    "cultura visual",
+                    "plan romantico"
+                ],
+                "pt": [
+                    "guerra",
+                    "água",
+                    "brincadeira com água",
+                    "momento criativo",
+                    "arte e design",
+                    "cultura visual",
+                    "plano romantico"
+                ],
+                "fr": [
+                    "bataille",
+                    "jeu d eau",
+                    "moment creatif",
+                    "art et design",
+                    "culture visuelle",
+                    "plan romantique",
+                    "moments partages"
+                ],
+                "it": [
+                    "guerra",
+                    "acqua",
+                    "gioco con l acqua",
+                    "momento creativo",
+                    "arte e design",
+                    "cultura visiva",
+                    "piano romantico"
+                ]
+            }
         },
         {
             "key": "086",
@@ -8454,7 +12449,54 @@
                     }
                 ]
             },
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "train",
+                    "ride",
+                    "scenic train ride",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "creative moment"
+                ],
+                "es": [
+                    "paseo",
+                    "tren",
+                    "viaje escénico",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "momento creativo"
+                ],
+                "pt": [
+                    "passeio",
+                    "trem",
+                    "viagem cênica",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "momento criativo"
+                ],
+                "fr": [
+                    "balade",
+                    "train",
+                    "trajet panoramique",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "moment creatif"
+                ],
+                "it": [
+                    "giro",
+                    "treno",
+                    "viaggio panoramico",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "momento creativo"
+                ]
+            }
         },
         {
             "key": "087",
@@ -8552,7 +12594,54 @@
                     }
                 ]
             },
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "talk",
+                    "about",
+                    "emotional appreciation",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "creative moment"
+                ],
+                "es": [
+                    "hablar",
+                    "gusta",
+                    "apreciación emocional",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "momento creativo"
+                ],
+                "pt": [
+                    "falar",
+                    "sobre",
+                    "apreciação emocional",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "momento criativo"
+                ],
+                "fr": [
+                    "parler",
+                    "vous",
+                    "appréciation émotionnelle",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "moment creatif"
+                ],
+                "it": [
+                    "parlare",
+                    "amate",
+                    "apprezzamento emotivo",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "momento creativo"
+                ]
+            }
         },
         {
             "key": "088",
@@ -8650,7 +12739,54 @@
                     }
                 ]
             },
-            "difficulty": 1
+            "difficulty": 1,
+            "tags": {
+                "en": [
+                    "theater",
+                    "live theater",
+                    "history",
+                    "cultural heritage",
+                    "architecture",
+                    "creative moment",
+                    "art and design"
+                ],
+                "es": [
+                    "obra",
+                    "teatro",
+                    "teatro en vivo",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitectura",
+                    "momento creativo"
+                ],
+                "pt": [
+                    "assistir",
+                    "peça",
+                    "teatro ao vivo",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitetura",
+                    "momento criativo"
+                ],
+                "fr": [
+                    "voir",
+                    "pièce",
+                    "théâtre en direct",
+                    "histoire",
+                    "patrimoine culturel",
+                    "architecture",
+                    "moment creatif"
+                ],
+                "it": [
+                    "vedere",
+                    "spettacolo",
+                    "teatro dal vivo",
+                    "storia",
+                    "patrimonio culturale",
+                    "architettura",
+                    "momento creativo"
+                ]
+            }
         },
         {
             "key": "089",
@@ -8748,7 +12884,54 @@
                     }
                 ]
             },
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "karting",
+                    "fun competition",
+                    "creative moment",
+                    "art and design",
+                    "visual culture",
+                    "romantic plan",
+                    "shared moments"
+                ],
+                "es": [
+                    "kart",
+                    "competencia divertida",
+                    "momento creativo",
+                    "arte y diseno",
+                    "cultura visual",
+                    "plan romantico",
+                    "momentos compartidos"
+                ],
+                "pt": [
+                    "kart",
+                    "competição divertida",
+                    "momento criativo",
+                    "arte e design",
+                    "cultura visual",
+                    "plano romantico",
+                    "momentos compartilhados"
+                ],
+                "fr": [
+                    "karting",
+                    "compétition amusante",
+                    "moment creatif",
+                    "art et design",
+                    "culture visuelle",
+                    "plan romantique",
+                    "moments partages"
+                ],
+                "it": [
+                    "kart",
+                    "competizione divertente",
+                    "momento creativo",
+                    "arte e design",
+                    "cultura visiva",
+                    "piano romantico",
+                    "momenti condivisi"
+                ]
+            }
         },
         {
             "key": "090",
@@ -8846,7 +13029,54 @@
                     }
                 ]
             },
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "sports",
+                    "event",
+                    "sports event",
+                    "creative moment",
+                    "art and design",
+                    "visual culture",
+                    "active plan"
+                ],
+                "es": [
+                    "evento",
+                    "deportivo",
+                    "evento deportivo",
+                    "momento creativo",
+                    "arte y diseno",
+                    "cultura visual",
+                    "plan activo"
+                ],
+                "pt": [
+                    "evento",
+                    "esportivo",
+                    "evento esportivo",
+                    "momento criativo",
+                    "arte e design",
+                    "cultura visual",
+                    "plano ativo"
+                ],
+                "fr": [
+                    "événement",
+                    "sportif",
+                    "événement sportif",
+                    "moment creatif",
+                    "art et design",
+                    "culture visuelle",
+                    "plan actif"
+                ],
+                "it": [
+                    "evento",
+                    "sportivo",
+                    "evento sportivo",
+                    "momento creativo",
+                    "arte e design",
+                    "cultura visiva",
+                    "piano attivo"
+                ]
+            }
         },
         {
             "key": "091",
@@ -8944,7 +13174,54 @@
                     }
                 ]
             },
-            "difficulty": 3
+            "difficulty": 3,
+            "tags": {
+                "en": [
+                    "stay",
+                    "airbnb",
+                    "private getaway",
+                    "food scene",
+                    "local cuisine",
+                    "culinary plan",
+                    "nature escape"
+                ],
+                "es": [
+                    "irse",
+                    "airbnb",
+                    "escapada privada",
+                    "escena gastronomica",
+                    "cocina local",
+                    "plan culinario",
+                    "escapada natural"
+                ],
+                "pt": [
+                    "ficar",
+                    "airbnb",
+                    "escapada privada",
+                    "cena gastronomica",
+                    "culinaria local",
+                    "plano culinario",
+                    "escapada natural"
+                ],
+                "fr": [
+                    "séjourner",
+                    "dans",
+                    "escapade privée",
+                    "scene gastronomique",
+                    "cuisine locale",
+                    "plan culinaire",
+                    "escapade nature"
+                ],
+                "it": [
+                    "soggiornare",
+                    "airbnb",
+                    "fuga privata",
+                    "scena gastronomica",
+                    "cucina locale",
+                    "piano culinario",
+                    "fuga nella natura"
+                ]
+            }
         },
         {
             "key": "092",
@@ -9042,7 +13319,54 @@
                     }
                 ]
             },
-            "difficulty": 1
+            "difficulty": 1,
+            "tags": {
+                "en": [
+                    "candlelight",
+                    "evening",
+                    "intimate night",
+                    "food scene",
+                    "local cuisine",
+                    "culinary plan",
+                    "nightlife"
+                ],
+                "es": [
+                    "velada",
+                    "noche íntima",
+                    "escena gastronomica",
+                    "cocina local",
+                    "plan culinario",
+                    "vida nocturna",
+                    "cultura musical"
+                ],
+                "pt": [
+                    "noite",
+                    "noite íntima",
+                    "cena gastronomica",
+                    "culinaria local",
+                    "plano culinario",
+                    "vida noturna",
+                    "cultura musical"
+                ],
+                "fr": [
+                    "soirée",
+                    "sans",
+                    "soirée intime",
+                    "scene gastronomique",
+                    "cuisine locale",
+                    "plan culinaire",
+                    "vie nocturne"
+                ],
+                "it": [
+                    "serata",
+                    "senza",
+                    "serata intima",
+                    "scena gastronomica",
+                    "cucina locale",
+                    "piano culinario",
+                    "vita notturna"
+                ]
+            }
         },
         {
             "key": "093",
@@ -9140,7 +13464,54 @@
                     }
                 ]
             },
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "something",
+                    "new experience",
+                    "nightlife",
+                    "music culture",
+                    "social plan",
+                    "creative moment",
+                    "art and design"
+                ],
+                "es": [
+                    "probar",
+                    "algo",
+                    "experiencia nueva",
+                    "vida nocturna",
+                    "cultura musical",
+                    "plan social",
+                    "momento creativo"
+                ],
+                "pt": [
+                    "experimentar",
+                    "algo",
+                    "experiência nova",
+                    "vida noturna",
+                    "cultura musical",
+                    "plano social",
+                    "momento criativo"
+                ],
+                "fr": [
+                    "essayer",
+                    "quelque",
+                    "nouvelle expérience",
+                    "vie nocturne",
+                    "culture musicale",
+                    "plan social",
+                    "moment creatif"
+                ],
+                "it": [
+                    "provare",
+                    "qualcosa",
+                    "nuova esperienza",
+                    "vita notturna",
+                    "cultura musicale",
+                    "piano sociale",
+                    "momento creativo"
+                ]
+            }
         },
         {
             "key": "094",
@@ -9238,7 +13609,54 @@
                     }
                 ]
             },
-            "difficulty": 3
+            "difficulty": 3,
+            "tags": {
+                "en": [
+                    "each",
+                    "other",
+                    "meaningful gesture",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "creative moment"
+                ],
+                "es": [
+                    "cumplir",
+                    "sueño",
+                    "gesto significativo",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "momento creativo"
+                ],
+                "pt": [
+                    "realizar",
+                    "sonho",
+                    "gesto significativo",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "momento criativo"
+                ],
+                "fr": [
+                    "réaliser",
+                    "rêve",
+                    "geste significatif",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "moment creatif"
+                ],
+                "it": [
+                    "realizzare",
+                    "sogno",
+                    "gesto significativo",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "momento creativo"
+                ]
+            }
         },
         {
             "key": "095",
@@ -9336,7 +13754,54 @@
                     }
                 ]
             },
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "good",
+                    "deed",
+                    "kind action",
+                    "food scene",
+                    "local cuisine",
+                    "culinary plan",
+                    "creative moment"
+                ],
+                "es": [
+                    "realizar",
+                    "buena",
+                    "acción solidaria",
+                    "escena gastronomica",
+                    "cocina local",
+                    "plan culinario",
+                    "momento creativo"
+                ],
+                "pt": [
+                    "realizar",
+                    "ação",
+                    "boa ação",
+                    "cena gastronomica",
+                    "culinaria local",
+                    "plano culinario",
+                    "momento criativo"
+                ],
+                "fr": [
+                    "bonne",
+                    "action",
+                    "bonne action",
+                    "scene gastronomique",
+                    "cuisine locale",
+                    "plan culinaire",
+                    "moment creatif"
+                ],
+                "it": [
+                    "buona",
+                    "azione",
+                    "buona azione",
+                    "scena gastronomica",
+                    "cucina locale",
+                    "piano culinario",
+                    "momento creativo"
+                ]
+            }
         },
         {
             "key": "096",
@@ -9434,7 +13899,54 @@
                     }
                 ]
             },
-            "difficulty": 1
+            "difficulty": 1,
+            "tags": {
+                "en": [
+                    "double",
+                    "date",
+                    "double date",
+                    "food scene",
+                    "local cuisine",
+                    "culinary plan",
+                    "water plan"
+                ],
+                "es": [
+                    "cita",
+                    "doble",
+                    "cita social en pareja",
+                    "escena gastronomica",
+                    "cocina local",
+                    "plan culinario",
+                    "plan acuatico"
+                ],
+                "pt": [
+                    "encontro",
+                    "duplo",
+                    "encontro duplo",
+                    "cena gastronomica",
+                    "culinaria local",
+                    "plano culinario",
+                    "plano aquatico"
+                ],
+                "fr": [
+                    "double",
+                    "rendez",
+                    "double rendez vous",
+                    "scene gastronomique",
+                    "cuisine locale",
+                    "plan culinaire",
+                    "plan aquatique"
+                ],
+                "it": [
+                    "appuntamento",
+                    "doppio",
+                    "doppio appuntamento",
+                    "scena gastronomica",
+                    "cucina locale",
+                    "piano culinario",
+                    "piano acquatico"
+                ]
+            }
         },
         {
             "key": "097",
@@ -9532,7 +14044,54 @@
                     }
                 ]
             },
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "recreate",
+                    "first",
+                    "romantic memory",
+                    "food scene",
+                    "local cuisine",
+                    "culinary plan",
+                    "water plan"
+                ],
+                "es": [
+                    "recrear",
+                    "primera",
+                    "recuerdo romántico",
+                    "escena gastronomica",
+                    "cocina local",
+                    "plan culinario",
+                    "plan acuatico"
+                ],
+                "pt": [
+                    "recriar",
+                    "primeiro",
+                    "memória romântica",
+                    "cena gastronomica",
+                    "culinaria local",
+                    "plano culinario",
+                    "plano aquatico"
+                ],
+                "fr": [
+                    "recréer",
+                    "votre",
+                    "souvenir romantique",
+                    "scene gastronomique",
+                    "cuisine locale",
+                    "plan culinaire",
+                    "plan aquatique"
+                ],
+                "it": [
+                    "ricreare",
+                    "vostro",
+                    "ricordo romantico",
+                    "scena gastronomica",
+                    "cucina locale",
+                    "piano culinario",
+                    "piano acquatico"
+                ]
+            }
         },
         {
             "key": "098",
@@ -9630,7 +14189,54 @@
                     }
                 ]
             },
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "swim",
+                    "springs",
+                    "natural relaxation",
+                    "nature escape",
+                    "outdoor activity",
+                    "scenic route",
+                    "water plan"
+                ],
+                "es": [
+                    "nadar",
+                    "aguas",
+                    "relajación natural",
+                    "escapada natural",
+                    "actividad al aire libre",
+                    "ruta escenica",
+                    "plan acuatico"
+                ],
+                "pt": [
+                    "nadar",
+                    "águas",
+                    "relaxamento natural",
+                    "escapada natural",
+                    "atividade ao ar livre",
+                    "rota cenica",
+                    "plano aquatico"
+                ],
+                "fr": [
+                    "nager",
+                    "dans",
+                    "relaxation naturelle",
+                    "escapade nature",
+                    "activite en plein air",
+                    "itineraire panoramique",
+                    "plan aquatique"
+                ],
+                "it": [
+                    "nuotare",
+                    "acque",
+                    "relax naturale",
+                    "fuga nella natura",
+                    "attivita all aperto",
+                    "percorso panoramico",
+                    "piano acquatico"
+                ]
+            }
         },
         {
             "key": "099",
@@ -9728,7 +14334,54 @@
                     }
                 ]
             },
-            "difficulty": 1
+            "difficulty": 1,
+            "tags": {
+                "en": [
+                    "tiktok",
+                    "together",
+                    "fun creation",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "nightlife"
+                ],
+                "es": [
+                    "tiktok",
+                    "juntos",
+                    "creación divertida",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "vida nocturna"
+                ],
+                "pt": [
+                    "tiktok",
+                    "juntos",
+                    "criação divertida",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "vida noturna"
+                ],
+                "fr": [
+                    "tiktok",
+                    "ensemble",
+                    "création amusante",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "vie nocturne"
+                ],
+                "it": [
+                    "tiktok",
+                    "insieme",
+                    "creazione divertente",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "vita notturna"
+                ]
+            }
         },
         {
             "key": "100",
@@ -9826,7 +14479,126 @@
                     }
                 ]
             },
-            "difficulty": 2
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "repeat",
+                    "best",
+                    "special closing activity",
+                    "creative moment",
+                    "art and design",
+                    "visual culture",
+                    "romantic plan"
+                ],
+                "es": [
+                    "repetir",
+                    "mejor",
+                    "cierre especial",
+                    "momento creativo",
+                    "arte y diseno",
+                    "cultura visual",
+                    "plan romantico"
+                ],
+                "pt": [
+                    "repetir",
+                    "melhor",
+                    "encerramento especial",
+                    "momento criativo",
+                    "arte e design",
+                    "cultura visual",
+                    "plano romantico"
+                ],
+                "fr": [
+                    "répéter",
+                    "votre",
+                    "clôture spéciale",
+                    "moment creatif",
+                    "art et design",
+                    "culture visuelle",
+                    "plan romantique"
+                ],
+                "it": [
+                    "ripetere",
+                    "vostro",
+                    "chiusura speciale",
+                    "momento creativo",
+                    "arte e design",
+                    "cultura visiva",
+                    "piano romantico"
+                ]
+            }
         }
-    ]
+    ],
+    "tags": {
+        "en": [
+            "100 things",
+            "couple",
+            "date ideas",
+            "romantic plans",
+            "shared moments",
+            "adventure",
+            "relationship goals",
+            "weekend ideas",
+            "to do together",
+            "fun activities",
+            "memories",
+            "bucket list"
+        ],
+        "es": [
+            "100 cosas",
+            "pareja",
+            "ideas de cita",
+            "planes romanticos",
+            "momentos compartidos",
+            "aventura",
+            "metas de pareja",
+            "ideas de fin de semana",
+            "hacer juntos",
+            "actividades divertidas",
+            "recuerdos",
+            "lista de deseos"
+        ],
+        "pt": [
+            "100 coisas",
+            "casal",
+            "ideias de encontro",
+            "planos romanticos",
+            "momentos compartilhados",
+            "aventura",
+            "metas do casal",
+            "ideias de fim de semana",
+            "fazer juntos",
+            "atividades divertidas",
+            "memorias",
+            "lista de desejos"
+        ],
+        "fr": [
+            "100 choses",
+            "couple",
+            "idees de rendez vous",
+            "plans romantiques",
+            "moments partages",
+            "aventure",
+            "objectifs de couple",
+            "idees de week end",
+            "a faire ensemble",
+            "activites amusantes",
+            "souvenirs",
+            "liste de reves"
+        ],
+        "it": [
+            "100 cose",
+            "coppia",
+            "idee per appuntamenti",
+            "piani romantici",
+            "momenti condivisi",
+            "avventura",
+            "obiettivi di coppia",
+            "idee per il fine settimana",
+            "da fare insieme",
+            "attivita divertenti",
+            "ricordi",
+            "lista dei desideri"
+        ]
+    }
 }

@@ -16,6 +16,78 @@
         "fr": "Bienvenue à votre première aventure ! Ce pack de démarrage comprend 3 activités faciles parfaites pour des expériences en solo ou en couple.",
         "it": "Benvenuto alla tua prima avventura! Questo pacchetto iniziale include 3 attività facili perfette per esperienze in solitaria o in coppia."
     },
+    "tags": {
+        "en": [
+            "starter",
+            "beginner",
+            "easy",
+            "solo",
+            "couple",
+            "budget",
+            "food",
+            "cooking",
+            "board-games",
+            "card-games",
+            "local",
+            "fun"
+        ],
+        "es": [
+            "inicio",
+            "principiante",
+            "facil",
+            "solo",
+            "pareja",
+            "economico",
+            "comida",
+            "cocina",
+            "juegos-de-mesa",
+            "juegos-de-cartas",
+            "local",
+            "diversion"
+        ],
+        "pt": [
+            "inicio",
+            "iniciante",
+            "facil",
+            "solo",
+            "casal",
+            "economico",
+            "comida",
+            "culinaria",
+            "jogos-de-tabuleiro",
+            "jogos-de-cartas",
+            "local",
+            "diversao"
+        ],
+        "fr": [
+            "debut",
+            "debutant",
+            "facile",
+            "solo",
+            "couple",
+            "petit budget",
+            "nourriture",
+            "cuisine",
+            "jeux de societe",
+            "jeux de cartes",
+            "local",
+            "amusement"
+        ],
+        "it": [
+            "inizio",
+            "principiante",
+            "facile",
+            "solo",
+            "coppia",
+            "economico",
+            "cibo",
+            "cucina",
+            "giochi da tavolo",
+            "giochi di carte",
+            "locale",
+            "divertimento"
+        ]
+    },
     "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1ef278308d89433b9e8103/6a1ef278308d89433b9e8103.webp",
     "isActive": true,
     "createdAt": {
@@ -69,6 +141,38 @@
                 ]
             },
             "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1ef278308d89433b9e8103/activities/001.webp",
+            "tags": {
+                "en": [
+                    "food",
+                    "restaurant",
+                    "local",
+                    "date night"
+                ],
+                "es": [
+                    "comida",
+                    "restaurante",
+                    "local",
+                    "cita"
+                ],
+                "pt": [
+                    "comida",
+                    "restaurante",
+                    "local",
+                    "encontro"
+                ],
+                "fr": [
+                    "nourriture",
+                    "restaurant",
+                    "local",
+                    "rendez vous"
+                ],
+                "it": [
+                    "cibo",
+                    "ristorante",
+                    "locale",
+                    "appuntamento"
+                ]
+            },
             "difficulty": 1
         },
         {
@@ -115,6 +219,38 @@
                 ]
             },
             "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1ef278308d89433b9e8103/activities/002.webp",
+            "tags": {
+                "en": [
+                    "cooking",
+                    "recipe",
+                    "home",
+                    "creative"
+                ],
+                "es": [
+                    "cocina",
+                    "receta",
+                    "casa",
+                    "creativo"
+                ],
+                "pt": [
+                    "culinaria",
+                    "receita",
+                    "casa",
+                    "criativo"
+                ],
+                "fr": [
+                    "cuisine",
+                    "recette",
+                    "maison",
+                    "creatif"
+                ],
+                "it": [
+                    "cucina",
+                    "ricetta",
+                    "casa",
+                    "creativo"
+                ]
+            },
             "difficulty": 2
         },
         {
@@ -161,6 +297,38 @@
                 ]
             },
             "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1ef278308d89433b9e8103/activities/003.webp",
+            "tags": {
+                "en": [
+                    "board games",
+                    "card games",
+                    "indoor",
+                    "social"
+                ],
+                "es": [
+                    "juegos de mesa",
+                    "juegos de cartas",
+                    "interior",
+                    "social"
+                ],
+                "pt": [
+                    "jogos de tabuleiro",
+                    "jogos de cartas",
+                    "ambiente interno",
+                    "social"
+                ],
+                "fr": [
+                    "jeux de societe",
+                    "jeux de cartes",
+                    "interieur",
+                    "social"
+                ],
+                "it": [
+                    "giochi da tavolo",
+                    "giochi di carte",
+                    "al chiuso",
+                    "sociale"
+                ]
+            },
             "difficulty": 1
         }
     ]

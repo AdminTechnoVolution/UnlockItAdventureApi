@@ -16,6 +16,78 @@
         "fr": "Explorez les sept merveilles du monde moderne avec détails, conseils et histoire.",
         "it": "Esplora le sette meraviglie del mondo moderno con dettagli, consigli e storia."
     },
+    "tags": {
+        "en": [
+            "world wonders",
+            "history",
+            "culture",
+            "travel",
+            "landmarks",
+            "unesco heritage",
+            "adventure",
+            "bucket list",
+            "architecture",
+            "archaeology",
+            "global destinations",
+            "sightseeing"
+        ],
+        "es": [
+            "maravillas del mundo",
+            "historia",
+            "cultura",
+            "viaje",
+            "monumentos",
+            "patrimonio unesco",
+            "aventura",
+            "lista de deseos",
+            "arquitectura",
+            "arqueologia",
+            "destinos globales",
+            "turismo"
+        ],
+        "pt": [
+            "maravilhas do mundo",
+            "historia",
+            "cultura",
+            "viagem",
+            "monumentos",
+            "patrimonio unesco",
+            "aventura",
+            "lista de desejos",
+            "arquitetura",
+            "arqueologia",
+            "destinos globais",
+            "turismo"
+        ],
+        "fr": [
+            "merveilles du monde",
+            "histoire",
+            "culture",
+            "voyage",
+            "monuments",
+            "patrimoine unesco",
+            "aventure",
+            "liste de reves",
+            "architecture",
+            "archeologie",
+            "destinations mondiales",
+            "tourisme"
+        ],
+        "it": [
+            "meraviglie del mondo",
+            "storia",
+            "cultura",
+            "viaggio",
+            "monumenti",
+            "patrimonio unesco",
+            "avventura",
+            "lista dei desideri",
+            "architettura",
+            "archeologia",
+            "destinazioni globali",
+            "turismo"
+        ]
+    },
     "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6949f50275714844685b301e/6949f50275714844685b301e.webp",
     "productsId": [
         "product_seven_wonders"
@@ -139,6 +211,38 @@
                     }
                 ]
             },
+            "tags": {
+                "en": [
+                    "peru",
+                    "inca civilization",
+                    "mountain site",
+                    "unesco heritage"
+                ],
+                "es": [
+                    "peru",
+                    "civilizacion inca",
+                    "sitio de montana",
+                    "patrimonio unesco"
+                ],
+                "pt": [
+                    "peru",
+                    "civilizacao inca",
+                    "sitio de montanha",
+                    "patrimonio unesco"
+                ],
+                "fr": [
+                    "perou",
+                    "civilisation inca",
+                    "site de montagne",
+                    "patrimoine unesco"
+                ],
+                "it": [
+                    "peru",
+                    "civilta inca",
+                    "sito montano",
+                    "patrimonio unesco"
+                ]
+            },
             "difficulty": 3
         },
         {
@@ -237,6 +341,38 @@
                     }
                 ]
             },
+            "tags": {
+                "en": [
+                    "mexico",
+                    "mayan civilization",
+                    "pyramid",
+                    "archaeological site"
+                ],
+                "es": [
+                    "mexico",
+                    "civilizacion maya",
+                    "piramide",
+                    "sitio arqueologico"
+                ],
+                "pt": [
+                    "mexico",
+                    "civilizacao maia",
+                    "piramide",
+                    "sitio arqueologico"
+                ],
+                "fr": [
+                    "mexique",
+                    "civilisation maya",
+                    "pyramide",
+                    "site archeologique"
+                ],
+                "it": [
+                    "messico",
+                    "civilta maya",
+                    "piramide",
+                    "sito archeologico"
+                ]
+            },
             "difficulty": 2
         },
         {
@@ -328,6 +464,38 @@
                         "name": "Posizione",
                         "value": "Brasile, Rio de Janeiro"
                     }
+                ]
+            },
+            "tags": {
+                "en": [
+                    "brazil",
+                    "rio de janeiro",
+                    "viewpoint",
+                    "monument"
+                ],
+                "es": [
+                    "brasil",
+                    "rio de janeiro",
+                    "mirador",
+                    "monumento"
+                ],
+                "pt": [
+                    "brasil",
+                    "rio de janeiro",
+                    "mirante",
+                    "monumento"
+                ],
+                "fr": [
+                    "bresil",
+                    "rio de janeiro",
+                    "point de vue",
+                    "monument"
+                ],
+                "it": [
+                    "brasile",
+                    "rio de janeiro",
+                    "belvedere",
+                    "monumento"
                 ]
             },
             "difficulty": 1
@@ -423,6 +591,38 @@
                     }
                 ]
             },
+            "tags": {
+                "en": [
+                    "china",
+                    "fortification",
+                    "hiking",
+                    "panoramic views"
+                ],
+                "es": [
+                    "china",
+                    "fortificacion",
+                    "senderismo",
+                    "vistas panoramicas"
+                ],
+                "pt": [
+                    "china",
+                    "fortificacao",
+                    "caminhada",
+                    "vistas panoramicas"
+                ],
+                "fr": [
+                    "chine",
+                    "fortification",
+                    "randonnee",
+                    "vues panoramiques"
+                ],
+                "it": [
+                    "cina",
+                    "fortificazione",
+                    "escursionismo",
+                    "viste panoramiche"
+                ]
+            },
             "difficulty": 4
         },
         {
@@ -511,6 +711,38 @@
                     }
                 ]
             },
+            "tags": {
+                "en": [
+                    "jordan",
+                    "rock carved city",
+                    "desert",
+                    "ancient city"
+                ],
+                "es": [
+                    "jordania",
+                    "ciudad tallada en roca",
+                    "desierto",
+                    "ciudad antigua"
+                ],
+                "pt": [
+                    "jordania",
+                    "cidade esculpida na rocha",
+                    "deserto",
+                    "cidade antiga"
+                ],
+                "fr": [
+                    "jordanie",
+                    "cite taillee dans la roche",
+                    "desert",
+                    "cite ancienne"
+                ],
+                "it": [
+                    "giordania",
+                    "citta scolpita nella roccia",
+                    "deserto",
+                    "citta antica"
+                ]
+            },
             "difficulty": 3
         },
         {
@@ -589,6 +821,38 @@
                     }
                 ]
             },
+            "tags": {
+                "en": [
+                    "rome",
+                    "amphitheater",
+                    "roman empire",
+                    "ancient architecture"
+                ],
+                "es": [
+                    "roma",
+                    "anfiteatro",
+                    "imperio romano",
+                    "arquitectura antigua"
+                ],
+                "pt": [
+                    "roma",
+                    "anfiteatro",
+                    "imperio romano",
+                    "arquitetura antiga"
+                ],
+                "fr": [
+                    "rome",
+                    "amphitheatre",
+                    "empire romain",
+                    "architecture antique"
+                ],
+                "it": [
+                    "roma",
+                    "anfiteatro",
+                    "impero romano",
+                    "architettura antica"
+                ]
+            },
             "difficulty": 1
         },
         {
@@ -665,6 +929,38 @@
                         "name": "Posizione",
                         "value": "India, Agra"
                     }
+                ]
+            },
+            "tags": {
+                "en": [
+                    "india",
+                    "marble mausoleum",
+                    "mughal architecture",
+                    "iconic landmark"
+                ],
+                "es": [
+                    "india",
+                    "mausoleo de marmol",
+                    "arquitectura mogol",
+                    "monumento iconico"
+                ],
+                "pt": [
+                    "india",
+                    "mausoleu de marmore",
+                    "arquitetura mogol",
+                    "marco iconico"
+                ],
+                "fr": [
+                    "inde",
+                    "mausolee de marbre",
+                    "architecture moghole",
+                    "monument iconique"
+                ],
+                "it": [
+                    "india",
+                    "mausoleo di marmo",
+                    "architettura moghul",
+                    "monumento iconico"
                 ]
             },
             "difficulty": 1

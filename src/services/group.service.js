@@ -78,12 +78,14 @@ const mapGroupLang = (group, lang) => {
         name: util.pickLanguage(group.name, lang),
         description: util.pickLanguage(group.description, lang),
         additionalInfo: util.pickLanguage(group.additionalInfo, lang),
+        tags: util.pickLanguage(group.tags, lang),
         activities: group.activities?.map(a => ({
             ...a,
             name: util.pickLanguage(a.name, lang),
             description: util.pickLanguage(a.description, lang),
             tips: util.pickLanguage(a.tips, lang),
             additionalInfo: util.pickLanguage(a.additionalInfo, lang),
+            tags: util.pickLanguage(a.tags, lang),
         })),
     }
 };
