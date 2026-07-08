@@ -1,4 +1,5 @@
 const path = require('path');
+const fs = require('fs/promises');
 const ObjectId = require('mongoose').Types.ObjectId;
 const logger = require('../../shared/config/logger');
 const filename = path.basename(__filename);
@@ -71,30 +72,54 @@ const updateProfilePhoto = async (req) => {
         throw new BusinessException(ERROR_CODES.CODE_PHOTO_REQUIRED, constants.HTTP_BAD_REQUEST);
     }
 
-    await validateProfilePhotoFile(file, req);
+    try {
+        await validateProfilePhotoFile(file, req);
 
-    const user = await UserRepository.findOneByFilter({ _id: userId, status: UserStatus.ACTIVE }, req);
+        const user = await UserRepository.findOneByFilter({ _id: userId, status: UserStatus.ACTIVE }, req);
 
-    if (!user) {
-        throw new BusinessException(ERROR_CODES.CODE_USER_NOT_FOUND, constants.HTTP_NOT_FOUND);
+        if (!user) {
+            throw new BusinessException(ERROR_CODES.CODE_USER_NOT_FOUND, constants.HTTP_NOT_FOUND);
+        }
+
+        const imageInput = file.path || file.buffer;
+
+        await googleCloudVision.validateImageContent(imageInput, req);
+        const processedBuffer = await profilePhotoProcessor.processProfilePhoto(imageInput, req);
+        const url = await azureBlobStorage.uploadUserProfilePhoto(userId.toString(), processedBuffer, req);
+
+        user.profileImageUrl = url;
+        const userSaved = await UserRepository.save(user, req);
+
+        const userData = {
+            username: userSaved.username,
+            fullName: userSaved.fullName,
+            profileImageUrl: userSaved.profileImageUrl,
+        };
+
+        return new BaseResponse(true, [], {
+            user: userData,
+        });
+    } finally {
+        await safeDeleteTempUpload(file, req);
+    }
+};
+
+const safeDeleteTempUpload = async (file, req) => {
+    if (!file?.path) {
+        return;
     }
 
-    await googleCloudVision.validateImageContent(file.buffer, req);
-    const processedBuffer = await profilePhotoProcessor.processProfilePhoto(file.buffer, req);
-    const url = await azureBlobStorage.uploadUserProfilePhoto(userId.toString(), processedBuffer, req);
-
-    user.profileImageUrl = url;
-    const userSaved = await UserRepository.save(user, req);
-
-    const userData = {
-        username: userSaved.username,
-        fullName: userSaved.fullName,
-        profileImageUrl: userSaved.profileImageUrl,
-    };
-
-    return new BaseResponse(true, [], {
-        user: userData,
-    });
+    try {
+        await fs.unlink(file.path);
+    } catch (error) {
+        if (error?.code !== 'ENOENT') {
+            logger.warn({
+                message: `Failed to delete temporary upload file at path=${file.path}. Error: ${error.message}`,
+                className: filename,
+                req,
+            });
+        }
+    }
 };
 
 const validateProfilePhotoFile = async (file, req) => {

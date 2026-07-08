@@ -1,4 +1,5 @@
 const path = require('path');
+const fs = require('fs/promises');
 const logger = require('../../shared/config/logger');
 const filename = path.basename(__filename);
 const ObjectId = require('mongoose').Types.ObjectId;
@@ -209,67 +210,103 @@ const addActivityPhoto = async (req) => {
         throw new BusinessException(ERROR_CODES.CODE_PHOTO_REQUIRED, constants.HTTP_BAD_REQUEST);
     }
 
-    await validateActivityPhotoFile(file, req);
+    try {
+        await validateActivityPhotoFile(file, req);
 
-    const groupProgress = await GroupProgressRepository.findById(groupProgressId, req);
+        const groupProgress = await GroupProgressRepository.findById(groupProgressId, req);
 
-    validateActivityPhotoGroupProgress(groupProgress, keyActivity);
+        validateActivityPhotoGroupProgress(groupProgress, keyActivity);
 
-    if (!isGroupProgressParticipant(userId, groupProgress)) {
-        throw new BusinessException(ERROR_CODES.CODE_GROUP_PROGRESS_UPDATE_FORBIDDEN, constants.HTTP_FORBIDDEN);
+        if (!isGroupProgressParticipant(userId, groupProgress)) {
+            throw new BusinessException(ERROR_CODES.CODE_GROUP_PROGRESS_UPDATE_FORBIDDEN, constants.HTTP_FORBIDDEN);
+        }
+
+        const maxPhotosPerActivity = (await AppConfigService.getConfigByKey(AppConfigKey.ACTIVITY_PHOTOS_MAX_PER_USER, req))?.value ?? 2;
+        const activity = groupProgress.activities.find((item) => item.key === keyActivity);
+        const activityPhotosCount = (activity.photos || []).length;
+
+        if (activityPhotosCount >= Number(maxPhotosPerActivity)) {
+            throw new BusinessException(ERROR_CODES.CODE_ACTIVITY_PHOTOS_MAX_REACHED, constants.HTTP_BAD_REQUEST);
+        }
+
+        const imageInput = file.path || file.buffer;
+
+        await googleCloudVision.validateImageContent(imageInput, req);
+
+        const pathPhotoName = buildActivityPhotoPathName();
+        const reservedPhoto = {
+            name: pathPhotoName,
+            uploadedBy: userId,
+        };
+
+        activity.photos.push(reservedPhoto);
+        activity.updatedBy = userId;
+        groupProgress.markModified('activities');
+
+        await GroupProgressRepository.save(groupProgress, req);
+
+        const photoIndex = activity.photos.length - 1;
+
+        try {
+            const containerClient = azureBlobStorage.getContainerClient();
+            const urlsBySize = {};
+
+            await activityPhotoProcessor.processActivityPhotoVariantsStreaming(
+                imageInput,
+                async (sizeKey, variantStream) => {
+                    const url = await azureBlobStorage.uploadActivityPhotoVariantStream({
+                        containerClient,
+                        groupProgressId,
+                        keyActivity,
+                        pathPhotoName,
+                        sizeKey,
+                        webpStream: variantStream,
+                        req,
+                    });
+
+                    urlsBySize[sizeKey] = url;
+                },
+                req,
+            );
+
+            activity.photos[photoIndex].sizes = Object.entries(urlsBySize).map(([size, url]) => ({ size, url }));
+            activity.photos[photoIndex].uploadedAt = new Date();
+            groupProgress.markModified('activities');
+
+            await GroupProgressRepository.save(groupProgress, req);
+        } catch (error) {
+            await azureBlobStorage.deleteActivityPhotoFolder(groupProgressId, keyActivity, pathPhotoName, req);
+            activity.photos.splice(photoIndex, 1);
+            groupProgress.markModified('activities');
+            await GroupProgressRepository.save(groupProgress, req);
+            throw error;
+        }
+
+        const message = translate(SUCCESS_CODES.CODE_ACTIVITY_PHOTO_UPLOAD_SUCCESS, acceptLanguage);
+
+        const data = { photo: mapActivityPhoto(activity.photos[photoIndex]) };
+        return new BaseResponse(true, [message], data);
+    } finally {
+        await safeDeleteTempUpload(file, req);
     }
+};
 
-    const maxPhotosPerActivity = (await AppConfigService.getConfigByKey(AppConfigKey.ACTIVITY_PHOTOS_MAX_PER_USER, req))?.value ?? 2;
-    const activity = groupProgress.activities.find((item) => item.key === keyActivity);
-    const activityPhotosCount = (activity.photos || []).length;
-
-    if (activityPhotosCount >= Number(maxPhotosPerActivity)) {
-        throw new BusinessException(ERROR_CODES.CODE_ACTIVITY_PHOTOS_MAX_REACHED, constants.HTTP_BAD_REQUEST);
+const safeDeleteTempUpload = async (file, req) => {
+    if (!file?.path) {
+        return;
     }
-
-    await googleCloudVision.validateImageContent(file.buffer, req);
-
-    const pathPhotoName = buildActivityPhotoPathName();
-    const reservedPhoto = {
-        name: pathPhotoName,
-        uploadedBy: userId,
-    };
-
-    activity.photos.push(reservedPhoto);
-    activity.updatedBy = userId;
-    groupProgress.markModified('activities');
-
-    await GroupProgressRepository.save(groupProgress, req);
-
-    const photoIndex = activity.photos.length - 1;
 
     try {
-        const variantsBuffers = await activityPhotoProcessor.processActivityPhotoVariants(file.buffer, req);
-        const urlsBySize = await azureBlobStorage.uploadActivityPhotoVariants(
-            groupProgressId,
-            keyActivity,
-            pathPhotoName,
-            variantsBuffers,
-            req,
-        );
-
-        activity.photos[photoIndex].sizes = Object.entries(urlsBySize).map(([size, url]) => ({ size, url }));
-        activity.photos[photoIndex].uploadedAt = new Date();
-        groupProgress.markModified('activities');
-
-        await GroupProgressRepository.save(groupProgress, req);
+        await fs.unlink(file.path);
     } catch (error) {
-        await azureBlobStorage.deleteActivityPhotoFolder(groupProgressId, keyActivity, pathPhotoName, req);
-        activity.photos.splice(photoIndex, 1);
-        groupProgress.markModified('activities');
-        await GroupProgressRepository.save(groupProgress, req);
-        throw error;
+        if (error?.code !== 'ENOENT') {
+            logger.warn({
+                message: `Failed to delete temporary upload file at path=${file.path}. Error: ${error.message}`,
+                className: filename,
+                req,
+            });
+        }
     }
-
-    const message = translate(SUCCESS_CODES.CODE_ACTIVITY_PHOTO_UPLOAD_SUCCESS, acceptLanguage);
-
-    const data = { photo: mapActivityPhoto(activity.photos[photoIndex]) };
-    return new BaseResponse(true, [message], data);
 };
 
 const buildActivityPhotoPathName = () => {

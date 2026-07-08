@@ -1,4 +1,5 @@
 const path = require('path');
+const fs = require('fs/promises');
 const { ImageAnnotatorClient } = require('@google-cloud/vision');
 const logger = require('../../shared/config/logger');
 const filename = path.basename(__filename);
@@ -20,7 +21,29 @@ const SAFE_SEARCH_CATEGORIES = {
 
 const CHECKED_CATEGORIES = Object.values(SAFE_SEARCH_CATEGORIES);
 
-const detectSafeSearch = async (imageBuffer, req = null) => {
+const toImageBuffer = async (imageInput) => {
+    if (Buffer.isBuffer(imageInput)) {
+        return imageInput;
+    }
+
+    if (typeof imageInput === 'string') {
+        return fs.readFile(imageInput);
+    }
+
+    if (imageInput?.buffer && Buffer.isBuffer(imageInput.buffer)) {
+        return imageInput.buffer;
+    }
+
+    if (imageInput?.filePath && typeof imageInput.filePath === 'string') {
+        return fs.readFile(imageInput.filePath);
+    }
+
+    throw new BusinessException(ERROR_CODES.CODE_PHOTOS_ONLY, constants.HTTP_BAD_REQUEST);
+};
+
+const detectSafeSearch = async (imageInput, req = null) => {
+    const imageBuffer = await toImageBuffer(imageInput);
+
     logger.info({ message: `Analyzing image with Google Cloud Vision Safe Search. Size=${imageBuffer?.length ?? 0} bytes`, className: filename, req });
 
     const [result] = await visionClient.safeSearchDetection(imageBuffer);
@@ -45,8 +68,8 @@ const logImageRejected = (safeSearch, flaggedCategories, req) => {
     logger.error({ message: `Image upload rejected. Flagged categories: ${details}`, className: filename, req });
 };
 
-const isUndesirableImage = async (imageBuffer, req = null) => {
-    const safeSearch = await detectSafeSearch(imageBuffer, req);
+const isUndesirableImage = async (imageInput, req = null) => {
+    const safeSearch = await detectSafeSearch(imageInput, req);
     const flaggedCategories = getFlaggedCategories(safeSearch);
 
     if (flaggedCategories.length > 0) {
@@ -57,9 +80,9 @@ const isUndesirableImage = async (imageBuffer, req = null) => {
     return false;
 };
 
-const validateImageContent = async (imageBuffer, req = null) => {
+const validateImageContent = async (imageInput, req = null) => {
     try {
-        const safeSearch = await detectSafeSearch(imageBuffer, req);
+        const safeSearch = await detectSafeSearch(imageInput, req);
         const flaggedCategories = getFlaggedCategories(safeSearch);
 
         if (flaggedCategories.length > 0) {

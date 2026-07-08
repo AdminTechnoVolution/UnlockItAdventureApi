@@ -33,7 +33,8 @@ const processProfilePhoto = async (buffer, req = null) => {
     const webpQuality = clamp(webpQualityConfig?.value, MIN_WEBP_QUALITY, MAX_WEBP_QUALITY, DEFAULT_WEBP_QUALITY);
 
     try {
-        const processedBuffer = await sharp(buffer)
+        const imageInput = buffer?.filePath || buffer;
+        const processedBuffer = await sharp(imageInput)
             .rotate()
             .resize({
                 width: maxDimension,
