@@ -1,0 +1,21 @@
+paths:
+  /api/group/group-activities:
+    get:
+      summary: Get group activities
+      description: Returns available groups and their activity definitions (master data).
+      tags:
+        - Groups & Activities
+      security:
+        - Bearer: []
+      parameters:
+        - $ref: '#/components/parameters/Authorization'
+        - $ref: '#/components/parameters/AcceptLanguage'
+      responses:
+        200:
+          $ref: '#/components/responses/GroupActivitiesSuccessResponse'
+        400:
+          $ref: '#/components/responses/BadRequestResponse'
+        401:
+          $ref: '#/components/responses/UnauthorizedResponse'
+        500:
+          $ref: '#/components/responses/InternalServerErrorResponse'

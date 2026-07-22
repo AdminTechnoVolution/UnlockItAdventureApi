@@ -1,0 +1,34 @@
+paths:
+  /api/google-play/rtdn:
+    post:
+      summary: Google Play Real-Time Developer Notifications
+      description: Pub/Sub push endpoint for Google Play billing events (one-time product refunds via oneTimeProductNotification or voidedPurchaseNotification from Play Console). Authenticated via Google Pub/Sub JWT (not app Bearer token).
+      tags:
+        - Google Play
+      security: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                message:
+                  type: object
+                  properties:
+                    data:
+                      type: string
+                      description: Base64-encoded DeveloperNotification JSON
+                    messageId:
+                      type: string
+                    publishTime:
+                      type: string
+                subscription:
+                  type: string
+      responses:
+        200:
+          description: Notification received and processed (or ignored idempotently)
+        401:
+          description: Invalid Pub/Sub push authentication
+        500:
+          $ref: '#/components/responses/InternalServerErrorResponse'

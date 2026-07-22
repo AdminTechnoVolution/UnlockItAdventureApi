@@ -1,0 +1,148 @@
+components:
+  responses:
+    SuccessResponse:
+      description: Success
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/BaseResponse'
+
+    BadRequestResponse:
+      description: Bad Request
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/BaseResponse'
+
+    UnauthorizedResponse:
+      description: Unauthorized
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/BaseResponse'
+
+    ForbiddenResponse:
+      description: Forbidden
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/BaseResponse'
+
+    NotFoundResponse:
+      description: Not Found
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/BaseResponse'
+
+    ConflictResponse:
+      description: Conflict
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/BaseResponse'
+
+    TooManyRequestsResponse:
+      description: Too Many Requests
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/BaseResponse'
+
+    InternalServerErrorResponse:
+      description: Internal Server Error
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/BaseResponse'
+
+    HealthSuccessResponse:
+      description: Health check result
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/HealthResponse'
+
+    SocialLoginSuccessResponse:
+      description: Social login successful
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/SocialLoginResponse'
+
+    RefreshTokenSuccessResponse:
+      description: Tokens refreshed successfully
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/RefreshTokenResponse'
+
+    LogoutSuccessResponse:
+      description: Logout successful
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/LogoutResponse'
+
+    UpdateProfileSuccessResponse:
+      description: Profile updated successfully
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/UpdateProfileResponse'
+
+    UpdateProfilePhotoSuccessResponse:
+      description: Profile photo updated successfully
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/UpdateProfilePhotoResponse'
+
+    DeleteAccountSuccessResponse:
+      description: Account deleted successfully
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/BaseResponse'
+
+    GroupActivitiesSuccessResponse:
+      description: Group activities list
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/GroupActivitiesResponse'
+
+    UnlockGroupSuccessResponse:
+      description: Group unlocked successfully
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/UnlockGroupResponse'
+
+    GroupProgressListSuccessResponse:
+      description: Group progress list
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/GroupProgressListResponse'
+
+    MessageOnlySuccessResponse:
+      description: Success with no data payload
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/MessageOnlyResponse'
+
+    AddActivityPhotoSuccessResponse:
+      description: Activity photo uploaded successfully
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/AddActivityPhotoResponse'
+
+    AppConfigsSuccessResponse:
+      description: Public app configuration list
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/AppConfigsResponse'

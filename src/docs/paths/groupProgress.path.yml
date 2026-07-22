@@ -1,0 +1,222 @@
+paths:
+  /api/group/unlock:
+    post:
+      summary: Unlock a group
+      description: Creates a group progress record for the authenticated user (free or paid group).
+      tags:
+        - Group Progress
+      security:
+        - Bearer: []
+      parameters:
+        - $ref: '#/components/parameters/Authorization'
+        - $ref: '#/components/parameters/AcceptLanguage'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UnlockGroupSchema'
+      responses:
+        200:
+          $ref: '#/components/responses/UnlockGroupSuccessResponse'
+        400:
+          $ref: '#/components/responses/BadRequestResponse'
+        401:
+          $ref: '#/components/responses/UnauthorizedResponse'
+        404:
+          $ref: '#/components/responses/NotFoundResponse'
+        409:
+          $ref: '#/components/responses/ConflictResponse'
+        500:
+          $ref: '#/components/responses/InternalServerErrorResponse'
+
+  /api/group/progress:
+    get:
+      summary: Get my own group progress
+      description: Lists group progress records owned by the authenticated user.
+      tags:
+        - Group Progress
+      security:
+        - Bearer: []
+      parameters:
+        - $ref: '#/components/parameters/Authorization'
+        - $ref: '#/components/parameters/AcceptLanguage'
+      responses:
+        200:
+          $ref: '#/components/responses/GroupProgressListSuccessResponse'
+        401:
+          $ref: '#/components/responses/UnauthorizedResponse'
+        500:
+          $ref: '#/components/responses/InternalServerErrorResponse'
+    put:
+      summary: Update a group progress activity
+      description: Updates completion state, dates, or notes for an activity within a group progress.
+      tags:
+        - Group Progress
+      security:
+        - Bearer: []
+      parameters:
+        - $ref: '#/components/parameters/Authorization'
+        - $ref: '#/components/parameters/AcceptLanguage'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateGroupProgressSchema'
+      responses:
+        200:
+          $ref: '#/components/responses/MessageOnlySuccessResponse'
+        400:
+          $ref: '#/components/responses/BadRequestResponse'
+        401:
+          $ref: '#/components/responses/UnauthorizedResponse'
+        403:
+          $ref: '#/components/responses/ForbiddenResponse'
+        404:
+          $ref: '#/components/responses/NotFoundResponse'
+        500:
+          $ref: '#/components/responses/InternalServerErrorResponse'
+
+  /api/group/progress/shared:
+    get:
+      summary: Get group progress shared with me
+      description: Lists group progress records where the authenticated user is listed as a partner.
+      tags:
+        - Group Progress
+      security:
+        - Bearer: []
+      parameters:
+        - $ref: '#/components/parameters/Authorization'
+        - $ref: '#/components/parameters/AcceptLanguage'
+      responses:
+        200:
+          $ref: '#/components/responses/GroupProgressListSuccessResponse'
+        401:
+          $ref: '#/components/responses/UnauthorizedResponse'
+        500:
+          $ref: '#/components/responses/InternalServerErrorResponse'
+
+  /api/group/progress/activity/photo:
+    post:
+      summary: Upload a photo for a group progress activity
+      description: Uploads a photo for a specific activity within a group progress.
+      tags:
+        - Group Progress
+      security:
+        - Bearer: []
+      parameters:
+        - $ref: '#/components/parameters/Authorization'
+        - $ref: '#/components/parameters/AcceptLanguage'
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/AddActivityPhotoSchema'
+      responses:
+        200:
+          $ref: '#/components/responses/AddActivityPhotoSuccessResponse'
+        400:
+          $ref: '#/components/responses/BadRequestResponse'
+        401:
+          $ref: '#/components/responses/UnauthorizedResponse'
+        403:
+          $ref: '#/components/responses/ForbiddenResponse'
+        404:
+          $ref: '#/components/responses/NotFoundResponse'
+        500:
+          $ref: '#/components/responses/InternalServerErrorResponse'
+
+  /api/group/progress/activity/photo/remove:
+    put:
+      summary: Remove a photo from a group progress activity
+      description: Removes a photo from a group progress activity. The authenticated user must be the owner of the group progress or a partner. Any participant may remove any photo on the activity.
+      tags:
+        - Group Progress
+      security:
+        - Bearer: []
+      parameters:
+        - $ref: '#/components/parameters/Authorization'
+        - $ref: '#/components/parameters/AcceptLanguage'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RemoveActivityPhotoSchema'
+      responses:
+        200:
+          $ref: '#/components/responses/MessageOnlySuccessResponse'
+        400:
+          $ref: '#/components/responses/BadRequestResponse'
+        401:
+          $ref: '#/components/responses/UnauthorizedResponse'
+        403:
+          $ref: '#/components/responses/ForbiddenResponse'
+        404:
+          $ref: '#/components/responses/NotFoundResponse'
+        500:
+          $ref: '#/components/responses/InternalServerErrorResponse'
+
+  /api/group/progress/partners:
+    put:
+      summary: Add partners to a group progress
+      description: Adds one or more partners to a group progress, allowing them to view and edit it.
+      tags:
+        - Group Progress
+      security:
+        - Bearer: []
+      parameters:
+        - $ref: '#/components/parameters/Authorization'
+        - $ref: '#/components/parameters/AcceptLanguage'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AddPartnersSchema'
+      responses:
+        200:
+          $ref: '#/components/responses/MessageOnlySuccessResponse'
+        400:
+          $ref: '#/components/responses/BadRequestResponse'
+        401:
+          $ref: '#/components/responses/UnauthorizedResponse'
+        403:
+          $ref: '#/components/responses/ForbiddenResponse'
+        404:
+          $ref: '#/components/responses/NotFoundResponse'
+        500:
+          $ref: '#/components/responses/InternalServerErrorResponse'
+
+  /api/group/progress/partners/remove:
+    put:
+      summary: Remove me or remove a partner from a group progress
+      description: If the authenticated user is the owner of the group progress, they can remove any partner. If they are a partner, they can remove themselves.
+      tags:
+        - Group Progress
+      security:
+        - Bearer: []
+      parameters:
+        - $ref: '#/components/parameters/Authorization'
+        - $ref: '#/components/parameters/AcceptLanguage'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RemovePartnerSchema'
+      responses:
+        200:
+          $ref: '#/components/responses/MessageOnlySuccessResponse'
+        400:
+          $ref: '#/components/responses/BadRequestResponse'
+        401:
+          $ref: '#/components/responses/UnauthorizedResponse'
+        403:
+          $ref: '#/components/responses/ForbiddenResponse'
+        404:
+          $ref: '#/components/responses/NotFoundResponse'
+        500:
+          $ref: '#/components/responses/InternalServerErrorResponse'

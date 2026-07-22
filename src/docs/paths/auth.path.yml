@@ -1,0 +1,66 @@
+paths:
+  /api/auth/user/login:
+    post:
+      summary: Social login with Google or Apple
+      description: Authenticates a user using a social provider and returns access and refresh tokens.
+      tags:
+        - Auth
+      parameters:
+        - $ref: '#/components/parameters/AcceptLanguage'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SocialLoginSchema'
+      responses:
+        200:
+          $ref: '#/components/responses/SocialLoginSuccessResponse'
+        400:
+          $ref: '#/components/responses/BadRequestResponse'
+        401:
+          $ref: '#/components/responses/UnauthorizedResponse'
+        500:
+          $ref: '#/components/responses/InternalServerErrorResponse'
+
+  /api/auth/user/login/refresh:
+    post:
+      summary: Refresh access and refresh tokens
+      description: Refreshes the access and refresh tokens for an authenticated user.
+      tags:
+        - Auth
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RefreshTokenSchema'
+      responses:
+        200:
+          $ref: '#/components/responses/RefreshTokenSuccessResponse'
+        400:
+          $ref: '#/components/responses/BadRequestResponse'
+        401:
+          $ref: '#/components/responses/UnauthorizedResponse'
+        500:
+          $ref: '#/components/responses/InternalServerErrorResponse'
+
+  /api/auth/user/logout:
+    post:
+      summary: Logout and revoke session tokens
+      description: Logs out the authenticated user and revokes their session tokens.
+      tags:
+        - Auth
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/LogoutSchema'
+      responses:
+        200:
+          $ref: '#/components/responses/LogoutSuccessResponse'
+        400:
+          $ref: '#/components/responses/BadRequestResponse'
+        500:
+          $ref: '#/components/responses/InternalServerErrorResponse'

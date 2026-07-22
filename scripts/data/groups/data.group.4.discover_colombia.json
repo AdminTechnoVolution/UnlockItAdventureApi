@@ -1,0 +1,3050 @@
+{
+    "_id": {
+        "$oid": "6a1f0b5c308d89433b9e8107"
+    },
+    "name": {
+        "en": "Discover Colombia",
+        "es": "Descubre Colombia",
+        "pt": "Descubra a Colômbia",
+        "fr": "Découvre la Colombie",
+        "it": "Scopri la Colombia"
+    },
+    "description": {
+        "en": "Embark on the ultimate Colombia challenge: visit all 32 departments, one by one, and collect a unique experience in each region.",
+        "es": "Embárcate en el reto definitivo de Colombia: visita los 32 departamentos, uno por uno, y colecciona una experiencia única en cada región.",
+        "pt": "Embarque no desafio definitivo da Colômbia: visite os 32 departamentos, um por um, e colecione uma experiência única em cada região.",
+        "fr": "Lancez-vous dans le défi ultime de la Colombie : visitez les 32 départements, un par un, et collectionnez une expérience unique dans chaque région.",
+        "it": "Intraprendi la sfida definitiva della Colombia: visita tutti i 32 dipartimenti, uno per uno, e colleziona un'esperienza unica in ogni regione."
+    },
+    "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/6a1f0b5c308d89433b9e8107.webp",
+    "productsId": [
+        "product_discover_colombia"
+    ],
+    "isActive": true,
+    "createdAt": {
+        "$date": "2026-06-02T18:45:41.153Z"
+    },
+    "updatedAt": {
+        "$date": "2026-06-02T18:45:41.153Z"
+    },
+    "activities": [
+        {
+            "key": "001",
+            "name": {
+                "en": "Amazonas",
+                "es": "Amazonas",
+                "pt": "Amazonas",
+                "fr": "Amazonas",
+                "it": "Amazonas"
+            },
+            "description": {
+                "en": "Explore the Colombian Amazon from Leticia, where the rainforest meets the triple border with Brazil and Peru.",
+                "es": "Explora el Amazonas colombiano desde Leticia, donde la selva se encuentra con la triple frontera con Brasil y Perú.",
+                "pt": "Explore a Amazônia colombiana a partir de Leticia, onde a floresta encontra a tríplice fronteira com Brasil e Peru.",
+                "fr": "Explorez l'Amazonie colombienne depuis Leticia, où la forêt rencontre la triple frontière avec le Brésil et le Pérou.",
+                "it": "Esplora l'Amazzonia colombiana da Leticia, dove la foresta incontra il triplice confine con Brasile e Perù."
+            },
+            "tips": {
+                "en": [
+                    "Navigate the Amazon River and its tributaries",
+                    "Visit the Victoria Regia natural reserve",
+                    "Experience indigenous communities of the triple border"
+                ],
+                "es": [
+                    "Recorre el río Amazonas y sus afluentes",
+                    "Visita la reserva natural Victoria Regia",
+                    "Conoce las comunidades indígenas de la triple frontera"
+                ],
+                "pt": [
+                    "Navegue pelo rio Amazonas e seus afluentes",
+                    "Visite a reserva natural Victoria Regia",
+                    "Conheça as comunidades indígenas da tríplice fronteira"
+                ],
+                "fr": [
+                    "Naviguez sur le fleuve Amazone et ses affluents",
+                    "Visitez la réserve naturelle Victoria Regia",
+                    "Découvrez les communautés indigènes de la triple frontière"
+                ],
+                "it": [
+                    "Naviga il fiume Amazonas e i suoi affluenti",
+                    "Visita la riserva naturale Victoria Regia",
+                    "Conosci le comunità indigene del triplice confine"
+                ]
+            },
+            "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/001.webp",
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "amazonas",
+                    "nature escape",
+                    "outdoor activity",
+                    "scenic route",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air"
+                ],
+                "es": [
+                    "amazonas",
+                    "escapada natural",
+                    "actividad al aire libre",
+                    "ruta escenica",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre"
+                ],
+                "pt": [
+                    "amazonas",
+                    "escapada natural",
+                    "atividade ao ar livre",
+                    "rota cenica",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre"
+                ],
+                "fr": [
+                    "amazonas",
+                    "escapade nature",
+                    "activite en plein air",
+                    "itineraire panoramique",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre"
+                ],
+                "it": [
+                    "amazonas",
+                    "fuga nella natura",
+                    "attivita all aperto",
+                    "percorso panoramico",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta"
+                ]
+            }
+        },
+        {
+            "key": "002",
+            "name": {
+                "en": "Antioquia",
+                "es": "Antioquia",
+                "pt": "Antioquia",
+                "fr": "Antioquia",
+                "it": "Antioquia"
+            },
+            "description": {
+                "en": "Discover the land of eternal spring, coffee culture and vibrant paisa hospitality from Medellín to its heritage towns.",
+                "es": "Descubre la tierra de la eterna primavera, el café y la hospitalidad paisa desde Medellín hasta sus pueblos patrimonio.",
+                "pt": "Descubra a terra da eterna primavera, do café e da hospitalidade paisa de Medellín aos seus vilarejos patrimônio.",
+                "fr": "Découvrez la terre du printemps éternel, du café et de l'hospitalité paisa de Medellín à ses villages patrimoniaux.",
+                "it": "Scopri la terra della primavera eterna, del caffè e dell'ospitalità paisa da Medellín ai suoi paesi patrimonio."
+            },
+            "tips": {
+                "en": [
+                    "Ride the Metrocable for panoramic views of Medellín",
+                    "Visit colorful towns like Guatapé and Jardín",
+                    "Tour a coffee farm in the Coffee Cultural Landscape"
+                ],
+                "es": [
+                    "Sube al Metrocable para vistas panorámicas de Medellín",
+                    "Visita pueblos coloridos como Guatapé y Jardín",
+                    "Recorre una finca cafetera en el Paisaje Cultural Cafetero"
+                ],
+                "pt": [
+                    "Pegue o Metrocable para vistas panorâmicas de Medellín",
+                    "Visite vilas coloridas como Guatapé e Jardín",
+                    "Conheça uma fazenda de café no Paisagem Cultural Cafeeiro"
+                ],
+                "fr": [
+                    "Montez en Metrocable pour une vue panoramique de Medellín",
+                    "Visitez des villages colorés comme Guatapé et Jardín",
+                    "Visitez une plantation de café dans le Paysage Culturel du Café"
+                ],
+                "it": [
+                    "Sali sul Metrocable per viste panoramiche di Medellín",
+                    "Visita paesi colorati come Guatapé e Jardín",
+                    "Visita una fattoria di caffè nel Paesaggio Culturale del Caffè"
+                ]
+            },
+            "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/002.webp",
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "antioquia",
+                    "food scene",
+                    "local cuisine",
+                    "culinary plan",
+                    "history",
+                    "cultural heritage",
+                    "architecture"
+                ],
+                "es": [
+                    "antioquia",
+                    "escena gastronomica",
+                    "cocina local",
+                    "plan culinario",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitectura"
+                ],
+                "pt": [
+                    "antioquia",
+                    "cena gastronomica",
+                    "culinaria local",
+                    "plano culinario",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitetura"
+                ],
+                "fr": [
+                    "antioquia",
+                    "scene gastronomique",
+                    "cuisine locale",
+                    "plan culinaire",
+                    "histoire",
+                    "patrimoine culturel",
+                    "architecture"
+                ],
+                "it": [
+                    "antioquia",
+                    "scena gastronomica",
+                    "cucina locale",
+                    "piano culinario",
+                    "storia",
+                    "patrimonio culturale",
+                    "architettura"
+                ]
+            }
+        },
+        {
+            "key": "003",
+            "name": {
+                "en": "Arauca",
+                "es": "Arauca",
+                "pt": "Arauca",
+                "fr": "Arauca",
+                "it": "Arauca"
+            },
+            "description": {
+                "en": "Experience the wide llanos plains, cowboy traditions and sunsets over the eastern Orinoquía.",
+                "es": "Vive los amplios llanos, la tradición llanera y los atardeceres de la Orinoquía oriental.",
+                "pt": "Viva as amplas planícies dos llanos, a tradição llanera e os pores do sol da Orinoquia oriental.",
+                "fr": "Vivez les vastes plaines des llanos, la tradition llanera et les couchers de soleil de l'Orinoquía oriental.",
+                "it": "Vivi le ampie pianure dei llanos, la tradizione llanera e i tramonti dell'Orinoquía orientale."
+            },
+            "tips": {
+                "en": [
+                    "Watch a llanero sunset on the plains",
+                    "Learn about joropo music and dance",
+                    "Explore the Arauca River and its wetlands"
+                ],
+                "es": [
+                    "Contempla un atardecer llanero en los llanos",
+                    "Conoce la música y el baile del joropo",
+                    "Explora el río Arauca y sus humedales"
+                ],
+                "pt": [
+                    "Contemple um pôr do sol llanero nas planícies",
+                    "Conheça a música e a dança do joropo",
+                    "Explore o rio Arauca e seus pântanos"
+                ],
+                "fr": [
+                    "Admirez un coucher de soleil llanero dans les plaines",
+                    "Découvrez la musique et la danse du joropo",
+                    "Explorez le fleuve Arauca et ses zones humides"
+                ],
+                "it": [
+                    "Ammira un tramonto llanero nelle pianure",
+                    "Scopri la musica e la danza del joropo",
+                    "Esplora il fiume Arauca e le sue zone umide"
+                ]
+            },
+            "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/003.webp",
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "arauca",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "nightlife",
+                    "music culture",
+                    "social plan"
+                ],
+                "es": [
+                    "arauca",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "vida nocturna",
+                    "cultura musical",
+                    "plan social"
+                ],
+                "pt": [
+                    "arauca",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "vida noturna",
+                    "cultura musical",
+                    "plano social"
+                ],
+                "fr": [
+                    "arauca",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "vie nocturne",
+                    "culture musicale",
+                    "plan social"
+                ],
+                "it": [
+                    "arauca",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "vita notturna",
+                    "cultura musicale",
+                    "piano sociale"
+                ]
+            }
+        },
+        {
+            "key": "004",
+            "name": {
+                "en": "Atlántico",
+                "es": "Atlántico",
+                "pt": "Atlântico",
+                "fr": "Atlantique",
+                "it": "Atlantico"
+            },
+            "description": {
+                "en": "Feel the Caribbean rhythm in Barranquilla, gateway to the coast and home of carnival and cumbia.",
+                "es": "Siente el ritmo caribeño en Barranquilla, puerta de la costa y cuna del carnaval y la cumbia.",
+                "pt": "Sinta o ritmo caribenho em Barranquilla, porta da costa e berço do carnaval e da cumbia.",
+                "fr": "Ressentez le rythme caribéen à Barranquilla, porte de la côte et berceau du carnaval et de la cumbia.",
+                "it": "Senti il ritmo caraibico a Barranquilla, porta della costa e culla del carnevale e della cumbia."
+            },
+            "tips": {
+                "en": [
+                    "Walk the Malecón del Río in Barranquilla",
+                    "Visit the Carnival Museum",
+                    "Enjoy fried fish and coconut rice on the coast"
+                ],
+                "es": [
+                    "Recorre el Malecón del Río en Barranquilla",
+                    "Visita el Museo del Carnaval",
+                    "Disfruta pescado frito y arroz con coco en la costa"
+                ],
+                "pt": [
+                    "Caminhe pelo Malecón del Río em Barranquilla",
+                    "Visite o Museu do Carnaval",
+                    "Saboreie peixe frito e arroz com coco na costa"
+                ],
+                "fr": [
+                    "Promenez-vous sur le Malecón del Río à Barranquilla",
+                    "Visitez le Musée du Carnaval",
+                    "Dégustez du poisson frit et du riz à la noix de coco sur la côte"
+                ],
+                "it": [
+                    "Passeggia sul Malecón del Río a Barranquilla",
+                    "Visita il Museo del Carnevale",
+                    "Gusta pesce fritto e riso al cocco sulla costa"
+                ]
+            },
+            "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/004.webp",
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "atlántico",
+                    "history",
+                    "cultural heritage",
+                    "architecture",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air"
+                ],
+                "es": [
+                    "atlántico",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitectura",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre"
+                ],
+                "pt": [
+                    "atlântico",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitetura",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre"
+                ],
+                "fr": [
+                    "atlantique",
+                    "histoire",
+                    "patrimoine culturel",
+                    "architecture",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre"
+                ],
+                "it": [
+                    "atlantico",
+                    "storia",
+                    "patrimonio culturale",
+                    "architettura",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta"
+                ]
+            }
+        },
+        {
+            "key": "005",
+            "name": {
+                "en": "Bolívar",
+                "es": "Bolívar",
+                "pt": "Bolívar",
+                "fr": "Bolívar",
+                "it": "Bolívar"
+            },
+            "description": {
+                "en": "Walk the walled city of Cartagena, a UNESCO World Heritage site full of history, color and Caribbean breeze.",
+                "es": "Recorre la ciudad amurallada de Cartagena, Patrimonio de la Humanidad llena de historia, color y brisa caribeña.",
+                "pt": "Percorra a cidade amuralhada de Cartagena, Patrimônio da Humanidade cheia de história, cor e brisa caribenha.",
+                "fr": "Parcourez la ville fortifiée de Cartagena, site du patrimoine mondial riche en histoire, couleurs et brise caribéenne.",
+                "it": "Percorri la città murata di Cartagena, patrimonio UNESCO ricco di storia, colori e brezza caraibica."
+            },
+            "tips": {
+                "en": [
+                    "Explore the historic center and Getsemaní",
+                    "Take a boat to the Rosario Islands",
+                    "Watch the sunset from the city walls"
+                ],
+                "es": [
+                    "Explora el centro histórico y Getsemaní",
+                    "Toma un bote hacia las Islas del Rosario",
+                    "Contempla el atardecer desde las murallas"
+                ],
+                "pt": [
+                    "Explore o centro histórico e Getsemaní",
+                    "Pegue um barco para as Ilhas do Rosário",
+                    "Contemple o pôr do sol das muralhas"
+                ],
+                "fr": [
+                    "Explorez le centre historique et Getsemaní",
+                    "Prenez un bateau vers les îles du Rosario",
+                    "Admirez le coucher de soleil depuis les remparts"
+                ],
+                "it": [
+                    "Esplora il centro storico e Getsemaní",
+                    "Prendi una barca per le isole del Rosario",
+                    "Ammira il tramonto dalle mura"
+                ]
+            },
+            "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/005.webp",
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "bolívar",
+                    "history",
+                    "cultural heritage",
+                    "architecture",
+                    "nature escape",
+                    "outdoor activity",
+                    "scenic route"
+                ],
+                "es": [
+                    "bolívar",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitectura",
+                    "escapada natural",
+                    "actividad al aire libre",
+                    "ruta escenica"
+                ],
+                "pt": [
+                    "bolívar",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitetura",
+                    "escapada natural",
+                    "atividade ao ar livre",
+                    "rota cenica"
+                ],
+                "fr": [
+                    "bolívar",
+                    "histoire",
+                    "patrimoine culturel",
+                    "architecture",
+                    "escapade nature",
+                    "activite en plein air",
+                    "itineraire panoramique"
+                ],
+                "it": [
+                    "bolívar",
+                    "storia",
+                    "patrimonio culturale",
+                    "architettura",
+                    "fuga nella natura",
+                    "attivita all aperto",
+                    "percorso panoramico"
+                ]
+            }
+        },
+        {
+            "key": "006",
+            "name": {
+                "en": "Boyacá",
+                "es": "Boyacá",
+                "pt": "Boyacá",
+                "fr": "Boyacá",
+                "it": "Boyacá"
+            },
+            "description": {
+                "en": "Travel through colonial towns, green páramos and the highlands where Colombia's independence was forged.",
+                "es": "Recorre pueblos coloniales, páramos verdes y tierras altas donde se forjó la independencia de Colombia.",
+                "pt": "Viaje por vilas coloniais, páramos verdes e terras altas onde se forjou a independência da Colômbia.",
+                "fr": "Parcourez des villages coloniaux, des páramos verdoyants et les hautes terres où l'indépendance colombienne s'est forgée.",
+                "it": "Attraversa paesi coloniali, páramos verdi e alture dove si forgiò l'indipendenza colombiana."
+            },
+            "tips": {
+                "en": [
+                    "Visit Villa de Leyva and its vast main square",
+                    "Explore the Iguaque páramo",
+                    "Discover the Puente de Boyacá historic site"
+                ],
+                "es": [
+                    "Visita Villa de Leyva y su amplio parque principal",
+                    "Explora el páramo de Iguaque",
+                    "Conoce el Puente de Boyacá"
+                ],
+                "pt": [
+                    "Visite Villa de Leyva e sua ampla praça principal",
+                    "Explore o páramo de Iguaque",
+                    "Conheça o Puente de Boyacá"
+                ],
+                "fr": [
+                    "Visitez Villa de Leyva et sa vaste place principale",
+                    "Explorez le páramo d'Iguaque",
+                    "Découvrez le Puente de Boyacá"
+                ],
+                "it": [
+                    "Visita Villa de Leyva e la sua vasta piazza principale",
+                    "Esplora il páramo di Iguaque",
+                    "Scopri il Puente de Boyacá"
+                ]
+            },
+            "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/006.webp",
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "boyacá",
+                    "history",
+                    "cultural heritage",
+                    "architecture",
+                    "nature escape",
+                    "outdoor activity",
+                    "scenic route"
+                ],
+                "es": [
+                    "boyacá",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitectura",
+                    "escapada natural",
+                    "actividad al aire libre",
+                    "ruta escenica"
+                ],
+                "pt": [
+                    "boyacá",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitetura",
+                    "escapada natural",
+                    "atividade ao ar livre",
+                    "rota cenica"
+                ],
+                "fr": [
+                    "boyacá",
+                    "histoire",
+                    "patrimoine culturel",
+                    "architecture",
+                    "escapade nature",
+                    "activite en plein air",
+                    "itineraire panoramique"
+                ],
+                "it": [
+                    "boyacá",
+                    "storia",
+                    "patrimonio culturale",
+                    "architettura",
+                    "fuga nella natura",
+                    "attivita all aperto",
+                    "percorso panoramico"
+                ]
+            }
+        },
+        {
+            "key": "007",
+            "name": {
+                "en": "Caldas",
+                "es": "Caldas",
+                "pt": "Caldas",
+                "fr": "Caldas",
+                "it": "Caldas"
+            },
+            "description": {
+                "en": "Climb the Andes to Manizales, heart of the Coffee Cultural Landscape with volcanoes and thermal springs.",
+                "es": "Sube a los Andes hasta Manizales, corazón del Paisaje Cultural Cafetero con volcanes y termales.",
+                "pt": "Suba aos Andes até Manizales, coração do Paisagem Cultural Cafeeiro com vulcões e termas.",
+                "fr": "Montez dans les Andes jusqu'à Manizales, cœur du Paysage Culturel du Café avec volcans et sources thermales.",
+                "it": "Sali nelle Ande fino a Manizales, cuore del Paesaggio Culturale del Caffè con vulcani e terme."
+            },
+            "tips": {
+                "en": [
+                    "Visit the Nevado del Ruiz viewpoints",
+                    "Tour coffee plantations near Chinchiná",
+                    "Relax in thermal baths at Termales del Otoño"
+                ],
+                "es": [
+                    "Visita miradores del Nevado del Ruiz",
+                    "Recorre fincas cafeteras cerca de Chinchiná",
+                    "Relájate en los termales del Otoño"
+                ],
+                "pt": [
+                    "Visite mirantes do Nevado del Ruiz",
+                    "Conheça fazendas de café perto de Chinchiná",
+                    "Relaxe nas termas del Otoño"
+                ],
+                "fr": [
+                    "Visitez les belvédères du Nevado del Ruiz",
+                    "Visitez des plantations de café près de Chinchiná",
+                    "Détendez-vous aux thermes del Otoño"
+                ],
+                "it": [
+                    "Visita i belvedere del Nevado del Ruiz",
+                    "Visita piantagioni di caffè vicino a Chinchiná",
+                    "Rilassati alle terme del Otoño"
+                ]
+            },
+            "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/007.webp",
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "caldas",
+                    "food scene",
+                    "local cuisine",
+                    "culinary plan",
+                    "nightlife",
+                    "music culture",
+                    "social plan"
+                ],
+                "es": [
+                    "caldas",
+                    "escena gastronomica",
+                    "cocina local",
+                    "plan culinario",
+                    "vida nocturna",
+                    "cultura musical",
+                    "plan social"
+                ],
+                "pt": [
+                    "caldas",
+                    "cena gastronomica",
+                    "culinaria local",
+                    "plano culinario",
+                    "vida noturna",
+                    "cultura musical",
+                    "plano social"
+                ],
+                "fr": [
+                    "caldas",
+                    "scene gastronomique",
+                    "cuisine locale",
+                    "plan culinaire",
+                    "vie nocturne",
+                    "culture musicale",
+                    "plan social"
+                ],
+                "it": [
+                    "caldas",
+                    "scena gastronomica",
+                    "cucina locale",
+                    "piano culinario",
+                    "vita notturna",
+                    "cultura musicale",
+                    "piano sociale"
+                ]
+            }
+        },
+        {
+            "key": "008",
+            "name": {
+                "en": "Caquetá",
+                "es": "Caquetá",
+                "pt": "Caquetá",
+                "fr": "Caquetá",
+                "it": "Caquetá"
+            },
+            "description": {
+                "en": "Venture into the Amazon foothills of southern Colombia, rich in rivers, forests and biodiversity.",
+                "es": "Aventúrate en la Amazonía andina del sur colombiano, rica en ríos, selvas y biodiversidad.",
+                "pt": "Aventure-se na Amazônia andina do sul colombiano, rica em rios, florestas e biodiversidade.",
+                "fr": "Aventurez-vous dans l'Amazonie andine du sud colombien, riche en rivières, forêts et biodiversité.",
+                "it": "Avventurati nell'Amazzonia andina del sud colombiano, ricca di fiumi, foreste e biodiversità."
+            },
+            "tips": {
+                "en": [
+                    "Explore Caquetá River landscapes",
+                    "Visit Florencia, the departmental capital",
+                    "Discover natural reserves in the Amazon transition zone"
+                ],
+                "es": [
+                    "Explora paisajes del río Caquetá",
+                    "Visita Florencia, capital departamental",
+                    "Descubre reservas naturales en la zona de transición amazónica"
+                ],
+                "pt": [
+                    "Explore paisagens do rio Caquetá",
+                    "Visite Florencia, capital departamental",
+                    "Descubra reservas naturais na zona de transição amazônica"
+                ],
+                "fr": [
+                    "Explorez les paysages du fleuve Caquetá",
+                    "Visitez Florencia, capitale départementale",
+                    "Découvrez les réserves naturelles de la zone de transition amazonienne"
+                ],
+                "it": [
+                    "Esplora i paesaggi del fiume Caquetá",
+                    "Visita Florencia, capitale dipartimentale",
+                    "Scopri le riserve naturali nella zona di transizione amazzonica"
+                ]
+            },
+            "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/008.webp",
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "caquetá",
+                    "nature escape",
+                    "outdoor activity",
+                    "scenic route",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air"
+                ],
+                "es": [
+                    "caquetá",
+                    "escapada natural",
+                    "actividad al aire libre",
+                    "ruta escenica",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre"
+                ],
+                "pt": [
+                    "caquetá",
+                    "escapada natural",
+                    "atividade ao ar livre",
+                    "rota cenica",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre"
+                ],
+                "fr": [
+                    "caquetá",
+                    "escapade nature",
+                    "activite en plein air",
+                    "itineraire panoramique",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre"
+                ],
+                "it": [
+                    "caquetá",
+                    "fuga nella natura",
+                    "attivita all aperto",
+                    "percorso panoramico",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta"
+                ]
+            }
+        },
+        {
+            "key": "009",
+            "name": {
+                "en": "Casanare",
+                "es": "Casanare",
+                "pt": "Casanare",
+                "fr": "Casanare",
+                "it": "Casanare"
+            },
+            "description": {
+                "en": "Discover the eastern llanos with vast savannas, wildlife and the cowboy soul of Yopal.",
+                "es": "Descubre los llanos orientales con sabanas infinitas, fauna silvestre y el alma llanera de Yopal.",
+                "pt": "Descubra os llanos orientais com savanas infinitas, fauna selvagem e a alma llanera de Yopal.",
+                "fr": "Découvrez les llanos orientaux avec leurs savanes infinies, leur faune sauvage et l'âme llanera de Yopal.",
+                "it": "Scopri i llanos orientali con savane infinite, fauna selvatica e l'anima llanera di Yopal."
+            },
+            "tips": {
+                "en": [
+                    "Spot capybaras and deer on the plains",
+                    "Take a safari in the llanos",
+                    "Enjoy a traditional llanera barbecue"
+                ],
+                "es": [
+                    "Observa chigüiros y venados en los llanos",
+                    "Haz un safari llanero",
+                    "Disfruta una parrilla llanera tradicional"
+                ],
+                "pt": [
+                    "Observe capivaras e veados nos llanos",
+                    "Faça um safari llanero",
+                    "Saboreie um churrasco llanero tradicional"
+                ],
+                "fr": [
+                    "Observez des capybaras et des cerfs dans les plaines",
+                    "Partez en safari llanero",
+                    "Dégustez un barbecue llanero traditionnel"
+                ],
+                "it": [
+                    "Osserva capibara e cervi nei llanos",
+                    "Fai un safari llanero",
+                    "Gusta un barbecue llanero tradizionale"
+                ]
+            },
+            "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/009.webp",
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "casanare",
+                    "nightlife",
+                    "music culture",
+                    "social plan",
+                    "creative moment",
+                    "art and design",
+                    "visual culture"
+                ],
+                "es": [
+                    "casanare",
+                    "vida nocturna",
+                    "cultura musical",
+                    "plan social",
+                    "momento creativo",
+                    "arte y diseno",
+                    "cultura visual"
+                ],
+                "pt": [
+                    "casanare",
+                    "vida noturna",
+                    "cultura musical",
+                    "plano social",
+                    "momento criativo",
+                    "arte e design",
+                    "cultura visual"
+                ],
+                "fr": [
+                    "casanare",
+                    "vie nocturne",
+                    "culture musicale",
+                    "plan social",
+                    "moment creatif",
+                    "art et design",
+                    "culture visuelle"
+                ],
+                "it": [
+                    "casanare",
+                    "vita notturna",
+                    "cultura musicale",
+                    "piano sociale",
+                    "momento creativo",
+                    "arte e design",
+                    "cultura visiva"
+                ]
+            }
+        },
+        {
+            "key": "010",
+            "name": {
+                "en": "Cauca",
+                "es": "Cauca",
+                "pt": "Cauca",
+                "fr": "Cauca",
+                "it": "Cauca"
+            },
+            "description": {
+                "en": "Explore Popayán, the white city, and a department of indigenous heritage, volcanoes and Andean valleys.",
+                "es": "Explora Popayán, la ciudad blanca, y un departamento de herencia indígena, volcanes y valles andinos.",
+                "pt": "Explore Popayán, a cidade branca, e um departamento de herança indígena, vulcões e vales andinos.",
+                "fr": "Explorez Popayán, la ville blanche, et un département d'héritage indigène, de volcans et de vallées andines.",
+                "it": "Esplora Popayán, la città bianca, e un dipartimento di eredità indigena, vulcani e valli andine."
+            },
+            "tips": {
+                "en": [
+                    "Walk Popayán's colonial white facades",
+                    "Visit Silvia's indigenous market",
+                    "Explore the Puracé National Natural Park"
+                ],
+                "es": [
+                    "Recorre las fachadas blancas coloniales de Popayán",
+                    "Visita el mercado indígena de Silvia",
+                    "Explora el Parque Nacional Natural Puracé"
+                ],
+                "pt": [
+                    "Caminhe pelas fachadas brancas coloniais de Popayán",
+                    "Visite o mercado indígena de Silvia",
+                    "Explore o Parque Nacional Natural Puracé"
+                ],
+                "fr": [
+                    "Parcourez les façades blanches coloniales de Popayán",
+                    "Visitez le marché indigène de Silvia",
+                    "Explorez le Parc National Naturel Puracé"
+                ],
+                "it": [
+                    "Percorri le facciate bianche coloniali di Popayán",
+                    "Visita il mercato indigeno di Silvia",
+                    "Esplora il Parco Nazionale Naturale Puracé"
+                ]
+            },
+            "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/010.webp",
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "cauca",
+                    "history",
+                    "cultural heritage",
+                    "architecture",
+                    "nature escape",
+                    "outdoor activity",
+                    "scenic route"
+                ],
+                "es": [
+                    "cauca",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitectura",
+                    "escapada natural",
+                    "actividad al aire libre",
+                    "ruta escenica"
+                ],
+                "pt": [
+                    "cauca",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitetura",
+                    "escapada natural",
+                    "atividade ao ar livre",
+                    "rota cenica"
+                ],
+                "fr": [
+                    "cauca",
+                    "histoire",
+                    "patrimoine culturel",
+                    "architecture",
+                    "escapade nature",
+                    "activite en plein air",
+                    "itineraire panoramique"
+                ],
+                "it": [
+                    "cauca",
+                    "storia",
+                    "patrimonio culturale",
+                    "architettura",
+                    "fuga nella natura",
+                    "attivita all aperto",
+                    "percorso panoramico"
+                ]
+            }
+        },
+        {
+            "key": "011",
+            "name": {
+                "en": "Cesar",
+                "es": "Cesar",
+                "pt": "Cesar",
+                "fr": "Cesar",
+                "it": "Cesar"
+            },
+            "description": {
+                "en": "Feel the beat of vallenato in Valledupar, cradle of Colombia's most iconic folk music.",
+                "es": "Siente el compás del vallenato en Valledupar, cuna de la música folclórica más icónica de Colombia.",
+                "pt": "Sinta o compasso do vallenato em Valledupar, berço da música folclórica mais icônica da Colômbia.",
+                "fr": "Ressentez le rythme du vallenato à Valledupar, berceau de la musique folklorique la plus emblématique de Colombie.",
+                "it": "Senti il ritmo del vallenato a Valledupar, culla della musica folk più iconica della Colombia."
+            },
+            "tips": {
+                "en": [
+                    "Visit the Vallenato Legend Festival Park",
+                    "Explore the Guatapurí River",
+                    "Discover the Sierra Nevada foothills at La Paz"
+                ],
+                "es": [
+                    "Visita el Parque de la Leyenda Vallenata",
+                    "Explora el río Guatapurí",
+                    "Descubre la Sierra Nevada en La Paz"
+                ],
+                "pt": [
+                    "Visite o Parque da Lenda Vallenata",
+                    "Explore o rio Guatapurí",
+                    "Descubra a Sierra Nevada em La Paz"
+                ],
+                "fr": [
+                    "Visitez le Parc de la Légende Vallenata",
+                    "Explorez le fleuve Guatapurí",
+                    "Découvrez le piémont de la Sierra Nevada à La Paz"
+                ],
+                "it": [
+                    "Visita il Parco della Leggenda Vallenata",
+                    "Esplora il fiume Guatapurí",
+                    "Scopri la Sierra Nevada a La Paz"
+                ]
+            },
+            "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/011.webp",
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "cesar",
+                    "nature escape",
+                    "outdoor activity",
+                    "scenic route",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air"
+                ],
+                "es": [
+                    "cesar",
+                    "escapada natural",
+                    "actividad al aire libre",
+                    "ruta escenica",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre"
+                ],
+                "pt": [
+                    "cesar",
+                    "escapada natural",
+                    "atividade ao ar livre",
+                    "rota cenica",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre"
+                ],
+                "fr": [
+                    "cesar",
+                    "escapade nature",
+                    "activite en plein air",
+                    "itineraire panoramique",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre"
+                ],
+                "it": [
+                    "cesar",
+                    "fuga nella natura",
+                    "attivita all aperto",
+                    "percorso panoramico",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta"
+                ]
+            }
+        },
+        {
+            "key": "012",
+            "name": {
+                "en": "Chocó",
+                "es": "Chocó",
+                "pt": "Chocó",
+                "fr": "Chocó",
+                "it": "Chocó"
+            },
+            "description": {
+                "en": "Immerse yourself in the Pacific rainforest, one of the wettest and most biodiverse regions on Earth.",
+                "es": "Sumérgete en la selva del Pacífico, una de las regiones más lluviosas y biodiversas del planeta.",
+                "pt": "Mergulhe na floresta do Pacífico, uma das regiões mais chuvosas e biodiversas do planeta.",
+                "fr": "Plongez dans la forêt du Pacifique, l'une des régions les plus pluvieuses et biodiverses de la planète.",
+                "it": "Immergiti nella foresta del Pacifico, una delle regioni più piovose e biodiverse del pianeta."
+            },
+            "tips": {
+                "en": [
+                    "Watch humpback whales off Nuquí and Bahía Solano",
+                    "Visit Afro-Colombian communities on the coast",
+                    "Hike to waterfalls in the lush jungle"
+                ],
+                "es": [
+                    "Observa ballenas jorobadas en Nuquí y Bahía Solano",
+                    "Conoce comunidades afrocolombianas en la costa",
+                    "Camina hasta cascadas en la selva húmeda"
+                ],
+                "pt": [
+                    "Observe baleias-jubarte em Nuquí e Bahía Solano",
+                    "Conheça comunidades afro-colombianas na costa",
+                    "Caminhe até cachoeiras na floresta úmida"
+                ],
+                "fr": [
+                    "Observez les baleines à bosse au large de Nuquí et Bahía Solano",
+                    "Découvrez les communautés afro-colombiennes sur la côte",
+                    "Randonnez jusqu'aux cascades dans la jungle luxuriante"
+                ],
+                "it": [
+                    "Osserva le megattere al largo di Nuquí e Bahía Solano",
+                    "Conosci le comunità afro-colombiane sulla costa",
+                    "Cammina fino alle cascate nella giungla lussureggiante"
+                ]
+            },
+            "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/012.webp",
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "chocó",
+                    "nature escape",
+                    "outdoor activity",
+                    "scenic route",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air"
+                ],
+                "es": [
+                    "chocó",
+                    "escapada natural",
+                    "actividad al aire libre",
+                    "ruta escenica",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre"
+                ],
+                "pt": [
+                    "chocó",
+                    "escapada natural",
+                    "atividade ao ar livre",
+                    "rota cenica",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre"
+                ],
+                "fr": [
+                    "chocó",
+                    "escapade nature",
+                    "activite en plein air",
+                    "itineraire panoramique",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre"
+                ],
+                "it": [
+                    "chocó",
+                    "fuga nella natura",
+                    "attivita all aperto",
+                    "percorso panoramico",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta"
+                ]
+            }
+        },
+        {
+            "key": "013",
+            "name": {
+                "en": "Córdoba",
+                "es": "Córdoba",
+                "pt": "Córdoba",
+                "fr": "Córdoba",
+                "it": "Córdoba"
+            },
+            "description": {
+                "en": "Explore Montería and the Sinú River valley, where Caribbean plains meet cattle ranches and folklore.",
+                "es": "Explora Montería y el valle del río Sinú, donde los llanos caribeños se encuentran con la ganadería y el folclor.",
+                "pt": "Explore Montería e o vale do rio Sinú, onde as planícies caribenhas se encontram com a pecuária e o folclore.",
+                "fr": "Explorez Montería et la vallée du fleuve Sinú, où les plaines caribéennes rencontrent l'élevage et le folklore.",
+                "it": "Esplora Montería e la valle del fiume Sinú, dove le pianure caraibiche incontrano l'allevamento e il folclore."
+            },
+            "tips": {
+                "en": [
+                    "Walk Montería's Ronda del Sinú park",
+                    "Visit Lorica's historic river port",
+                    "Enjoy sancocho and coastal cuisine"
+                ],
+                "es": [
+                    "Recorre el parque Ronda del Sinú en Montería",
+                    "Visita el puerto fluvial histórico de Lorica",
+                    "Disfruta sancocho y gastronomía costeña"
+                ],
+                "pt": [
+                    "Caminhe pelo parque Ronda del Sinú em Montería",
+                    "Visite o porto fluvial histórico de Lorica",
+                    "Saboreie sancocho e culinária costeira"
+                ],
+                "fr": [
+                    "Promenez-vous dans le parc Ronda del Sinú à Montería",
+                    "Visitez le port fluvial historique de Lorica",
+                    "Dégustez sancocho et cuisine côtière"
+                ],
+                "it": [
+                    "Passeggia nel parco Ronda del Sinú a Montería",
+                    "Visita il porto fluviale storico di Lorica",
+                    "Gusta sancocho e cucina costiera"
+                ]
+            },
+            "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/013.webp",
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "córdoba",
+                    "food scene",
+                    "local cuisine",
+                    "culinary plan",
+                    "history",
+                    "cultural heritage",
+                    "architecture"
+                ],
+                "es": [
+                    "córdoba",
+                    "escena gastronomica",
+                    "cocina local",
+                    "plan culinario",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitectura"
+                ],
+                "pt": [
+                    "córdoba",
+                    "cena gastronomica",
+                    "culinaria local",
+                    "plano culinario",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitetura"
+                ],
+                "fr": [
+                    "córdoba",
+                    "scene gastronomique",
+                    "cuisine locale",
+                    "plan culinaire",
+                    "histoire",
+                    "patrimoine culturel",
+                    "architecture"
+                ],
+                "it": [
+                    "córdoba",
+                    "scena gastronomica",
+                    "cucina locale",
+                    "piano culinario",
+                    "storia",
+                    "patrimonio culturale",
+                    "architettura"
+                ]
+            }
+        },
+        {
+            "key": "014",
+            "name": {
+                "en": "Cundinamarca",
+                "es": "Cundinamarca",
+                "pt": "Cundinamarca",
+                "fr": "Cundinamarca",
+                "it": "Cundinamarca"
+            },
+            "description": {
+                "en": "Discover the highlands surrounding Bogotá, with páramos, colonial villages and Andean landscapes.",
+                "es": "Descubre la sabana de Bogotá y sus alrededores, con páramos, pueblos coloniales y paisajes andinos.",
+                "pt": "Descubra as terras altas ao redor de Bogotá, com páramos, vilas coloniais e paisagens andinas.",
+                "fr": "Découvrez les hautes terres entourant Bogotá, avec páramos, villages coloniaux et paysages andins.",
+                "it": "Scopri le alture intorno a Bogotá, con páramos, paesi coloniali e paesaggi andini."
+            },
+            "tips": {
+                "en": [
+                    "Visit Zipaquirá's Salt Cathedral",
+                    "Explore Guatavita and the legend of El Dorado",
+                    "Hike in Chingaza National Natural Park"
+                ],
+                "es": [
+                    "Visita la Catedral de Sal de Zipaquirá",
+                    "Explora Guatavita y la leyenda de El Dorado",
+                    "Camina en el Parque Nacional Natural Chingaza"
+                ],
+                "pt": [
+                    "Visite a Catedral de Sal de Zipaquirá",
+                    "Explore Guatavita e a lenda de El Dorado",
+                    "Caminhe no Parque Nacional Natural Chingaza"
+                ],
+                "fr": [
+                    "Visitez la Cathédrale de Sel de Zipaquirá",
+                    "Explorez Guatavita et la légende d'El Dorado",
+                    "Randonnez dans le Parc National Naturel Chingaza"
+                ],
+                "it": [
+                    "Visita la Cattedrale di Sale di Zipaquirá",
+                    "Esplora Guatavita e la leggenda di El Dorado",
+                    "Cammina nel Parco Nazionale Naturale Chingaza"
+                ]
+            },
+            "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/014.webp",
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "cundinamarca",
+                    "history",
+                    "cultural heritage",
+                    "architecture",
+                    "nature escape",
+                    "outdoor activity",
+                    "scenic route"
+                ],
+                "es": [
+                    "cundinamarca",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitectura",
+                    "escapada natural",
+                    "actividad al aire libre",
+                    "ruta escenica"
+                ],
+                "pt": [
+                    "cundinamarca",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitetura",
+                    "escapada natural",
+                    "atividade ao ar livre",
+                    "rota cenica"
+                ],
+                "fr": [
+                    "cundinamarca",
+                    "histoire",
+                    "patrimoine culturel",
+                    "architecture",
+                    "escapade nature",
+                    "activite en plein air",
+                    "itineraire panoramique"
+                ],
+                "it": [
+                    "cundinamarca",
+                    "storia",
+                    "patrimonio culturale",
+                    "architettura",
+                    "fuga nella natura",
+                    "attivita all aperto",
+                    "percorso panoramico"
+                ]
+            }
+        },
+        {
+            "key": "015",
+            "name": {
+                "en": "Guainía",
+                "es": "Guainía",
+                "pt": "Guainía",
+                "fr": "Guainía",
+                "it": "Guainía"
+            },
+            "description": {
+                "en": "Reach the remote Orinoco region with tepuis, black-water rivers and ancestral indigenous cultures.",
+                "es": "Llega a la remota Orinoquía con tepuyes, ríos de aguas negras y culturas indígenas ancestrales.",
+                "pt": "Chegue à remota Orinoquia com tepuis, rios de águas negras e culturas indígenas ancestrais.",
+                "fr": "Atteignez la remote Orinoquía avec tepuis, rivières aux eaux noires et cultures indigènes ancestrales.",
+                "it": "Raggiungi la remota Orinoquía con tepui, fiumi d'acque nere e culture indigene ancestrali."
+            },
+            "tips": {
+                "en": [
+                    "Navigate the Inírida River and its rock formations",
+                    "Visit Cerro Pintado petroglyphs",
+                    "Learn about Puinave and Curripaco traditions"
+                ],
+                "es": [
+                    "Navega el río Inírida y sus formaciones rocosas",
+                    "Visita los petroglifos del Cerro Pintado",
+                    "Conoce las tradiciones Puinave y Curripaco"
+                ],
+                "pt": [
+                    "Navegue pelo rio Inírida e suas formações rochosas",
+                    "Visite os petróglifos do Cerro Pintado",
+                    "Conheça as tradições Puinave e Curripaco"
+                ],
+                "fr": [
+                    "Naviguez sur le fleuve Inírida et ses formations rocheuses",
+                    "Visitez les pétroglyphes du Cerro Pintado",
+                    "Découvrez les traditions Puinave et Curripaco"
+                ],
+                "it": [
+                    "Naviga il fiume Inírida e le sue formazioni rocciose",
+                    "Visita i petroglifi del Cerro Pintado",
+                    "Conosci le tradizioni Puinave e Curripaco"
+                ]
+            },
+            "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/015.webp",
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "guainía",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air"
+                ],
+                "es": [
+                    "guainía",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre"
+                ],
+                "pt": [
+                    "guainía",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre"
+                ],
+                "fr": [
+                    "guainía",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre"
+                ],
+                "it": [
+                    "guainía",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta"
+                ]
+            }
+        },
+        {
+            "key": "016",
+            "name": {
+                "en": "Guaviare",
+                "es": "Guaviare",
+                "pt": "Guaviare",
+                "fr": "Guaviare",
+                "it": "Guaviare"
+            },
+            "description": {
+                "en": "Uncover ancient rock art, red rivers and the gateway between the Amazon and the eastern plains.",
+                "es": "Descubre arte rupestre milenario, ríos rojos y la puerta entre la Amazonía y los llanos orientales.",
+                "pt": "Descubra arte rupestre milenar, rios vermelhos e a porta entre a Amazônia e os llanos orientais.",
+                "fr": "Découvrez l'art rupestre millénaire, les rivières rouges et la porte entre l'Amazonie et les plaines orientales.",
+                "it": "Scopri arte rupestre millenaria, fiumi rossi e la porta tra l'Amazzonia e le pianure orientali."
+            },
+            "tips": {
+                "en": [
+                    "Visit the Serranía de la Lindosa rock murals",
+                    "Swim in the red waters of Caño Cristales' region",
+                    "Explore Chiribiquete National Natural Park surroundings"
+                ],
+                "es": [
+                    "Visita los murales rupestres de la Serranía de la Lindosa",
+                    "Nada en las aguas rojas de la región del Caño Cristales",
+                    "Explora los alrededores del Parque Nacional Natural Chiribiquete"
+                ],
+                "pt": [
+                    "Visite os murais rupestres da Serranía de la Lindosa",
+                    "Nade nas águas vermelhas da região do Caño Cristales",
+                    "Explore os arredores do Parque Nacional Natural Chiribiquete"
+                ],
+                "fr": [
+                    "Visitez les fresques rupestres de la Serranía de la Lindosa",
+                    "Nagez dans les eaux rouges de la région du Caño Cristales",
+                    "Explorez les environs du Parc National Naturel Chiribiquete"
+                ],
+                "it": [
+                    "Visita gli affreschi rupestri della Serranía de la Lindosa",
+                    "Nuota nelle acque rosse della regione del Caño Cristales",
+                    "Esplora i dintorni del Parco Nazionale Naturale Chiribiquete"
+                ]
+            },
+            "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/016.webp",
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "guaviare",
+                    "nature escape",
+                    "outdoor activity",
+                    "scenic route",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air"
+                ],
+                "es": [
+                    "guaviare",
+                    "escapada natural",
+                    "actividad al aire libre",
+                    "ruta escenica",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre"
+                ],
+                "pt": [
+                    "guaviare",
+                    "escapada natural",
+                    "atividade ao ar livre",
+                    "rota cenica",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre"
+                ],
+                "fr": [
+                    "guaviare",
+                    "escapade nature",
+                    "activite en plein air",
+                    "itineraire panoramique",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre"
+                ],
+                "it": [
+                    "guaviare",
+                    "fuga nella natura",
+                    "attivita all aperto",
+                    "percorso panoramico",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta"
+                ]
+            }
+        },
+        {
+            "key": "017",
+            "name": {
+                "en": "Huila",
+                "es": "Huila",
+                "pt": "Huila",
+                "fr": "Huila",
+                "it": "Huila"
+            },
+            "description": {
+                "en": "From the Tatacoa Desert to the Magdalena River source, Huila blends arid landscapes and Andean culture.",
+                "es": "Del desierto de la Tatacoa al nacimiento del Magdalena, Huila combina paisajes áridos y cultura andina.",
+                "pt": "Do deserto de Tatacoa ao nascente do Magdalena, Huila combina paisagens áridas e cultura andina.",
+                "fr": "Du désert de Tatacoa à la source du Magdalena, Huila mêle paysages arides et culture andine.",
+                "it": "Dal deserto di Tatacoa alla sorgente del Magdalena, Huila unisce paesaggi aridi e cultura andina."
+            },
+            "tips": {
+                "en": [
+                    "Stargaze in the Tatacoa Desert",
+                    "Visit San Agustín archaeological park",
+                    "Explore Neiva and the Magdalena Valley"
+                ],
+                "es": [
+                    "Observa estrellas en el desierto de la Tatacoa",
+                    "Visita el parque arqueológico de San Agustín",
+                    "Explora Neiva y el valle del Magdalena"
+                ],
+                "pt": [
+                    "Observe estrelas no deserto de Tatacoa",
+                    "Visite o parque arqueológico de San Agustín",
+                    "Explore Neiva e o vale do Magdalena"
+                ],
+                "fr": [
+                    "Observez les étoiles dans le désert de Tatacoa",
+                    "Visitez le parc archéologique de San Agustín",
+                    "Explorez Neiva et la vallée du Magdalena"
+                ],
+                "it": [
+                    "Osserva le stelle nel deserto di Tatacoa",
+                    "Visita il parco archeologico di San Agustín",
+                    "Esplora Neiva e la valle del Magdalena"
+                ]
+            },
+            "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/017.webp",
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "huila",
+                    "nature escape",
+                    "outdoor activity",
+                    "scenic route",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air"
+                ],
+                "es": [
+                    "huila",
+                    "escapada natural",
+                    "actividad al aire libre",
+                    "ruta escenica",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre"
+                ],
+                "pt": [
+                    "huila",
+                    "escapada natural",
+                    "atividade ao ar livre",
+                    "rota cenica",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre"
+                ],
+                "fr": [
+                    "huila",
+                    "escapade nature",
+                    "activite en plein air",
+                    "itineraire panoramique",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre"
+                ],
+                "it": [
+                    "huila",
+                    "fuga nella natura",
+                    "attivita all aperto",
+                    "percorso panoramico",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta"
+                ]
+            }
+        },
+        {
+            "key": "018",
+            "name": {
+                "en": "Guajira",
+                "es": "Guajira",
+                "pt": "Guajira",
+                "fr": "Guajira",
+                "it": "Guajira"
+            },
+            "description": {
+                "en": "Travel to Colombia's northern tip: desert dunes, Caribbean beaches and proud Wayuu culture.",
+                "es": "Viaja al extremo norte de Colombia: dunas desérticas, playas caribeñas y la cultura wayuu.",
+                "pt": "Viaje à ponta norte da Colômbia: dunas desérticas, praias caribenhas e a cultura wayuu.",
+                "fr": "Voyagez à l'extrémité nord de la Colombie : dunes désertiques, plages caribéennes et culture wayuu.",
+                "it": "Viaggia all'estremità nord della Colombia: dune desertiche, spiagge caraibiche e cultura wayuu."
+            },
+            "tips": {
+                "en": [
+                    "Visit Cabo de la Vela and Punta Gallinas",
+                    "Learn about Wayuu handicrafts and traditions",
+                    "Kitesurf on Caribbean winds"
+                ],
+                "es": [
+                    "Visita Cabo de la Vela y Punta Gallinas",
+                    "Conoce artesanías y tradiciones wayuu",
+                    "Practica kitesurf con los vientos caribeños"
+                ],
+                "pt": [
+                    "Visite Cabo de la Vela e Punta Gallinas",
+                    "Conheça artesanato e tradições wayuu",
+                    "Pratique kitesurf com os ventos caribenhos"
+                ],
+                "fr": [
+                    "Visitez Cabo de la Vela et Punta Gallinas",
+                    "Découvrez l'artisanat et les traditions wayuu",
+                    "Faites du kitesurf avec les vents caribéens"
+                ],
+                "it": [
+                    "Visita Cabo de la Vela e Punta Gallinas",
+                    "Conosci artigianato e tradizioni wayuu",
+                    "Pratica kitesurf con i venti caraibici"
+                ]
+            },
+            "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/018.webp",
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "guajira",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "creative moment",
+                    "art and design",
+                    "visual culture"
+                ],
+                "es": [
+                    "guajira",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "momento creativo",
+                    "arte y diseno",
+                    "cultura visual"
+                ],
+                "pt": [
+                    "guajira",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "momento criativo",
+                    "arte e design",
+                    "cultura visual"
+                ],
+                "fr": [
+                    "guajira",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "moment creatif",
+                    "art et design",
+                    "culture visuelle"
+                ],
+                "it": [
+                    "guajira",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "momento creativo",
+                    "arte e design",
+                    "cultura visiva"
+                ]
+            }
+        },
+        {
+            "key": "019",
+            "name": {
+                "en": "Magdalena",
+                "es": "Magdalena",
+                "pt": "Magdalena",
+                "fr": "Magdalena",
+                "it": "Magdalena"
+            },
+            "description": {
+                "en": "Climb from Santa Marta to the Sierra Nevada, where jungle meets snow-capped peaks and lost cities.",
+                "es": "Sube desde Santa Marta hasta la Sierra Nevada, donde la selva se encuentra con picos nevados y ciudades perdidas.",
+                "pt": "Suba de Santa Marta até a Sierra Nevada, onde a floresta encontra picos nevados e cidades perdidas.",
+                "fr": "Montez de Santa Marta à la Sierra Nevada, où la jungle rencontre des sommets enneigés et des cités perdues.",
+                "it": "Sali da Santa Marta alla Sierra Nevada, dove la giungla incontra picchi innevati e città perdute."
+            },
+            "tips": {
+                "en": [
+                    "Trek to Ciudad Perdida (Lost City)",
+                    "Relax on Tayrona National Natural Park beaches",
+                    "Explore Santa Marta's historic center"
+                ],
+                "es": [
+                    "Camina hacia la Ciudad Perdida",
+                    "Relájate en las playas del Parque Nacional Natural Tayrona",
+                    "Explora el centro histórico de Santa Marta"
+                ],
+                "pt": [
+                    "Caminhe até a Ciudad Perdida",
+                    "Relaxe nas praias do Parque Nacional Natural Tayrona",
+                    "Explore o centro histórico de Santa Marta"
+                ],
+                "fr": [
+                    "Randonnez vers la Ciudad Perdida",
+                    "Détendez-vous sur les plages du Parc National Naturel Tayrona",
+                    "Explorez le centre historique de Santa Marta"
+                ],
+                "it": [
+                    "Cammina verso la Ciudad Perdida",
+                    "Rilassati sulle spiagge del Parco Nazionale Naturale Tayrona",
+                    "Esplora il centro storico di Santa Marta"
+                ]
+            },
+            "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/019.webp",
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "magdalena",
+                    "history",
+                    "cultural heritage",
+                    "architecture",
+                    "nature escape",
+                    "outdoor activity",
+                    "scenic route"
+                ],
+                "es": [
+                    "magdalena",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitectura",
+                    "escapada natural",
+                    "actividad al aire libre",
+                    "ruta escenica"
+                ],
+                "pt": [
+                    "magdalena",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitetura",
+                    "escapada natural",
+                    "atividade ao ar livre",
+                    "rota cenica"
+                ],
+                "fr": [
+                    "magdalena",
+                    "histoire",
+                    "patrimoine culturel",
+                    "architecture",
+                    "escapade nature",
+                    "activite en plein air",
+                    "itineraire panoramique"
+                ],
+                "it": [
+                    "magdalena",
+                    "storia",
+                    "patrimonio culturale",
+                    "architettura",
+                    "fuga nella natura",
+                    "attivita all aperto",
+                    "percorso panoramico"
+                ]
+            }
+        },
+        {
+            "key": "020",
+            "name": {
+                "en": "Meta",
+                "es": "Meta",
+                "pt": "Meta",
+                "fr": "Meta",
+                "it": "Meta"
+            },
+            "description": {
+                "en": "Experience Villavicencio and the gateway to the llanos, with rivers, ranches and wild nature.",
+                "es": "Vive Villavicencio y la puerta de los llanos, con ríos, hatos llaneros y naturaleza salvaje.",
+                "pt": "Viva Villavicencio e a porta dos llanos, com rios, fazendas llaneras e natureza selvagem.",
+                "fr": "Vivez Villavicencio et la porte des llanos, avec rivières, ranchs llaneros et nature sauvage.",
+                "it": "Vivi Villavicencio e la porta dei llanos, con fiumi, ranch llaneros e natura selvaggia."
+            },
+            "tips": {
+                "en": [
+                    "Visit Caño Cristales during the blooming season",
+                    "Explore La Macarena National Natural Park",
+                    "Enjoy a llanera party in Villavicencio"
+                ],
+                "es": [
+                    "Visita el Caño Cristales en temporada de florecimiento",
+                    "Explora el Parque Nacional Natural La Macarena",
+                    "Disfruta una parranda llanera en Villavicencio"
+                ],
+                "pt": [
+                    "Visite o Caño Cristales na temporada de floração",
+                    "Explore o Parque Nacional Natural La Macarena",
+                    "Aproveite uma festa llanera em Villavicencio"
+                ],
+                "fr": [
+                    "Visitez le Caño Cristales en saison de floraison",
+                    "Explorez le Parc National Naturel La Macarena",
+                    "Profitez d'une fête llanera à Villavicencio"
+                ],
+                "it": [
+                    "Visita il Caño Cristales in stagione di fioritura",
+                    "Esplora il Parco Nazionale Naturale La Macarena",
+                    "Goditi una festa llanera a Villavicencio"
+                ]
+            },
+            "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/020.webp",
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "meta",
+                    "nature escape",
+                    "outdoor activity",
+                    "scenic route",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air"
+                ],
+                "es": [
+                    "meta",
+                    "escapada natural",
+                    "actividad al aire libre",
+                    "ruta escenica",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre"
+                ],
+                "pt": [
+                    "meta",
+                    "escapada natural",
+                    "atividade ao ar livre",
+                    "rota cenica",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre"
+                ],
+                "fr": [
+                    "meta",
+                    "escapade nature",
+                    "activite en plein air",
+                    "itineraire panoramique",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre"
+                ],
+                "it": [
+                    "meta",
+                    "fuga nella natura",
+                    "attivita all aperto",
+                    "percorso panoramico",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta"
+                ]
+            }
+        },
+        {
+            "key": "021",
+            "name": {
+                "en": "Nariño",
+                "es": "Nariño",
+                "pt": "Nariño",
+                "fr": "Nariño",
+                "it": "Nariño"
+            },
+            "description": {
+                "en": "Reach Colombia's southern Andes in Pasto, with volcanoes, lakes and a rich blend of Andean cultures.",
+                "es": "Llega a los Andes del sur en Pasto, con volcanes, lagunas y un rico cruce de culturas andinas.",
+                "pt": "Chegue aos Andes do sul em Pasto, com vulcões, lagunas e um rico cruzamento de culturas andinas.",
+                "fr": "Atteignez les Andes du sud à Pasto, avec volcans, lacs et un riche croisement de cultures andines.",
+                "it": "Raggiungi le Ande meridionali a Pasto, con vulcani, lagune e un ricco incrocio di culture andine."
+            },
+            "tips": {
+                "en": [
+                    "Visit Las Lajas Sanctuary near Ipiales",
+                    "Explore Laguna de la Cocha",
+                    "Experience the Black and White Carnival in Pasto"
+                ],
+                "es": [
+                    "Visita el Santuario de Las Lajas cerca de Ipiales",
+                    "Explora la Laguna de la Cocha",
+                    "Vive el Carnaval de Negros y Blancos en Pasto"
+                ],
+                "pt": [
+                    "Visite o Santuário de Las Lajas perto de Ipiales",
+                    "Explore a Laguna de la Cocha",
+                    "Viva o Carnaval de Negros y Blancos em Pasto"
+                ],
+                "fr": [
+                    "Visitez le Sanctuaire de Las Lajas près d'Ipiales",
+                    "Explorez la Laguna de la Cocha",
+                    "Vivez le Carnaval de Negros y Blancos à Pasto"
+                ],
+                "it": [
+                    "Visita il Santuario de Las Lajas vicino a Ipiales",
+                    "Esplora la Laguna de la Cocha",
+                    "Vivi il Carnevale de Negros y Blancos a Pasto"
+                ]
+            },
+            "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/021.webp",
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "nariño",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air"
+                ],
+                "es": [
+                    "nariño",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre"
+                ],
+                "pt": [
+                    "nariño",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre"
+                ],
+                "fr": [
+                    "nariño",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre"
+                ],
+                "it": [
+                    "nariño",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta"
+                ]
+            }
+        },
+        {
+            "key": "022",
+            "name": {
+                "en": "North Santander",
+                "es": "Norte de Santander",
+                "pt": "Norte de Santander",
+                "fr": "Norte de Santander",
+                "it": "Norte de Santander"
+            },
+            "description": {
+                "en": "Discover Cúcuta and the eastern Andes, a border region of mountains, history and warm climate.",
+                "es": "Descubre Cúcuta y los Andes orientales, una región fronteriza de montañas, historia y clima cálido.",
+                "pt": "Descubra Cúcuta e os Andes orientais, uma região de fronteira de montanhas, história e clima quente.",
+                "fr": "Découvrez Cúcuta et les Andes orientales, une région frontalière de montagnes, d'histoire et de climat chaud.",
+                "it": "Scopri Cúcuta e le Ande orientali, una regione di confine di montagne, storia e clima caldo."
+            },
+            "tips": {
+                "en": [
+                    "Visit the Santander Park in Cúcuta",
+                    "Explore Pamplona's colonial university town",
+                    "Discover Chicamocha Canyon viewpoints nearby"
+                ],
+                "es": [
+                    "Visita el Parque Santander en Cúcuta",
+                    "Explora Pamplona, ciudad universitaria colonial",
+                    "Descubre miradores del Cañón del Chicamocha cercano"
+                ],
+                "pt": [
+                    "Visite o Parque Santander em Cúcuta",
+                    "Explore Pamplona, cidade universitária colonial",
+                    "Descubra mirantes do Cañón del Chicamocha nas proximidades"
+                ],
+                "fr": [
+                    "Visitez le Parc Santander à Cúcuta",
+                    "Explorez Pamplona, ville universitaire coloniale",
+                    "Découvrez les belvédères du Cañón del Chicamocha à proximité"
+                ],
+                "it": [
+                    "Visita il Parco Santander a Cúcuta",
+                    "Esplora Pamplona, città universitaria coloniale",
+                    "Scopri i belvedere del Cañón del Chicamocha nelle vicinanze"
+                ]
+            },
+            "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/022.webp",
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "north",
+                    "santander",
+                    "history",
+                    "cultural heritage",
+                    "architecture",
+                    "nature escape",
+                    "outdoor activity"
+                ],
+                "es": [
+                    "norte",
+                    "santander",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitectura",
+                    "escapada natural",
+                    "actividad al aire libre"
+                ],
+                "pt": [
+                    "norte",
+                    "santander",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitetura",
+                    "escapada natural",
+                    "atividade ao ar livre"
+                ],
+                "fr": [
+                    "norte",
+                    "santander",
+                    "histoire",
+                    "patrimoine culturel",
+                    "architecture",
+                    "escapade nature",
+                    "activite en plein air"
+                ],
+                "it": [
+                    "norte",
+                    "santander",
+                    "storia",
+                    "patrimonio culturale",
+                    "architettura",
+                    "fuga nella natura",
+                    "attivita all aperto"
+                ]
+            }
+        },
+        {
+            "key": "023",
+            "name": {
+                "en": "Putumayo",
+                "es": "Putumayo",
+                "pt": "Putumayo",
+                "fr": "Putumayo",
+                "it": "Putumayo"
+            },
+            "description": {
+                "en": "Enter the Amazon gateway of Mocoa, with waterfalls, jungle trails and incredible biodiversity.",
+                "es": "Entra a la puerta amazónica de Mocoa, con cascadas, senderos selváticos e increíble biodiversidad.",
+                "pt": "Entre no portal amazônico de Mocoa, com cachoeiras, trilhas na selva e biodiversidade incrível.",
+                "fr": "Entrez dans la porte amazonienne de Mocoa, avec cascades, sentiers jungle et biodiversité incroyable.",
+                "it": "Entra nel portale amazzonico di Mocoa, con cascate, sentieri nella giungla e biodiversità incredibile."
+            },
+            "tips": {
+                "en": [
+                    "Hike to Fin del Mundo waterfall",
+                    "Visit the Mandiyaco Canyon",
+                    "Explore Sibundoy Valley indigenous communities"
+                ],
+                "es": [
+                    "Camina hasta la cascada Fin del Mundo",
+                    "Visita el Cañón del Mandiyaco",
+                    "Explora comunidades indígenas del valle de Sibundoy"
+                ],
+                "pt": [
+                    "Caminhe até a cachoeira Fin del Mundo",
+                    "Visite o Cañón del Mandiyaco",
+                    "Explore comunidades indígenas do vale de Sibundoy"
+                ],
+                "fr": [
+                    "Randonnez jusqu'à la cascade Fin del Mundo",
+                    "Visitez le Cañón del Mandiyaco",
+                    "Explorez les communautés indigènes de la vallée de Sibundoy"
+                ],
+                "it": [
+                    "Cammina fino alla cascata Fin del Mundo",
+                    "Visita il Cañón del Mandiyaco",
+                    "Esplora le comunità indigene della valle di Sibundoy"
+                ]
+            },
+            "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/023.webp",
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "putumayo",
+                    "nature escape",
+                    "outdoor activity",
+                    "scenic route",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air"
+                ],
+                "es": [
+                    "putumayo",
+                    "escapada natural",
+                    "actividad al aire libre",
+                    "ruta escenica",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre"
+                ],
+                "pt": [
+                    "putumayo",
+                    "escapada natural",
+                    "atividade ao ar livre",
+                    "rota cenica",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre"
+                ],
+                "fr": [
+                    "putumayo",
+                    "escapade nature",
+                    "activite en plein air",
+                    "itineraire panoramique",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre"
+                ],
+                "it": [
+                    "putumayo",
+                    "fuga nella natura",
+                    "attivita all aperto",
+                    "percorso panoramico",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta"
+                ]
+            }
+        },
+        {
+            "key": "024",
+            "name": {
+                "en": "Quindío",
+                "es": "Quindío",
+                "pt": "Quindío",
+                "fr": "Quindío",
+                "it": "Quindío"
+            },
+            "description": {
+                "en": "Stroll through Armenia and the Coffee Cultural Landscape, a UNESCO site of green hills and wax palms.",
+                "es": "Recorre Armenia y el Paisaje Cultural Cafetero, Patrimonio de la Humanidad de montañas verdes y palmas de cera.",
+                "pt": "Percorra Armenia e o Paisagem Cultural Cafeeiro, Patrimônio da Humanidade de montanhas verdes e palmeiras-de-cera.",
+                "fr": "Parcourez Armenia et le Paysage Culturel du Café, site UNESCO de collines vertes et de palmiers à cire.",
+                "it": "Percorri Armenia e il Paesaggio Culturale del Caffè, patrimonio UNESCO di colline verdi e palme da cera."
+            },
+            "tips": {
+                "en": [
+                    "Visit Cocora Valley and its wax palms",
+                    "Explore Salento's colorful streets",
+                    "Tour a traditional coffee farm"
+                ],
+                "es": [
+                    "Visita el Valle de Cocora y sus palmas de cera",
+                    "Explora las coloridas calles de Salento",
+                    "Recorre una finca cafetera tradicional"
+                ],
+                "pt": [
+                    "Visite o Vale de Cocora e suas palmeiras-de-cera",
+                    "Explore as ruas coloridas de Salento",
+                    "Conheça uma fazenda de café tradicional"
+                ],
+                "fr": [
+                    "Visitez la vallée de Cocora et ses palmiers à cire",
+                    "Explorez les rues colorées de Salento",
+                    "Visitez une plantation de café traditionnelle"
+                ],
+                "it": [
+                    "Visita la Valle de Cocora e le sue palme da cera",
+                    "Esplora le colorate strade di Salento",
+                    "Visita una fattoria di caffè tradizionale"
+                ]
+            },
+            "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/024.webp",
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "quindío",
+                    "food scene",
+                    "local cuisine",
+                    "culinary plan",
+                    "history",
+                    "cultural heritage",
+                    "architecture"
+                ],
+                "es": [
+                    "quindío",
+                    "escena gastronomica",
+                    "cocina local",
+                    "plan culinario",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitectura"
+                ],
+                "pt": [
+                    "quindío",
+                    "cena gastronomica",
+                    "culinaria local",
+                    "plano culinario",
+                    "historia",
+                    "patrimonio cultural",
+                    "arquitetura"
+                ],
+                "fr": [
+                    "quindío",
+                    "scene gastronomique",
+                    "cuisine locale",
+                    "plan culinaire",
+                    "histoire",
+                    "patrimoine culturel",
+                    "architecture"
+                ],
+                "it": [
+                    "quindío",
+                    "scena gastronomica",
+                    "cucina locale",
+                    "piano culinario",
+                    "storia",
+                    "patrimonio culturale",
+                    "architettura"
+                ]
+            }
+        },
+        {
+            "key": "025",
+            "name": {
+                "en": "Risaralda",
+                "es": "Risaralda",
+                "pt": "Risaralda",
+                "fr": "Risaralda",
+                "it": "Risaralda"
+            },
+            "description": {
+                "en": "Explore Pereira and the coffee axis, surrounded by volcanoes, hot springs and lush valleys.",
+                "es": "Explora Pereira y el eje cafetero, rodeado de volcanes, termales y valles verdes.",
+                "pt": "Explore Pereira e o eixo cafeeiro, cercado por vulcões, termas e vales verdes.",
+                "fr": "Explorez Pereira et l'axe du café, entouré de volcans, sources thermales et vallées verdoyantes.",
+                "it": "Esplora Pereira e l'asse del caffè, circondato da vulcani, terme e valli verdi."
+            },
+            "tips": {
+                "en": [
+                    "Relax in Santa Rosa de Cabal hot springs",
+                    "Visit Otún Quimbaya wildlife sanctuary",
+                    "Enjoy Pereira's coffee culture and nightlife"
+                ],
+                "es": [
+                    "Relájate en los termales de Santa Rosa de Cabal",
+                    "Visita la reserva Otún Quimbaya",
+                    "Disfruta la cultura cafetera y la vida nocturna de Pereira"
+                ],
+                "pt": [
+                    "Relaxe nas termas de Santa Rosa de Cabal",
+                    "Visite a reserva Otún Quimbaya",
+                    "Aproveite a cultura cafeeira e a vida noturna de Pereira"
+                ],
+                "fr": [
+                    "Détendez-vous aux thermes de Santa Rosa de Cabal",
+                    "Visitez la réserve Otún Quimbaya",
+                    "Profitez de la culture du café et de la vie nocturne de Pereira"
+                ],
+                "it": [
+                    "Rilassati alle terme di Santa Rosa de Cabal",
+                    "Visita la riserva Otún Quimbaya",
+                    "Goditi la cultura del caffè e la vita notturna di Pereira"
+                ]
+            },
+            "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/025.webp",
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "risaralda",
+                    "food scene",
+                    "local cuisine",
+                    "culinary plan",
+                    "nightlife",
+                    "music culture",
+                    "social plan"
+                ],
+                "es": [
+                    "risaralda",
+                    "escena gastronomica",
+                    "cocina local",
+                    "plan culinario",
+                    "vida nocturna",
+                    "cultura musical",
+                    "plan social"
+                ],
+                "pt": [
+                    "risaralda",
+                    "cena gastronomica",
+                    "culinaria local",
+                    "plano culinario",
+                    "vida noturna",
+                    "cultura musical",
+                    "plano social"
+                ],
+                "fr": [
+                    "risaralda",
+                    "scene gastronomique",
+                    "cuisine locale",
+                    "plan culinaire",
+                    "vie nocturne",
+                    "culture musicale",
+                    "plan social"
+                ],
+                "it": [
+                    "risaralda",
+                    "scena gastronomica",
+                    "cucina locale",
+                    "piano culinario",
+                    "vita notturna",
+                    "cultura musicale",
+                    "piano sociale"
+                ]
+            }
+        },
+        {
+            "key": "026",
+            "name": {
+                "en": "San Andrés and Providencia",
+                "es": "San Andrés y Providencia",
+                "pt": "San Andrés e Providência",
+                "fr": "San Andrés et Providencia",
+                "it": "San Andrés e Providencia"
+            },
+            "description": {
+                "en": "Dive into the Caribbean Sea of Seven Colors, coral reefs and Creole island culture.",
+                "es": "Sumérgete en el mar de siete colores, arrecifes de coral y la cultura creole isleña.",
+                "pt": "Mergulhe no mar de sete cores, recifes de coral e na cultura crioula das ilhas.",
+                "fr": "Plongez dans la mer aux sept couleurs, les récifs coralliens et la culture créole insulaire.",
+                "it": "Immergiti nel mare dai sette colori, nelle barriere coralline e nella cultura creola isolana."
+            },
+            "tips": {
+                "en": [
+                    "Snorkel at Johnny Cay and Haynes Cay",
+                    "Try rondón, the traditional island dish",
+                    "Explore Old Point Regional Mangrove Park"
+                ],
+                "es": [
+                    "Haz snorkel en Johnny Cay y Haynes Cay",
+                    "Prueba el rondón, plato tradicional isleño",
+                    "Explora el Parque Regional Old Point Mangrove"
+                ],
+                "pt": [
+                    "Faça snorkel em Johnny Cay e Haynes Cay",
+                    "Experimente o rondón, prato tradicional da ilha",
+                    "Explore o Parque Regional Old Point Mangrove"
+                ],
+                "fr": [
+                    "Faites de la plongée avec tuba à Johnny Cay et Haynes Cay",
+                    "Goûtez le rondón, plat traditionnel de l'île",
+                    "Explorez le Parc Régional Old Point Mangrove"
+                ],
+                "it": [
+                    "Fai snorkeling a Johnny Cay e Haynes Cay",
+                    "Prova il rondón, piatto tradizionale dell'isola",
+                    "Esplora il Parco Regionale Old Point Mangrove"
+                ]
+            },
+            "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/026.webp",
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "andrés",
+                    "providencia",
+                    "nature escape",
+                    "outdoor activity",
+                    "scenic route",
+                    "water plan",
+                    "coastal vibe"
+                ],
+                "es": [
+                    "andrés",
+                    "providencia",
+                    "escapada natural",
+                    "actividad al aire libre",
+                    "ruta escenica",
+                    "plan acuatico",
+                    "ambiente costero"
+                ],
+                "pt": [
+                    "andrés",
+                    "providência",
+                    "escapada natural",
+                    "atividade ao ar livre",
+                    "rota cenica",
+                    "plano aquatico",
+                    "clima litoraneo"
+                ],
+                "fr": [
+                    "andrés",
+                    "providencia",
+                    "escapade nature",
+                    "activite en plein air",
+                    "itineraire panoramique",
+                    "plan aquatique",
+                    "ambiance cotiere"
+                ],
+                "it": [
+                    "andrés",
+                    "providencia",
+                    "fuga nella natura",
+                    "attivita all aperto",
+                    "percorso panoramico",
+                    "piano acquatico",
+                    "atmosfera costiera"
+                ]
+            }
+        },
+        {
+            "key": "027",
+            "name": {
+                "en": "Santander",
+                "es": "Santander",
+                "pt": "Santander",
+                "fr": "Santander",
+                "it": "Santander"
+            },
+            "description": {
+                "en": "Adventure awaits in Bucaramanga and the Chicamocha Canyon, land of paragliding and dramatic landscapes.",
+                "es": "La aventura te espera en Bucaramanga y el Cañón del Chicamocha, tierra de parapente y paisajes imponentes.",
+                "pt": "A aventura espera em Bucaramanga e no Cañón del Chicamocha, terra de parapente e paisagens imponentes.",
+                "fr": "L'aventure vous attend à Bucaramanga et au Cañón del Chicamocha, terre de parapente et de paysages spectaculaires.",
+                "it": "L'avventura ti aspetta a Bucaramanga e nel Cañón del Chicamocha, terra di parapendio e paesaggi imponenti."
+            },
+            "tips": {
+                "en": [
+                    "Cross the Chicamocha Canyon by cable car",
+                    "Paraglide over Bucaramanga's ridges",
+                    "Visit Barichara, Colombia's prettiest town"
+                ],
+                "es": [
+                    "Cruza el Cañón del Chicamocha en teleférico",
+                    "Practica parapente sobre las montañas de Bucaramanga",
+                    "Visita Barichara, el pueblo más bonito de Colombia"
+                ],
+                "pt": [
+                    "Atravesse o Cañón del Chicamocha de teleférico",
+                    "Pratique parapente sobre as montanhas de Bucaramanga",
+                    "Visite Barichara, a vila mais bonita da Colômbia"
+                ],
+                "fr": [
+                    "Traversez le Cañón del Chicamocha en téléphérique",
+                    "Faites du parapente au-dessus des montagnes de Bucaramanga",
+                    "Visitez Barichara, le plus beau village de Colombie"
+                ],
+                "it": [
+                    "Attraversa il Cañón del Chicamocha in teleferica",
+                    "Pratica parapendio sulle montagne di Bucaramanga",
+                    "Visita Barichara, il paese più bello della Colombia"
+                ]
+            },
+            "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/027.webp",
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "santander",
+                    "nature escape",
+                    "outdoor activity",
+                    "scenic route",
+                    "nightlife",
+                    "music culture",
+                    "social plan"
+                ],
+                "es": [
+                    "santander",
+                    "escapada natural",
+                    "actividad al aire libre",
+                    "ruta escenica",
+                    "vida nocturna",
+                    "cultura musical",
+                    "plan social"
+                ],
+                "pt": [
+                    "santander",
+                    "escapada natural",
+                    "atividade ao ar livre",
+                    "rota cenica",
+                    "vida noturna",
+                    "cultura musical",
+                    "plano social"
+                ],
+                "fr": [
+                    "santander",
+                    "escapade nature",
+                    "activite en plein air",
+                    "itineraire panoramique",
+                    "vie nocturne",
+                    "culture musicale",
+                    "plan social"
+                ],
+                "it": [
+                    "santander",
+                    "fuga nella natura",
+                    "attivita all aperto",
+                    "percorso panoramico",
+                    "vita notturna",
+                    "cultura musicale",
+                    "piano sociale"
+                ]
+            }
+        },
+        {
+            "key": "028",
+            "name": {
+                "en": "Sucre",
+                "es": "Sucre",
+                "pt": "Sucre",
+                "fr": "Sucre",
+                "it": "Sucre"
+            },
+            "description": {
+                "en": "Feel the Caribbean soul of Sincelejo, home of fandango, sombrero vueltiao and warm coastal traditions.",
+                "es": "Siente el alma caribeña de Sincelejo, cuna del fandango, el sombrero vueltiao y tradiciones costeñas.",
+                "pt": "Sinta a alma caribenha de Sincelejo, berço do fandango, do sombrero vueltiao e tradições costeiras.",
+                "fr": "Ressentez l'âme caribéenne de Sincelejo, berceau du fandango, du sombrero vueltiao et des traditions côtières.",
+                "it": "Senti l'anima caraibica di Sincelejo, culla del fandango, del sombrero vueltiao e delle tradizioni costiere."
+            },
+            "tips": {
+                "en": [
+                    "Visit the San Francisco de Asís Cove",
+                    "Experience the Sincelejo Fandango Festival",
+                    "Explore the San Bernardo del Viento beaches"
+                ],
+                "es": [
+                    "Visita la Ensenada de San Francisco de Asís",
+                    "Vive el Festival del Fandango de Sincelejo",
+                    "Explora las playas de San Bernardo del Viento"
+                ],
+                "pt": [
+                    "Visite a Ensenada de San Francisco de Asís",
+                    "Viva o Festival do Fandango de Sincelejo",
+                    "Explore as praias de San Bernardo del Viento"
+                ],
+                "fr": [
+                    "Visitez l'Ensenada de San Francisco de Asís",
+                    "Vivez le Festival du Fandango de Sincelejo",
+                    "Explorez les plages de San Bernardo del Viento"
+                ],
+                "it": [
+                    "Visita l'Ensenada de San Francisco de Asís",
+                    "Vivi il Festival del Fandango di Sincelejo",
+                    "Esplora le spiagge di San Bernardo del Viento"
+                ]
+            },
+            "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/028.webp",
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "sucre",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "nightlife",
+                    "music culture",
+                    "social plan"
+                ],
+                "es": [
+                    "sucre",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "vida nocturna",
+                    "cultura musical",
+                    "plan social"
+                ],
+                "pt": [
+                    "sucre",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "vida noturna",
+                    "cultura musical",
+                    "plano social"
+                ],
+                "fr": [
+                    "sucre",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "vie nocturne",
+                    "culture musicale",
+                    "plan social"
+                ],
+                "it": [
+                    "sucre",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "vita notturna",
+                    "cultura musicale",
+                    "piano sociale"
+                ]
+            }
+        },
+        {
+            "key": "029",
+            "name": {
+                "en": "Tolima",
+                "es": "Tolima",
+                "pt": "Tolima",
+                "fr": "Tolima",
+                "it": "Tolima"
+            },
+            "description": {
+                "en": "Discover Ibagué, the musical capital of Colombia, nestled in the Magdalena Valley with snow-capped views.",
+                "es": "Descubre Ibagué, la capital musical de Colombia, en el valle del Magdalena con vistas a nevados.",
+                "pt": "Descubra Ibagué, a capital musical da Colômbia, no vale do Magdalena com vistas para neve.",
+                "fr": "Découvrez Ibagué, la capitale musicale de Colombie, nichée dans la vallée du Magdalena avec vue sur les sommets enneigés.",
+                "it": "Scopri Ibagué, la capitale musicale della Colombia, nella valle del Magdalena con viste sui picchi innevati."
+            },
+            "tips": {
+                "en": [
+                    "Visit the Tolima Music Conservatory",
+                    "Explore Nevado del Tolima surroundings",
+                    "Discover Honda's colonial river port"
+                ],
+                "es": [
+                    "Visita el Conservatorio del Tolima",
+                    "Explora los alrededores del Nevado del Tolima",
+                    "Descubre el puerto fluvial colonial de Honda"
+                ],
+                "pt": [
+                    "Visite o Conservatório do Tolima",
+                    "Explore os arredores do Nevado del Tolima",
+                    "Descubra o porto fluvial colonial de Honda"
+                ],
+                "fr": [
+                    "Visitez le Conservatoire du Tolima",
+                    "Explorez les environs du Nevado del Tolima",
+                    "Découvrez le port fluvial colonial de Honda"
+                ],
+                "it": [
+                    "Visita il Conservatorio del Tolima",
+                    "Esplora i dintorni del Nevado del Tolima",
+                    "Scopri il porto fluviale coloniale di Honda"
+                ]
+            },
+            "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/029.webp",
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "tolima",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "nightlife",
+                    "music culture",
+                    "social plan"
+                ],
+                "es": [
+                    "tolima",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "vida nocturna",
+                    "cultura musical",
+                    "plan social"
+                ],
+                "pt": [
+                    "tolima",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "vida noturna",
+                    "cultura musical",
+                    "plano social"
+                ],
+                "fr": [
+                    "tolima",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "vie nocturne",
+                    "culture musicale",
+                    "plan social"
+                ],
+                "it": [
+                    "tolima",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "vita notturna",
+                    "cultura musicale",
+                    "piano sociale"
+                ]
+            }
+        },
+        {
+            "key": "030",
+            "name": {
+                "en": "Valle del Cauca",
+                "es": "Valle del Cauca",
+                "pt": "Valle del Cauca",
+                "fr": "Valle del Cauca",
+                "it": "Valle del Cauca"
+            },
+            "description": {
+                "en": "Dance through Cali, the world capital of salsa, and a valley of sugar cane, Pacific culture and joy.",
+                "es": "Baila por Cali, capital mundial de la salsa, y un valle de caña de azúcar, cultura pacífica y alegría.",
+                "pt": "Dance por Cali, capital mundial da salsa, e um vale de cana-de-açúcar, cultura do Pacífico e alegria.",
+                "fr": "Dansez à Cali, capitale mondiale de la salsa, et une vallée de canne à sucre, culture pacifique et joie.",
+                "it": "Balla per Cali, capitale mondiale della salsa, e una valle di canna da zucchero, cultura del Pacifico e gioia."
+            },
+            "tips": {
+                "en": [
+                    "Take a salsa class and hit a salsoteca in Cali",
+                    "Visit San Cipriano's river by brujita rail cart",
+                    "Explore Buga and its Basilica del Señor de los Milagros"
+                ],
+                "es": [
+                    "Toma una clase de salsa y visita una salsoteca en Cali",
+                    "Recorre el río de San Cipriano en brujita",
+                    "Explora Buga y su Basílica del Señor de los Milagros"
+                ],
+                "pt": [
+                    "Faça uma aula de salsa e visite uma salsoteca em Cali",
+                    "Percorra o rio de San Cipriano de brujita",
+                    "Explore Buga e sua Basílica del Señor de los Milagros"
+                ],
+                "fr": [
+                    "Prenez un cours de salsa et visitez une salsoteca à Cali",
+                    "Parcourez la rivière de San Cipriano en brujita",
+                    "Explorez Buga et sa Basílica del Señor de los Milagros"
+                ],
+                "it": [
+                    "Fai un corso di salsa e visita una salsoteca a Cali",
+                    "Percorri il fiume di San Cipriano in brujita",
+                    "Esplora Buga e la sua Basílica del Señor de los Milagros"
+                ]
+            },
+            "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/030.webp",
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "valle",
+                    "cauca",
+                    "nature escape",
+                    "outdoor activity",
+                    "scenic route",
+                    "water plan",
+                    "coastal vibe"
+                ],
+                "es": [
+                    "valle",
+                    "cauca",
+                    "escapada natural",
+                    "actividad al aire libre",
+                    "ruta escenica",
+                    "plan acuatico",
+                    "ambiente costero"
+                ],
+                "pt": [
+                    "valle",
+                    "cauca",
+                    "escapada natural",
+                    "atividade ao ar livre",
+                    "rota cenica",
+                    "plano aquatico",
+                    "clima litoraneo"
+                ],
+                "fr": [
+                    "valle",
+                    "cauca",
+                    "escapade nature",
+                    "activite en plein air",
+                    "itineraire panoramique",
+                    "plan aquatique",
+                    "ambiance cotiere"
+                ],
+                "it": [
+                    "valle",
+                    "cauca",
+                    "fuga nella natura",
+                    "attivita all aperto",
+                    "percorso panoramico",
+                    "piano acquatico",
+                    "atmosfera costiera"
+                ]
+            }
+        },
+        {
+            "key": "031",
+            "name": {
+                "en": "Vaupés",
+                "es": "Vaupés",
+                "pt": "Vaupés",
+                "fr": "Vaupés",
+                "it": "Vaupés"
+            },
+            "description": {
+                "en": "Venture into the heart of the Amazon, where indigenous Tukano and Cubeo cultures thrive along the Vaupés River.",
+                "es": "Aventúrate en el corazón del Amazonas, donde las culturas indígenas Tukano y Cubeo florecen junto al río Vaupés.",
+                "pt": "Aventure-se no coração da Amazônia, onde as culturas indígenas Tukano e Cubeo florescem junto ao rio Vaupés.",
+                "fr": "Aventurez-vous au cœur de l'Amazonie, où les cultures indigènes Tukano et Cubeo prospèrent le long du fleuve Vaupés.",
+                "it": "Avventurati nel cuore dell'Amazzonia, dove le culture indigene Tukano e Cubeo fioriscono lungo il fiume Vaupés."
+            },
+            "tips": {
+                "en": [
+                    "Visit Mitú and its indigenous malocas",
+                    "Navigate the Vaupés and Apaporis rivers",
+                    "Learn about traditional chagra farming"
+                ],
+                "es": [
+                    "Visita Mitú y sus malocas indígenas",
+                    "Navega los ríos Vaupés y Apaporis",
+                    "Conoce la agricultura tradicional de chagra"
+                ],
+                "pt": [
+                    "Visite Mitú e suas malocas indígenas",
+                    "Navegue pelos rios Vaupés e Apaporis",
+                    "Conheça a agricultura tradicional de chagra"
+                ],
+                "fr": [
+                    "Visitez Mitú et ses malocas indigènes",
+                    "Naviguez sur les fleuves Vaupés et Apaporis",
+                    "Découvrez l'agriculture traditionnelle de chagra"
+                ],
+                "it": [
+                    "Visita Mitú e le sue malocas indigene",
+                    "Naviga i fiumi Vaupés e Apaporis",
+                    "Conosci l'agricoltura tradizionale di chagra"
+                ]
+            },
+            "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/031.webp",
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "vaupés",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air",
+                    "creative moment",
+                    "art and design",
+                    "visual culture"
+                ],
+                "es": [
+                    "vaupés",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre",
+                    "momento creativo",
+                    "arte y diseno",
+                    "cultura visual"
+                ],
+                "pt": [
+                    "vaupés",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre",
+                    "momento criativo",
+                    "arte e design",
+                    "cultura visual"
+                ],
+                "fr": [
+                    "vaupés",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre",
+                    "moment creatif",
+                    "art et design",
+                    "culture visuelle"
+                ],
+                "it": [
+                    "vaupés",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta",
+                    "momento creativo",
+                    "arte e design",
+                    "cultura visiva"
+                ]
+            }
+        },
+        {
+            "key": "032",
+            "name": {
+                "en": "Vichada",
+                "es": "Vichada",
+                "pt": "Vichada",
+                "fr": "Vichada",
+                "it": "Vichada"
+            },
+            "description": {
+                "en": "Explore Colombia's eastern frontier with El Tuparro National Natural Park, savannas and the Orinoco River.",
+                "es": "Explora la frontera oriental de Colombia con el Parque Nacional Natural El Tuparro, sabanas y el río Orinoco.",
+                "pt": "Explore a fronteira oriental da Colômbia com o Parque Nacional Natural El Tuparro, savanas e o rio Orinoco.",
+                "fr": "Explorez la frontière orientale de la Colombie avec le Parc National Naturel El Tuparro, savanes et fleuve Orinoco.",
+                "it": "Esplora la frontiera orientale della Colombia con il Parco Nazionale Naturale El Tuparro, savane e fiume Orinoco."
+            },
+            "tips": {
+                "en": [
+                    "Visit El Tuparro's golden savannas and rivers",
+                    "Spot pink dolphins in the Orinoco basin",
+                    "Explore Puerto Carreño on the Venezuelan border"
+                ],
+                "es": [
+                    "Visita las sabanas doradas y ríos de El Tuparro",
+                    "Observa delfines rosados en la cuenca del Orinoco",
+                    "Explora Puerto Carreño en la frontera con Venezuela"
+                ],
+                "pt": [
+                    "Visite as savanas douradas e rios de El Tuparro",
+                    "Observe golfinhos-rosas na bacia do Orinoco",
+                    "Explore Puerto Carreño na fronteira com a Venezuela"
+                ],
+                "fr": [
+                    "Visitez les savanes dorées et les rivières d'El Tuparro",
+                    "Observez les dauphins roses dans le bassin de l'Orinoco",
+                    "Explorez Puerto Carreño à la frontière vénézuélienne"
+                ],
+                "it": [
+                    "Visita le savane dorate e i fiumi di El Tuparro",
+                    "Osserva i delfini rosa nel bacino dell'Orinoco",
+                    "Esplora Puerto Carreño al confine con il Venezuela"
+                ]
+            },
+            "imageUrl": "https://saunlockit.blob.core.windows.net/unlockit/groups/6a1f0b5c308d89433b9e8107/activities/032.webp",
+            "difficulty": 2,
+            "tags": {
+                "en": [
+                    "vichada",
+                    "nature escape",
+                    "outdoor activity",
+                    "scenic route",
+                    "water plan",
+                    "coastal vibe",
+                    "fresh air"
+                ],
+                "es": [
+                    "vichada",
+                    "escapada natural",
+                    "actividad al aire libre",
+                    "ruta escenica",
+                    "plan acuatico",
+                    "ambiente costero",
+                    "aire libre"
+                ],
+                "pt": [
+                    "vichada",
+                    "escapada natural",
+                    "atividade ao ar livre",
+                    "rota cenica",
+                    "plano aquatico",
+                    "clima litoraneo",
+                    "ar livre"
+                ],
+                "fr": [
+                    "vichada",
+                    "escapade nature",
+                    "activite en plein air",
+                    "itineraire panoramique",
+                    "plan aquatique",
+                    "ambiance cotiere",
+                    "air libre"
+                ],
+                "it": [
+                    "vichada",
+                    "fuga nella natura",
+                    "attivita all aperto",
+                    "percorso panoramico",
+                    "piano acquatico",
+                    "atmosfera costiera",
+                    "aria aperta"
+                ]
+            }
+        }
+    ],
+    "tags": {
+        "en": [
+            "discover colombia",
+            "colombia",
+            "culture",
+            "nature",
+            "adventure",
+            "local experiences",
+            "travel",
+            "sightseeing",
+            "food",
+            "history",
+            "outdoor plans",
+            "bucket list"
+        ],
+        "es": [
+            "descubre colombia",
+            "colombia",
+            "cultura",
+            "naturaleza",
+            "aventura",
+            "experiencias locales",
+            "viaje",
+            "turismo",
+            "gastronomia",
+            "historia",
+            "planes al aire libre",
+            "lista de deseos"
+        ],
+        "pt": [
+            "descubra colombia",
+            "colombia",
+            "cultura",
+            "natureza",
+            "aventura",
+            "experiencias locais",
+            "viagem",
+            "turismo",
+            "gastronomia",
+            "historia",
+            "planos ao ar livre",
+            "lista de desejos"
+        ],
+        "fr": [
+            "decouvrir colombie",
+            "colombie",
+            "culture",
+            "nature",
+            "aventure",
+            "experiences locales",
+            "voyage",
+            "tourisme",
+            "gastronomie",
+            "histoire",
+            "activites en plein air",
+            "liste de reves"
+        ],
+        "it": [
+            "scopri colombia",
+            "colombia",
+            "cultura",
+            "natura",
+            "avventura",
+            "esperienze locali",
+            "viaggio",
+            "turismo",
+            "gastronomia",
+            "storia",
+            "attivita all aperto",
+            "lista dei desideri"
+        ]
+    }
+}

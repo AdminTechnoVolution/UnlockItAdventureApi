@@ -1,0 +1,88 @@
+paths:
+  /api/user/profile:
+    put:
+      summary: Update authenticated user profile
+      description: Updates the profile information of the authenticated user.
+      tags:
+        - Users
+      security:
+        - Bearer: []
+      parameters:
+        - $ref: '#/components/parameters/Authorization'
+        - $ref: '#/components/parameters/AcceptLanguage'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UpdateProfileSchema'
+      responses:
+        200:
+          $ref: '#/components/responses/UpdateProfileSuccessResponse'
+        400:
+          $ref: '#/components/responses/BadRequestResponse'
+        401:
+          $ref: '#/components/responses/UnauthorizedResponse'
+        404:
+          $ref: '#/components/responses/NotFoundResponse'
+        409:
+          $ref: '#/components/responses/ConflictResponse'
+        500:
+          $ref: '#/components/responses/InternalServerErrorResponse'
+
+  /api/user/delete-account:
+    delete:
+      summary: Delete authenticated user account
+      description: Permanently deletes the authenticated user account and all associated personal data (profile photo, FCM tokens, owned group progress, partner photos uploaded by the user, and partner memberships).
+      tags:
+        - Users
+      security:
+        - Bearer: []
+      parameters:
+        - $ref: '#/components/parameters/Authorization'
+        - $ref: '#/components/parameters/AcceptLanguage'
+      responses:
+        200:
+          $ref: '#/components/responses/DeleteAccountSuccessResponse'
+        401:
+          $ref: '#/components/responses/UnauthorizedResponse'
+        404:
+          $ref: '#/components/responses/NotFoundResponse'
+        500:
+          $ref: '#/components/responses/InternalServerErrorResponse'
+
+  /api/user/profile/photo:
+    put:
+      summary: Update user profile photo
+      description: Updates the profile photo of the authenticated user.
+      tags:
+        - Users
+      security:
+        - Bearer: []
+      parameters:
+        - $ref: '#/components/parameters/Authorization'
+        - $ref: '#/components/parameters/AcceptLanguage'
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              required:
+                - photo
+              properties:
+                photo:
+                  type: string
+                  format: binary
+                  description: Profile photo file (jpeg, png, or webp)
+      responses:
+        200:
+          $ref: '#/components/responses/UpdateProfilePhotoSuccessResponse'
+        400:
+          $ref: '#/components/responses/BadRequestResponse'
+        401:
+          $ref: '#/components/responses/UnauthorizedResponse'
+        404:
+          $ref: '#/components/responses/NotFoundResponse'
+        500:
+          $ref: '#/components/responses/InternalServerErrorResponse'

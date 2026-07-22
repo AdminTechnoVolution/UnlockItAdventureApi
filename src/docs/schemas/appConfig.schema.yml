@@ -1,0 +1,34 @@
+components:
+  schemas:
+    AppConfigItem:
+      type: object
+      required:
+        - key
+        - value
+      properties:
+        key:
+          type: string
+          example: activity.photos.max_per_user
+        value:
+          description: Mixed config value (string, number, boolean, or array)
+        description:
+          type: string
+          nullable: true
+          example: Maximum number of photos a user can upload per activity
+
+    AppConfigsResponse:
+      allOf:
+        - $ref: '#/components/schemas/BaseResponse'
+        - type: object
+          properties:
+            success:
+              type: boolean
+              example: true
+            messages:
+              type: array
+              items:
+                type: string
+            data:
+              type: array
+              items:
+                $ref: '#/components/schemas/AppConfigItem'

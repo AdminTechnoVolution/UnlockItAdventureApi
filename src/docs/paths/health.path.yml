@@ -1,0 +1,13 @@
+/api/health:
+  get:
+    summary: Healthcheck
+    description: Checks if the API is running and healthy.
+    tags:
+      - Health
+    responses:
+      200:
+        $ref: '#/components/responses/HealthSuccessResponse'
+      400:
+        $ref: '#/components/responses/BadRequestResponse'
+      500:
+        $ref: '#/components/responses/InternalServerErrorResponse'

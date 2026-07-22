@@ -1,0 +1,300 @@
+const path = require('path');
+const logger = require('../../shared/config/logger');
+const filename = path.basename(__filename);
+const BaseResponse = require('../../shared/commons/models/BaseResponse');
+const BusinessException = require('../../shared/commons/models/BusinessException');
+const User = require('../models/user.model');
+const FCMToken = require('../models/fcmToken.model');
+const UserRepository = require('../repository/user.repository');
+const FCMTokenRepository = require('../repository/fcmToken.repository');
+const UserStatus = require('../../shared/constants/enums/EnumUserStatus');
+const redisClient = require('../../shared/config/redis');
+const util = require('../../shared/util/util');
+const jwt = require('../../shared/util/jwt');
+const AuthType = require('../../shared/constants/enums/EnumAuthType');
+const { verifyGoogleToken } = require('../clients/google');
+const constants = require('../../shared/constants/constants');
+const consCache = require('../../shared/constants/constants.cache');
+const env = require('../../shared/constants/environmentSystemVariables');
+const { SUCCESS_CODES, ERROR_CODES } = require('../../shared/i18n/messages');
+const { translate } = require('../../shared/util/util');
+
+const socialLogin = async (req) => {
+    const acceptLanguage = req.acceptLanguage;
+    const { authType, tokenId, device } = req.body;
+
+    const profile = await verifyProviderToken(authType, tokenId, req);
+    const { user, isNewUser } = await findOrCreateSocialUser(authType, profile, req);
+
+    user.lastLogin = new Date();
+    await UserRepository.save(user, req);
+
+    if (device?.fcmToken) {
+        await registerDevice(user, device, req);
+    }
+
+    const tokens = await issueAuthTokens(user);
+
+    const message = translate(SUCCESS_CODES.CODE_LOGIN_SUCCESS, acceptLanguage);
+
+    const userData = {
+        username: user.username,
+        fullName: user.fullName,
+        profileImageUrl: user.profileImageUrl,
+    };
+
+    return new BaseResponse(true, [message], {
+        accessToken: tokens.accessToken,
+        refreshToken: tokens.refreshToken,
+        user: userData,
+        isNewUser,
+    });
+};
+
+const verifyProviderToken = async (authType, tokenId, req) => {
+    try {
+        let profile;
+
+        if (authType === AuthType.GOOGLE) {
+            profile = await verifyGoogleToken(tokenId);
+        } else if (authType === AuthType.APPLE) {
+            // TODO: Implement Apple ID token verification.
+            throw new BusinessException(ERROR_CODES.CODE_SOCIAL_AUTH_NOT_IMPLEMENTED, constants.HTTP_BAD_REQUEST);
+        } else {
+            throw new BusinessException(ERROR_CODES.FIELD_INVALID, constants.HTTP_BAD_REQUEST);
+        }
+
+        if (!profile.providerId) {
+            throw new BusinessException(ERROR_CODES.CODE_SOCIAL_AUTH_FAILED, constants.HTTP_UNAUTHORIZED);
+        }
+
+        return profile;
+    } catch (error) {
+        if (error instanceof BusinessException) {
+            throw error;
+        }
+
+        logger.error({ message: `Social token verification failed for authType=${authType}. Error: ${error.message}`, className: filename, req });
+        throw new BusinessException(ERROR_CODES.CODE_SOCIAL_AUTH_FAILED, constants.HTTP_UNAUTHORIZED);
+    }
+};
+
+const findOrCreateSocialUser = async (authType, profile, req) => {
+    let user = await UserRepository.findOneByFilter({ authType, providerId: profile.providerId }, req);
+
+    if (user) {
+        return { user, isNewUser: false };
+    }
+
+    if (profile.email) {
+        user = await UserRepository.findOneByFilter({ email: profile.email }, req);
+    }
+
+    if (user) {
+        user.authType = authType;
+        user.providerId = profile.providerId;
+        user.status = UserStatus.ACTIVE;
+        user.verificationExpiresAt = undefined;
+
+        if (profile.fullName && !user.fullName) {
+            user.fullName = profile.fullName;
+        }
+
+        if (profile.profileImageUrl && !user.profileImageUrl) {
+            user.profileImageUrl = profile.profileImageUrl;
+        }
+
+        return { user, isNewUser: false };
+    }
+
+    if (!profile.email) {
+        throw new BusinessException(ERROR_CODES.CODE_SOCIAL_AUTH_EMAIL_REQUIRED, constants.HTTP_BAD_REQUEST);
+    }
+
+    const username = await generateUniqueUsername(req);
+    const fullName = profile.fullName || profile.email.split('@')[0];
+
+    user = new User({
+        email: profile.email,
+        username,
+        fullName,
+        profileImageUrl: profile.profileImageUrl,
+        authType,
+        providerId: profile.providerId,
+        status: UserStatus.ACTIVE,
+    });
+
+    await UserRepository.save(user, req);
+
+    return { user, isNewUser: true };
+};
+
+const issueAuthTokens = async (user) => {
+    const payload = {
+        id: user._id,
+        email: user.email,
+    };
+
+    const payloadRefresh = {
+        id: user._id,
+        email: user.email,
+        hash: util.generateRandomHash(),
+    };
+
+    const accessToken = await saveTokenInRedis(
+        jwt.generateToken(payload, env.JWT_ACCESS_TOKEN_TTL_SECS),
+        payload,
+        env.JWT_ACCESS_TOKEN_TTL_SECS,
+        `${consCache.REDIS_KEY_ACCESS_TOKEN}${payload.id}:`
+    );
+
+    const refreshToken = await saveTokenInRedis(
+        jwt.generateToken(payloadRefresh, env.JWT_REFRESH_TOKEN_TTL_SECS),
+        payloadRefresh,
+        env.JWT_REFRESH_TOKEN_TTL_SECS,
+        `${consCache.REDIS_KEY_REFRESH_TOKEN}${payloadRefresh.id}:`
+    );
+
+    return { accessToken, refreshToken };
+};
+
+const registerDevice = async (user, device, req) => {
+    const fcmTokenDoc = await FCMTokenRepository.findOneByFilter({ userId: user._id }, req);
+
+    if (fcmTokenDoc) {
+        const existsFcmToken = fcmTokenDoc.devices.some((item) => item.fcmToken === device.fcmToken);
+
+        if (!existsFcmToken) {
+            fcmTokenDoc.devices.push(device);
+            await FCMTokenRepository.save(fcmTokenDoc, req);
+        }
+
+        return;
+    }
+
+    const newFcmTokenDoc = new FCMToken({
+        userId: user._id,
+        devices: [device],
+    });
+
+    await FCMTokenRepository.save(newFcmTokenDoc, req);
+};
+
+const saveTokenInRedis = async (token, payload, ttl, redisKeyPrefix) => {
+    const key = util.getKeyRedis(`${redisKeyPrefix}${token}`);
+    await redisClient.setEx(key, ttl, JSON.stringify(payload));
+    return token;
+};
+
+const generateUniqueUsername = async (req) => {
+    while (true) {
+        const username = generateUsername();
+        const exists = await UserRepository.existsByFilter({ username }, req);
+
+        if (!exists) {
+            return username;
+        }
+    }
+};
+
+const generateUsername = (prefix = 'Guest') => {
+    const timestamp = Date.now();
+    const random = util.generateSecureRandom(100, 999);
+    return `${prefix}_${timestamp}_${random}`;
+};
+
+const refreshToken = async (req) => {
+    const { refreshToken: refreshTokenBody } = req.body;
+
+    const { decoded } = jwt.verifyJwtToken(refreshTokenBody, false);
+    if (!decoded) {
+        throw new BusinessException(ERROR_CODES.CODE_ERROR_AUTH, constants.HTTP_UNAUTHORIZED);
+    }
+
+    const redisKey = util.getKeyRedis(`${consCache.REDIS_KEY_REFRESH_TOKEN}${decoded.id}:${refreshTokenBody}`);
+    const exists = await redisClient.exists(redisKey);
+    if (exists !== 1) {
+        throw new BusinessException(ERROR_CODES.CODE_ERROR_AUTH, constants.HTTP_UNAUTHORIZED);
+    }
+
+    const user = await UserRepository.findOneByFilter({ _id: decoded.id, status: UserStatus.ACTIVE }, req);
+    if (!user) {
+        throw new BusinessException(ERROR_CODES.CODE_ERROR_AUTH, constants.HTTP_UNAUTHORIZED);
+    }
+
+    await redisClient.del(redisKey);
+
+    user.lastLogin = new Date();
+    await UserRepository.save(user, req);
+
+    const tokens = await issueAuthTokens(user);
+
+    return new BaseResponse(true, [], {
+        accessToken: tokens.accessToken,
+        refreshToken: tokens.refreshToken,
+    });
+};
+
+const revokeAuthTokens = async (accessToken, refreshToken, fcmToken, req) => {
+    const revocations = [];
+
+    const { decoded: decodedAccessToken } = jwt.verifyJwtToken(accessToken, false);
+    if (decodedAccessToken) {
+        const accessKey = util.getKeyRedis(`${consCache.REDIS_KEY_ACCESS_TOKEN}${decodedAccessToken.id}:${accessToken}`);
+        revocations.push(redisClient.del(accessKey));
+    }
+
+    const { decoded: decodedRefreshToken } = jwt.verifyJwtToken(refreshToken, false);
+    if (decodedRefreshToken) {
+        const refreshKey = util.getKeyRedis(`${consCache.REDIS_KEY_REFRESH_TOKEN}${decodedRefreshToken.id}:${refreshToken}`);
+        revocations.push(redisClient.del(refreshKey));
+    }
+
+    if (fcmToken) {
+        revocations.push(
+            FCMTokenRepository.findOneByFilterAndPullToken(
+                { 'devices.fcmToken': fcmToken },
+                { devices: { fcmToken } },
+                req
+            )
+        );
+    }
+
+    await Promise.all(revocations);
+};
+
+const logout = async (req) => {
+    const { accessToken, refreshToken, fcmToken } = req.body;
+
+    revokeAuthTokens(accessToken, refreshToken, fcmToken, req).catch((err) => {
+        logger.error({ message: `Error revoking tokens on logout: ${err.message}`, className: filename, req });
+    });
+
+    return new BaseResponse(true, []);
+};
+
+const revokeAllAuthTokensForUser = async (userId) => {
+    const userIdStr = userId.toString();
+    const accessPattern = util.getKeyRedis(`${consCache.REDIS_KEY_ACCESS_TOKEN}${userIdStr}:*`);
+    const refreshPattern = util.getKeyRedis(`${consCache.REDIS_KEY_REFRESH_TOKEN}${userIdStr}:*`);
+    const keysToDelete = [];
+
+    for await (const key of redisClient.scanIterator({ MATCH: accessPattern, COUNT: 100 })) {
+        keysToDelete.push(key);
+    }
+
+    for await (const key of redisClient.scanIterator({ MATCH: refreshPattern, COUNT: 100 })) {
+        keysToDelete.push(key);
+    }
+
+    if (keysToDelete.length > 0) {
+        await Promise.all(keysToDelete.map((key) => redisClient.del(key)));
+    }
+};
+
+module.exports = {
+    socialLogin,
+    refreshToken,
+    logout,
+    revokeAllAuthTokensForUser,
+};
