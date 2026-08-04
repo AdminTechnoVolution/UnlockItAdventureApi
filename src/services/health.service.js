@@ -1,7 +1,6 @@
 const mongoose = require("mongoose");
 const packageJson = require("../../package.json");
 const redisClient = require('../../shared/config/redis');
-const { transporter } = require("../../shared/config/email");
 const BaseResponse = require('../../shared/commons/models/BaseResponse');
 const env = require('../../shared/constants/environmentSystemVariables');
 
@@ -18,7 +17,6 @@ const getHealth = async () => {
 
     await mongoStatus(healthInfo);
     await redisStatus(healthInfo);
-    await mailerStatus(healthInfo);
 
     return new BaseResponse(healthInfo.status === "ok", [], healthInfo);
 }
@@ -88,24 +86,6 @@ const redisStatus = async (healthInfo) => {
             error: err.message
         };
         healthInfo.status = "error";
-    }
-}
-
-const mailerStatus = async (healthInfo) => {
-    try {
-        await transporter.verify();
-
-        healthInfo.services.mailer = {
-            status: "connected",
-            service: transporter.options.service || null,
-            user: transporter.options.auth.user
-        };
-    } catch (err) {
-        healthInfo.services.mailer = {
-            status: "error",
-            error: err.message
-        };
-        healthInfo.status = "degraded";
     }
 }
 

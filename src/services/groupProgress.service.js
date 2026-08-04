@@ -123,7 +123,7 @@ const getNewPartnerIds = (groupProgress, partnerUsers) => {
 
 const validatePartnersMaxCount = async (groupProgress, partnerUsers, req) => {
     const maxPartnersConfig = await AppConfigService.getConfigByKey(AppConfigKey.GROUP_PARTNERS_MAX_COUNT, req);
-    const maxPartners = Number(maxPartnersConfig);
+    const maxPartners = Number(maxPartnersConfig.value);
     const newPartnersCount = getNewPartnerIds(groupProgress, partnerUsers).length;
     const totalAfterAdd = (groupProgress.partnerId || []).length + newPartnersCount;
 
