@@ -38,9 +38,8 @@ const addPartnersSchema = Joi.object({
         }),
     partnerIds: Joi.array()
         .items(
-            Joi.string().trim().max(256).email().required()
+            Joi.string().trim().max(256).email()
                 .messages({
-                    'any.required': ERROR_CODES.FIELD_REQUIRED,
                     'string.empty': ERROR_CODES.FIELD_REQUIRED,
                     'string.max': ERROR_CODES.FIELD_MAX,
                     'string.email': ERROR_CODES.FIELD_INVALID,
@@ -50,6 +49,7 @@ const addPartnersSchema = Joi.object({
         .required()
         .messages({
             'any.required': ERROR_CODES.FIELD_REQUIRED,
+            'array.base': ERROR_CODES.FIELD_INVALID,
             'array.min': ERROR_CODES.FIELD_REQUIRED,
         }),
 });
