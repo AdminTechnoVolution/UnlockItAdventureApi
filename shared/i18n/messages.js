@@ -322,11 +322,11 @@ const TRANSLATIONS = {
         it: "Solo il proprietario del gruppo può aggiungere partner."
     },
     [ERROR_CODES.CODE_PARTNER_EMAIL_NOT_FOUND]: {
-        en: "Unable to add one or more partners. Please verify the information and try again.",
-        es: "No se pudieron agregar uno o más compañeros. Verifica la información e inténtalo de nuevo.",
-        pt: "Não foi possível adicionar um ou mais parceiros. Verifique as informações e tente novamente.",
-        fr: "Impossible d'ajouter un ou plusieurs partenaires. Vérifiez les informations et réessayez.",
-        it: "Impossibile aggiungere uno o più partner. Verifica le informazioni e riprova."
+        en: "Unable to add one or more partners. You can only invite people who already have an account with that email in the app.",
+        es: "No se pudieron agregar uno o más compañeros. Solo puedes invitar personas que ya tengan cuenta con ese correo en la app.",
+        pt: "Não foi possível adicionar um ou mais parceiros. Você só pode convidar pessoas que já tenham conta com esse e-mail no app.",
+        fr: "Impossible d'ajouter un ou plusieurs partenaires. Vous ne pouvez inviter que des personnes qui ont déjà un compte avec cet e-mail dans l'application.",
+        it: "Impossibile aggiungere uno o più partner. Puoi invitare solo persone che hanno già un account con quella email nell'app."
     },
     [ERROR_CODES.CODE_PARTNER_CANNOT_BE_SELF]: {
         en: "You cannot add yourself as a partner.",
