@@ -5,6 +5,7 @@ const BaseResponse = require('../../shared/commons/models/BaseResponse');
 const ObjectId = require("mongoose").Types.ObjectId;
 const GroupRepository = require('../repository/group.repository');
 const GroupProgressRepository = require('../repository/groupProgress.repository');
+const PurchaseRepository = require('../repository/purchase.repository');
 const cache = require("../../shared/config/cache");
 const consCache = require('../../shared/constants/constants.cache');
 const env = require('../../shared/constants/environmentSystemVariables');
@@ -28,6 +29,7 @@ const getGroupActivities = async (req) => {
     const groupProgress = await getProgressByUserId(decoded['id'], req);
     groups = groups.map(g => mapGroupLang(g, acceptLanguage));
     addFieldsToGroups(groups, groupProgress, decoded['id']);
+    await attachPurchaseCountsAndSort(groups, req);
 
     return new BaseResponse(true, [], groups);
 };
@@ -70,6 +72,64 @@ const addFieldsToGroups = (groups, groupProgress, userId) => {
         g.unlocked = flags?.unlocked ?? false;
         g.sharedWithMe = flags?.sharedWithMe ?? false;
     });
+};
+
+const isPaidGroup = (group) => {
+    return Array.isArray(group.productsId)
+        && group.productsId.length > 0
+        && group.productsId.some((id) => typeof id === 'string' && id.trim().length > 0);
+};
+
+const attachPurchaseCountsAndSort = async (groups, req) => {
+    const freeGroupIds = [];
+    const paidGroupIds = [];
+
+    groups.forEach((group) => {
+        const id = group._id;
+        if (isPaidGroup(group)) {
+            paidGroupIds.push(id);
+        } else {
+            freeGroupIds.push(id);
+        }
+    });
+
+    const [freeUnlockCounts, paidPurchaseCounts] = await Promise.all([
+        GroupProgressRepository.countUnlocksByGroupIds(freeGroupIds, req),
+        PurchaseRepository.countActivePurchasesByGroupIds(paidGroupIds, req),
+    ]);
+
+    groups.forEach((group) => {
+        const groupIdStr = group._id.toString();
+        if (isPaidGroup(group)) {
+            group.purchaseCount = paidPurchaseCounts.get(groupIdStr) ?? 0;
+        } else {
+            group.purchaseCount = freeUnlockCounts.get(groupIdStr) ?? 0;
+        }
+    });
+
+    groups.sort(compareGroupsForCatalog);
+};
+
+const compareGroupsForCatalog = (a, b) => {
+    const aPaid = isPaidGroup(a);
+    const bPaid = isPaidGroup(b);
+
+    if (!aPaid && bPaid) {
+        return -1;
+    }
+    if (aPaid && !bPaid) {
+        return 1;
+    }
+    if (!aPaid && !bPaid) {
+        return a._id.toString().localeCompare(b._id.toString());
+    }
+
+    const countDiff = (b.purchaseCount ?? 0) - (a.purchaseCount ?? 0);
+    if (countDiff !== 0) {
+        return countDiff;
+    }
+
+    return a._id.toString().localeCompare(b._id.toString());
 };
 
 const mapGroupLang = (group, lang) => {
