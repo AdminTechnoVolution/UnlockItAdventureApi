@@ -4,6 +4,7 @@ const filename = path.basename(__filename);
 const { ERROR_CODES } = require('../../shared/i18n/messages');
 const DataLayerException = require('../../shared/commons/models/DataLayerException');
 const GroupProgress = require('../models/groupProgress.model');
+const GroupProgressStatus = require('../../shared/constants/enums/EnumGroupProgressStatus');
 
 const find = async (filter, sort, req = null) => {
     try {
@@ -142,6 +143,29 @@ const findForeignWithPhotosByUploader = async (userId, req = null) => {
     }
 };
 
+const countUnlocksByGroupIds = async (groupIds, req = null) => {
+    try {
+        if (!groupIds.length) {
+            return new Map();
+        }
+
+        const rows = await GroupProgress.aggregate([
+            {
+                $match: {
+                    groupId: { $in: groupIds },
+                    status: { $ne: GroupProgressStatus.VALIDATING },
+                },
+            },
+            { $group: { _id: '$groupId', count: { $sum: 1 } } },
+        ]);
+
+        return new Map(rows.map((row) => [row._id.toString(), row.count]));
+    } catch (err) {
+        logger.error(`Error in countUnlocksByGroupIds. Error: ${err}`, { className: filename, req: req });
+        throw new DataLayerException(ERROR_CODES.ERROR_INTERNAL_SERVER_ERROR);
+    }
+};
+
 const pullPartnerFromAll = async (userId, req = null) => {
     try {
         return await GroupProgress.updateMany(
@@ -166,5 +190,6 @@ module.exports = {
     deleteById,
     deleteManyByUserId,
     findForeignWithPhotosByUploader,
+    countUnlocksByGroupIds,
     pullPartnerFromAll,
 };
