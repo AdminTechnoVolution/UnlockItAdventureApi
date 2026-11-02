@@ -79,6 +79,13 @@ components:
           type: boolean
           description: True when the authenticated user is a partner on someone else's group progress
           example: false
+        purchaseCount:
+          type: integer
+          minimum: 0
+          description: >
+            Popularity count for catalog ordering. Free groups count non-validating group progress
+            unlocks; paid groups count active purchases only (refunded purchases are excluded).
+          example: 42
         createdAt:
           type: string
           format: date-time
