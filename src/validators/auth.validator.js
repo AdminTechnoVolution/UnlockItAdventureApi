@@ -4,10 +4,8 @@ const AuthType = require('../../shared/constants/enums/EnumAuthType');
 const Platforms = require('../../shared/constants/enums/EnumPlatforms');
 
 const deviceSchema = Joi.object({
-    fcmToken: Joi.string().trim().optional()
-        .messages({
-            'string.empty': ERROR_CODES.FIELD_REQUIRED,
-        }),
+    // Vacío u omitido: válido en dev sin Firebase; auth.service solo registra si hay token.
+    fcmToken: Joi.string().trim().allow('').optional(),
     platform: Joi.string().valid(...Object.values(Platforms)).required()
         .messages({
             'any.required': ERROR_CODES.FIELD_REQUIRED,
@@ -61,10 +59,7 @@ const logoutSchema = Joi.object({
             'any.required': ERROR_CODES.FIELD_REQUIRED,
             'string.empty': ERROR_CODES.FIELD_REQUIRED,
         }),
-    fcmToken: Joi.string().trim().optional()
-        .messages({
-            'string.empty': ERROR_CODES.FIELD_REQUIRED,
-        }),
+    fcmToken: Joi.string().trim().allow('').optional(),
 });
 
 module.exports = {
